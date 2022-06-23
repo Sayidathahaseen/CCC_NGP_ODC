@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pin_planner>
+	<pin_info>
+		<pin name="CS_ADC2n" source="Pin Planner" >
+		</pin>
+		<pin name="CS_ADC1n" source="Pin Planner" >
+		</pin>
+		<pin name="CS_ADC3n" source="Pin Planner" >
+		</pin>
+		<pin name="CS_ADC4n" source="Pin Planner" >
+		</pin>
+		<pin name="TP4" source="Pin Planner" >
+		</pin>
+		<pin name="EXTRA29" source="Pin Planner" >
+		</pin>
+		<pin name="EXTRA28" source="Pin Planner" >
+		</pin>
+		<pin name="EXTRA24" source="Pin Planner" >
+		</pin>
+		<pin name="EXTRA23" source="Pin Planner" >
+		</pin>
+		<pin name="EXTRA22" source="Pin Planner" >
+		</pin>
+		<pin name="EXTRA08" source="Pin Planner" >
+		</pin>
+		<pin name="EXTRA07" source="Pin Planner" >
+		</pin>
+		<pin name="TP3" source="Pin Planner" >
+		</pin>
+		<pin name="TP1" source="Pin Planner" >
+		</pin>
+		<pin name="SDO_ADC1" source="Pin Planner" >
+		</pin>
+		<pin name="SDO_ADC2" source="Pin Planner" >
+		</pin>
+		<pin name="SDO_ADC3" source="Pin Planner" >
+		</pin>
+		<pin name="SDO_ADC4" source="Pin Planner" >
+		</pin>
+	</pin_info>
+	<buses>
+	</buses>
+	<group_file_association>
+	</group_file_association>
+	<pin_planner_file_specifies>
+	</pin_planner_file_specifies>
+</pin_planner>

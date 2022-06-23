@@ -1,0 +1,38 @@
+|MPC5534_Proto
+I_AM_HEALTHY => HealthyLogic:HealthyLogic_inst.I_AM_HEALTHY
+TAKE_CONTROL => HealthyLogic:HealthyLogic_inst.TAKE_CONTROL
+MPC_CLK_OUT => ~NO_FANOUT~
+MPC_ENG_CLK => ~NO_FANOUT~
+MPC_RESET_NOT => HealthyLogic:HealthyLogic_inst.MPC_RESET_NOT
+RST_OUT_NOT => HealthyLogic:HealthyLogic_inst.RST_OUT_NOT
+APP1_OPN_EN_NOT => HealthyLogic:HealthyLogic_inst.APP1_OPN_EN_NOT
+APP2_OPN_EN_NOT => HealthyLogic:HealthyLogic_inst.APP2_OPN_EN_NOT
+ESC1_WDI_CPLD => HealthyLogic:HealthyLogic_inst.ESC1_WDI_CPLD
+ESC2_WDI_CPLD => HealthyLogic:HealthyLogic_inst.ESC2_WDI_CPLD
+ESC1_GPIO => ~NO_FANOUT~
+ESC2_GPIO => ~NO_FANOUT~
+IOP_TO_IOP_SRH1 => ~NO_FANOUT~
+IOP_TO_IOP_SRH2 => ~NO_FANOUT~
+IOP_TO_IOP_SRH3 => ~NO_FANOUT~
+IOP_TO_IOP_SRH4 => ~NO_FANOUT~
+PEER_IN_CONTROL => HealthyLogic:HealthyLogic_inst.PEER_IN_CONTROL
+IN_CONTROL => HealthyLogic:HealthyLogic_inst.IN_CONTROL
+PLD_SPARE2 => ~NO_FANOUT~
+PLD_SPARE1 => HealthyLogic:HealthyLogic_inst.PLD_SPARE1_CONTROL
+
+
+|MPC5534_Proto|HealthyLogic:HealthyLogic_inst
+I_AM_HEALTHY => inst12.IN0
+MPC_RESET_NOT => inst12.IN1
+RST_OUT_NOT => inst12.IN2
+APP2_OPN_EN_NOT => inst11.IN0
+APP1_OPN_EN_NOT => inst11.IN1
+TAKE_CONTROL => inst.CLK
+TAKE_CONTROL => inst4.CLK
+PLD_SPARE1_CONTROL => inst4.ACLR
+PEER_IN_CONTROL => inst4.ENA
+ESC1_WDI_CPLD => ~NO_FANOUT~
+ESC2_WDI_CPLD => ~NO_FANOUT~
+IN_CONTROL => ~NO_FANOUT~
+
+

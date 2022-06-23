@@ -1,0 +1,255 @@
+Classic Timing Analyzer report for IOP
+Wed Dec 21 17:07:49 2011
+Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Timing Analyzer Settings
+  4. Clock Settings Summary
+  5. Parallel Compilation
+  6. tsu
+  7. tco
+  8. tpd
+  9. th
+ 10. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                                                                                                                                                 ;
++------------------------------+-------+---------------+-------------+----------------------------------------------+----------------------------------------------+------------+----------+--------------+
+; Type                         ; Slack ; Required Time ; Actual Time ; From                                         ; To                                           ; From Clock ; To Clock ; Failed Paths ;
++------------------------------+-------+---------------+-------------+----------------------------------------------+----------------------------------------------+------------+----------+--------------+
+; Worst-case tsu               ; N/A   ; None          ; -0.849 ns   ; ADC_D[3]                                     ; FF_D:inst23|lpm_ff:lpm_ff_component|dffs[3]  ; --         ; ADC_BUSY ; 0            ;
+; Worst-case tco               ; N/A   ; None          ; 8.185 ns    ; FF_D:inst23|lpm_ff:lpm_ff_component|dffs[13] ; P_DATA[2]                                    ; ADC_BUSY   ; --       ; 0            ;
+; Worst-case tpd               ; N/A   ; None          ; 5.375 ns    ; ADC_BUSY                                     ; EXTRA16                                      ; --         ; --       ; 0            ;
+; Worst-case th                ; N/A   ; None          ; 2.309 ns    ; ADC_D[12]                                    ; FF_D:inst23|lpm_ff:lpm_ff_component|dffs[12] ; --         ; ADC_BUSY ; 0            ;
+; Total number of failed paths ;       ;               ;             ;                                              ;                                              ;            ;          ; 0            ;
++------------------------------+-------+---------------+-------------+----------------------------------------------+----------------------------------------------+------------+----------+--------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Settings                                                                                                                            ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+; Option                                                                                               ; Setting            ; From ; To ; Entity Name ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+; Device Name                                                                                          ; EPM2210F256C3      ;      ;    ;             ;
+; Timing Models                                                                                        ; Final              ;      ;    ;             ;
+; Default hold multicycle                                                                              ; Same as Multicycle ;      ;    ;             ;
+; Cut paths between unrelated clock domains                                                            ; On                 ;      ;    ;             ;
+; Cut off read during write signal paths                                                               ; On                 ;      ;    ;             ;
+; Cut off feedback from I/O pins                                                                       ; On                 ;      ;    ;             ;
+; Report Combined Fast/Slow Timing                                                                     ; Off                ;      ;    ;             ;
+; Ignore Clock Settings                                                                                ; Off                ;      ;    ;             ;
+; Analyze latches as synchronous elements                                                              ; On                 ;      ;    ;             ;
+; Enable Recovery/Removal analysis                                                                     ; Off                ;      ;    ;             ;
+; Enable Clock Latency                                                                                 ; Off                ;      ;    ;             ;
+; Use TimeQuest Timing Analyzer                                                                        ; Off                ;      ;    ;             ;
+; Minimum Core Junction Temperature                                                                    ; 0                  ;      ;    ;             ;
+; Maximum Core Junction Temperature                                                                    ; 85                 ;      ;    ;             ;
+; Number of source nodes to report per destination node                                                ; 10                 ;      ;    ;             ;
+; Number of destination nodes to report                                                                ; 10                 ;      ;    ;             ;
+; Number of paths to report                                                                            ; 200                ;      ;    ;             ;
+; Report Minimum Timing Checks                                                                         ; Off                ;      ;    ;             ;
+; Use Fast Timing Models                                                                               ; Off                ;      ;    ;             ;
+; Report IO Paths Separately                                                                           ; Off                ;      ;    ;             ;
+; Perform Multicorner Analysis                                                                         ; Off                ;      ;    ;             ;
+; Reports the worst-case path for each clock domain and analysis                                       ; Off                ;      ;    ;             ;
+; Reports worst-case timing paths for each clock domain and analysis                                   ; On                 ;      ;    ;             ;
+; Specifies the maximum number of worst-case timing paths to report for each clock domain and analysis ; 100                ;      ;    ;             ;
+; Removes common clock path pessimism (CCPP) during slack computation                                  ; Off                ;      ;    ;             ;
+; Output I/O Timing Endpoint                                                                           ; Near End           ;      ;    ;             ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Settings Summary                                                                                                                                                             ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; Clock Node Name ; Clock Setting Name ; Type     ; Fmax Requirement ; Early Latency ; Late Latency ; Based on ; Multiply Base Fmax by ; Divide Base Fmax by ; Offset ; Phase offset ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; ADC_BUSY        ;                    ; User Pin ; None             ; 0.000 ns      ; 0.000 ns     ; --       ; N/A                   ; N/A                 ; N/A    ;              ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 2      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++---------------------------------------------------------------------------------------------------------+
+; tsu                                                                                                     ;
++-------+--------------+------------+-----------+----------------------------------------------+----------+
+; Slack ; Required tsu ; Actual tsu ; From      ; To                                           ; To Clock ;
++-------+--------------+------------+-----------+----------------------------------------------+----------+
+; N/A   ; None         ; -0.849 ns  ; ADC_D[3]  ; FF_D:inst23|lpm_ff:lpm_ff_component|dffs[3]  ; ADC_BUSY ;
+; N/A   ; None         ; -0.873 ns  ; ADC_D[7]  ; FF_D:inst23|lpm_ff:lpm_ff_component|dffs[7]  ; ADC_BUSY ;
+; N/A   ; None         ; -0.944 ns  ; ADC_D[2]  ; FF_D:inst23|lpm_ff:lpm_ff_component|dffs[2]  ; ADC_BUSY ;
+; N/A   ; None         ; -0.966 ns  ; ADC_D[6]  ; FF_D:inst23|lpm_ff:lpm_ff_component|dffs[6]  ; ADC_BUSY ;
+; N/A   ; None         ; -0.992 ns  ; ADC_D[0]  ; FF_D:inst23|lpm_ff:lpm_ff_component|dffs[0]  ; ADC_BUSY ;
+; N/A   ; None         ; -1.200 ns  ; ADC_D[1]  ; FF_D:inst23|lpm_ff:lpm_ff_component|dffs[1]  ; ADC_BUSY ;
+; N/A   ; None         ; -1.218 ns  ; ADC_D[4]  ; FF_D:inst23|lpm_ff:lpm_ff_component|dffs[4]  ; ADC_BUSY ;
+; N/A   ; None         ; -1.267 ns  ; ADC_D[5]  ; FF_D:inst23|lpm_ff:lpm_ff_component|dffs[5]  ; ADC_BUSY ;
+; N/A   ; None         ; -1.282 ns  ; ADC_D[11] ; FF_D:inst23|lpm_ff:lpm_ff_component|dffs[11] ; ADC_BUSY ;
+; N/A   ; None         ; -1.564 ns  ; ADC_D[15] ; FF_D:inst23|lpm_ff:lpm_ff_component|dffs[15] ; ADC_BUSY ;
+; N/A   ; None         ; -1.569 ns  ; ADC_D[10] ; FF_D:inst23|lpm_ff:lpm_ff_component|dffs[10] ; ADC_BUSY ;
+; N/A   ; None         ; -1.646 ns  ; ADC_D[8]  ; FF_D:inst23|lpm_ff:lpm_ff_component|dffs[8]  ; ADC_BUSY ;
+; N/A   ; None         ; -1.693 ns  ; ADC_D[13] ; FF_D:inst23|lpm_ff:lpm_ff_component|dffs[13] ; ADC_BUSY ;
+; N/A   ; None         ; -1.694 ns  ; ADC_D[9]  ; FF_D:inst23|lpm_ff:lpm_ff_component|dffs[9]  ; ADC_BUSY ;
+; N/A   ; None         ; -1.713 ns  ; ADC_D[14] ; FF_D:inst23|lpm_ff:lpm_ff_component|dffs[14] ; ADC_BUSY ;
+; N/A   ; None         ; -1.963 ns  ; ADC_D[12] ; FF_D:inst23|lpm_ff:lpm_ff_component|dffs[12] ; ADC_BUSY ;
++-------+--------------+------------+-----------+----------------------------------------------+----------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; tco                                                                                                        ;
++-------+--------------+------------+----------------------------------------------+------------+------------+
+; Slack ; Required tco ; Actual tco ; From                                         ; To         ; From Clock ;
++-------+--------------+------------+----------------------------------------------+------------+------------+
+; N/A   ; None         ; 8.185 ns   ; FF_D:inst23|lpm_ff:lpm_ff_component|dffs[13] ; P_DATA[2]  ; ADC_BUSY   ;
+; N/A   ; None         ; 7.805 ns   ; FF_D:inst23|lpm_ff:lpm_ff_component|dffs[15] ; P_DATA[0]  ; ADC_BUSY   ;
+; N/A   ; None         ; 7.797 ns   ; FF_D:inst23|lpm_ff:lpm_ff_component|dffs[11] ; P_DATA[4]  ; ADC_BUSY   ;
+; N/A   ; None         ; 7.797 ns   ; FF_D:inst23|lpm_ff:lpm_ff_component|dffs[8]  ; P_DATA[7]  ; ADC_BUSY   ;
+; N/A   ; None         ; 7.792 ns   ; FF_D:inst23|lpm_ff:lpm_ff_component|dffs[7]  ; P_DATA[8]  ; ADC_BUSY   ;
+; N/A   ; None         ; 7.789 ns   ; FF_D:inst23|lpm_ff:lpm_ff_component|dffs[0]  ; P_DATA[15] ; ADC_BUSY   ;
+; N/A   ; None         ; 7.781 ns   ; FF_D:inst23|lpm_ff:lpm_ff_component|dffs[5]  ; P_DATA[10] ; ADC_BUSY   ;
+; N/A   ; None         ; 7.781 ns   ; FF_D:inst23|lpm_ff:lpm_ff_component|dffs[1]  ; P_DATA[14] ; ADC_BUSY   ;
+; N/A   ; None         ; 7.779 ns   ; FF_D:inst23|lpm_ff:lpm_ff_component|dffs[14] ; P_DATA[1]  ; ADC_BUSY   ;
+; N/A   ; None         ; 7.779 ns   ; FF_D:inst23|lpm_ff:lpm_ff_component|dffs[10] ; P_DATA[5]  ; ADC_BUSY   ;
+; N/A   ; None         ; 7.777 ns   ; FF_D:inst23|lpm_ff:lpm_ff_component|dffs[3]  ; P_DATA[12] ; ADC_BUSY   ;
+; N/A   ; None         ; 7.773 ns   ; FF_D:inst23|lpm_ff:lpm_ff_component|dffs[12] ; P_DATA[3]  ; ADC_BUSY   ;
+; N/A   ; None         ; 7.773 ns   ; FF_D:inst23|lpm_ff:lpm_ff_component|dffs[9]  ; P_DATA[6]  ; ADC_BUSY   ;
+; N/A   ; None         ; 7.773 ns   ; FF_D:inst23|lpm_ff:lpm_ff_component|dffs[6]  ; P_DATA[9]  ; ADC_BUSY   ;
+; N/A   ; None         ; 7.773 ns   ; FF_D:inst23|lpm_ff:lpm_ff_component|dffs[4]  ; P_DATA[11] ; ADC_BUSY   ;
+; N/A   ; None         ; 7.773 ns   ; FF_D:inst23|lpm_ff:lpm_ff_component|dffs[2]  ; P_DATA[13] ; ADC_BUSY   ;
++-------+--------------+------------+----------------------------------------------+------------+------------+
+
+
++------------------------------------------------------------------+
+; tpd                                                              ;
++-------+-------------------+-----------------+----------+---------+
+; Slack ; Required P2P Time ; Actual P2P Time ; From     ; To      ;
++-------+-------------------+-----------------+----------+---------+
+; N/A   ; None              ; 5.375 ns        ; ADC_BUSY ; EXTRA16 ;
+; N/A   ; None              ; 3.899 ns        ; SDO_DAC1 ; EXTRA32 ;
++-------+-------------------+-----------------+----------+---------+
+
+
++---------------------------------------------------------------------------------------------------------------+
+; th                                                                                                            ;
++---------------+-------------+-----------+-----------+----------------------------------------------+----------+
+; Minimum Slack ; Required th ; Actual th ; From      ; To                                           ; To Clock ;
++---------------+-------------+-----------+-----------+----------------------------------------------+----------+
+; N/A           ; None        ; 2.309 ns  ; ADC_D[12] ; FF_D:inst23|lpm_ff:lpm_ff_component|dffs[12] ; ADC_BUSY ;
+; N/A           ; None        ; 2.059 ns  ; ADC_D[14] ; FF_D:inst23|lpm_ff:lpm_ff_component|dffs[14] ; ADC_BUSY ;
+; N/A           ; None        ; 2.040 ns  ; ADC_D[9]  ; FF_D:inst23|lpm_ff:lpm_ff_component|dffs[9]  ; ADC_BUSY ;
+; N/A           ; None        ; 2.039 ns  ; ADC_D[13] ; FF_D:inst23|lpm_ff:lpm_ff_component|dffs[13] ; ADC_BUSY ;
+; N/A           ; None        ; 1.992 ns  ; ADC_D[8]  ; FF_D:inst23|lpm_ff:lpm_ff_component|dffs[8]  ; ADC_BUSY ;
+; N/A           ; None        ; 1.915 ns  ; ADC_D[10] ; FF_D:inst23|lpm_ff:lpm_ff_component|dffs[10] ; ADC_BUSY ;
+; N/A           ; None        ; 1.910 ns  ; ADC_D[15] ; FF_D:inst23|lpm_ff:lpm_ff_component|dffs[15] ; ADC_BUSY ;
+; N/A           ; None        ; 1.628 ns  ; ADC_D[11] ; FF_D:inst23|lpm_ff:lpm_ff_component|dffs[11] ; ADC_BUSY ;
+; N/A           ; None        ; 1.613 ns  ; ADC_D[5]  ; FF_D:inst23|lpm_ff:lpm_ff_component|dffs[5]  ; ADC_BUSY ;
+; N/A           ; None        ; 1.564 ns  ; ADC_D[4]  ; FF_D:inst23|lpm_ff:lpm_ff_component|dffs[4]  ; ADC_BUSY ;
+; N/A           ; None        ; 1.546 ns  ; ADC_D[1]  ; FF_D:inst23|lpm_ff:lpm_ff_component|dffs[1]  ; ADC_BUSY ;
+; N/A           ; None        ; 1.338 ns  ; ADC_D[0]  ; FF_D:inst23|lpm_ff:lpm_ff_component|dffs[0]  ; ADC_BUSY ;
+; N/A           ; None        ; 1.312 ns  ; ADC_D[6]  ; FF_D:inst23|lpm_ff:lpm_ff_component|dffs[6]  ; ADC_BUSY ;
+; N/A           ; None        ; 1.290 ns  ; ADC_D[2]  ; FF_D:inst23|lpm_ff:lpm_ff_component|dffs[2]  ; ADC_BUSY ;
+; N/A           ; None        ; 1.219 ns  ; ADC_D[7]  ; FF_D:inst23|lpm_ff:lpm_ff_component|dffs[7]  ; ADC_BUSY ;
+; N/A           ; None        ; 1.195 ns  ; ADC_D[3]  ; FF_D:inst23|lpm_ff:lpm_ff_component|dffs[3]  ; ADC_BUSY ;
++---------------+-------------+-----------+-----------+----------------------------------------------+----------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Classic Timing Analyzer
+    Info: Version 9.1 Build 222 10/21/2009 SJ Web Edition
+    Info: Processing started: Wed Dec 21 17:07:48 2011
+Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off IOP -c IOP
+Info: Started post-fitting delay annotation
+Info: Delay annotation completed successfully
+Warning: Found pins functioning as undefined clocks and/or memory enables
+    Info: Assuming node "ADC_BUSY" is an undefined clock
+Warning: Found 4 node(s) in clock paths which may be acting as ripple and/or gated clocks -- node(s) analyzed as buffer(s) resulting in clock skew
+    Info: Detected ripple clock "SPI:inst13|SCLK" as buffer
+    Info: Detected ripple clock "COUNTER_25:inst1|lpm_counter:lpm_counter_component|cntr_49h:auto_generated|safe_q[17]" as buffer
+    Info: Detected ripple clock "COUNTER_25:inst1|lpm_counter:lpm_counter_component|cntr_49h:auto_generated|safe_q[14]" as buffer
+    Info: Detected ripple clock "COUNTER_25:inst1|lpm_counter:lpm_counter_component|cntr_49h:auto_generated|safe_q[20]" as buffer
+Info: No valid register-to-register data paths exist for clock "ADC_BUSY"
+Info: tsu for register "FF_D:inst23|lpm_ff:lpm_ff_component|dffs[3]" (data pin = "ADC_D[3]", clock pin = "ADC_BUSY") is -0.849 ns
+    Info: + Longest pin to register delay is 4.547 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.708 ns) = 0.708 ns; Loc. = PIN_L4; Fanout = 1; PIN Node = 'ADC_D[3]'
+        Info: 2: + IC(3.664 ns) + CELL(0.175 ns) = 4.547 ns; Loc. = LC_X6_Y13_N1; Fanout = 2; REG Node = 'FF_D:inst23|lpm_ff:lpm_ff_component|dffs[3]'
+        Info: Total cell delay = 0.883 ns ( 19.42 % )
+        Info: Total interconnect delay = 3.664 ns ( 80.58 % )
+    Info: + Micro setup delay of destination is 0.208 ns
+    Info: - Shortest clock path from clock "ADC_BUSY" to destination register is 5.604 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.708 ns) = 0.708 ns; Loc. = PIN_G1; Fanout = 25; CLK Node = 'ADC_BUSY'
+        Info: 2: + IC(4.322 ns) + CELL(0.574 ns) = 5.604 ns; Loc. = LC_X6_Y13_N1; Fanout = 2; REG Node = 'FF_D:inst23|lpm_ff:lpm_ff_component|dffs[3]'
+        Info: Total cell delay = 1.282 ns ( 22.88 % )
+        Info: Total interconnect delay = 4.322 ns ( 77.12 % )
+Info: tco from clock "ADC_BUSY" to destination pin "P_DATA[2]" through register "FF_D:inst23|lpm_ff:lpm_ff_component|dffs[13]" is 8.185 ns
+    Info: + Longest clock path from clock "ADC_BUSY" to source register is 5.604 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.708 ns) = 0.708 ns; Loc. = PIN_G1; Fanout = 25; CLK Node = 'ADC_BUSY'
+        Info: 2: + IC(4.322 ns) + CELL(0.574 ns) = 5.604 ns; Loc. = LC_X1_Y13_N8; Fanout = 2; REG Node = 'FF_D:inst23|lpm_ff:lpm_ff_component|dffs[13]'
+        Info: Total cell delay = 1.282 ns ( 22.88 % )
+        Info: Total interconnect delay = 4.322 ns ( 77.12 % )
+    Info: + Micro clock to output delay of source is 0.235 ns
+    Info: + Longest register to pin delay is 2.346 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LC_X1_Y13_N8; Fanout = 2; REG Node = 'FF_D:inst23|lpm_ff:lpm_ff_component|dffs[13]'
+        Info: 2: + IC(0.892 ns) + CELL(1.454 ns) = 2.346 ns; Loc. = PIN_D3; Fanout = 0; PIN Node = 'P_DATA[2]'
+        Info: Total cell delay = 1.454 ns ( 61.98 % )
+        Info: Total interconnect delay = 0.892 ns ( 38.02 % )
+Info: Longest tpd from source pin "ADC_BUSY" to destination pin "EXTRA16" is 5.375 ns
+    Info: 1: + IC(0.000 ns) + CELL(0.708 ns) = 0.708 ns; Loc. = PIN_G1; Fanout = 25; CLK Node = 'ADC_BUSY'
+    Info: 2: + IC(3.213 ns) + CELL(1.454 ns) = 5.375 ns; Loc. = PIN_K16; Fanout = 0; PIN Node = 'EXTRA16'
+    Info: Total cell delay = 2.162 ns ( 40.22 % )
+    Info: Total interconnect delay = 3.213 ns ( 59.78 % )
+Info: th for register "FF_D:inst23|lpm_ff:lpm_ff_component|dffs[12]" (data pin = "ADC_D[12]", clock pin = "ADC_BUSY") is 2.309 ns
+    Info: + Longest clock path from clock "ADC_BUSY" to destination register is 5.604 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.708 ns) = 0.708 ns; Loc. = PIN_G1; Fanout = 25; CLK Node = 'ADC_BUSY'
+        Info: 2: + IC(4.322 ns) + CELL(0.574 ns) = 5.604 ns; Loc. = LC_X1_Y13_N3; Fanout = 2; REG Node = 'FF_D:inst23|lpm_ff:lpm_ff_component|dffs[12]'
+        Info: Total cell delay = 1.282 ns ( 22.88 % )
+        Info: Total interconnect delay = 4.322 ns ( 77.12 % )
+    Info: + Micro hold delay of destination is 0.138 ns
+    Info: - Shortest pin to register delay is 3.433 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.708 ns) = 0.708 ns; Loc. = PIN_J1; Fanout = 1; PIN Node = 'ADC_D[12]'
+        Info: 2: + IC(2.550 ns) + CELL(0.175 ns) = 3.433 ns; Loc. = LC_X1_Y13_N3; Fanout = 2; REG Node = 'FF_D:inst23|lpm_ff:lpm_ff_component|dffs[12]'
+        Info: Total cell delay = 0.883 ns ( 25.72 % )
+        Info: Total interconnect delay = 2.550 ns ( 74.28 % )
+Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 131 megabytes
+    Info: Processing ended: Wed Dec 21 17:07:49 2011
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

@@ -1,0 +1,7 @@
+1. C311, C312 part number is wrong. Package should be different.
+2. DDR3 module,SD Card and Coin battery need not be purchased
+	NB: We have 4 DDR modules
+3. NAND Flash socket was purchased from PRIME Distributors
+4. Processor, MRAM were supplied by CCC (Check availability)
+5. AR8031, Atheros part was obtained from Atheros directly
+		> Contact Gerhard Meuller, Mail attached

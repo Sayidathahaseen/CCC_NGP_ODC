@@ -1,0 +1,18 @@
+       PADS LIBRARY (INDUCTORS Part Types) DIRECTORY LISTING
+
+
+Library: INDUCTORS
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|Part Name                |CCC P/N |VALUE |MFG #1          |MFG #1 P/N           |PCB Decal        |DESCRIPTION                        |ROHS |PACKAGE                          |CURRENT |DISTRIBUTOR |HEIGHT |TOLERANCE 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|IND-B82464G4103M         |        |10uH  |EPCOS INC       |B82464G4103M         |IND_NR6045T100MA |INDUCTOR,POWER,10UH,3.4A,SMD       |Yes  |0.409" L x 0.409" W x 0.189" H   |3.4A    |Digikey     |4.8mm  |20%       
+|IND-HC3-5R6-R            |        |5.6UH |COOPER BUSSMANN |HC3-5R6-R            |IND_NR6045T100MA |INDUCTOR,POWER,5.6UH,33.8A,SMD     |Yes  |1.181" L x 0.996" W x 0.688" H   |33.8A   |Digikey     |17.5mm |20%       
+|IND-IHLP2020BZER3R3M01   |        |3.3uH |VISHAY          |IHLP2020BZER3R3M01   |IND_IHLP2020     |INDUCTOR,POWER,3.3UH,3.3A,SMD      |Yes  |0.216" L x 0.204" W x 0.078" H   |3.3A    |Digikey     |2mm    |20%       
+|IND-IHLP2525CZER100M01   |        |10uH  |VISHAY          |IHLP2525CZER100M01   |IND_IHLP2525     |INDUCTOR,POWER,10UH,3A,SMD         |Yes  |0.270" L x 0.255" W x 0.118" H   |3A      |Digikey     |3mm    |20%       
+|IND-IHLP3232DZER220M11   |        |22uH  |VISHAY          |IHLP3232DZER220M11   |IND_IHLP3232D    |INDUCTOR,POWER,22UH,4.3A,SMD       |Yes  |0.340" L x 0.322" W x 0.158" H   |4.3A    |Digikey     |4mm    |20%       
+|IND-IHLP6767GZER3R3M01   |        |3.3uH |VISHAY          |IHLP6767GZER3R3M01   |IND_IHLP2020     |INDUCTOR,POWER,3.3UH,28A,SMD       |Yes  |0.675" L x 0.675" W x 0.276" H   |28A     |Digikey     |7mm    |20%       
+|IND-IMC1210ER100K        |        |10uH  |VISHAY          |IMC1210ER100K        |L1210            |INDUCTOR,WW,10UH,0.189A,1210       |Yes  |1210                             |189mA   |Digikey     |2.21mm |10%       
+|IND-MLP2520S4R7S         |        |4.7uH |TDK CORPORATION |MLP2520S4R7S         |INDC2520X120N    |INDUCTOR,MULTILAYER,4.7UH,1A,1008  |Yes  |1008                             |1A      |Digikey     |0.95mm |20%       
+|IND-MLZ2012N100L         |        |10uH  |TDK CORPORATION |MLZ2012N100L         |L0805            |INDUCTOR,MULTILAYER,10UH,0.5A,0805 |Yes  |0805                             |500mA   |Digikey     |NA     |20%       
+|IND-SLF10165T-2R2N6R33PF |        |2.2uH |TDK CORPORATION |SLF10165T-2R2N6R33PF |INDC101101X700N  |INDUCTOR,POWER,2.2UH,6.3A, SMD     |Yes  |0.398" L x 0.398" W x 0.276" H   |6.3A    |Digikey     |7mm    |30%       
+|IND-SRP7030-6R8FM        |        |6.8uH |BOURNS INC      |SRP7030-6R8FM        |INDC7865X300N    |INDUCTOR,POWER,6.8UH,4.5A,SMD      |Yes  |0.299" L x 0.256" W x 0.118" H   |4.5A    |Digikey     |3mm    |20%       

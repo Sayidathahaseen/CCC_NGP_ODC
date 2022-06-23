@@ -1,0 +1,15 @@
+       PADS LIBRARY (MISC Part Types) DIRECTORY LISTING
+
+
+Library: MISC
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|Part Name              |CCC P/N |Logic Decal   |VALUE           |MFG #1               |MFG #1 P/N     |PCB Decal               |DESCRIPTION                      
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|MEC-BH-SMTU2430-LF.TR  |        |BAT_HOLDER    |Battery Holders |RENATA               |SMTU2430-LF.TR |BATTERY_HOLDER_SMTU2430 |BATTERY HOLDER,CR2430            
+|MEC-FD-#               |        |FD            |FIDUCIAL        |NA                   |NA             |MH_3.55MM               |FIDUCIAL                         
+|MEC-GP-223986-1        |        |GUIDE_PIN     |Guide Pin       |FCI                  |223986-1       |GUIDE_PIN               |GUIDE PIN,10.8MM,EXT THR         
+|MEC-GS-10045597-107LF  |        |GUIDE_SOCKET  |Guide Socket    |FCI                  |10045597-107LF |CONN_10045597           |GUIDE SOCKET,10.8MM,RA           
+|MEC-MH-#               |        |MH            |Mounting Hole   |NA                   |NA             |MH_3.55MM               |Mounting Hole                    
+|MEC-TPD-#              |        |TEST_PAD      |TEST-PAD        |NA                   |NA             |TP_40_SM                |TEST PAD                         
+|TPT-0.015"X0.032"-5014 |        |TP_DWN, TP_UP |Test Point      |KEYSTONE ELECTRONICS |5014           |KEYSTONE_501X           |TEST POINT, PC MULTI PURPOSE YEL 
+|TPT-SM-5015            |        |TP_UP, TP_DWN |5015            |KEYSTONE             |5015           |TP                      |C TEST POINT MINIATURE SMT       

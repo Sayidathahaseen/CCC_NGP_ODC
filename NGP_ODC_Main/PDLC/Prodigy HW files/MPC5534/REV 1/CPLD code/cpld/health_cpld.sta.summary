@@ -1,0 +1,29 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Setup 'MPC_ENG_CLK'
+Slack : -9.100
+TNS   : -195.100
+
+Type  : Hold 'MPC_ENG_CLK'
+Slack : 3.800
+TNS   : 0.000
+
+Type  : Recovery 'TAKE_CONTROL'
+Slack : -11.200
+TNS   : -11.200
+
+Type  : Removal 'TAKE_CONTROL'
+Slack : 7.900
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'MPC_ENG_CLK'
+Slack : -3.500
+TNS   : -154.000
+
+Type  : Minimum Pulse Width 'TAKE_CONTROL'
+Slack : -3.500
+TNS   : -14.000
+
+------------------------------------------------------------

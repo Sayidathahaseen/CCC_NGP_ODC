@@ -1,0 +1,4 @@
+set tool_name "ModelSim-Altera (VHDL)"
+set corner_file_list {
+	{{"Slow Model"} {MPC5534_Proto.vho MPC5534_Proto_vhd.sdo}}
+}

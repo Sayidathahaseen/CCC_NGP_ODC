@@ -1,0 +1,253 @@
+PowerPlay Power Analyzer report for APP_TOP
+Wed Jul 20 11:24:48 2011
+Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. PowerPlay Power Analyzer Summary
+  3. PowerPlay Power Analyzer Settings
+  4. Indeterminate Toggle Rates
+  5. Thermal Power Dissipation by Block
+  6. Thermal Power Dissipation by Block Type
+  7. Thermal Power Dissipation by Hierarchy
+  8. Core Dynamic Thermal Power Dissipation by Clock Domain
+  9. Confidence Metric Details
+ 10. Signal Activities
+ 11. PowerPlay Power Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------------------+
+; PowerPlay Power Analyzer Summary                                                          ;
++----------------------------------------+--------------------------------------------------+
+; PowerPlay Power Analyzer Status        ; Successful - Wed Jul 20 11:24:48 2011            ;
+; Quartus II Version                     ; 9.1 Build 222 10/21/2009 SJ Web Edition          ;
+; Revision Name                          ; APP_TOP                                          ;
+; Top-level Entity Name                  ; app_top                                          ;
+; Family                                 ; MAX3000A                                         ;
+; Device                                 ; EPM3064ATI44-10                                  ;
+; Power Models                           ; Final                                            ;
+; Total Thermal Power Dissipation        ; 97.28 mW                                         ;
+; Core Dynamic Thermal Power Dissipation ; 0.00 mW                                          ;
+; Core Static Thermal Power Dissipation  ; 97.28 mW                                         ;
+; I/O Thermal Power Dissipation          ; 0.00 mW                                          ;
+; Power Estimation Confidence            ; Low: user provided insufficient toggle rate data ;
++----------------------------------------+--------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------+
+; PowerPlay Power Analyzer Settings                                                                    ;
++----------------------------------------------------------------------------+---------+---------------+
+; Option                                                                     ; Setting ; Default Value ;
++----------------------------------------------------------------------------+---------+---------------+
+; Use smart compilation                                                      ; Off     ; Off           ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On      ; On            ;
+; Enable compact report table                                                ; Off     ; Off           ;
+; Default Power Toggle Rate                                                  ; 12.5%   ; 12.5%         ;
+; Default Power Input I/O Toggle Rate                                        ; 12.5%   ; 12.5%         ;
+; Use Input Files                                                            ; Off     ; Off           ;
+; Power Analyzer Report Signal Activity                                      ; Off     ; Off           ;
+; Power Analyzer Report Power Dissipation                                    ; Off     ; Off           ;
+; Filter Glitches in VCD File Reader                                         ; Off     ;               ;
+; Use vectorless estimation                                                  ; Off     ;               ;
++----------------------------------------------------------------------------+---------+---------------+
+
+
++------------------------------------------------------------+
+; Indeterminate Toggle Rates                                 ;
++------------------------------+-----------------------------+
+; Node                         ; Reason                      ;
++------------------------------+-----------------------------+
+; COUNT300US[11]               ; No valid clock domain found ;
+; COUNT300US[0]                ; No valid clock domain found ;
+; COUNT300US[1]                ; No valid clock domain found ;
+; PWR_ON_GVDD$latch~9          ; No valid clock domain found ;
+; PGOOD_SYS$latch~9            ; No valid clock domain found ;
+; COUNT300US[2]                ; No valid clock domain found ;
+; COUNT300US[3]                ; No valid clock domain found ;
+; COUNT300US[4]                ; No valid clock domain found ;
+; COUNT300US[5]                ; No valid clock domain found ;
+; COUNT300US[6]                ; No valid clock domain found ;
+; COUNT300US[7]                ; No valid clock domain found ;
+; COUNT300US[8]                ; No valid clock domain found ;
+; COUNT300US[9]                ; No valid clock domain found ;
+; COUNT300US[10]               ; No valid clock domain found ;
+; COUNT300US[12]               ; No valid clock domain found ;
+; HIGHAFTER300US               ; No valid clock domain found ;
+; HIGHAFTER100US               ; No valid clock domain found ;
+; HIGHAFTER200US               ; No valid clock domain found ;
+; HIGHAFTER200US_PLUS_ONECLK   ; No valid clock domain found ;
+; SGMII_PHY_RESET_bar$latch~11 ; No valid clock domain found ;
+; CPU_HRESET_bar$latch~9       ; No valid clock domain found ;
+; CPU_SRESET_bar$latch~9       ; No valid clock domain found ;
+; CPU_TRST_bar$latch~9         ; No valid clock domain found ;
+; DDR3_RESET$latch~9           ; No valid clock domain found ;
+; MUX_SEL1$latch~11            ; No valid clock domain found ;
+; SGMII_PHY_RESET_bar$latch~13 ; No valid clock domain found ;
+; SGMII_PHY_RESET_bar$latch~15 ; No valid clock domain found ;
+; MUX_SEL1$latch~13            ; No valid clock domain found ;
+; MUX_SEL1$latch~15            ; No valid clock domain found ;
+; HIGHAFTER100US~8             ; No valid clock domain found ;
+; HIGHAFTER200US~8             ; No valid clock domain found ;
+; HIGHAFTER200US_PLUS_ONECLK~8 ; No valid clock domain found ;
+; ~GND~0                       ; No valid clock domain found ;
+; ~GND~1                       ; No valid clock domain found ;
+; ~VCC~0                       ; No valid clock domain found ;
+; ~VCC~1                       ; No valid clock domain found ;
+; process_0~1sexpand0          ; No valid clock domain found ;
+; CPU_HRESET_bar~1sexpand0     ; No valid clock domain found ;
+; PWR_GOOD_DDR3                ; No valid clock domain found ;
+; PWR_GOOD_DDR3                ; No valid clock domain found ;
+; PGOOD_VDD_CPU                ; No valid clock domain found ;
+; PGOOD_VDD_CPU                ; No valid clock domain found ;
+; CPU_HRESET_REQ_bar           ; No valid clock domain found ;
+; COP_HRESET_bar               ; No valid clock domain found ;
+; COP_HRESET_bar               ; No valid clock domain found ;
+; COP_SRESET_bar               ; No valid clock domain found ;
+; COP_SRESET_bar               ; No valid clock domain found ;
+; COP_TRST_bar                 ; No valid clock domain found ;
+; COP_TRST_bar                 ; No valid clock domain found ;
+; CLK_IN_25MHz                 ; No valid clock domain found ;
+; CLK_IN_25MHz                 ; No valid clock domain found ;
+; CPLD_RESET_bar               ; No valid clock domain found ;
+; CPLD_RESET_bar               ; No valid clock domain found ;
+; MUX_EN1_bar                  ; No valid clock domain found ;
+; MUX_EN2_bar                  ; No valid clock domain found ;
+; PWR_OFF_VDD_CPU              ; No valid clock domain found ;
+; SD_1588_CLK_EN               ; No valid clock domain found ;
+; PWR_ON_GVDD                  ; No valid clock domain found ;
+; PGOOD_SYS                    ; No valid clock domain found ;
+; SGMII_PHY_RESET_bar          ; No valid clock domain found ;
+; CPU_HRESET_bar               ; No valid clock domain found ;
+; CPU_SRESET_bar               ; No valid clock domain found ;
+; CPU_TRST_bar                 ; No valid clock domain found ;
+; DDR3_RESET                   ; No valid clock domain found ;
+; ENET_PHY_RESET_bar           ; No valid clock domain found ;
+; TSEC_PHY_RESET_bar           ; No valid clock domain found ;
+; MUX_SEL1                     ; No valid clock domain found ;
+; MUX_SEL2                     ; No valid clock domain found ;
+; BUF_EN_bar                   ; No valid clock domain found ;
+; process_0~4                  ; No valid clock domain found ;
++------------------------------+-----------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Thermal Power Dissipation by Block                                                                                 ;
++------------+------------+---------------------+---------------------------------------+----------------------------+
+; Block Name ; Block Type ; Total Thermal Power ; Block & Routing Thermal Dynamic Power ; Block Thermal Static Power ;
++------------+------------+---------------------+---------------------------------------+----------------------------+
+(1) The "Thermal Power Dissipation by Block" Table has been hidden. To show this table, please select the "Write power dissipation by block to report file" option under "PowerPlay Power Analyzer Settings".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Thermal Power Dissipation by Block Type                                                                                                                                                 ;
++--------------------+-----------------------------------+---------------------------------------+----------------------------+-----------------------------------------------------------+
+; Block Type         ; Total Thermal Power by Block Type ; Block & Routing Thermal Dynamic Power ; Block Thermal Static Power ; Block Average Toggle Rate (millions of transitions / sec) ;
++--------------------+-----------------------------------+---------------------------------------+----------------------------+-----------------------------------------------------------+
+; Input              ; 0.00 mW                           ; 0.00 mW                               ; --                         ;    0.000                                                  ;
+; I/O                ; 0.00 mW                           ; 0.00 mW                               ; 0.00 mW                    ;    0.000                                                  ;
+; Logic cell         ; 0.00 mW                           ; 0.00 mW                               ; --                         ;    0.000                                                  ;
+; Shareable expander ; 0.00 mW                           ; 0.00 mW                               ; --                         ;    0.000                                                  ;
++--------------------+-----------------------------------+---------------------------------------+----------------------------+-----------------------------------------------------------+
+(1) The "Block Thermal Static Power" for all block types except Pins and the Voltage Regulator, if one exists, is part of the "Core Static Thermal Power Dissipation" value found on the PowerPlay Power Analyzer-->Summary report panel. The "Core Static Thermal Power Dissipation" also contains the thermal static power dissipated by the routing.
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Thermal Power Dissipation by Hierarchy                                                                                                                                                      ;
++----------------------------+--------------------------------------+-------------------------------------------+--------------------------------+--------------------------------------------+
+; Compilation Hierarchy Node ; Total Thermal Power by Hierarchy (1) ; Block & Routing Thermal Dynamic Power (1) ; Block Thermal Static Power (1) ; Full Hierarchy Name                        ;
++----------------------------+--------------------------------------+-------------------------------------------+--------------------------------+--------------------------------------------+
+; |app_top                   ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)                         ; 0.00 mW (0.00 mW)              ; |app_top                                   ;
+;     |lpm_add_sub:Add0      ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)                         ; --                             ; |app_top|lpm_add_sub:Add0                  ;
+;         |addcore:adder[0]  ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)                         ; --                             ; |app_top|lpm_add_sub:Add0|addcore:adder[0] ;
+;         |addcore:adder[1]  ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)                         ; --                             ; |app_top|lpm_add_sub:Add0|addcore:adder[1] ;
++----------------------------+--------------------------------------+-------------------------------------------+--------------------------------+--------------------------------------------+
+(1) Value in parentheses is the power consumed at that level of hierarchy. Value not in parentheses is the power consumed at that level of hierarchy plus the power consumed by all levels of hierarchy below it.
+
+(2) The "Block Thermal Static Power" for all levels of hierarchy except the top-level hierarchy is part of the "Core Static Thermal Power Dissipation" value found on the PowerPlay Power Analyzer-->Summary report panel. The "Core Static Thermal Power Dissipation" also contains the thermal static power dissipated by the routing.
+
+
++-----------------------------------------------------------------+
+; Core Dynamic Thermal Power Dissipation by Clock Domain          ;
++--------------+-----------------------+--------------------------+
+; Clock Domain ; Clock Frequency (MHz) ; Total Core Dynamic Power ;
++--------------+-----------------------+--------------------------+
+; CLK_IN_25MHz ; Unspecified           ; 0.00                     ;
++--------------+-----------------------+--------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Confidence Metric Details                                                                                                                        ;
++----------------------------------------------------------------------------------------+-------------+-------------+-------------+---------------+
+; Data Source                                                                            ; Total       ; Pin         ; Registered  ; Combinational ;
++----------------------------------------------------------------------------------------+-------------+-------------+-------------+---------------+
+; Simulation (from file)                                                                 ;             ;             ;             ;               ;
+;     -- Number of signals with Toggle Rate from Simulation                              ; 0 (0.0%)    ; 0 (0.0%)    ; 0 (0.0%)    ; 0 (0.0%)      ;
+;     -- Number of signals with Static Probability from Simulation                       ; 0 (0.0%)    ; 0 (0.0%)    ; 0 (0.0%)    ; 0 (0.0%)      ;
+;                                                                                        ;             ;             ;             ;               ;
+; Node, entity or clock assignment                                                       ;             ;             ;             ;               ;
+;     -- Number of signals with Toggle Rate from Node, entity or clock assignment        ; 0 (0.0%)    ; 0 (0.0%)    ; 0 (0.0%)    ; 0 (0.0%)      ;
+;     -- Number of signals with Static Probability from Node, entity or clock assignment ; 0 (0.0%)    ; 0 (0.0%)    ; 0 (0.0%)    ; 0 (0.0%)      ;
+;                                                                                        ;             ;             ;             ;               ;
+; Vectorless estimation                                                                  ;             ;             ;             ;               ;
+;     -- Number of signals with Toggle Rate from Vectorless estimation                   ; 0 (0.0%)    ; 0 (0.0%)    ; 0 (0.0%)    ; 0 (0.0%)      ;
+;     -- Number of signals with Static Probability from Vectorless estimation            ; 0 (0.0%)    ; 0 (0.0%)    ; 0 (0.0%)    ; 0 (0.0%)      ;
+;                                                                                        ;             ;             ;             ;               ;
+; Default assignment                                                                     ;             ;             ;             ;               ;
+;     -- Number of signals with Toggle Rate from Default assignment                      ; 0 (0.0%)    ; 0 (0.0%)    ; 0 (0.0%)    ; 0 (0.0%)      ;
+;     -- Number of signals with Static Probability from Default assignment               ; 67 (100.0%) ; 28 (100.0%) ; 17 (100.0%) ; 22 (100.0%)   ;
+;                                                                                        ;             ;             ;             ;               ;
+; Assumed 0                                                                              ;             ;             ;             ;               ;
+;     -- Number of signals with Toggle Rate assumed 0                                    ; 67 (100.0%) ; 28 (100.0%) ; 17 (100.0%) ; 22 (100.0%)   ;
++----------------------------------------------------------------------------------------+-------------+-------------+-------------+---------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Activities                                                                                                                           ;
++--------+------+---------------------------------------------+-------------------------+--------------------+--------------------------------+
+; Signal ; Type ; Toggle Rate (millions of transitions / sec) ; Toggle Rate Data Source ; Static Probability ; Static Probability Data Source ;
++--------+------+---------------------------------------------+-------------------------+--------------------+--------------------------------+
+(1) The "Signal Activity" Table has been hidden. To show this table, please select the "Write signal activities to report file" option under "PowerPlay Power Analyzer Settings".
+
+
++-----------------------------------+
+; PowerPlay Power Analyzer Messages ;
++-----------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II PowerPlay Power Analyzer
+    Info: Version 9.1 Build 222 10/21/2009 SJ Web Edition
+    Info: Processing started: Wed Jul 20 11:24:47 2011
+Info: Command: quartus_pow --read_settings_files=on --write_settings_files=off APP_CPLD -c APP_TOP
+Warning: VCD File parser will not perform glitch filtering because device family MAX3000A does not support it
+Warning: Relative toggle rates could not be calculated because no clock domain could be identified for some nodes
+Info: Average toggle rate for this design is 0.000 millions of transitions / sec
+Info: Total thermal power estimate for the design is 97.28 mW
+Info: Quartus II PowerPlay Power Analyzer was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 142 megabytes
+    Info: Processing ended: Wed Jul 20 11:24:48 2011
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

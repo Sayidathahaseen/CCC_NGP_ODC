@@ -1,0 +1,125 @@
+Quartus II Archive log --	E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/IOP_TEST LED.qarlog
+
+Archive:	E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/IOP_TEST LED.qar
+Date:		Mon Aug 22 18:18:23 2011
+Quartus II		9.1 Build 222 10/21/2009 SJ Web Edition
+
+	=========== Files Selected: ===========
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/ADC_CONV.bsf
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/ADC_CONV.cmp
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/ADC_CONV.qip
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/ADC_CONV.vhd
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/AND_2.bsf
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/AND_2.cmp
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/AND_2.qip
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/AND_2.vhd
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/AND_3.bsf
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/AND_3.cmp
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/AND_3.qip
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/AND_3.vhd
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/AND_4.bsf
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/AND_4.cmp
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/AND_4.qip
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/AND_4.vhd
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/CNT3.bsf
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/CNT3.cmp
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/CNT3.qip
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/CNT3.vhd
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/CNT4.bsf
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/CNT4.cmp
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/CNT4.qip
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/CNT4.vhd
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/CONV_ST.bsf
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/CONV_ST.cmp
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/CONV_ST.qip
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/CONV_ST.vhd
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/DELAY_500ns.bsf
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/DELAY_500ns.cmp
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/DELAY_500ns.qip
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/DELAY_500ns.vhd
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/DFF_1.bsf
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/DFF_1.cmp
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/DFF_1.qip
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/DFF_1.vhd
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/DFF_CD.vhd
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/IOP.bdf
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/IOP.dpf
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/IOP.pin
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/IOP.qpf
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/IOP.qsf
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/MEM_1.bsf
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/MEM_1.cmp
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/MEM_1.qip
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/MEM_1.vhd
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/NAND_2.bsf
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/NAND_2.cmp
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/NAND_2.qip
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/NAND_2.vhd
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/NOR_4.bsf
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/NOR_4.cmp
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/NOR_4.qip
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/NOR_4.vhd
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/OR4.bsf
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/OR4.cmp
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/OR4.qip
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/OR4.vhd
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/OR_2.bsf
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/OR_2.cmp
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/OR_2.qip
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/OR_2.vhd
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/OR_4.bsf
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/OR_4.cmp
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/OR_4.qip
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/OR_4.vhd
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/T_FF.bsf
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/T_FF.cmp
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/T_FF.qip
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/T_FF.vhd
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/VHI.vhd
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/VLO.bsf
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/VLO.cmp
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/VLO.qip
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/VLO.vhd
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/assignment_defaults.qdf
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/counter8.bsf
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/counter8.cmp
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/counter8.qip
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/counter8.vhd
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/fifo16.vhd
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/lLED_FF.bsf
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/lLED_FF.cmp
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/lLED_FF.qip
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/lLED_FF.vhd
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/m2.bsf
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/m2.cmp
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/m2.qip
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/m2.tdf
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/noninv16.vhd
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/not2.vhd
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/oscillator.bsf
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/oscillator.cmp
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/oscillator.qip
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/oscillator.vhd
+E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/tr16.tdf
+	======= Total: 96 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Thu Aug 25 16:01:08 2011
+Source archive file:	E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/IOP_TEST LED.qar
+Archive was extracted into	E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/IOP_TEST LED_restored/
+		 - successfully.
+
+
+******* Archived project restoration attempt on Tue Aug 30 10:39:53 2011
+Source archive file:	E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/IOP_TEST LED.qar
+Archive was extracted into	E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/IOP_TEST LED_restored/
+		 - successfully.
+
+
+******* Archived project restoration attempt on Tue Aug 30 10:41:50 2011
+Source archive file:	E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/IOP_TEST LED.qar
+Archive was extracted into	E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/IOP_TEST LED_restored/
+		 - successfully.

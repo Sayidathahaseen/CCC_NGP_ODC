@@ -1,0 +1,56 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 4.542 ns
+From           : MPC_CS3n
+To             : CPLD_READ_ADD_BUF[5]
+From Clock     : --
+To Clock       : CPLD_CLK
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 11.291 ns
+From           : LED_REGISTER1[3]
+To             : DI4_ACTIVE
+From Clock     : CPLD_CLK
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : -1.143 ns
+From           : B_MPC_DATA[4]
+To             : LED_REGISTER2[4]
+From Clock     : --
+To Clock       : CPLD_CLK
+Failed Paths   : 0
+
+Type           : Clock Setup: 'CPLD_CLK'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 95.89 MHz ( period = 10.429 ns )
+From           : CPLD_READ_ADD_BUF[7]
+To             : LED_REGISTER1[15]
+From Clock     : CPLD_CLK
+To Clock       : CPLD_CLK
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+

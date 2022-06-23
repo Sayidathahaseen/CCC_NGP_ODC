@@ -1,0 +1,548 @@
+Fitter report for APP_TOP
+Wed Aug 03 13:15:15 2011
+Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Fitter Summary
+  3. Fitter Settings
+  4. Parallel Compilation
+  5. Pin-Out File
+  6. Fitter Resource Usage Summary
+  7. Input Pins
+  8. Output Pins
+  9. All Package Pins
+ 10. I/O Standard
+ 11. Dedicated Inputs I/O
+ 12. Output Pin Default Load For Reported TCO
+ 13. Fitter Resource Utilization by Entity
+ 14. Control Signals
+ 15. Global & Other Fast Signals
+ 16. Non-Global High Fan-Out Signals
+ 17. Interconnect Usage Summary
+ 18. LAB Macrocells
+ 19. Parallel Expander
+ 20. Shareable Expander
+ 21. Logic Cell Interconnection
+ 22. Fitter Device Options
+ 23. Fitter Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------+
+; Fitter Summary                                                  ;
++-----------------------+-----------------------------------------+
+; Fitter Status         ; Successful - Wed Aug 03 13:15:15 2011   ;
+; Quartus II Version    ; 9.1 Build 222 10/21/2009 SJ Web Edition ;
+; Revision Name         ; APP_TOP                                 ;
+; Top-level Entity Name ; app_top                                 ;
+; Family                ; MAX3000A                                ;
+; Device                ; EPM3064ATI44-10                         ;
+; Timing Models         ; Final                                   ;
+; Total macrocells      ; 63 / 64 ( 98 % )                        ;
+; Total pins            ; 28 / 34 ( 82 % )                        ;
++-----------------------+-----------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Fitter Settings                                                                                              ;
++----------------------------------------------------------------------------+-----------------+---------------+
+; Option                                                                     ; Setting         ; Default Value ;
++----------------------------------------------------------------------------+-----------------+---------------+
+; Device                                                                     ; EPM3064ATI44-10 ;               ;
+; Use smart compilation                                                      ; Off             ; Off           ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On              ; On            ;
+; Enable compact report table                                                ; Off             ; Off           ;
+; Use TimeQuest Timing Analyzer                                              ; Off             ; Off           ;
+; Optimize Timing for ECOs                                                   ; Off             ; Off           ;
+; Regenerate full fit report during ECO compiles                             ; Off             ; Off           ;
+; Optimize IOC Register Placement for Timing                                 ; On              ; On            ;
+; Limit to One Fitting Attempt                                               ; Off             ; Off           ;
+; Fitter Initial Placement Seed                                              ; 1               ; 1             ;
+; Slow Slew Rate                                                             ; Off             ; Off           ;
+; Fitter Effort                                                              ; Auto Fit        ; Auto Fit      ;
+; Force Fitter to Avoid Periphery Placement Warnings                         ; Off             ; Off           ;
+; Use Best Effort Settings for Compilation                                   ; Off             ; Off           ;
++----------------------------------------------------------------------------+-----------------+---------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 2      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++--------------+
+; Pin-Out File ;
++--------------+
+The pin-out file can be found in C:/altera/91/quartus/APP/APP_TOP.pin.
+
+
++------------------------------------------------------+
+; Fitter Resource Usage Summary                        ;
++-----------------------------------+------------------+
+; Resource                          ; Usage            ;
++-----------------------------------+------------------+
+; Logic cells                       ; 63 / 64 ( 98 % ) ;
+; Registers                         ; 38 / 64 ( 59 % ) ;
+; Number of pterms used             ; 176              ;
+; User inserted logic elements      ; 0                ;
+; I/O pins                          ; 28 / 34 ( 82 % ) ;
+;     -- Clock pins                 ; 1 / 2 ( 50 % )   ;
+;     -- Dedicated input pins       ; 1 / 2 ( 50 % )   ;
+; Global signals                    ; 2                ;
+; Shareable expanders               ; 23 / 64 ( 36 % ) ;
+; Parallel expanders                ; 1 / 60 ( 2 % )   ;
+; Cells using turbo bit             ; 63 / 64 ( 98 % ) ;
+; Maximum fan-out node              ; CLK_IN_25MHz     ;
+; Maximum fan-out                   ; 38               ;
+; Highest non-global fan-out signal ; COUNT140US[0]    ;
+; Highest non-global fan-out        ; 21               ;
+; Total fan-out                     ; 631              ;
+; Average fan-out                   ; 5.54             ;
++-----------------------------------+------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------+
+; Input Pins                                                                                                                              ;
++--------------------+-------+----------+-----+-----------------------+--------------------+--------+--------------+----------------------+
+; Name               ; Pin # ; I/O Bank ; LAB ; Combinational Fan-Out ; Registered Fan-Out ; Global ; I/O Standard ; Location assigned by ;
++--------------------+-------+----------+-----+-----------------------+--------------------+--------+--------------+----------------------+
+; CLK_IN_25MHz       ; 37    ; --       ; --  ; 38                    ; 0                  ; yes    ; 3.3-V LVTTL  ; User                 ;
+; COP_HRESET_bar     ; 5     ; --       ; 1   ; 19                    ; 0                  ; no     ; 3.3-V LVTTL  ; User                 ;
+; COP_SRESET_bar     ; 6     ; --       ; 1   ; 4                     ; 0                  ; no     ; 3.3-V LVTTL  ; User                 ;
+; COP_TRST_bar       ; 8     ; --       ; 2   ; 4                     ; 0                  ; no     ; 3.3-V LVTTL  ; User                 ;
+; CPLD_RESET_bar     ; 39    ; --       ; --  ; 25                    ; 0                  ; yes    ; 3.3-V LVTTL  ; User                 ;
+; CPU_HRESET_REQ_bar ; 3     ; --       ; 1   ; 0                     ; 0                  ; no     ; 3.3-V LVTTL  ; User                 ;
+; PGOOD_VDD_CPU      ; 42    ; --       ; 1   ; 10                    ; 0                  ; no     ; 3.3-V LVTTL  ; User                 ;
+; PWR_GOOD_DDR3      ; 21    ; --       ; 3   ; 9                     ; 0                  ; no     ; 3.3-V LVTTL  ; User                 ;
++--------------------+-------+----------+-----+-----------------------+--------------------+--------+--------------+----------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Output Pins                                                                                                                                                                                             ;
++---------------------+-------+----------+-----+-----------------+----------------+------------+---------------+--------------+----------------------+-------+----------------------+---------------------+
+; Name                ; Pin # ; I/O Bank ; LAB ; Output Register ; Slow Slew Rate ; Open Drain ; TRI Primitive ; I/O Standard ; Location assigned by ; Load  ; Output Enable Source ; Output Enable Group ;
++---------------------+-------+----------+-----+-----------------+----------------+------------+---------------+--------------+----------------------+-------+----------------------+---------------------+
+; BUF_EN_bar          ; 27    ; --       ; 4   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; User                 ; 10 pF ; -                    ; -                   ;
+; CPU_HRESET_bar      ; 43    ; --       ; 1   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; User                 ; 10 pF ; -                    ; -                   ;
+; CPU_SRESET_bar      ; 44    ; --       ; 1   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; User                 ; 10 pF ; -                    ; -                   ;
+; CPU_TRST_bar        ; 2     ; --       ; 1   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; User                 ; 10 pF ; -                    ; -                   ;
+; DDR3_RESET          ; 10    ; --       ; 2   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; User                 ; 10 pF ; -                    ; -                   ;
+; ENET_PHY_RESET_bar  ; 14    ; --       ; 2   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; User                 ; 10 pF ; -                    ; -                   ;
+; MUX_EN1_bar         ; 35    ; --       ; 4   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; User                 ; 10 pF ; -                    ; -                   ;
+; MUX_EN2_bar         ; 34    ; --       ; 4   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; User                 ; 10 pF ; -                    ; -                   ;
+; MUX_SEL1            ; 33    ; --       ; 4   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; User                 ; 10 pF ; -                    ; -                   ;
+; MUX_SEL2            ; 31    ; --       ; 4   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; User                 ; 10 pF ; -                    ; -                   ;
+; PGOOD_SYS           ; 25    ; --       ; 3   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; User                 ; 10 pF ; -                    ; -                   ;
+; PWR_OFF_VDD_CPU     ; 22    ; --       ; 3   ; no              ; no             ; yes        ; no            ; 3.3-V LVTTL  ; User                 ; 10 pF ; -                    ; -                   ;
+; PWR_ON_GVDD         ; 23    ; --       ; 3   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; User                 ; 10 pF ; -                    ; -                   ;
+; SD_1588_CLK_EN      ; 18    ; --       ; 3   ; no              ; no             ; yes        ; no            ; 3.3-V LVTTL  ; User                 ; 10 pF ; -                    ; -                   ;
+; SGMII_PHY_RESET_bar ; 13    ; --       ; 2   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; User                 ; 10 pF ; -                    ; -                   ;
+; TSEC_PHY_RESET_bar  ; 15    ; --       ; 2   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; User                 ; 10 pF ; -                    ; -                   ;
++---------------------+-------+----------+-----+-----------------+----------------+------------+---------------+--------------+----------------------+-------+----------------------+---------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; All Package Pins                                                                                           ;
++----------+------------+----------+---------------------+--------+--------------+---------+-----------------+
+; Location ; Pad Number ; I/O Bank ; Pin Name/Usage      ; Dir.   ; I/O Standard ; Voltage ; User Assignment ;
++----------+------------+----------+---------------------+--------+--------------+---------+-----------------+
+; 1        ; 6          ; --       ; TDI                 ; input  ; 3.3-V LVTTL  ;         ; Y               ;
+; 2        ; 7          ; --       ; CPU_TRST_bar        ; output ; 3.3-V LVTTL  ;         ; Y               ;
+; 3        ; 8          ; --       ; CPU_HRESET_REQ_bar  ; input  ; 3.3-V LVTTL  ;         ; Y               ;
+; 4        ; 9          ; --       ; GND                 ; gnd    ;              ;         ;                 ;
+; 5        ; 10         ; --       ; COP_HRESET_bar      ; input  ; 3.3-V LVTTL  ;         ; Y               ;
+; 6        ; 11         ; --       ; COP_SRESET_bar      ; input  ; 3.3-V LVTTL  ;         ; Y               ;
+; 7        ; 12         ; --       ; TMS                 ; input  ; 3.3-V LVTTL  ;         ; Y               ;
+; 8        ; 13         ; --       ; COP_TRST_bar        ; input  ; 3.3-V LVTTL  ;         ; Y               ;
+; 9        ; 14         ; --       ; VCCIO               ; power  ;              ; 3.3V    ;                 ;
+; 10       ; 15         ; --       ; DDR3_RESET          ; output ; 3.3-V LVTTL  ;         ; Y               ;
+; 11       ; 16         ; --       ; GND                 ; gnd    ;              ;         ;                 ;
+; 12       ; 17         ; --       ; RESERVED            ;        ;              ;         ;                 ;
+; 13       ; 18         ; --       ; SGMII_PHY_RESET_bar ; output ; 3.3-V LVTTL  ;         ; Y               ;
+; 14       ; 19         ; --       ; ENET_PHY_RESET_bar  ; output ; 3.3-V LVTTL  ;         ; Y               ;
+; 15       ; 20         ; --       ; TSEC_PHY_RESET_bar  ; output ; 3.3-V LVTTL  ;         ; Y               ;
+; 16       ; 21         ; --       ; GND                 ; gnd    ;              ;         ;                 ;
+; 17       ; 22         ; --       ; VCCINT              ; power  ;              ; 3.3V    ;                 ;
+; 18       ; 23         ; --       ; SD_1588_CLK_EN      ; output ; 3.3-V LVTTL  ;         ; Y               ;
+; 19       ; 24         ; --       ; RESERVED            ;        ;              ;         ;                 ;
+; 20       ; 25         ; --       ; RESERVED            ;        ;              ;         ;                 ;
+; 21       ; 26         ; --       ; PWR_GOOD_DDR3       ; input  ; 3.3-V LVTTL  ;         ; Y               ;
+; 22       ; 27         ; --       ; PWR_OFF_VDD_CPU     ; output ; 3.3-V LVTTL  ;         ; Y               ;
+; 23       ; 28         ; --       ; PWR_ON_GVDD         ; output ; 3.3-V LVTTL  ;         ; Y               ;
+; 24       ; 29         ; --       ; GND                 ; gnd    ;              ;         ;                 ;
+; 25       ; 30         ; --       ; PGOOD_SYS           ; output ; 3.3-V LVTTL  ;         ; Y               ;
+; 26       ; 31         ; --       ; TCK                 ; input  ; 3.3-V LVTTL  ;         ; Y               ;
+; 27       ; 32         ; --       ; BUF_EN_bar          ; output ; 3.3-V LVTTL  ;         ; Y               ;
+; 28       ; 33         ; --       ; RESERVED            ;        ;              ;         ;                 ;
+; 29       ; 34         ; --       ; VCCIO               ; power  ;              ; 3.3V    ;                 ;
+; 30       ; 35         ; --       ; GND                 ; gnd    ;              ;         ;                 ;
+; 31       ; 36         ; --       ; MUX_SEL2            ; output ; 3.3-V LVTTL  ;         ; Y               ;
+; 32       ; 37         ; --       ; TDO                 ; output ; 3.3-V LVTTL  ;         ; Y               ;
+; 33       ; 38         ; --       ; MUX_SEL1            ; output ; 3.3-V LVTTL  ;         ; Y               ;
+; 34       ; 39         ; --       ; MUX_EN2_bar         ; output ; 3.3-V LVTTL  ;         ; Y               ;
+; 35       ; 40         ; --       ; MUX_EN1_bar         ; output ; 3.3-V LVTTL  ;         ; Y               ;
+; 36       ; 41         ; --       ; GND                 ; gnd    ;              ;         ;                 ;
+; 37       ; 42         ; --       ; CLK_IN_25MHz        ; input  ; 3.3-V LVTTL  ;         ; Y               ;
+; 38       ; 43         ; --       ; GND+                ;        ;              ;         ;                 ;
+; 39       ; 0          ; --       ; CPLD_RESET_bar      ; input  ; 3.3-V LVTTL  ;         ; Y               ;
+; 40       ; 1          ; --       ; GND+                ;        ;              ;         ;                 ;
+; 41       ; 2          ; --       ; VCCINT              ; power  ;              ; 3.3V    ;                 ;
+; 42       ; 3          ; --       ; PGOOD_VDD_CPU       ; input  ; 3.3-V LVTTL  ;         ; Y               ;
+; 43       ; 4          ; --       ; CPU_HRESET_bar      ; output ; 3.3-V LVTTL  ;         ; Y               ;
+; 44       ; 5          ; --       ; CPU_SRESET_bar      ; output ; 3.3-V LVTTL  ;         ; Y               ;
++----------+------------+----------+---------------------+--------+--------------+---------+-----------------+
+Note: Pin directions (input, output or bidir) are based on device operating in user mode.
+
+
++--------------------------------------------------------------------------------------------------+
+; I/O Standard                                                                                     ;
++--------------+------------+----------------------+-------------------+-------------------+-------+
+; I/O Standard ; Input Vref ; Dedicated Input Pins ; Pins in I/O Bank1 ; Pins in I/O Bank2 ; Total ;
++--------------+------------+----------------------+-------------------+-------------------+-------+
+; 3.3-V LVTTL  ; -          ; 2                    ; 0                 ; 0                 ; 2     ;
++--------------+------------+----------------------+-------------------+-------------------+-------+
+
+
++------------------------------------------------------------------------------+
+; Dedicated Inputs I/O                                                         ;
++----------------+-------+-------+-------+--------------+------------+---------+
+; Name           ; Pin # ; Type  ; VCCIO ; I/O Standard ; Input Vref ; Current ;
++----------------+-------+-------+-------+--------------+------------+---------+
+; CLK_IN_25MHz   ; 37    ; Input ; --    ; 3.3-V LVTTL  ; -          ; 0 mA    ;
+; CPLD_RESET_bar ; 39    ; Input ; --    ; 3.3-V LVTTL  ; -          ; 0 mA    ;
++----------------+-------+-------+-------+--------------+------------+---------+
+
+
++-----------------------------------------------+
+; Output Pin Default Load For Reported TCO      ;
++--------------+-------+------------------------+
+; I/O Standard ; Load  ; Termination Resistance ;
++--------------+-------+------------------------+
+; 3.3-V LVTTL  ; 10 pF ; Not Available          ;
+; 3.3-V LVCMOS ; 10 pF ; Not Available          ;
+; 3.3-V PCI    ; 10 pF ; 25 Ohm (Parallel)      ;
+; 2.5 V        ; 10 pF ; Not Available          ;
++--------------+-------+------------------------+
+Note: User assignments will override these defaults. The user specified values are listed in the Output Pins and Bidir Pins tables.
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Resource Utilization by Entity                                                                                                      ;
++------------------------------------+------------+------+--------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node         ; Macrocells ; Pins ; Full Hierarchy Name                                                ; Library Name ;
++------------------------------------+------------+------+--------------------------------------------------------------------+--------------+
+; |app_top                           ; 63         ; 28   ; |app_top                                                           ; work         ;
+;    |lpm_add_sub:Add0|              ; 1          ; 0    ; |app_top|lpm_add_sub:Add0                                          ; work         ;
+;       |addcore:adder[1]|           ; 1          ; 0    ; |app_top|lpm_add_sub:Add0|addcore:adder[1]                         ; work         ;
+;          |a_csnbuffer:result_node| ; 1          ; 0    ; |app_top|lpm_add_sub:Add0|addcore:adder[1]|a_csnbuffer:result_node ; work         ;
+;    |lpm_add_sub:Add1|              ; 2          ; 0    ; |app_top|lpm_add_sub:Add1                                          ; work         ;
+;       |addcore:adder[1]|           ; 2          ; 0    ; |app_top|lpm_add_sub:Add1|addcore:adder[1]                         ; work         ;
+;          |a_csnbuffer:result_node| ; 2          ; 0    ; |app_top|lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node ; work         ;
++------------------------------------+------------+------+--------------------------------------------------------------------+--------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                                                                  ;
++---------------------------------------------------------------------------+----------+---------+--------------+--------+----------------------+------------------+
+; Name                                                                      ; Location ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ;
++---------------------------------------------------------------------------+----------+---------+--------------+--------+----------------------+------------------+
+; CLK_IN_25MHz                                                              ; PIN_37   ; 38      ; Clock        ; yes    ; On                   ; --               ;
+; COP_HRESET_bar                                                            ; PIN_5    ; 19      ; Async. clear ; no     ; --                   ; --               ;
+; COP_SRESET_bar                                                            ; PIN_6    ; 4       ; Async. clear ; no     ; --                   ; --               ;
+; COP_TRST_bar                                                              ; PIN_8    ; 4       ; Async. clear ; no     ; --                   ; --               ;
+; COUNT120nS[0]                                                             ; LC13     ; 3       ; Clock enable ; no     ; --                   ; --               ;
+; COUNT120nS[1]                                                             ; LC15     ; 3       ; Clock enable ; no     ; --                   ; --               ;
+; COUNT120nS_2[0]                                                           ; LC10     ; 3       ; Clock enable ; no     ; --                   ; --               ;
+; COUNT120nS_2[1]                                                           ; LC16     ; 3       ; Clock enable ; no     ; --                   ; --               ;
+; COUNT300US[0]                                                             ; LC36     ; 19      ; Clock enable ; no     ; --                   ; --               ;
+; COUNT300US[10]                                                            ; LC59     ; 15      ; Clock enable ; no     ; --                   ; --               ;
+; COUNT300US[11]                                                            ; LC50     ; 14      ; Clock enable ; no     ; --                   ; --               ;
+; COUNT300US[12]                                                            ; LC55     ; 10      ; Clock enable ; no     ; --                   ; --               ;
+; COUNT300US[1]                                                             ; LC47     ; 19      ; Clock enable ; no     ; --                   ; --               ;
+; COUNT300US[2]                                                             ; LC56     ; 17      ; Clock enable ; no     ; --                   ; --               ;
+; COUNT300US[3]                                                             ; LC60     ; 18      ; Clock enable ; no     ; --                   ; --               ;
+; COUNT300US[4]                                                             ; LC34     ; 18      ; Clock enable ; no     ; --                   ; --               ;
+; COUNT300US[5]                                                             ; LC42     ; 17      ; Clock enable ; no     ; --                   ; --               ;
+; COUNT300US[6]                                                             ; LC51     ; 17      ; Clock enable ; no     ; --                   ; --               ;
+; COUNT300US[7]                                                             ; LC39     ; 17      ; Clock enable ; no     ; --                   ; --               ;
+; COUNT300US[8]                                                             ; LC58     ; 16      ; Clock enable ; no     ; --                   ; --               ;
+; COUNT300US[9]                                                             ; LC44     ; 15      ; Clock enable ; no     ; --                   ; --               ;
+; CPLD_RESET_bar                                                            ; PIN_39   ; 25      ; Async. clear ; yes    ; On                   ; --               ;
+; LessThan0~9                                                               ; SEXP37   ; 1       ; Clock enable ; no     ; --                   ; --               ;
+; LessThan1~10sexp1                                                         ; SEXP34   ; 1       ; Clock enable ; no     ; --                   ; --               ;
+; LessThan1~10sexp2                                                         ; SEXP35   ; 1       ; Clock enable ; no     ; --                   ; --               ;
+; LessThan1~10sexp3                                                         ; SEXP36   ; 1       ; Clock enable ; no     ; --                   ; --               ;
+; LessThan3~6                                                               ; SEXP8    ; 1       ; Clock enable ; no     ; --                   ; --               ;
+; LessThan4~13                                                              ; SEXP7    ; 1       ; Clock enable ; no     ; --                   ; --               ;
+; LessThan5~24                                                              ; LC30     ; 1       ; Clock enable ; no     ; --                   ; --               ;
+; lpm_add_sub:Add0|addcore:adder[1]|a_csnbuffer:result_node|sout_node[4]~46 ; LC52     ; 2       ; Clock enable ; no     ; --                   ; --               ;
+; lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[3]~28 ; LC24     ; 1       ; Clock enable ; no     ; --                   ; --               ;
++---------------------------------------------------------------------------+----------+---------+--------------+--------+----------------------+------------------+
+
+
++-------------------------------------------------------------------------------+
+; Global & Other Fast Signals                                                   ;
++----------------+----------+---------+----------------------+------------------+
+; Name           ; Location ; Fan-Out ; Global Resource Used ; Global Line Name ;
++----------------+----------+---------+----------------------+------------------+
+; CLK_IN_25MHz   ; PIN_37   ; 38      ; On                   ; --               ;
+; CPLD_RESET_bar ; PIN_39   ; 25      ; On                   ; --               ;
++----------------+----------+---------+----------------------+------------------+
+
+
++-------------------------------------------------------------------------------------+
+; Non-Global High Fan-Out Signals                                                     ;
++---------------------------------------------------------------------------+---------+
+; Name                                                                      ; Fan-Out ;
++---------------------------------------------------------------------------+---------+
+; COUNT140US[4]                                                             ; 21      ;
+; COUNT140US[5]                                                             ; 21      ;
+; COUNT140US[0]                                                             ; 21      ;
+; COUNT140US[6]                                                             ; 20      ;
+; COUNT140US[3]                                                             ; 20      ;
+; COUNT140US[2]                                                             ; 20      ;
+; COUNT140US[1]                                                             ; 20      ;
+; COP_HRESET_bar                                                            ; 19      ;
+; COUNT140US[7]                                                             ; 19      ;
+; COUNT300US[1]                                                             ; 19      ;
+; COUNT300US[0]                                                             ; 19      ;
+; COUNT140US[8]                                                             ; 18      ;
+; COUNT300US[4]                                                             ; 18      ;
+; COUNT300US[3]                                                             ; 18      ;
+; COUNT300US[7]                                                             ; 17      ;
+; COUNT300US[6]                                                             ; 17      ;
+; COUNT300US[2]                                                             ; 17      ;
+; COUNT300US[5]                                                             ; 17      ;
+; COUNT300US[8]                                                             ; 16      ;
+; COUNT300US[10]                                                            ; 15      ;
+; COUNT140US[9]                                                             ; 15      ;
+; COUNT300US[9]                                                             ; 15      ;
+; COUNT300US[11]                                                            ; 14      ;
+; PGOOD_VDD_CPU                                                             ; 10      ;
+; COUNT300US[12]                                                            ; 10      ;
+; COUNT140US[10]                                                            ; 10      ;
+; PWR_GOOD_DDR3                                                             ; 9       ;
+; COUNT140US[11]                                                            ; 8       ;
+; LessThan5~17                                                              ; 8       ;
+; COP_TRST_bar                                                              ; 4       ;
+; COP_SRESET_bar                                                            ; 4       ;
+; MUX_SEL1$latch~28                                                         ; 4       ;
+; SGMII_PHY_RESET_bar$latch~28                                              ; 4       ;
+; CPU_HRESET_bar~10sexpand0                                                 ; 3       ;
+; COUNT120nS_2[0]                                                           ; 3       ;
+; COUNT120nS[0]                                                             ; 3       ;
+; COUNT120nS_2[1]                                                           ; 3       ;
+; COUNT120nS[1]                                                             ; 3       ;
+; DDR3_RESET$latch~21                                                       ; 2       ;
+; CPU_HRESET_bar$latch~20                                                   ; 2       ;
+; CPU_TRST_bar$latch~20                                                     ; 2       ;
+; CPU_SRESET_bar$latch~20                                                   ; 2       ;
+; HIGHAFTER200US_PLUS_ONECLK                                                ; 2       ;
+; HIGHAFTER100US                                                            ; 2       ;
+; LessThan4~7                                                               ; 2       ;
+; HRESET_HIGHAFTER40uS                                                      ; 2       ;
+; HIGHAFTER200US                                                            ; 2       ;
+; lpm_add_sub:Add0|addcore:adder[1]|a_csnbuffer:result_node|sout_node[4]~46 ; 2       ;
+; PGOOD_SYS$latch~19                                                        ; 2       ;
+; PWR_ON_GVDD$latch~19                                                      ; 2       ;
++---------------------------------------------------------------------------+---------+
+
+
++-------------------------------------------------+
+; Interconnect Usage Summary                      ;
++----------------------------+--------------------+
+; Interconnect Resource Type ; Usage              ;
++----------------------------+--------------------+
+; Output enables             ; 0 / 6 ( 0 % )      ;
+; PIA buffers                ; 100 / 144 ( 69 % ) ;
++----------------------------+--------------------+
+
+
++-----------------------------------------------------------------------+
+; LAB Macrocells                                                        ;
++-----------------------------------------+-----------------------------+
+; Number of Macrocells  (Average = 15.75) ; Number of LABs  (Total = 4) ;
++-----------------------------------------+-----------------------------+
+; 0                                       ; 0                           ;
+; 1                                       ; 0                           ;
+; 2                                       ; 0                           ;
+; 3                                       ; 0                           ;
+; 4                                       ; 0                           ;
+; 5                                       ; 0                           ;
+; 6                                       ; 0                           ;
+; 7                                       ; 0                           ;
+; 8                                       ; 0                           ;
+; 9                                       ; 0                           ;
+; 10                                      ; 0                           ;
+; 11                                      ; 0                           ;
+; 12                                      ; 0                           ;
+; 13                                      ; 0                           ;
+; 14                                      ; 0                           ;
+; 15                                      ; 1                           ;
+; 16                                      ; 3                           ;
++-----------------------------------------+-----------------------------+
+
+
++---------------------------------------------------------+
+; Parallel Expander                                       ;
++--------------------------+------------------------------+
+; Parallel Expander Length ; Number of Parallel Expanders ;
++--------------------------+------------------------------+
+; 0                        ; 0                            ;
+; 1                        ; 1                            ;
++--------------------------+------------------------------+
+
+
++-------------------------------------------------------------------------------+
+; Shareable Expander                                                            ;
++-------------------------------------------------+-----------------------------+
+; Number of shareable expanders  (Average = 5.75) ; Number of LABs  (Total = 4) ;
++-------------------------------------------------+-----------------------------+
+; 0                                               ; 0                           ;
+; 1                                               ; 0                           ;
+; 2                                               ; 0                           ;
+; 3                                               ; 0                           ;
+; 4                                               ; 1                           ;
+; 5                                               ; 1                           ;
+; 6                                               ; 1                           ;
+; 7                                               ; 0                           ;
+; 8                                               ; 1                           ;
++-------------------------------------------------+-----------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Logic Cell Interconnection                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ;
++-----+------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; LAB ; Logic Cell ; Input                                                                                                                                                                                                                              ; Output                                                                                                                                                                                                                                                                                                                                                                                                                                                             ;
++-----+------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+;  A  ; LC15       ; CLK_IN_25MHz, COUNT120nS[0], COUNT120nS[1], COP_SRESET_bar                                                                                                                                                                         ; COUNT120nS[1], COUNT120nS[0], SRESET_HIGHAFTER120nS                                                                                                                                                                                                                                                                                                                                                                                                                ;
+;  A  ; LC16       ; CLK_IN_25MHz, COUNT120nS_2[0], COUNT120nS_2[1], COP_TRST_bar                                                                                                                                                                       ; COUNT120nS_2[1], COUNT120nS_2[0], TRESET_HIGHAFTER120nS                                                                                                                                                                                                                                                                                                                                                                                                            ;
+;  A  ; LC3        ; CLK_IN_25MHz, COUNT140US[4], COUNT140US[3], COUNT140US[2], COUNT140US[0], COUNT140US[1], LessThan5~17, COUNT140US[5], COP_HRESET_bar                                                                                               ; COUNT140US[0], LessThan5~11, LessThan5~17, COUNT140US[5], COUNT140US[6], COUNT140US[7], COUNT140US[8], COUNT140US[9], lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[2]~24, COUNT140US[11], lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[3]~28, LessThan5~24, COUNT140US~202, LessThan3~11, LessThan4~7, COUNT140US~210, LessThan4~19sexp1, LessThan4~19sexp2, LessThan4~19sexp3, LessThan4~19sexp4, LessThan4~19sexp5 ;
+;  A  ; LC9        ; CLK_IN_25MHz, COP_SRESET_bar, COUNT120nS[0], COUNT120nS[1]                                                                                                                                                                         ; CPU_SRESET_bar$latch~20                                                                                                                                                                                                                                                                                                                                                                                                                                            ;
+;  A  ; LC13       ; CLK_IN_25MHz, COUNT120nS[0], COUNT120nS[1], COP_SRESET_bar                                                                                                                                                                         ; COUNT120nS[1], COUNT120nS[0], SRESET_HIGHAFTER120nS                                                                                                                                                                                                                                                                                                                                                                                                                ;
+;  A  ; LC10       ; CLK_IN_25MHz, COUNT120nS_2[0], COUNT120nS_2[1], COP_TRST_bar                                                                                                                                                                       ; COUNT120nS_2[1], COUNT120nS_2[0], TRESET_HIGHAFTER120nS                                                                                                                                                                                                                                                                                                                                                                                                            ;
+;  A  ; LC6        ; CLK_IN_25MHz, COUNT140US[5], COUNT140US[4], COUNT140US[3], COUNT140US[2], COUNT140US[0], COUNT140US[1], LessThan5~17, COUNT140US[6], COP_HRESET_bar                                                                                ; COUNT140US[0], LessThan5~11, LessThan5~17, COUNT140US[6], COUNT140US[7], COUNT140US[8], COUNT140US[9], lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[2]~24, COUNT140US[11], lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[3]~28, LessThan5~24, COUNT140US~202, LessThan3~11, LessThan4~7, COUNT140US~210, LessThan4~19sexp1, LessThan4~19sexp2, LessThan4~19sexp3, LessThan4~19sexp4, LessThan4~19sexp5                ;
+;  A  ; LC4        ; CLK_IN_25MHz, COUNT140US[6], COUNT140US[5], COUNT140US[4], COUNT140US[3], COUNT140US[2], COUNT140US[0], COUNT140US[1], LessThan5~17, COUNT140US[7], COP_HRESET_bar                                                                 ; COUNT140US[0], LessThan5~11, LessThan5~17, COUNT140US[7], COUNT140US[8], COUNT140US[9], lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[2]~24, COUNT140US[11], lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[3]~28, LessThan5~24, COUNT140US[4], LessThan3~11, LessThan4~7, COUNT140US~210, LessThan4~19sexp1, LessThan4~19sexp2, LessThan4~19sexp3, LessThan4~19sexp4, LessThan4~19sexp5                                ;
+;  A  ; LC8        ; CLK_IN_25MHz, COP_TRST_bar, COUNT120nS_2[0], COUNT120nS_2[1]                                                                                                                                                                       ; CPU_TRST_bar$latch~20                                                                                                                                                                                                                                                                                                                                                                                                                                              ;
+;  A  ; LC2        ; CLK_IN_25MHz, COUNT140US[3], COUNT140US[2], COUNT140US[6], COUNT140US[7], COUNT140US[0], COUNT140US[1], COUNT140US[4], COUNT140US[5], LessThan5~17, COUNT140US[8], COP_HRESET_bar                                                  ; COUNT140US[0], LessThan5~11, LessThan5~17, COUNT140US[8], COUNT140US[9], lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[2]~24, COUNT140US[11], lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[3]~28, LessThan5~24, COUNT140US[4], LessThan3~11, LessThan4~7, COUNT140US~210, LessThan4~19sexp1, LessThan4~19sexp2, LessThan4~19sexp3, LessThan4~19sexp4, LessThan4~19sexp5                                               ;
+;  A  ; LC12       ; CLK_IN_25MHz, COUNT140US[2], COUNT140US[0], COUNT140US[1], LessThan5~17, COUNT140US[3], COP_HRESET_bar                                                                                                                             ; COUNT140US[0], LessThan5~11, LessThan5~17, COUNT140US[3], COUNT140US[5], COUNT140US[6], COUNT140US[7], COUNT140US[8], COUNT140US[9], lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[2]~24, COUNT140US[11], lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[3]~28, LessThan5~24, COUNT140US~201, COUNT140US[4], LessThan3~11, LessThan4~7, COUNT140US~210, LessThan4~19sexp1, LessThan4~19sexp2                            ;
+;  A  ; LC1        ; CLK_IN_25MHz, COP_HRESET_bar, LessThan3~6                                                                                                                                                                                          ; CPU_HRESET_bar~9sexpand0, CPU_HRESET_bar$latch~20                                                                                                                                                                                                                                                                                                                                                                                                                  ;
+;  A  ; LC7        ; CLK_IN_25MHz, COP_HRESET_bar, LessThan4~13                                                                                                                                                                                         ; MUX_SEL1$latch~28                                                                                                                                                                                                                                                                                                                                                                                                                                                  ;
+;  A  ; LC11       ; CPLD_RESET_bar, CPU_SRESET_bar$latch~20, PGOOD_VDD_CPU, PWR_GOOD_DDR3, CPU_HRESET_bar~10sexpand0, SRESET_HIGHAFTER120nS, HIGHAFTER100US, COP_SRESET_bar                                                                            ; CPU_SRESET_bar$latch~20, CPU_SRESET_bar                                                                                                                                                                                                                                                                                                                                                                                                                            ;
+;  A  ; LC5        ; CPLD_RESET_bar, CPU_TRST_bar$latch~20, PGOOD_VDD_CPU, PWR_GOOD_DDR3, CPU_HRESET_bar~10sexpand0, TRESET_HIGHAFTER120nS, HIGHAFTER100US, COP_TRST_bar                                                                                ; CPU_TRST_bar$latch~20, CPU_TRST_bar                                                                                                                                                                                                                                                                                                                                                                                                                                ;
+;  A  ; LC14       ; CPLD_RESET_bar, CPU_HRESET_bar$latch~20, PGOOD_VDD_CPU, PWR_GOOD_DDR3, CPU_HRESET_bar~10sexpand0, HIGHAFTER200US, COP_HRESET_bar, HRESET_HIGHAFTER40uS                                                                             ; CPU_HRESET_bar$latch~20, CPU_HRESET_bar                                                                                                                                                                                                                                                                                                                                                                                                                            ;
+;  B  ; LC31       ; COUNT140US[9], COUNT140US[8], COUNT140US[3], COUNT140US[2], COUNT140US[6], COUNT140US[7], COUNT140US[0], COUNT140US[1], COUNT140US[4], COUNT140US[5], COUNT140US[10]                                                               ; COUNT140US[10]                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
+;  B  ; LC18       ; CLK_IN_25MHz, COUNT140US[3], COUNT140US[2], COUNT140US[5], COUNT140US[8], COUNT140US[7], COUNT140US[11], COUNT140US[10], COUNT140US[0], COUNT140US[4], COUNT140US[6], COUNT140US[9], COP_HRESET_bar                                ; COUNT140US[0], LessThan5~11, LessThan5~17, COUNT140US[1], COUNT140US[2], COUNT140US[3], COUNT140US[5], COUNT140US[6], COUNT140US[7], COUNT140US[8], COUNT140US[9], lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[2]~24, COUNT140US[11], lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[3]~28, LessThan5~24, COUNT140US~201, COUNT140US[4], LessThan3~11, LessThan4~7, COUNT140US~210, LessThan4~19sexp4                 ;
+;  B  ; LC32       ; CLK_IN_25MHz, COUNT140US[11], COUNT140US[10], COUNT140US[9], COUNT140US[3], COUNT140US[2], COUNT140US[0], COUNT140US[1], COUNT140US[4], COUNT140US~201, COUNT140US~202, COUNT140US[8], COUNT140US[7], COP_HRESET_bar               ; COUNT140US[0], LessThan5~11, LessThan5~17, COUNT140US[5], COUNT140US[6], COUNT140US[7], COUNT140US[8], COUNT140US[9], lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[2]~24, COUNT140US[11], lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[3]~28, LessThan5~24, COUNT140US[4], LessThan3~11, LessThan4~7, COUNT140US~210, LessThan4~19sexp1, LessThan4~19sexp2, LessThan4~19sexp3, LessThan4~19sexp4, LessThan4~19sexp5  ;
+;  B  ; LC26       ; COUNT140US[9], COUNT140US[11], COUNT140US[10], COUNT140US[8], COUNT140US[3], COUNT140US[2], COUNT140US[7], COUNT140US[5], COUNT140US[0], COUNT140US[1], COUNT140US[6], COUNT140US[4], LessThan5~11                                 ; COUNT140US[10], COUNT140US[1], COUNT140US[2], COUNT140US[3], COUNT140US[5], COUNT140US[6], COUNT140US[7], COUNT140US[8]                                                                                                                                                                                                                                                                                                                                            ;
+;  B  ; LC24       ; COUNT140US[10], COUNT140US[9], COUNT140US[8], COUNT140US[3], COUNT140US[2], COUNT140US[6], COUNT140US[7], COUNT140US[0], COUNT140US[1], COUNT140US[4], COUNT140US[5], COUNT140US[11]                                               ; HRESET_HIGHAFTER140uS                                                                                                                                                                                                                                                                                                                                                                                                                                              ;
+;  B  ; LC29       ; CLK_IN_25MHz, COUNT140US[11], COUNT140US[8], COUNT140US[3], COUNT140US[2], COUNT140US[6], COUNT140US[7], COUNT140US[0], COUNT140US[1], COUNT140US[4], COUNT140US[5], COUNT140US[10], COUNT140US[9], COP_HRESET_bar                 ; COUNT140US[0], LessThan5~17, COUNT140US[9], lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[2]~24, lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[3]~28, LessThan5~24, COUNT140US[4], LessThan3~11, LessThan4~7, COUNT140US~210, LessThan4~19sexp1, LessThan4~19sexp2, LessThan4~19sexp3, LessThan4~19sexp4, LessThan4~19sexp5                                                                                            ;
+;  B  ; LC28       ; CLK_IN_25MHz, COUNT140US~210, COUNT140US[2], COUNT140US[3], COUNT140US[11], COUNT140US[10], COUNT140US[8], COUNT140US[7], COUNT140US[5], COUNT140US[0], COUNT140US[1], COUNT140US[6], COUNT140US[4], COP_HRESET_bar                ; COUNT140US[0], LessThan5~17, COUNT140US[9], COUNT140US[11], lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[3]~28, COUNT140US[4], LessThan4~7, COUNT140US~210                                                                                                                                                                                                                                                                                  ;
+;  B  ; LC30       ; COUNT140US[9], COUNT140US[10], COUNT140US[8], COUNT140US[3], COUNT140US[2], COUNT140US[7], COUNT140US[5], COUNT140US[0], COUNT140US[1], COUNT140US[6], COUNT140US[4], LessThan5~11                                                 ; HRESET_HIGHAFTER140uS                                                                                                                                                                                                                                                                                                                                                                                                                                              ;
+;  B  ; LC23       ; CLK_IN_25MHz, COP_HRESET_bar, lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[3]~28, LessThan5~24                                                                                                              ; SGMII_PHY_RESET_bar$latch~28                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
+;  B  ; LC22       ; COUNT140US[5], COUNT140US[9], COUNT140US[6], COUNT140US[8], COUNT140US[7], COUNT140US[3], COUNT140US[4], COUNT140US[2], COUNT140US[0], COUNT140US[1]                                                                               ; LessThan3~6                                                                                                                                                                                                                                                                                                                                                                                                                                                        ;
+;  B  ; LC21       ; COUNT140US[10], COUNT140US[9], COUNT140US[8], COUNT140US[3], COUNT140US[2], COUNT140US[6], COUNT140US[7], COUNT140US[0], COUNT140US[1], COUNT140US[4], COUNT140US[5], COUNT140US[11]                                               ; LessThan3~6, LessThan4~13                                                                                                                                                                                                                                                                                                                                                                                                                                          ;
+;  B  ; LC20       ; CPLD_RESET_bar, SGMII_PHY_RESET_bar$latch~28, PGOOD_VDD_CPU, PWR_GOOD_DDR3, HIGHAFTER300US, COP_HRESET_bar, HRESET_HIGHAFTER140uS                                                                                                  ; SGMII_PHY_RESET_bar$latch~28, SGMII_PHY_RESET_bar, SGMII_PHY_RESET_bar$latch~30, SGMII_PHY_RESET_bar$latch~32                                                                                                                                                                                                                                                                                                                                                      ;
+;  B  ; LC19       ; SGMII_PHY_RESET_bar$latch~28                                                                                                                                                                                                       ; ENET_PHY_RESET_bar                                                                                                                                                                                                                                                                                                                                                                                                                                                 ;
+;  B  ; LC17       ; SGMII_PHY_RESET_bar$latch~28                                                                                                                                                                                                       ; TSEC_PHY_RESET_bar                                                                                                                                                                                                                                                                                                                                                                                                                                                 ;
+;  B  ; LC25       ; DDR3_RESET$latch~21, CPLD_RESET_bar, PGOOD_VDD_CPU, PWR_GOOD_DDR3, CPU_HRESET_bar~15, CPU_HRESET_bar~9sexpand0                                                                                                                     ; DDR3_RESET$latch~21, DDR3_RESET                                                                                                                                                                                                                                                                                                                                                                                                                                    ;
+;  B  ; LC27       ; COUNT140US[9], COUNT140US[2], COUNT140US[3], COUNT140US[0], COUNT140US[1], COUNT140US[6], COUNT140US[10], COUNT140US[8], COUNT140US[7], COUNT140US[4], COUNT140US[5], COUNT140US[11]                                               ; COUNT140US[11]                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
+;  C  ; LC35       ; CLK_IN_25MHz, CPLD_RESET_bar, lpm_add_sub:Add0|addcore:adder[1]|a_csnbuffer:result_node|sout_node[4]~46, LessThan1~10sexp1, LessThan1~10sexp2, LessThan1~10sexp3                                                                   ; CPU_HRESET_bar~9sexpand0, CPU_HRESET_bar$latch~20                                                                                                                                                                                                                                                                                                                                                                                                                  ;
+;  C  ; LC36       ; CLK_IN_25MHz, CPLD_RESET_bar                                                                                                                                                                                                       ; COUNT300US[11], COUNT300US[5], COUNT300US[1], COUNT300US[2], COUNT300US[3], COUNT300US[4], COUNT300US[6], COUNT300US[7], COUNT300US[8], COUNT300US[9], COUNT300US[10], HIGHAFTER300US, COUNT300US[12], lpm_add_sub:Add0|addcore:adder[1]|a_csnbuffer:result_node|sout_node[4]~46, LessThan1~5, LessThan0~11, LessThan0~15, HIGHAFTER200US_PLUS_ONECLK~11, LessThan1~10sexp1                                                                                        ;
+;  C  ; LC42       ; CLK_IN_25MHz, CPLD_RESET_bar, COUNT300US[4], COUNT300US[3], COUNT300US[2], COUNT300US[0], COUNT300US[1], COUNT300US[5]                                                                                                             ; COUNT300US[11], COUNT300US[5], COUNT300US[2], COUNT300US[3], COUNT300US[6], COUNT300US[7], COUNT300US[8], COUNT300US[9], COUNT300US[10], HIGHAFTER300US, COUNT300US[12], lpm_add_sub:Add0|addcore:adder[1]|a_csnbuffer:result_node|sout_node[4]~46, LessThan0~15, HIGHAFTER200US_PLUS_ONECLK~11, HIGHAFTER200US_PLUS_ONECLK~12, LessThan1~10sexp1, LessThan1~10sexp2                                                                                               ;
+;  C  ; LC41       ; CPLD_RESET_bar, PWR_ON_GVDD$latch~19, PGOOD_VDD_CPU                                                                                                                                                                                ; PWR_ON_GVDD$latch~19, PWR_ON_GVDD                                                                                                                                                                                                                                                                                                                                                                                                                                  ;
+;  C  ; LC43       ; CLK_IN_25MHz, CPLD_RESET_bar, LessThan0~9                                                                                                                                                                                          ; CPU_SRESET_bar$latch~20, CPU_TRST_bar$latch~20                                                                                                                                                                                                                                                                                                                                                                                                                     ;
+;  C  ; LC47       ; CLK_IN_25MHz, CPLD_RESET_bar, COUNT300US[0], COUNT300US[1]                                                                                                                                                                         ; COUNT300US[11], COUNT300US[5], COUNT300US[1], COUNT300US[2], COUNT300US[3], COUNT300US[4], COUNT300US[6], COUNT300US[7], COUNT300US[8], COUNT300US[9], COUNT300US[10], HIGHAFTER300US, COUNT300US[12], lpm_add_sub:Add0|addcore:adder[1]|a_csnbuffer:result_node|sout_node[4]~46, LessThan1~5, LessThan0~11, LessThan0~15, HIGHAFTER200US_PLUS_ONECLK~11, LessThan1~10sexp1                                                                                        ;
+;  C  ; LC38       ; CLK_IN_25MHz, LessThan5~17, COUNT140US[0], COUNT140US[1], COP_HRESET_bar                                                                                                                                                           ; LessThan5~11, LessThan5~17, COUNT140US[1], COUNT140US[2], COUNT140US[3], COUNT140US[5], COUNT140US[6], COUNT140US[7], COUNT140US[8], COUNT140US[9], lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[2]~24, COUNT140US[11], lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[3]~28, LessThan5~24, COUNT140US~201, COUNT140US[4], LessThan3~11, LessThan4~7, COUNT140US~210, LessThan4~19sexp5                                ;
+;  C  ; LC46       ; CPLD_RESET_bar, PGOOD_SYS$latch~19, PGOOD_VDD_CPU, PWR_GOOD_DDR3                                                                                                                                                                   ; PGOOD_SYS$latch~19, PGOOD_SYS                                                                                                                                                                                                                                                                                                                                                                                                                                      ;
+;  C  ; LC45       ; CLK_IN_25MHz, lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[2]~24, LessThan5~17, COP_HRESET_bar                                                                                                              ; COUNT140US[0], LessThan5~17, COUNT140US[9], lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[2]~24, COUNT140US[11], lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[3]~28, LessThan5~24, COUNT140US[4], LessThan4~7, COUNT140US~210                                                                                                                                                                                         ;
+;  C  ; LC37       ; CLK_IN_25MHz, COUNT140US[0], COUNT140US[1], LessThan5~17, COUNT140US[2], COP_HRESET_bar                                                                                                                                            ; COUNT140US[0], LessThan5~11, LessThan5~17, COUNT140US[2], COUNT140US[3], COUNT140US[5], COUNT140US[6], COUNT140US[7], COUNT140US[8], COUNT140US[9], lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[2]~24, COUNT140US[11], lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[3]~28, LessThan5~24, COUNT140US~201, COUNT140US[4], LessThan3~11, LessThan4~7, COUNT140US~210, LessThan4~19sexp3                                ;
+;  C  ; LC34       ; CLK_IN_25MHz, CPLD_RESET_bar, COUNT300US[3], COUNT300US[2], COUNT300US[0], COUNT300US[1], COUNT300US[4]                                                                                                                            ; COUNT300US[11], COUNT300US[5], COUNT300US[2], COUNT300US[3], COUNT300US[4], COUNT300US[6], COUNT300US[7], COUNT300US[8], COUNT300US[9], COUNT300US[10], HIGHAFTER300US, COUNT300US[12], lpm_add_sub:Add0|addcore:adder[1]|a_csnbuffer:result_node|sout_node[4]~46, LessThan0~15, HIGHAFTER200US_PLUS_ONECLK~11, HIGHAFTER200US_PLUS_ONECLK~12, LessThan1~10sexp1, LessThan1~10sexp2                                                                                ;
+;  C  ; LC39       ; CLK_IN_25MHz, CPLD_RESET_bar, COUNT300US[6], COUNT300US[5], COUNT300US[4], COUNT300US[3], COUNT300US[2], COUNT300US[0], COUNT300US[1], COUNT300US[7]                                                                               ; COUNT300US[11], COUNT300US[2], COUNT300US[3], COUNT300US[6], COUNT300US[7], COUNT300US[8], COUNT300US[9], COUNT300US[10], HIGHAFTER300US, COUNT300US[12], lpm_add_sub:Add0|addcore:adder[1]|a_csnbuffer:result_node|sout_node[4]~46, LessThan1~6, LessThan0~10, LessThan0~15, HIGHAFTER200US_PLUS_ONECLK~11, HIGHAFTER200US_PLUS_ONECLK, LessThan1~10sexp1                                                                                                         ;
+;  C  ; LC44       ; CLK_IN_25MHz, CPLD_RESET_bar, COUNT300US[8], COUNT300US[3], COUNT300US[2], COUNT300US[6], COUNT300US[7], COUNT300US[0], COUNT300US[1], COUNT300US[5], COUNT300US[4], COUNT300US[9]                                                 ; COUNT300US[11], COUNT300US[2], COUNT300US[3], COUNT300US[6], COUNT300US[8], COUNT300US[9], COUNT300US[10], HIGHAFTER300US, COUNT300US[12], lpm_add_sub:Add0|addcore:adder[1]|a_csnbuffer:result_node|sout_node[4]~46, LessThan1~6, LessThan0~15, HIGHAFTER200US_PLUS_ONECLK~11, HIGHAFTER200US_PLUS_ONECLK, LessThan1~10sexp1                                                                                                                                      ;
+;  C  ; LC33       ;                                                                                                                                                                                                                                    ; SD_1588_CLK_EN                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
+;  C  ; LC40       ;                                                                                                                                                                                                                                    ; PWR_OFF_VDD_CPU                                                                                                                                                                                                                                                                                                                                                                                                                                                    ;
+;  D  ; LC61       ; CLK_IN_25MHz, CPLD_RESET_bar, COUNT300US[11], COUNT300US[10], COUNT300US[12], HIGHAFTER200US_PLUS_ONECLK~11, HIGHAFTER200US_PLUS_ONECLK~12, COUNT300US[9], COUNT300US[8], COUNT300US[7], HIGHAFTER200US_PLUS_ONECLK                ; HIGHAFTER200US_PLUS_ONECLK, MUX_SEL1$latch~28                                                                                                                                                                                                                                                                                                                                                                                                                      ;
+;  D  ; LC55       ; CLK_IN_25MHz, CPLD_RESET_bar, COUNT300US[9], COUNT300US[11], COUNT300US[10], COUNT300US[4], COUNT300US[2], COUNT300US[8], COUNT300US[3], COUNT300US[5], COUNT300US[6], COUNT300US[7], COUNT300US[0], COUNT300US[1], COUNT300US[12] ; COUNT300US[11], COUNT300US[2], COUNT300US[3], COUNT300US[6], COUNT300US[8], COUNT300US[10], HIGHAFTER300US, COUNT300US[12], lpm_add_sub:Add0|addcore:adder[1]|a_csnbuffer:result_node|sout_node[4]~46, HIGHAFTER200US_PLUS_ONECLK                                                                                                                                                                                                                                  ;
+;  D  ; LC52       ; COUNT300US[11], COUNT300US[10], COUNT300US[9], COUNT300US[8], COUNT300US[3], COUNT300US[2], COUNT300US[6], COUNT300US[7], COUNT300US[0], COUNT300US[1], COUNT300US[5], COUNT300US[4], COUNT300US[12]                               ; HIGHAFTER200US, LessThan0~9                                                                                                                                                                                                                                                                                                                                                                                                                                        ;
+;  D  ; LC58       ; CLK_IN_25MHz, CPLD_RESET_bar, COUNT300US[2], COUNT300US[3], COUNT300US[4], COUNT300US[6], COUNT300US[7], COUNT300US[0], COUNT300US[1], COUNT300US[5], COUNT300US[11], COUNT300US[9], COUNT300US[10], COUNT300US[12], COUNT300US[8] ; COUNT300US[11], COUNT300US[2], COUNT300US[3], COUNT300US[6], COUNT300US[8], COUNT300US[9], COUNT300US[10], HIGHAFTER300US, COUNT300US[12], lpm_add_sub:Add0|addcore:adder[1]|a_csnbuffer:result_node|sout_node[4]~46, LessThan1~6, LessThan0~10, LessThan0~15, HIGHAFTER200US_PLUS_ONECLK~11, HIGHAFTER200US_PLUS_ONECLK, LessThan1~10sexp1                                                                                                                        ;
+;  D  ; LC51       ; CLK_IN_25MHz, CPLD_RESET_bar, COUNT300US[4], COUNT300US[2], COUNT300US[5], COUNT300US[3], COUNT300US[0], COUNT300US[1], COUNT300US[11], COUNT300US[7], COUNT300US[9], COUNT300US[10], COUNT300US[12], COUNT300US[8], COUNT300US[6] ; COUNT300US[11], COUNT300US[2], COUNT300US[3], COUNT300US[6], COUNT300US[7], COUNT300US[8], COUNT300US[9], COUNT300US[10], HIGHAFTER300US, COUNT300US[12], lpm_add_sub:Add0|addcore:adder[1]|a_csnbuffer:result_node|sout_node[4]~46, LessThan0~10, LessThan0~15, HIGHAFTER200US_PLUS_ONECLK~11, HIGHAFTER200US_PLUS_ONECLK~12, LessThan1~10sexp1, LessThan1~10sexp2                                                                                                ;
+;  D  ; LC60       ; CLK_IN_25MHz, CPLD_RESET_bar, COUNT300US[5], COUNT300US[4], COUNT300US[11], COUNT300US[7], COUNT300US[6], COUNT300US[9], COUNT300US[10], COUNT300US[12], COUNT300US[8], COUNT300US[0], COUNT300US[1], COUNT300US[3], COUNT300US[2] ; COUNT300US[11], COUNT300US[5], COUNT300US[2], COUNT300US[3], COUNT300US[4], COUNT300US[6], COUNT300US[7], COUNT300US[8], COUNT300US[9], COUNT300US[10], HIGHAFTER300US, COUNT300US[12], lpm_add_sub:Add0|addcore:adder[1]|a_csnbuffer:result_node|sout_node[4]~46, LessThan0~15, HIGHAFTER200US_PLUS_ONECLK~11, HIGHAFTER200US_PLUS_ONECLK~12, LessThan1~10sexp1, LessThan1~10sexp2                                                                                ;
+;  D  ; LC56       ; CLK_IN_25MHz, CPLD_RESET_bar, COUNT300US[5], COUNT300US[4], COUNT300US[11], COUNT300US[7], COUNT300US[6], COUNT300US[9], COUNT300US[10], COUNT300US[12], COUNT300US[8], COUNT300US[2], COUNT300US[3], COUNT300US[0], COUNT300US[1] ; COUNT300US[11], COUNT300US[5], COUNT300US[2], COUNT300US[3], COUNT300US[4], COUNT300US[6], COUNT300US[7], COUNT300US[8], COUNT300US[9], COUNT300US[10], HIGHAFTER300US, COUNT300US[12], lpm_add_sub:Add0|addcore:adder[1]|a_csnbuffer:result_node|sout_node[4]~46, LessThan1~5, LessThan0~15, HIGHAFTER200US_PLUS_ONECLK~11, LessThan1~10sexp1                                                                                                                     ;
+;  D  ; LC50       ; CLK_IN_25MHz, CPLD_RESET_bar, COUNT300US[9], COUNT300US[10], COUNT300US[4], COUNT300US[2], COUNT300US[8], COUNT300US[3], COUNT300US[5], COUNT300US[6], COUNT300US[7], COUNT300US[0], COUNT300US[1], COUNT300US[12], COUNT300US[11] ; COUNT300US[11], COUNT300US[2], COUNT300US[3], COUNT300US[6], COUNT300US[8], COUNT300US[10], HIGHAFTER300US, COUNT300US[12], lpm_add_sub:Add0|addcore:adder[1]|a_csnbuffer:result_node|sout_node[4]~46, LessThan0~15, HIGHAFTER200US_PLUS_ONECLK, LessThan1~10sexp1, LessThan1~10sexp2, LessThan1~10sexp3                                                                                                                                                           ;
+;  D  ; LC59       ; CLK_IN_25MHz, CPLD_RESET_bar, COUNT300US[9], COUNT300US[4], COUNT300US[2], COUNT300US[8], COUNT300US[3], COUNT300US[5], COUNT300US[6], COUNT300US[7], COUNT300US[0], COUNT300US[1], COUNT300US[11], COUNT300US[12], COUNT300US[10] ; COUNT300US[11], COUNT300US[2], COUNT300US[3], COUNT300US[6], COUNT300US[8], COUNT300US[10], HIGHAFTER300US, COUNT300US[12], lpm_add_sub:Add0|addcore:adder[1]|a_csnbuffer:result_node|sout_node[4]~46, LessThan0~15, HIGHAFTER200US_PLUS_ONECLK~11, HIGHAFTER200US_PLUS_ONECLK, LessThan1~10sexp1, LessThan1~10sexp2, LessThan1~10sexp3                                                                                                                            ;
+;  D  ; LC53       ; MUX_SEL1$latch~28                                                                                                                                                                                                                  ; MUX_SEL2                                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
+;  D  ; LC49       ; MUX_SEL1$latch~28                                                                                                                                                                                                                  ; BUF_EN_bar                                                                                                                                                                                                                                                                                                                                                                                                                                                         ;
+;  D  ; LC63       ; COUNT300US[10], COUNT300US[9], COUNT300US[8], COUNT300US[3], COUNT300US[2], COUNT300US[6], COUNT300US[7], COUNT300US[0], COUNT300US[1], COUNT300US[5], COUNT300US[4], LessThan0~10, LessThan0~11, COUNT300US[11]                   ; LessThan0~9                                                                                                                                                                                                                                                                                                                                                                                                                                                        ;
+;  D  ; LC64       ;                                                                                                                                                                                                                                    ; MUX_EN1_bar                                                                                                                                                                                                                                                                                                                                                                                                                                                        ;
+;  D  ; LC62       ;                                                                                                                                                                                                                                    ; MUX_EN2_bar                                                                                                                                                                                                                                                                                                                                                                                                                                                        ;
+;  D  ; LC54       ; CLK_IN_25MHz, CPLD_RESET_bar, COUNT300US[5], COUNT300US[4], COUNT300US[2], COUNT300US[0], COUNT300US[1], COUNT300US[11], COUNT300US[7], COUNT300US[6], COUNT300US[9], COUNT300US[10], COUNT300US[12], COUNT300US[8], COUNT300US[3] ; SGMII_PHY_RESET_bar$latch~28                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
+;  D  ; LC57       ; CPLD_RESET_bar, MUX_SEL1$latch~28, PGOOD_VDD_CPU, PWR_GOOD_DDR3, HRESET_HIGHAFTER40US_PLUS_ONECLK, HIGHAFTER200US_PLUS_ONECLK, COP_HRESET_bar                                                                                      ; MUX_SEL1$latch~28, MUX_SEL1, MUX_SEL1$latch~30, MUX_SEL1$latch~32                                                                                                                                                                                                                                                                                                                                                                                                  ;
++-----+------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------+
+; Fitter Device Options                                         ;
++----------------------------------------------+----------------+
+; Option                                       ; Setting        ;
++----------------------------------------------+----------------+
+; Enable user-supplied start-up clock (CLKUSR) ; Off            ;
+; Enable device-wide reset (DEV_CLRn)          ; Off            ;
+; Enable device-wide output enable (DEV_OE)    ; Off            ;
+; Enable INIT_DONE output                      ; Off            ;
+; Configuration scheme                         ; Passive Serial ;
+; Security bit                                 ; Off            ;
+; Base pin-out file on sameframe device        ; Off            ;
++----------------------------------------------+----------------+
+
+
++-----------------+
+; Fitter Messages ;
++-----------------+
+Info: *******************************************************************
+Info: Running Quartus II Fitter
+    Info: Version 9.1 Build 222 10/21/2009 SJ Web Edition
+    Info: Processing started: Wed Aug 03 13:15:15 2011
+Info: Command: quartus_fit --read_settings_files=off --write_settings_files=off APP_CPLD -c APP_TOP
+Info: Selected device EPM3064ATI44-10 for design "APP_TOP"
+Warning: Ignored locations or region assignments to the following nodes
+    Warning: Node "TCK" is assigned to location or region, but does not exist in design
+    Warning: Node "TDI" is assigned to location or region, but does not exist in design
+    Warning: Node "TDO" is assigned to location or region, but does not exist in design
+    Warning: Node "TMS" is assigned to location or region, but does not exist in design
+Info: Quartus II Fitter was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 150 megabytes
+    Info: Processing ended: Wed Aug 03 13:15:15 2011
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
+
+

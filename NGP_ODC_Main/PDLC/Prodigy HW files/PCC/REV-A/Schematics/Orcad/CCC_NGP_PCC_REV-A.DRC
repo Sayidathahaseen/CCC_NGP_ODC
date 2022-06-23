@@ -1,0 +1,44 @@
+
+Checking Pins and Pin Connections
+
+--------------------------------------------------
+Checking Schematic:  DC1804A-2
+--------------------------------------------------
+Checking Electrical Rules 
+ERROR:  [DRC0003]  Port has a type which is inconsistent with other ports on the net FAULT_APP_B
+                    DC1804A-2, Input Conn,I2C-I/O EXPANDER  (11.00, 7.20) 
+ERROR:  [DRC0003]  Port has a type which is inconsistent with other ports on the net 24V_B_HS_FET_ON
+                    DC1804A-2, Input Conn,I2C-I/O EXPANDER  (7.60, 4.70) 
+ERROR:  [DRC0003]  Port has a type which is inconsistent with other ports on the net 24V_B_HS_FET_ON
+                    DC1804A-2, Input Conn,I2C-I/O EXPANDER  (16.60, 4.70) 
+ERROR:  [DRC0003]  Port has a type which is inconsistent with other ports on the net 24V_A_HS_FET_ON
+                    DC1804A-2, Input Conn,I2C-I/O EXPANDER  (7.60, 4.60) 
+ERROR:  [DRC0003]  Port has a type which is inconsistent with other ports on the net 24V_A_HS_FET_ON
+                    DC1804A-2, Input Conn,I2C-I/O EXPANDER  (16.60, 4.60) 
+ERROR:  [DRC0003]  Port has a type which is inconsistent with other ports on the net 24V_B_HS_FLT
+                    DC1804A-2, Input Conn,I2C-I/O EXPANDER  (7.60, 4.50) 
+ERROR:  [DRC0003]  Port has a type which is inconsistent with other ports on the net 24V_B_HS_FLT
+                    DC1804A-2, Input Conn,I2C-I/O EXPANDER  (16.60, 4.50) 
+ERROR:  [DRC0003]  Port has a type which is inconsistent with other ports on the net HS_EN
+                    DC1804A-2, Input Conn,I2C-I/O EXPANDER  (6.80, 10.70) 
+ERROR:  [DRC0003]  Port has a type which is inconsistent with other ports on the net APP1_INT_I/O_EXPNDR
+                    DC1804A-2, Input Conn,I2C-I/O EXPANDER  (6.80, 10.90) 
+ERROR:  [DRC0003]  Port has a type which is inconsistent with other ports on the net APP2_INT_I/O_EXPNDR
+                    DC1804A-2, Input Conn,I2C-I/O EXPANDER  (6.80, 11.00) 
+ERROR:  [DRC0003]  Port has a type which is inconsistent with other ports on the net 24V_A_HS_FLT
+                    DC1804A-2, Input Conn,I2C-I/O EXPANDER  (7.60, 4.40) 
+ERROR:  [DRC0003]  Port has a type which is inconsistent with other ports on the net 24V_A_HS_FLT
+                    DC1804A-2, Input Conn,I2C-I/O EXPANDER  (16.60, 4.40) 
+ERROR:  [DRC0003]  Port has a type which is inconsistent with other ports on the net FAULT_APP_A
+                    DC1804A-2, Input Conn,I2C-I/O EXPANDER  (10.20, 7.20) 
+
+Checking for Unconnected Nets
+WARNING:  [DRC0006]  Net has fewer than two connections VOUT
+                    DC1804A-2, DC-DC Converter1_LTC3890EUN  (5.20, 10.90) 
+
+Checking for Invalid References
+[DRC0011]  Reference is invalid for this part /
+
+Checking for Duplicate References
+
+Check Bus width mismatch

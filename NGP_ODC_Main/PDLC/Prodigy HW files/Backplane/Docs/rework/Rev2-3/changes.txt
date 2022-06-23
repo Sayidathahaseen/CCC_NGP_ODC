@@ -1,0 +1,2 @@
+FTC-ID not connected to both IOP  A&B
+PCC  ????

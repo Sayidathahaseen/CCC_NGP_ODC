@@ -1,0 +1,952 @@
+RefDes     X          Y          Rot.       Exact     (FREE)    Side
+C1         2800.0000  1040.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+C2         2800.0000  1250.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+C3         2675.0000  1250.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C4         1575.0000  825.0000   180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C5         2675.0000  1110.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C6         2575.0000  1125.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C7         2225.0000  1325.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C8         2325.0000  1150.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C9         2205.0000  1150.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C10        1750.0000  650.0000   270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C11        3315.0000  1360.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C12        3750.0000  1350.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C13        2530.0000  1535.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C14        3305.0000  1405.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+C15        3625.0000  1075.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C16        3425.0000  1050.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C17        3760.0000  1500.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+C18        3890.0000  1500.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+C19        2860.0000  1280.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C20        3190.0000  1425.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C21        2680.0000  1465.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+C22        3290.0000  1290.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+C23        2775.0000  4800.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C24        1300.0000  1100.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+C25        1685.0000  2215.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C26        1300.0000  1300.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+C27        825.0000   2800.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C28        1625.0000  4800.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C29        3725.0000  865.0000   090        EXACT     (FREE)    L1_TOP SIDE                   
+C30        3900.0000  1225.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+C31        3725.0000  1010.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+C32        3905.0000  1780.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+C33        3720.0000  1645.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+C34        3905.0000  950.0000   000        EXACT     (FREE)    L1_TOP SIDE                   
+C35        3895.0000  445.0000   270        EXACT     (FREE)    L1_TOP SIDE                   
+C36        4075.0000  640.0000   000        EXACT     (FREE)    L1_TOP SIDE                   
+C37        3900.0000  230.0000   090        EXACT     (FREE)    L1_TOP SIDE                   
+C38        4100.0000  360.0000   000        EXACT     (FREE)    L1_TOP SIDE                   
+C39        2180.0000  4795.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C40        4100.0000  150.0000   180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C41        3900.0000  270.0000   270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C42        2975.0000  1275.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C43        3145.0000  1285.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C44        4100.0000  440.0000   180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C45        3910.0000  630.0000   090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C46        1000.0000  1200.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+C47        1935.0000  305.0000   090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C48        4200.0000  2765.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C49        4150.0000  4200.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C50        4150.0000  4100.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C51        4495.0000  4220.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C52        4495.0000  4125.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C53        4495.0000  4030.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C54        4825.0000  3300.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C55        4825.0000  3200.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C56        4525.0000  3250.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C57        4425.0000  3250.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C58        4325.0000  3250.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C59        3085.0000  5325.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C60        800.0000   4775.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C61        2725.0000  3750.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+C62        4775.0000  3750.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C63        4775.0000  3650.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C64        4425.0000  3650.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C65        2950.0000  5090.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+C66        4525.0000  3650.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C67        3255.0000  1560.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C68        2710.0000  1475.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C69        2900.0000  1025.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+C70        3325.0000  1125.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+C71        925.0000   4625.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+C72        800.0000   5050.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+C73        800.0000   4625.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+C74        1075.0000  4700.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C75        1450.0000  4630.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+C76        1625.0000  4700.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C77        1325.0000  5075.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+C78        800.0000   4925.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+C79        1625.0000  4625.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C80        1325.0000  4950.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+C81        1075.0000  4800.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C82        1075.0000  4625.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C83        1325.0000  4630.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+C84        4325.0000  3650.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C85        950.0000   4750.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C86        2000.0000  4625.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+C87        1875.0000  5075.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+C88        2650.0000  4750.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C89        1875.0000  4625.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+C90        2180.0000  4695.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C91        2600.0000  4625.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+C92        2775.0000  4710.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C93        2295.0000  5055.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+C94        1875.0000  4950.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+C95        2775.0000  4640.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C96        2295.0000  4935.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+C97        1950.0000  2600.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C98        2200.0000  4600.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C99        2475.0000  4625.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+C100       675.0000   525.0000   000        EXACT     (FREE)    L1_TOP SIDE                   
+C101       2075.0000  4725.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C102       800.0000   525.0000   180        EXACT     (FREE)    L1_TOP SIDE                   
+C103       4850.0000  2100.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C104       3475.0000  450.0000   000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C105       3475.0000  585.0000   180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C106       975.0000   900.0000   000        EXACT     (FREE)    L1_TOP SIDE                   
+C107       1025.0000  2600.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C108       925.0000   2600.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C109       1285.0000  2130.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C110       700.0000   2575.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C111       1275.0000  2375.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+C112       1525.0000  3000.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C113       1350.0000  2825.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C114       1125.0000  2575.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C115       1475.0000  2575.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C116       4850.0000  2000.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C117       4575.0000  2025.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C118       825.0000   2950.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C119       920.0000   2950.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C120       4375.0000  2025.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C121       1700.0000  2625.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C122       1800.0000  2625.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C123       2425.0000  2440.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C124       3125.0000  2440.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C125       2050.0000  2850.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C126       1660.0000  2700.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+C127       1730.0000  2440.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C128       2270.0000  2980.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C129       2200.0000  2525.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C130       1015.0000  2830.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C131       1870.0000  2830.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C132       2025.0000  3275.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+C133       2125.0000  3250.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+C134       1640.0000  3270.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+C135       3150.0000  2650.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C136       3250.0000  2650.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C137       2985.0000  2095.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C138       3350.0000  2600.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C139       3570.0000  2975.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C140       3150.0000  2700.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+C141       2425.0000  2700.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+C142       3725.0000  2960.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C143       3600.0000  2500.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C144       4275.0000  2025.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C145       4495.0000  3935.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C146       3655.0000  3295.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+C147       3740.0000  3255.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+C148       3255.0000  3300.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+C149       2400.0000  2625.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C150       2500.0000  2625.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C151       2380.0000  2215.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C152       2625.0000  2575.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C153       2655.0000  2985.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C154       1950.0000  4775.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C155       1600.0000  3925.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C156       3000.0000  2780.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C157       2860.0000  2540.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C158       4225.0000  3250.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C159       4225.0000  3650.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C160       2850.0000  3275.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+C161       2950.0000  3255.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+C162       2450.0000  3275.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+C163       4700.0000  4050.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+C164       4175.0000  2025.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C165       4150.0000  4000.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C166       4125.0000  3250.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C167       3575.0000  4675.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C168       3750.0000  3475.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+C169       4125.0000  3650.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C170       4475.0000  2025.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C171       1420.0000  2115.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+C172       3575.0000  4425.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C173       4225.0000  4125.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+C174       1350.0000  2115.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+C175       1120.0000  1980.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C176       1145.0000  2100.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C177       3722.6202  3878.1114  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C178       3925.0000  2175.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+C179       1780.0000  2100.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C180       3412.6202  3873.1114  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C181       1655.0000  2110.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+C182       1575.0000  3675.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C183       975.0000   3600.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C184       1845.0000  2085.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+C185       1655.0000  2120.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C186       1655.0000  2000.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C187       2345.0000  2095.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+C188       1775.0000  3725.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C189       2420.0000  2100.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C190       1400.0000  4775.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C191       1465.0000  3930.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C192       1510.0000  4735.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C193       800.0000   1200.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+C194       3475.0000  850.0000   180        EXACT     (FREE)    L1_TOP SIDE                   
+C195       3475.0000  725.0000   000        EXACT     (FREE)    L1_TOP SIDE                   
+C196       555.0000   1220.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+C197       625.0000   1400.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C198       3455.0000  175.0000   180        EXACT     (FREE)    L1_TOP SIDE                   
+C199       3455.0000  305.0000   000        EXACT     (FREE)    L1_TOP SIDE                   
+C200       3475.0000  450.0000   180        EXACT     (FREE)    L1_TOP SIDE                   
+C201       3475.0000  585.0000   000        EXACT     (FREE)    L1_TOP SIDE                   
+C202       3225.0000  175.0000   180        EXACT     (FREE)    L1_TOP SIDE                   
+C203       3225.0000  300.0000   000        EXACT     (FREE)    L1_TOP SIDE                   
+C204       750.0000   1400.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C205       1000.0000  1025.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+C206       3725.0000  450.0000   180        EXACT     (FREE)    L1_TOP SIDE                   
+C207       3725.0000  575.0000   000        EXACT     (FREE)    L1_TOP SIDE                   
+C208       3225.0000  850.0000   000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C209       3225.0000  725.0000   180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C210       3225.0000  575.0000   180        EXACT     (FREE)    L1_TOP SIDE                   
+C211       3225.0000  450.0000   000        EXACT     (FREE)    L1_TOP SIDE                   
+C212       2450.0000  4790.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C213       800.0000   3600.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C214       3225.0000  300.0000   000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C215       3225.0000  175.0000   180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C216       3225.0000  450.0000   000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C217       3225.0000  575.0000   180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C218       3225.0000  725.0000   180        EXACT     (FREE)    L1_TOP SIDE                   
+C219       3225.0000  850.0000   000        EXACT     (FREE)    L1_TOP SIDE                   
+C220       3725.0000  575.0000   000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C221       3725.0000  450.0000   180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C222       1475.0000  3675.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C223       2625.0000  2800.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C224       3375.0000  2825.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C225       2275.0000  5725.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C226       2025.0000  5725.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C227       1775.0000  5725.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C228       625.0000   3600.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C229       2520.0000  2085.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+C230       2325.0000  2120.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C231       2315.0000  2190.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+C232       3080.0000  2210.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C233       3010.0000  2185.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+C234       3235.0000  2090.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+C235       3030.0000  2085.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+C236       3245.0000  2090.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C237       1355.0000  2130.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C238       1650.0000  1675.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+C239       1875.0000  1675.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+C240       1075.0000  1700.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C241       3590.0000  1695.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C242       3225.0000  1675.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+C243       3000.0000  1675.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+C244       2775.0000  1675.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+C245       1344.0000  1682.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C246       1575.0000  1675.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C247       1750.0000  1675.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C248       2200.0000  1695.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C249       2955.0000  1695.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C250       2800.0000  1695.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C251       3350.0000  1675.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C252       2690.0000  3905.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C253       3150.0000  3890.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C254       2375.0000  1675.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C255       2970.0000  3935.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+C256       2550.0000  1675.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+C257       3150.0000  3650.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C258       3025.0000  3525.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C259       2695.0000  3625.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C260       2325.0000  1675.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+C261       2100.0000  1695.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+C262       1340.0000  1675.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+C263       1425.0000  1675.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+C264       2050.0000  850.0000   180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C265       1775.0000  1200.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C266       2200.0000  1460.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C267       1620.0000  1590.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C268       1665.0000  1200.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C269       1795.0000  1385.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C270       1795.0000  1275.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C271       1885.0000  1200.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C272       1795.0000  1120.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C273       1995.0000  1200.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C274       1565.0000  675.0000   270        EXACT     (FREE)    L1_TOP SIDE                   
+C275       2050.0000  800.0000   180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C276       1620.0000  1540.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C277       2055.0000  1610.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C278       2145.0000  1460.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C279       1375.0000  825.0000   270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C280       2055.0000  1555.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C281       2190.0000  945.0000   270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C282       1575.0000  775.0000   180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C283       1425.0000  825.0000   270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C284       1970.0000  825.0000   270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C285       2240.0000  945.0000   270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C286       1650.0000  675.0000   270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C287       1430.0000  1465.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C288       1375.0000  1465.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C289       1400.0000  1595.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C290       2140.0000  945.0000   270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C291       2339.0000  4000.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C292       1615.0000  3985.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+C293       1050.0000  5100.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C294       740.0000   4205.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C295       635.0000   4555.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C296       825.0000   4575.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C297       1180.0000  4200.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C298       1265.0000  4540.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C299       1400.0000  4570.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C300       2040.0000  3456.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+C301       2136.0000  3456.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+C302       4764.0000  4848.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C303       4460.0000  4847.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C304       1540.0000  5100.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C305       1800.0000  4550.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C306       2070.0000  5095.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C307       1755.0000  4200.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C308       2520.0000  5095.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C309       2315.0000  4200.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C310       2360.0000  4550.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C311       1950.0000  4525.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C312       2525.0000  4550.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C313       3650.0000  5475.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C314       3975.0000  5475.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C315       3325.0000  5475.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C316       325.0000   4700.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C317       135.0000   5335.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C318       3760.0000  1705.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C319       3725.0000  1290.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+C320       3745.0000  1530.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C321       3750.0000  1210.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C322       3950.0000  1295.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C323       3955.0000  1015.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C324       3941.0000  740.0000   180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C325       2270.0000  815.0000   000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C326       1455.0000  360.0000   090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C327       700.0000   775.0000   090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C328       2060.0000  275.0000   180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C329       1075.0000  4000.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+C330       735.0000   3870.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+C331       565.0000   955.0000   270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C332       655.0000   955.0000   270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C333       800.0000   775.0000   090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C334       3725.0000  740.0000   270        EXACT     (FREE)    L1_TOP SIDE                   
+C335       3720.0000  870.0000   270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C336       2525.0000  445.0000   090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C337       3955.0000  1575.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C338       495.0000   2225.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+C339       400.0000   2225.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+C340       325.0000   3525.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C341       425.0000   3525.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C342       100.0000   3675.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C343       100.0000   3850.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C344       520.0000   3630.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+C345       3370.0000  5805.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C346       3810.0000  5550.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C347       395.0000   3040.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+C348       520.0000   3040.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+C349       3000.0000  4425.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+C350       3000.0000  4250.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+C351       705.0000   5145.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C352       975.0000   5275.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C353       575.0000   5250.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C354       1500.0000  5275.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C355       1100.0000  5255.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C356       1227.0000  5144.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C357       1975.0000  5275.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C358       1575.0000  5275.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C359       1725.0000  5150.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C360       2500.0000  5275.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C361       2100.0000  5275.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C362       2250.0000  5150.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C363       1590.0000  2300.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+C364       2220.0000  2200.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+C365       3640.0000  2150.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+C366       2870.0000  2270.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+C367       2760.0000  3370.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C368       3570.0000  3370.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C369       1310.0000  3370.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C370       1910.0000  3370.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C371       1405.0000  5800.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C372       4075.0000  2885.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C373       4165.0000  2995.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+C374       3995.0000  2640.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+C375       3980.0000  2810.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+D1         1275.0000  3400.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+D2         1275.0000  2825.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+D3         1475.0000  2375.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+D4         1275.0000  3225.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+D5         1879.0000  2749.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+D6         1975.0000  2850.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+D7         1875.0000  3000.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+D8         1700.0000  3000.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+D9         3350.0000  2750.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+D10        3480.0000  3010.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+D11        3350.0000  3000.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+D12        3175.0000  3000.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+D13        2625.0000  2749.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+D14        2655.0000  3055.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+D15        2625.0000  3000.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+D16        2425.0000  3000.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+D18        289.3701   5543.3071  090        EXACT     (FREE)    L1_TOP SIDE                   
+D19        4400.0000  275.0000   270        EXACT     (FREE)    L1_TOP SIDE                   
+D20        4400.4025  275.4867   090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+D21        4400.4025  575.4867   090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+D22        4175.0000  815.0000   270        EXACT     (FREE)    L1_TOP SIDE                   
+D23        4400.0000  575.0000   270        EXACT     (FREE)    L1_TOP SIDE                   
+D24        4200.0000  845.0000   090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+D25        4175.0000  1415.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+D26        4200.0000  1145.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+D27        4175.0000  1115.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+D28        4200.0000  1445.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+D29        4175.0000  1715.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+D30        4200.0000  1745.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+D31        450.0000   4170.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+D32        3325.0000  5325.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+D33        3325.0000  4920.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+D34        3650.0000  5325.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+D35        3645.0000  4915.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+D36        3950.0000  5325.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+D37        3975.0000  4925.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+D38        340.0000   4595.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+D39        383.4646   3966.9291  270        EXACT     (FREE)    L1_TOP SIDE                   
+D40        383.4646   3744.8819  270        EXACT     (FREE)    L1_TOP SIDE                   
+D41        124.4094   3236.2205  090        EXACT     (FREE)    L1_TOP SIDE                   
+D42        146.4567   3040.5512  090        EXACT     (FREE)    L1_TOP SIDE                   
+D43        168.8976   2844.8819  090        EXACT     (FREE)    L1_TOP SIDE                   
+D44        190.9449   2649.6063  090        EXACT     (FREE)    L1_TOP SIDE                   
+D45        212.9921   2453.9370  090        EXACT     (FREE)    L1_TOP SIDE                   
+D46        235.4331   2258.2677  090        EXACT     (FREE)    L1_TOP SIDE                   
+D47        257.4803   2062.5984  090        EXACT     (FREE)    L1_TOP SIDE                   
+D48        279.9213   1866.9291  090        EXACT     (FREE)    L1_TOP SIDE                   
+D49        301.9685   1671.6535  090        EXACT     (FREE)    L1_TOP SIDE                   
+D50        324.4094   1475.9843  090        EXACT     (FREE)    L1_TOP SIDE                   
+D51        346.4567   1280.3150  090        EXACT     (FREE)    L1_TOP SIDE                   
+D52        368.8976   1084.6457  090        EXACT     (FREE)    L1_TOP SIDE                   
+D53        390.9449   888.9764   090        EXACT     (FREE)    L1_TOP SIDE                   
+D54        413.3858   693.7008   090        EXACT     (FREE)    L1_TOP SIDE                   
+D55        71.2598    4475.1969  090        EXACT     (FREE)    L1_TOP SIDE                   
+D56        71.2598    4845.2756  090        EXACT     (FREE)    L1_TOP SIDE                   
+D57        435.4331   498.0315   090        EXACT     (FREE)    L1_TOP SIDE                   
+D58        71.2598    4660.2362  090        EXACT     (FREE)    L1_TOP SIDE                   
+D59        71.2598    4105.1181  090        EXACT     (FREE)    L1_TOP SIDE                   
+D60        71.2598    5030.3150  090        EXACT     (FREE)    L1_TOP SIDE                   
+D61        71.2598    4290.1575  090        EXACT     (FREE)    L1_TOP SIDE                   
+D62        4125.0000  4725.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+D63        2575.0000  5750.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+D64        161.4173   5543.3071  090        EXACT     (FREE)    L1_TOP SIDE                   
+D65        2000.0000  3750.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+D75        446.8504   5543.3071  090        EXACT     (FREE)    L1_TOP SIDE                   
+D77        4750.0000  4700.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+D78        4450.0000  4700.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+D99        101.9685   3431.8898  090        EXACT     (FREE)    L1_TOP SIDE                   
+F1         4125.0000  4725.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+F3         4775.0000  4725.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+F4         4450.0000  4725.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+FB1        2595.0000  1005.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+FB2        4800.0000  5350.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+FD1        775.0000   150.0000   000        EXACT     (FREE)    L1_TOP SIDE                   
+FD2        775.0000   150.0000   000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+FD3        1000.0000  5800.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+FD4        4775.0000  725.0000   000        EXACT     (FREE)    L1_TOP SIDE                   
+FD5        4775.0000  725.0000   000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+FD6        1000.0000  5800.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+GP1        4581.4961  5590.5512  090        EXACT     (FREE)    L1_TOP SIDE                   
+J1         4917.3228  908.6614   090        EXACT     (FREE)    L1_TOP SIDE                   
+J2         4842.5197  5097.2441  090        EXACT     (FREE)    L1_TOP SIDE                   
+J3         4917.3228  2377.9528  090        EXACT     (FREE)    L1_TOP SIDE                   
+J4         1150.0000  1125.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+J6         1809.0551  3717.3228  000        EXACT     (FREE)    L1_TOP SIDE                   
+J7         2284.6457  279.5276   180        EXACT     (FREE)    L1_TOP SIDE                   
+J51        3860.0000  5718.1100  180        EXACT     (FREE)    L1_TOP SIDE                   
+J56        3200.0000  5775.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+L1         1300.0000  1200.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+L2         4700.0000  4200.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+L3         4275.0000  3955.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+L4         4000.0000  3450.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+L5         4175.0000  2325.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+L6         4350.0000  4175.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+L7         3302.6202  3668.1114  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+L8         3827.6202  3668.1114  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+L9         1800.0000  4800.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+L10        4650.0000  3300.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+L11        2335.0000  4765.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+L12        625.0000   4800.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+L13        1250.0000  4800.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+L14        545.0000   1460.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+L15        4625.0000  3700.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+L16        4675.0000  2075.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+LS1        225.0000   5375.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+LS2        3225.4025  5425.4867  000        EXACT     (FREE)    L1_TOP SIDE                   
+LS3        3550.4025  5425.4867  000        EXACT     (FREE)    L1_TOP SIDE                   
+LS4        3875.4025  5425.4867  000        EXACT     (FREE)    L1_TOP SIDE                   
+LS7        225.4025   4700.4867  000        EXACT     (FREE)    L1_TOP SIDE                   
+MH1        2826.7717  5763.7795  000        EXACT     (FREE)    L1_TOP SIDE                   
+MH3        957.0866   236.2205   000        EXACT     (FREE)    L1_TOP SIDE                   
+MH4        3690.9449  236.2205   000        EXACT     (FREE)    L1_TOP SIDE                   
+MH6        779.5276   5763.7795  000        EXACT     (FREE)    L1_TOP SIDE                   
+Q1         2125.0000  2875.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+Q2         2875.0000  2875.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+Q3         3600.0000  2865.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+Q4         1325.0000  2875.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+Q5         1075.0000  4405.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+Q6         1650.0000  4395.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+Q7         2755.0000  4425.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+Q8         2210.0000  4395.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+Q9         550.0000   5500.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+Q10        300.0000   5600.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+Q11        550.0000   5735.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+Q13        2695.0000  5400.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+Q14        285.0000   4860.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+Q18        825.0000   3825.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+Q19        500.0000   3825.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+Q20        755.0000   3555.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+Q21        755.0000   3720.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+Q22        3025.0000  4400.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+Q23        3025.0000  4150.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+Q24        2375.0000  3775.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+Q25        280.0000   4170.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+Q26        525.0000   4005.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+Q28        750.0000   5525.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+Q29        1075.0000  5525.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+Q30        1400.0000  5525.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+Q31        305.0000   3495.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+Q32        565.0000   4195.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+R1         3625.0000  5550.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R2         2800.0000  1175.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+R3         3065.0000  1275.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R4         3220.0000  1260.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R5         3075.0000  1475.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+R6         3650.0000  5150.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R7         3290.0000  1220.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+R8         600.0000   5575.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+R9         2920.0000  4765.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R10        550.0000   5850.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+R11        2215.0000  3530.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R12        2340.0000  3530.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R13        2400.0000  4750.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+R14        2145.0000  4760.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+R15        2340.0000  3455.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R16        4240.0000  2890.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R17        675.0000   300.0000   090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R18        350.0000   3350.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+R19        2450.0000  4625.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R20        490.0000   3350.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+R21        3325.0000  5575.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R22        4050.0000  2415.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R23        4190.0000  2490.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+R24        2745.0000  4250.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R25        2450.0000  5725.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+R26        1750.0000  3000.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R27        2800.0000  1425.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+R28        2800.0000  1360.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+R29        2800.0000  1505.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+R30        2800.0000  1575.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+R31        3325.0000  1000.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+R32        2325.0000  4750.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+R33        2750.0000  4800.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+R34        2075.0000  4400.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R35        2785.0000  4555.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R36        2750.0000  4700.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+R37        1840.0000  4750.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+R38        1835.0000  4695.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R39        2145.0000  4670.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+R40        2655.0000  4250.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R41        2150.0000  4220.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R42        2065.0000  4220.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R43        2075.0000  4575.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R44        2200.0000  4525.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R45        2650.0000  4600.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R46        1770.0000  4750.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+R47        2625.0000  4425.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R48        2325.0000  4625.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R49        1765.0000  4695.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R50        1125.0000  4400.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+R51        1050.0000  4400.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+R52        1625.0000  4450.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+R53        1625.0000  4375.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+R54        2175.0000  4425.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+R55        2175.0000  4355.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+R56        2750.0000  4450.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+R57        2750.0000  4375.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+R58        2925.0000  800.0000   090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R59        3035.0000  670.0000   270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R60        2925.0000  600.0000   270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R61        325.0000   4425.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R62        2695.0000  915.0000   000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R63        2695.0000  690.0000   000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R64        2695.0000  575.0000   000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R65        710.0000   5025.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+R66        2695.0000  805.0000   000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R67        2695.0000  465.0000   000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R68        2475.0000  655.0000   090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R69        585.0000   5060.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+R70        2365.0000  650.0000   090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R71        2250.0000  650.0000   090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R72        2125.0000  650.0000   090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R73        4020.0000  2740.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R74        550.0000   5695.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R75        3325.0000  5150.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R76        2950.0000  4790.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+R77        2950.0000  4700.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+R78        300.0000   5735.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+R79        4020.0000  2810.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R80        175.0000   5735.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+R81        4190.0000  2415.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+R82        4190.0000  2565.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+R83        4190.0000  2640.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+R84        4050.0000  2490.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+R85        4050.0000  2565.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+R86        4050.0000  2415.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+R87        4050.0000  2640.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+R88        1240.0000  5640.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R89        1310.0000  5640.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R90        1160.0000  5805.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R91        740.0000   4300.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R92        735.0000   4535.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R93        3500.0000  5550.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R94        3390.0000  5675.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R95        3958.0000  5671.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R96        625.0000   4900.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R97        1250.0000  4900.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R98        1760.0000  4900.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R99        2295.0000  4895.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R100       2920.0000  4595.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R101       3975.0000  5150.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R102       4375.0000  5325.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R103       4200.0000  5325.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R104       650.0000   4675.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R105       1200.0000  4725.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+R106       1275.0000  4675.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R107       550.0000   4775.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+R108       550.0000   4600.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+R109       495.0000   2025.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+R110       430.0000   3500.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+R111       252.6202   3278.1114  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R112       520.0000   3980.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+R113       520.0000   4070.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+R114       520.0000   3890.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+R115       520.0000   3800.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+R116       325.0000   4100.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+R117       274.9941   3100.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R118       520.0000   3715.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+R119       274.9941   2900.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R120       300.0000   2700.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R121       225.0000   3475.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R122       350.0000   2500.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R123       1325.0000  2950.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R124       775.0000   2225.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R125       775.0000   2375.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R126       1125.0000  3200.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R127       1320.0000  3055.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R128       1030.0000  3205.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R129       820.0000   3345.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R130       1250.0000  2375.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R131       1350.0000  2375.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R132       1830.0000  2215.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R133       2025.0000  2975.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R134       2025.0000  2600.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R135       1950.0000  3200.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R136       2145.0000  3060.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R137       1850.0000  3200.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R138       1677.0000  3351.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R139       2125.0000  2525.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+R140       2125.0000  2425.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+R141       3230.0000  2210.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R142       3610.0000  3050.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R143       3425.0000  2600.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R144       3600.0000  3200.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R145       3800.0000  3050.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R146       3500.0000  3200.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R147       3300.0000  3350.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R148       3525.0000  2400.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+R149       3525.0000  2500.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+R150       2525.0000  2215.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R151       2805.0000  3040.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R152       2700.0000  2575.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R153       2775.0000  3200.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R154       2975.0000  3050.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R155       2675.0000  3200.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R156       2475.0000  3350.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R157       2850.0000  2425.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+R158       2925.0000  2530.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+R159       2395.0000  1005.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R160       2425.0000  1125.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R161       2325.0000  1005.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R162       2500.0000  1125.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R163       2455.0000  1315.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R164       2355.0000  1345.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R165       2520.0000  1315.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R166       2590.0000  1315.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R167       2550.0000  1450.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R168       2425.0000  1450.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R169       375.0000   2300.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R170       382.1608   2086.2217  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R171       380.0000   1910.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R172       450.0000   1725.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+R173       410.0000   1520.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R174       475.0000   1300.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R175       475.0000   1125.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R176       475.0000   955.0000   270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R177       525.0000   750.0000   270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R178       150.0000   4435.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R179       150.0000   4875.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R180       532.1608   561.2217   270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R181       150.0000   4700.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R182       150.0000   4085.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R183       155.0000   5070.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R184       150.0000   4250.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R185       3050.0000  4725.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R186       3485.0000  4915.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R187       4300.0000  5200.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R188       4225.0000  5050.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R189       2995.0000  4940.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R190       3130.0000  4975.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R191       3000.0000  4950.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+R192       2945.0000  5465.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R193       2900.0000  5250.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R194       3050.0000  5225.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R195       3100.0000  5550.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+R196       2925.0000  5550.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+R197       3100.0000  5465.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R198       1075.0000  3000.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R199       2475.0000  3000.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R200       3225.0000  3000.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R201       480.0000   4848.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R202       408.0000   4848.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R203       255.0000   4050.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R204       1050.0000  480.0000   270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R205       900.0000   800.0000   090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R206       800.0000   2575.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R207       1955.0000  2435.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R208       2650.0000  2440.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R209       3355.0000  2440.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R210       400.0000   5735.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+R211       1280.0000  4300.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R212       950.0000   3955.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R213       950.0000   3825.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R214       700.0000   3825.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R215       625.0000   3825.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R216       875.0000   3550.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+R217       950.0000   3550.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+R218       2850.0000  3625.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R219       3025.0000  3625.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R220       2665.0000  4060.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R221       875.0000   3710.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+R222       945.0000   3710.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+R223       2700.0000  3725.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R224       2700.0000  3825.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R225       2150.0000  3800.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R226       380.0000   4050.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R227       640.0000   3975.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R228       715.0000   3975.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R229       1325.0000  4200.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R230       2215.0000  3590.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R231       875.0000   5550.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+R232       950.0000   5550.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+R233       1200.0000  5550.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+R234       1275.0000  5550.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+R235       1600.0000  5549.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+R236       1525.0000  5550.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+R237       505.0000   3500.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+R238       565.0000   4315.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+R239       560.0000   4385.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+R240       1815.0000  4300.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R241       1900.0000  4200.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R242       2365.0000  4295.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R243       2465.0000  4200.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R244       305.0000   5115.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R245       1090.0000  4520.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+R246       1630.0000  4530.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+R247       2170.0000  4510.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+R248       2750.0000  4540.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+R249       670.0000   570.0000   270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R250       3040.0000  3300.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+R251       3040.0000  3180.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+R252       2370.0000  3210.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+R253       2370.0000  3340.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+R254       3900.0000  3240.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+R255       3900.0000  3110.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+R256       3190.0000  3170.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+R257       3190.0000  3300.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+R258       2220.0000  3210.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+R259       2220.0000  3340.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+R260       1550.0000  3220.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+R261       1550.0000  3350.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+R262       1420.0000  3220.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+R263       1420.0000  3350.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+R264       720.0000   3130.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+R265       720.0000   3260.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+R266       120.0000   5700.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R267       3980.0000  2735.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+R284       1075.0000  4800.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+R285       925.0000   1200.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+R316       925.0000   4575.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R317       1075.0000  4700.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+R318       800.0000   1050.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+R319       925.0000   1025.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+R320       1225.0000  275.0000   000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R322       1075.0000  4525.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R323       1040.0000  4235.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R324       940.0000   4235.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R325       940.0000   4405.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R326       700.0000   4735.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+R327       630.0000   4735.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+R329       640.0000   4495.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+R330       1570.0000  4235.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R332       1480.0000  4235.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R333       1650.0000  4800.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+R334       1200.0000  4675.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R335       1510.0000  4580.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R336       1510.0000  4410.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R337       1650.0000  4525.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R338       1650.0000  4700.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+R339       1275.0000  4725.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+R362       815.0000   570.0000   090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R366       975.0000   480.0000   090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R368       975.0000   775.0000   090        EXACT     (FREE)    L1_TOP SIDE                   
+R369       745.0000   570.0000   270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+R370       905.0000   480.0000   270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+SW1        1175.0000  175.0000   090        EXACT     (FREE)    L1_TOP SIDE                   
+SW2        533.4646   358.2677   270        EXACT     (FREE)    L1_TOP SIDE                   
+TP1        1245.4900  1471.7100  000        EXACT     (FREE)    L1_TOP SIDE                   
+TP2_CONN   1575.0000  525.0000   000        EXACT     (FREE)    L1_TOP SIDE                   
+TP3        1420.0000  710.0000   000        EXACT     (FREE)    L1_TOP SIDE                   
+TP3_CONN   1500.0000  525.0000   000        EXACT     (FREE)    L1_TOP SIDE                   
+TP4        1425.0000  625.0000   000        EXACT     (FREE)    L1_TOP SIDE                   
+TP4_CONN   1425.0000  525.0000   000        EXACT     (FREE)    L1_TOP SIDE                   
+TP_+6V5    2875.0000  3625.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+TP_PWRGD   2475.0000  5845.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+U1         1791.3386  1200.7874  180        EXACT     (FREE)    L1_TOP SIDE                   
+U2         2500.0000  1175.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+U3         3525.0000  1400.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+U4         3525.0000  1400.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U5         3925.0000  805.0000   180        EXACT     (FREE)    L1_TOP SIDE                   
+U6         3075.0000  1275.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+U7         3915.0000  1360.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+U8         3950.0000  1435.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U9         1350.0000  4425.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+U10        3025.0000  5325.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+U11        2475.0000  1500.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+U12        4100.0000  225.0000   180        EXACT     (FREE)    L1_TOP SIDE                   
+U13        725.0000   4400.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U14        4100.0000  300.0000   000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U15        4100.0000  500.0000   180        EXACT     (FREE)    L1_TOP SIDE                   
+U16        3950.0000  1155.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U17        3910.0000  1640.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+U18        2975.0000  1475.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U19        3100.0000  1025.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+U20        3525.0000  1075.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+U21        3100.0000  1050.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U22        1500.0000  5000.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+U23        1272.0000  4100.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+U24        850.0000   4425.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+U25        1325.0000  4400.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U26        775.0000   4100.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+U27        1000.0000  5000.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+U28        2475.0000  4425.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+U29        1900.0000  4400.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U30        2475.0000  5000.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+U31        2425.0000  4100.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+U32        1925.0000  4425.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+U33        4850.0000  4300.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+U34        1800.0000  4100.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+U35        2050.0000  5000.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+U36        750.0000   725.0000   090        EXACT     (FREE)    L1_TOP SIDE                   
+U37        1300.0000  650.0000   270        EXACT     (FREE)    L1_TOP SIDE                   
+U38        675.0000   5025.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U39        700.0000   1200.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U40        1725.0000  300.0000   180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U41        2700.0000  675.0000   180        EXACT     (FREE)    L1_TOP SIDE                   
+U42        2325.0000  650.0000   090        EXACT     (FREE)    L1_TOP SIDE                   
+U43        1250.0000  5025.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U44        1000.0000  2300.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U45        1325.0000  3200.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U46        1275.0000  1900.0000  270        EXACT     (FREE)    L1_TOP SIDE                   
+U47        975.0000   1900.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U48        1500.0000  1900.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+U49        1500.0000  2325.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U50        825.0000   3200.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U51        1500.0000  2775.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U52        3267.6208  4773.1117  000        EXACT     (FREE)    L1_TOP SIDE                   
+U53        675.0000   2875.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U54        1825.0000  2325.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+U55        1825.0000  1900.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U56        1725.0000  1900.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+U57        2150.0000  3200.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U58        1650.0000  3200.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U59        2125.0000  1900.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U60        2175.0000  2300.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U61        2225.0000  2775.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U62        1150.0000  2850.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U63        1825.0000  3225.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+U64        3225.0000  2325.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+U65        3025.0000  1900.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U66        3075.0000  1900.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+U67        3800.0000  3200.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U68        3300.0000  3200.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U69        3550.0000  1900.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U70        3550.0000  2300.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U71        3625.0000  2750.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U72        1275.0000  3800.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U73        3450.0000  3250.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+U74        2525.0000  2325.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+U75        2450.0000  1900.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U76        2400.0000  1900.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+U77        2975.0000  3200.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U78        2475.0000  3200.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U79        2750.0000  1900.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U80        2875.0000  2325.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U81        2850.0000  2775.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U82        378.7011   3246.2989  270        EXACT     (FREE)    L1_TOP SIDE                   
+U83        2650.0000  3250.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+U84        4150.0000  3850.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+U85        4150.0000  3425.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+U86        4150.0000  2205.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+U87        580.0000   4955.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+U88        2950.0000  3850.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U89        1800.0000  3875.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U90        1775.0000  5030.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U91        4100.0000  575.0000   000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U92        3950.0000  875.0000   000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U93        3920.0000  1085.0000  180        EXACT     (FREE)    L1_TOP SIDE                   
+U94        3955.0000  1715.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U95        2300.0000  5025.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U96        2425.0000  4400.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U97        3308.7011  5688.7011  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U98        503.7011   3246.2989  270        EXACT     (FREE)    L1_TOP SIDE                   
+U99        3050.0000  4825.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U100       3050.0000  4625.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U101       4200.0000  5195.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U102       600.0000   1950.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U103       4140.0000  2740.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+U104       1275.0000  1900.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U105       1950.0000  1900.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+U106       1700.0000  2830.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U107       2475.0000  2850.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U108       3225.0000  2850.0000  270        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U109       2625.0000  1900.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+U110       3300.0000  1900.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+U111       1500.0000  1900.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U112       2175.0000  1900.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+U113       2850.0000  1900.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+U114       3275.0000  1900.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U115       775.0000   5300.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U116       1300.0000  5300.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U117       1775.0000  5300.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U118       2300.0000  5300.0000  180        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U119       1290.0000  5795.0000  090        EXACT     (FREE)    L8_BOTTOM_SIDE                
+U121       4140.0000  2880.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+Y1         1325.0000  1000.0000  090        EXACT     (FREE)    L1_TOP SIDE                   
+Y2         2275.0000  5275.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+Y3         1775.0000  5275.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+Y4         1950.0000  4750.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+Y5         2550.0000  4750.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+Y6         1390.0000  4745.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+Y7         800.0000   400.0000   270        EXACT     (FREE)    L1_TOP SIDE                   
+Y8         775.0000   5275.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+Y9         850.0000   4750.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+Y10        1275.0000  5275.0000  000        EXACT     (FREE)    L1_TOP SIDE                   
+Y11        700.0000   1575.0000  000        EXACT     (FREE)    L8_BOTTOM_SIDE                

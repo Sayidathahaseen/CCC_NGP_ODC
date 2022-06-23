@@ -1,0 +1,8 @@
+WED
+
+	Undo Commands
+	     1.	Move Time Bar
+			 ***  *** 
+	     2.	Insert Node or Bus
+
+

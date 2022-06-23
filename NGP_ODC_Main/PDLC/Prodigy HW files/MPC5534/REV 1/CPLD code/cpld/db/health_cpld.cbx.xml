@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="health_cpld">
+		<CBX_INST_ENTRY INSTANCE_NAME="|health_cpld|lpm_add_sub:Add0" CBX_FILE_NAME="add_sub_6nh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|health_cpld|lpm_add_sub:Add1" CBX_FILE_NAME="add_sub_6nh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|health_cpld|lpm_add_sub:Add2" CBX_FILE_NAME="add_sub_0nh.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

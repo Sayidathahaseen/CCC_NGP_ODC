@@ -1,0 +1,187 @@
+(ExpressProject ""
+  (ProjectVersion "19981106")
+  (ProjectType "PCB")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (File ".\ccc_ngp_pcc_rev-a.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (NoModify)
+    (ANNOTATE_Scope "0")
+    (ANNOTATE_Mode "1")
+    (ANNOTATE_Action "3")
+    (Annotate_Page_Order "0")
+    (ANNOTATE_Reset_References_to_1 "FALSE")
+    (ANNOTATE_No_Page_Number_Change "FALSE")
+    (ANNOTATE_Property_Combine "{Value}{Source Package}{POWER_GROUP}")
+    (ANNOTATE_IncludeNonPrimitive "FALSE")
+    (DRC_Scope "0")
+    (DRC_Action "0")
+    (DRC_Create_Warnings "FALSE")
+    (DRC_Check_Ports "FALSE")
+    (DRC_Check_Off-Page_Connectors "FALSE")
+    (DRC_Identical_References "TRUE")
+    (DRC_Type_Mismatch "TRUE")
+    (DRC_Report_Ports_and_Off-page_Connectors "FALSE")
+    (DRC_SDT_Compatibility "FALSE")
+    (DRC_Report_Off-grid_Objects "FALSE")
+    (DRC_Check_Unconnected_Nets "TRUE")
+    ([DRC0038] _Visible_unconnected_Power_Pins_are_connected_to_global_nets
+       "FALSE")
+    (DRC_Report_Netnames "FALSE")
+    (DRC_View_Output "FALSE")
+    (DRC_Report_File
+       "D:\VIJAY\SVN\NGP_ODC\PDLC\PRODIGY HW FILES\PCC\REV-A\SCHEMATICS\ORCAD\CCC_NGP_PCC_REV-A.DRC"))
+  (Folder "Outputs"
+    (File ".\ccc_ngp_pcc_rev-a.drc"
+      (Type "Report")))
+  (Folder "Referenced Projects")
+  (PartMRUSelector
+    (PORTRIGHT-R
+      (LibraryName "C:\ORCAD\ORCAD_10.3\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (PORTLEFT-L
+      (LibraryName "C:\ORCAD\ORCAD_10.3\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    ("TEST POINT"
+      (FullPartName "TEST POINT.Normal")
+      (LibraryName "C:\ORCAD\ORCAD_10.3\TOOLS\CAPTURE\LIBRARY\CONNECTOR.OLB")
+      (DeviceIndex "0"))
+    ("DIODE TS BI-DIR"
+      (FullPartName "DIODE TS BI-DIR.Normal")
+      (LibraryName "C:\ORCAD\ORCAD_10.3\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (PORTRIGHT-L
+      (LibraryName "C:\ORCAD\ORCAD_10.3\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (PORTLEFT-R
+      (LibraryName "C:\CADENCE\SPB_15.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (PORTBOTH-R
+      (LibraryName "C:\ORCAD\ORCAD_10.3\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    ("DIODE TVS"
+      (FullPartName "DIODE TVS.Normal")
+      (LibraryName "C:\ORCAD\ORCAD_10.3\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (THERMISTOR
+      (FullPartName "THERMISTOR.Normal")
+      (LibraryName "C:\ORCAD\ORCAD_10.3\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (CAP
+      (FullPartName "CAP.Normal")
+      (LibraryName "C:\ORCAD\ORCAD_10.3\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (MOSFET_EN_GDS
+      (FullPartName "MOSFET_EN_GDS.Normal")
+      (LibraryName "C:\ORCAD\ORCAD_10.3\TOOLS\CAPTURE\LIBRARY\TRANSISTOR.OLB")
+      (DeviceIndex "0"))
+    ("MOSFET N"
+      (FullPartName "MOSFET N.Normal")
+      (LibraryName "C:\ORCAD\ORCAD_10.3\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    ("CAP NP"
+      (FullPartName "CAP NP.Normal")
+      (LibraryName "C:\CADENCE\SPB_15.2\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (RESISTOR
+      (FullPartName "RESISTOR.Normal")
+      (LibraryName "C:\ORCAD\ORCAD_10.3\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    ("RESISTOR DIP 9 A-I"
+      (FullPartName "RESISTOR DIP 9 A-I.Normal")
+      (LibraryName "C:\ORCAD\ORCAD_10.3\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    ("RESISTOR SIP 2"
+      (FullPartName "RESISTOR SIP 2.Normal")
+      (LibraryName "C:\ORCAD\ORCAD_10.3\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    ("DIODE TAZ"
+      (FullPartName "DIODE TAZ.Normal")
+      (LibraryName "C:\ORCAD\ORCAD_10.3\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (VCC_ARROW
+      (LibraryName "C:\ORCAD\ORCAD_10.3\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0")))
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources" ".\ccc_ngp_pcc_rev-a.dsn")
+      (Path "Design Resources" ".\ccc_ngp_pcc_rev-a.dsn" "DC1804A-2")
+      (Path "Outputs")
+      (Select "Design Resources" ".\ccc_ngp_pcc_rev-a.dsn" "DC1804A-2"
+         "24V_F Hotswap,Supply Monitor"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -4 -23 202 402 -1 510"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -4 -23 110 1308 110 648")
+        (Scroll "0 0")
+        (Zoom "49")
+        (Occurrence "/"))
+      (Path
+         "D:\VIJAY\SVN\NGP_ODC\PDLC\PRODIGY HW FILES\PCC\REV-A\SCHEMATICS\ORCAD\CCC_NGP_PCC_REV-A.DSN")
+      (Schematic "DC1804A-2")
+      (Page "24V_F Hotswap,Supply Monitor"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -4 -23 198 1396 198 736")
+        (Scroll "0 0")
+        (Zoom "49")
+        (Occurrence "/"))
+      (Path
+         "D:\VIJAY\SVN\NGP_ODC\PDLC\PRODIGY HW FILES\PCC\REV-A\SCHEMATICS\ORCAD\CCC_NGP_PCC_REV-A.DSN")
+      (Schematic "DC1804A-2")
+      (Page "I/O Conn,I2C-I/O EXPANDER"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -4 -23 220 1418 220 758")
+        (Scroll "115 497")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "D:\VIJAY\SVN\NGP_ODC\PDLC\PRODIGY HW FILES\PCC\REV-A\SCHEMATICS\ORCAD\CCC_NGP_PCC_REV-A.DSN")
+      (Schematic "DC1804A-2")
+      (Page "DC-DC Converter1_LTC3890EUN"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -4 -23 242 1440 242 780")
+        (Scroll "0 0")
+        (Zoom "50")
+        (Occurrence "/"))
+      (Path
+         "D:\VIJAY\SVN\NGP_ODC\PDLC\PRODIGY HW FILES\PCC\REV-A\SCHEMATICS\ORCAD\CCC_NGP_PCC_REV-A.DSN")
+      (Schematic "DC1804A-2")
+      (Page "DC-DC Converter2_LTC3890EUN"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -4 -23 0 1198 0 538")
+        (Scroll "0 0")
+        (Zoom "49")
+        (Occurrence "/"))
+      (Path
+         "D:\VIJAY\SVN\NGP_ODC\PDLC\PRODIGY HW FILES\PCC\REV-A\SCHEMATICS\ORCAD\CCC_NGP_PCC_REV-A.DSN")
+      (Schematic "DC1804A-2")
+      (Page "EMI Filter,Hotswap"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -4 -23 22 1220 22 560")
+        (Scroll "0 0")
+        (Zoom "102")
+        (Occurrence "/"))
+      (Path
+         "D:\VIJAY\SVN\NGP_ODC\PDLC\PRODIGY HW FILES\PCC\REV-A\SCHEMATICS\ORCAD\CCC_NGP_PCC_REV-A.DSN")
+      (Schematic "DC1804A-2")
+      (Page "BLOCK DIAGRAM")))
+  (MPSSessionName "9012"))

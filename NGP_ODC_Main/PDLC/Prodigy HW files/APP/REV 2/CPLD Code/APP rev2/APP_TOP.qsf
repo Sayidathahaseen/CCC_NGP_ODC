@@ -1,0 +1,81 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2009 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II
+# Version 9.1 Build 222 10/21/2009 SJ Web Edition
+# Date created = 13:03:56  June 29, 2011
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		APP_TOP_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY MAX3000A
+set_global_assignment -name DEVICE "EPM3064ATI44-10"
+set_global_assignment -name TOP_LEVEL_ENTITY APP_TOP
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 9.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "13:03:56  JUNE 29, 2011"
+set_global_assignment -name LAST_QUARTUS_VERSION 9.1
+set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
+set_global_assignment -name DEVICE_FILTER_PACKAGE "ANY QFP"
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 44
+set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 10
+set_global_assignment -name VHDL_FILE APP_TOP.vhd
+set_global_assignment -name MAX7000_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_global_assignment -name MISC_FILE "c:/altera/91/quartus/APP/APP_TOP.dpf"
+set_global_assignment -name MISC_FILE "C:/altera/91/quartus/APP/APP_TOP.dpf"
+set_location_assignment PIN_43 -to CPU_HRESET_bar
+set_location_assignment PIN_44 -to CPU_SRESET_bar
+set_location_assignment PIN_3 -to CPU_HRESET_REQ_bar
+set_location_assignment PIN_2 -to CPU_TRST_bar
+set_location_assignment PIN_5 -to COP_HRESET_bar
+set_location_assignment PIN_6 -to COP_SRESET_bar
+set_location_assignment PIN_8 -to COP_TRST_bar
+set_location_assignment PIN_10 -to DDR3_RESET
+set_location_assignment PIN_13 -to SGMII_PHY_RESET_bar
+set_location_assignment PIN_14 -to ENET_PHY_RESET_bar
+set_location_assignment PIN_15 -to TSEC_PHY_RESET_bar
+set_location_assignment PIN_35 -to MUX_EN1_bar
+set_location_assignment PIN_34 -to MUX_EN2_bar
+set_location_assignment PIN_33 -to MUX_SEL1
+set_location_assignment PIN_31 -to MUX_SEL2
+set_location_assignment PIN_25 -to PGOOD_SYS
+set_location_assignment PIN_42 -to PGOOD_VDD_CPU
+set_location_assignment PIN_21 -to PWR_GOOD_DDR3
+set_location_assignment PIN_22 -to PWR_OFF_VDD_CPU
+set_location_assignment PIN_23 -to PWR_ON_GVDD
+set_location_assignment PIN_20 -to SD_1588_CLK_EN
+set_location_assignment PIN_1 -to TDI
+set_location_assignment PIN_26 -to TCK
+set_location_assignment PIN_32 -to TDO
+set_location_assignment PIN_7 -to TMS
+set_location_assignment PIN_39 -to CPLD_RESET_bar
+set_location_assignment PIN_37 -to CLK_IN_25MHz
+set_location_assignment PIN_27 -to BUF_EN_bar
+set_location_assignment PIN_18 -to RTS_EN_bar

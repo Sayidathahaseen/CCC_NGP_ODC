@@ -1,0 +1,10 @@
+
+IPC356 export report file.
+Export to file: C:\PADS Projects\Cam\default\17-600550-112_REVD6.ipc
+Report created on: 05/15/2014 17:23:15
+
+
+Warning: Component drill keepout containing point (0.0000, 4580.0000) found in design, not written to CC file.
+Warning: Component drill keepout containing point (2575.0000, 4580.0000) found in design, not written to CC file.
+Warning: Component drill keepout containing point (2575.0000, 95.0000) found in design, not written to CC file.
+Warning: Accordion keepout found in K9 symbol, not written to CC file.

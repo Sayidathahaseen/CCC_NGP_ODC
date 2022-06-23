@@ -1,0 +1,208 @@
+Archive Project report for IOP
+Thu Sep 15 12:04:27 2011
+Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Archive Project Summary
+  3. Archive Project Messages
+  4. Files Archived
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------+
+; Archive Project Summary                                        ;
++------------------------+---------------------------------------+
+; Archive Project Status ; Successful - Thu Sep 15 12:04:27 2011 ;
+; Revision Name          ; IOP                                   ;
+; Top-level Entity Name  ; IOP                                   ;
+; Family                 ; MAX II                                ;
++------------------------+---------------------------------------+
+
+
++--------------------------+
+; Archive Project Messages ;
++--------------------------+
+Info: File Set 'Source control' contains:
+    Info: Project source and settings files
+    Info: Automatically detected source files
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated archive 'E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/IOP_ANALOG.qar'
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated report 'IOP.archive.rpt'
+Info: Evaluation of Tcl script c:/altera/91/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus II Shell was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 117 megabytes
+    Info: Processing ended: Thu Sep 15 12:04:27 2011
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:05
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Files Archived                                                                                                  ;
++-----------------------------------------------------------------------------------------------------------------+
+; File Name                                                                                                       ;
++-----------------------------------------------------------------------------------------------------------------+
+; ADC_CONV.bsf                                                                                                    ;
+; ADC_CONV.cmp                                                                                                    ;
+; ADC_CONV.qip                                                                                                    ;
+; ADC_CONV.vhd                                                                                                    ;
+; AND_2.bsf                                                                                                       ;
+; AND_2.cmp                                                                                                       ;
+; AND_2.qip                                                                                                       ;
+; AND_2.vhd                                                                                                       ;
+; AND_3.bsf                                                                                                       ;
+; AND_3.cmp                                                                                                       ;
+; AND_3.qip                                                                                                       ;
+; AND_3.vhd                                                                                                       ;
+; AND_4.bsf                                                                                                       ;
+; AND_4.cmp                                                                                                       ;
+; AND_4.qip                                                                                                       ;
+; AND_4.vhd                                                                                                       ;
+; assignment_defaults.qdf                                                                                         ;
+; CNT3.bsf                                                                                                        ;
+; CNT3.cmp                                                                                                        ;
+; CNT3.qip                                                                                                        ;
+; CNT3.vhd                                                                                                        ;
+; CNT4.bsf                                                                                                        ;
+; CNT4.cmp                                                                                                        ;
+; CNT4.qip                                                                                                        ;
+; CNT4.vhd                                                                                                        ;
+; CONST.bsf                                                                                                       ;
+; CONST.cmp                                                                                                       ;
+; CONST.qip                                                                                                       ;
+; CONST.vhd                                                                                                       ;
+; CONST24.bsf                                                                                                     ;
+; CONST24.cmp                                                                                                     ;
+; CONST24.qip                                                                                                     ;
+; CONST24.vhd                                                                                                     ;
+; CONV_ST.bsf                                                                                                     ;
+; CONV_ST.cmp                                                                                                     ;
+; CONV_ST.qip                                                                                                     ;
+; CONV_ST.vhd                                                                                                     ;
+; counter8.bsf                                                                                                    ;
+; counter8.cmp                                                                                                    ;
+; counter8.qip                                                                                                    ;
+; counter8.vhd                                                                                                    ;
+; COUNTER_25.bsf                                                                                                  ;
+; COUNTER_25.cmp                                                                                                  ;
+; COUNTER_25.qip                                                                                                  ;
+; COUNTER_25.vhd                                                                                                  ;
+; DELAY_500ns.bsf                                                                                                 ;
+; DELAY_500ns.cmp                                                                                                 ;
+; DELAY_500ns.qip                                                                                                 ;
+; DELAY_500ns.vhd                                                                                                 ;
+; DFF.bsf                                                                                                         ;
+; DFF.cmp                                                                                                         ;
+; DFF.qip                                                                                                         ;
+; DFF.vhd                                                                                                         ;
+; DFF_1.bsf                                                                                                       ;
+; DFF_1.cmp                                                                                                       ;
+; DFF_1.qip                                                                                                       ;
+; DFF_1.vhd                                                                                                       ;
+; DFF_16.bsf                                                                                                      ;
+; DFF_16.cmp                                                                                                      ;
+; DFF_16.qip                                                                                                      ;
+; DFF_16.vhd                                                                                                      ;
+; E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/IOP_TEST LED_restored/IOP_ADC_TEST_restored/IOP.dpf ;
+; FF.bsf                                                                                                          ;
+; FF.cmp                                                                                                          ;
+; FF.qip                                                                                                          ;
+; FF.vhd                                                                                                          ;
+; FF_D.bsf                                                                                                        ;
+; FF_D.cmp                                                                                                        ;
+; FF_D.qip                                                                                                        ;
+; FF_D.vhd                                                                                                        ;
+; IOP.bdf                                                                                                         ;
+; IOP.dpf                                                                                                         ;
+; IOP.pin                                                                                                         ;
+; IOP.qpf                                                                                                         ;
+; IOP.qsf                                                                                                         ;
+; lLED_FF.bsf                                                                                                     ;
+; lLED_FF.cmp                                                                                                     ;
+; lLED_FF.qip                                                                                                     ;
+; lLED_FF.vhd                                                                                                     ;
+; lpm_inv0.bsf                                                                                                    ;
+; lpm_inv0.cmp                                                                                                    ;
+; lpm_inv0.qip                                                                                                    ;
+; lpm_inv0.vhd                                                                                                    ;
+; m2.bsf                                                                                                          ;
+; m2.cmp                                                                                                          ;
+; m2.qip                                                                                                          ;
+; m2.tdf                                                                                                          ;
+; MEM_1.bsf                                                                                                       ;
+; MEM_1.cmp                                                                                                       ;
+; MEM_1.qip                                                                                                       ;
+; MEM_1.vhd                                                                                                       ;
+; NAND_2.bsf                                                                                                      ;
+; NAND_2.cmp                                                                                                      ;
+; NAND_2.qip                                                                                                      ;
+; NAND_2.vhd                                                                                                      ;
+; NONIN.bsf                                                                                                       ;
+; NONIN.cmp                                                                                                       ;
+; NONIN.qip                                                                                                       ;
+; NONIN.vhd                                                                                                       ;
+; NOR_4.bsf                                                                                                       ;
+; NOR_4.cmp                                                                                                       ;
+; NOR_4.qip                                                                                                       ;
+; NOR_4.vhd                                                                                                       ;
+; OR4.bsf                                                                                                         ;
+; OR4.cmp                                                                                                         ;
+; OR4.qip                                                                                                         ;
+; OR4.vhd                                                                                                         ;
+; OR_2.bsf                                                                                                        ;
+; OR_2.cmp                                                                                                        ;
+; OR_2.qip                                                                                                        ;
+; OR_2.vhd                                                                                                        ;
+; OR_4.bsf                                                                                                        ;
+; OR_4.cmp                                                                                                        ;
+; OR_4.qip                                                                                                        ;
+; OR_4.vhd                                                                                                        ;
+; oscillator.bsf                                                                                                  ;
+; oscillator.cmp                                                                                                  ;
+; oscillator.qip                                                                                                  ;
+; oscillator.vhd                                                                                                  ;
+; SPI.bsf                                                                                                         ;
+; SPI.cmp                                                                                                         ;
+; SPI.qip                                                                                                         ;
+; SPI.vhd                                                                                                         ;
+; SPI_DAC.bsf                                                                                                     ;
+; SPI_DAC.cmp                                                                                                     ;
+; SPI_DAC.qip                                                                                                     ;
+; SPI_DAC.vhd                                                                                                     ;
+; T_FF.bsf                                                                                                        ;
+; T_FF.cmp                                                                                                        ;
+; T_FF.qip                                                                                                        ;
+; T_FF.vhd                                                                                                        ;
+; VHI.vhd                                                                                                         ;
+; VLO.bsf                                                                                                         ;
+; VLO.cmp                                                                                                         ;
+; VLO.qip                                                                                                         ;
+; VLO.vhd                                                                                                         ;
++-----------------------------------------------------------------------------------------------------------------+
+
+

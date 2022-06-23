@@ -1,0 +1,114 @@
+12-Nov-2014
+
+D27,D29,D39,D49 attributes updated
+
+
+Layout:
+
+Ground plane adjustment for C318,C319
+Drill tolerance for J1,J6 changed t +/- 2
+
+
+11-Nov-2014
+
+R325,R326 and Q2 made DNI
+Renamed C349 to C348
+Swap Ref Des:  R335<>R549 ; R336<>R550 ;
+Q2 P/N reverted back as in RevD but with new decal.
+U66.20 connected to APP_LATCH_RESET and R481 deleted
+
+
+
+
+
+06-Nov-2014
+
+Q2 footprint change
+FB18,FB21 P/N changed
+C300 P/N changed
+	
+
+
+
+
+
+05-Nov-2014
+
+Schematics
+
+R335 & R336 changed to 4.75K/0603
+R337 changed to 1K/0603
+CCC P/N added
+D[50:53] P/N changed
+
+Layout
+
+"Rev E” top silkscreen added
+3.3V_CPLD,5V (on z9),6.5V(on z5) plane shape slightly modified
+Q[17:19] footprint modified
+
+
+
+
+04-Nov-2014
+
+
+R546 and R551 changed to 0603
+D113,D114,R547,R548 deleted as in IBS
+D63,D115 P/N used as in IBS
+CCC P/N added
+
+
+
+
+30-Oct-2014
+
+D[50:53] added.
+
+
+
+28-Oct-2014
+
+C302,C305 deleted
+Added loadshare additional circuit
+added D39,D49,D113,D114,R547
+
+
+
+
+17-Oct-2014
+
+U53 , C373 removed
+CCC P/N corrected for C278
+
+10-oct-2014
+Schottky diode and cap added for Vbat
+U42 replaced
+Green LED changed
+U46 footprint modified in layout
+
+
+
+9-Oct-2014
+Changed C278 P/N from 31-006750-332 to 31-006750-333
+Changed C325 P/N from 31-006525-475 to 31-006516-475
+L6,L9,L10 p/n changed
+
+
+
+8-Oct-2014
+R340,R341 changed to 15K
+R171,R172,R325,R326,R164,R167 changed to 3.32K
+Socket(U7) P/N changed
+FB10 replaced by R480(0E)
+
+
+
+RevE Changes:
+
+U45,C303,C315 replaced
+U6.1 net change
+D45,D46,D47 added
+D44,D39,R480,R481 removed
+R340,R341 P/N change
+

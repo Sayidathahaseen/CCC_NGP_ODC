@@ -1,0 +1,360 @@
+PowerPlay Power Analyzer report for IOP_Analog_Proto
+Thu Jan 05 11:18:39 2012
+Quartus II Version 11.0 Build 208 07/03/2011 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. PowerPlay Power Analyzer Summary
+  3. PowerPlay Power Analyzer Settings
+  4. Operating Conditions Used
+  5. Thermal Power Dissipation by Block
+  6. Thermal Power Dissipation by Block Type
+  7. Thermal Power Dissipation by Hierarchy
+  8. Core Dynamic Thermal Power Dissipation by Clock Domain
+  9. Current Drawn from Voltage Supplies Summary
+ 10. VCCIO Supply Current Drawn by I/O Bank
+ 11. VCCIO Supply Current Drawn by Voltage
+ 12. Confidence Metric Details
+ 13. Signal Activities
+ 14. PowerPlay Power Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2011 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------------------+
+; PowerPlay Power Analyzer Summary                                                          ;
++----------------------------------------+--------------------------------------------------+
+; PowerPlay Power Analyzer Status        ; Successful - Thu Jan 05 11:18:39 2012            ;
+; Quartus II Version                     ; 11.0 Build 208 07/03/2011 SP 1 SJ Web Edition    ;
+; Revision Name                          ; IOP_Analog_Proto                                 ;
+; Top-level Entity Name                  ; IOP_Analog_Proto                                 ;
+; Family                                 ; MAX II                                           ;
+; Device                                 ; EPM2210F256I5                                    ;
+; Power Models                           ; Final                                            ;
+; Total Thermal Power Dissipation        ; 48.99 mW                                         ;
+; Core Dynamic Thermal Power Dissipation ; 1.96 mW                                          ;
+; Core Static Thermal Power Dissipation  ; 39.74 mW                                         ;
+; I/O Thermal Power Dissipation          ; 7.30 mW                                          ;
+; Power Estimation Confidence            ; Low: user provided insufficient toggle rate data ;
++----------------------------------------+--------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; PowerPlay Power Analyzer Settings                                                                                        ;
++----------------------------------------------------------------------------+-----------------------------+---------------+
+; Option                                                                     ; Setting                     ; Default Value ;
++----------------------------------------------------------------------------+-----------------------------+---------------+
+; Use smart compilation                                                      ; Off                         ; Off           ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                          ; On            ;
+; Enable compact report table                                                ; Off                         ; Off           ;
+; Default Power Toggle Rate                                                  ; 100000.0transitions/s       ; 12.5%         ;
+; Default Power Input I/O Toggle Rate                                        ; 100000.0transitions/s       ; 12.5%         ;
+; Use vectorless estimation                                                  ; Off                         ; On            ;
+; External Supply Voltage Applied to Voltage Regulator                       ; 3.3V                        ;               ;
+; Ambient Temperature                                                        ; 60                          ; 25            ;
+; Preset Cooling Solution                                                    ; No Heat Sink With Still Air ;               ;
+; Use Input Files                                                            ; Off                         ; Off           ;
+; Filter Glitches in VCD File Reader                                         ; On                          ; On            ;
+; Power Analyzer Report Signal Activity                                      ; Off                         ; Off           ;
+; Power Analyzer Report Power Dissipation                                    ; Off                         ; Off           ;
+; Device Power Characteristics                                               ; TYPICAL                     ; TYPICAL       ;
+; Automatically Compute Junction Temperature                                 ; On                          ; On            ;
+; Specified Junction Temperature                                             ; 25                          ; 25            ;
+; Use Custom Cooling Solution                                                ; Off                         ; Off           ;
++----------------------------------------------------------------------------+-----------------------------+---------------+
+
+
++----------------------------------------------------------------------+
+; Operating Conditions Used                                            ;
++-----------------------------------------+----------------------------+
+; Setting                                 ; Value                      ;
++-----------------------------------------+----------------------------+
+; Device power characteristics            ; Typical                    ;
+;                                         ;                            ;
+; Voltages                                ;                            ;
+;     VCCINT                              ; 3.30 V                     ;
+;     3.3-V LVTTL I/O Standard            ; 3.3 V                      ;
+;                                         ;                            ;
+; Auto computed junction temperature      ; 61.5 degrees Celsius       ;
+;     Ambient temperature                 ; 60.0 degrees Celsius       ;
+;     Junction-to-Case thermal resistance ; 8.70 degrees Celsius/Watt  ;
+;     Case-to-Ambient thermal resistance  ; 21.50 degrees Celsius/Watt ;
++-----------------------------------------+----------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Thermal Power Dissipation by Block                                                                                                           ;
++------------+------------+---------------------+-----------------------------+--------------------------------+-------------------------------+
+; Block Name ; Block Type ; Total Thermal Power ; Block Thermal Dynamic Power ; Block Thermal Static Power (1) ; Routing Thermal Dynamic Power ;
++------------+------------+---------------------+-----------------------------+--------------------------------+-------------------------------+
+(1) The "Thermal Power Dissipation by Block" Table has been hidden. To show this table, please select the "Write power dissipation by block to report file" option under "PowerPlay Power Analyzer Settings".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Thermal Power Dissipation by Block Type                                                                                                                                                                          ;
++-------------------+-----------------------------------+-----------------------------+--------------------------------+-------------------------------+-----------------------------------------------------------+
+; Block Type        ; Total Thermal Power by Block Type ; Block Thermal Dynamic Power ; Block Thermal Static Power (1) ; Routing Thermal Dynamic Power ; Block Average Toggle Rate (millions of transitions / sec) ;
++-------------------+-----------------------------------+-----------------------------+--------------------------------+-------------------------------+-----------------------------------------------------------+
+; Logic cell        ; 1.06 mW                           ; 0.49 mW                     ; --                             ; 0.57 mW                       ;    0.100                                                  ;
+; I/O               ; 0.82 mW                           ; 0.62 mW                     ; 0.08 mW                        ; 0.12 mW                       ;    0.100                                                  ;
+; Voltage Regulator ; 16.25 mW                          ; 0.77 mW                     ; 15.48 mW                       ; --                            ; --                                                        ;
++-------------------+-----------------------------------+-----------------------------+--------------------------------+-------------------------------+-----------------------------------------------------------+
+(1) The "Block Thermal Static Power" for all block types except Pins and the Voltage Regulator, if one exists, is part of the "Core Static Thermal Power Dissipation" value found on the PowerPlay Power Analyzer-->Summary report panel. The "Core Static Thermal Power Dissipation" also contains the thermal static power dissipated by the routing.
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Thermal Power Dissipation by Hierarchy                                                                                                                                                                                                                                                                                                                  ;
++----------------------------------------------------------+--------------------------------------+---------------------------------+-----------------------------------+-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------+
+; Compilation Hierarchy Node                               ; Total Thermal Power by Hierarchy (1) ; Block Thermal Dynamic Power (1) ; Block Thermal Static Power (1)(2) ; Routing Thermal Dynamic Power (1) ; Full Hierarchy Name                                                                                                                         ;
++----------------------------------------------------------+--------------------------------------+---------------------------------+-----------------------------------+-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------+
+; |IOP_Analog_Proto                                        ; 18.13 mW (17.75 mW)                  ; 1.88 mW (1.68 mW)               ; 15.56 mW (15.56 mW)               ; 0.69 mW (0.51 mW)                 ; |IOP_Analog_Proto                                                                                                                           ;
+;     |AI_FIFO_S:AI_FIFO_S_inst                            ; 0.38 mW (0.00 mW)                    ; 0.20 mW (0.00 mW)               ; --                                ; 0.18 mW (0.00 mW)                 ; |IOP_Analog_Proto|AI_FIFO_S:AI_FIFO_S_inst                                                                                                  ;
+;         |scfifo:scfifo_component                         ; 0.38 mW (0.00 mW)                    ; 0.20 mW (0.00 mW)               ; --                                ; 0.18 mW (0.00 mW)                 ; |IOP_Analog_Proto|AI_FIFO_S:AI_FIFO_S_inst|scfifo:scfifo_component                                                                          ;
+;             |a_fffifo:subfifo                            ; 0.38 mW (0.02 mW)                    ; 0.20 mW (0.00 mW)               ; --                                ; 0.18 mW (0.02 mW)                 ; |IOP_Analog_Proto|AI_FIFO_S:AI_FIFO_S_inst|scfifo:scfifo_component|a_fffifo:subfifo                                                         ;
+;                 |a_fefifo:fifo_state                     ; 0.01 mW (0.01 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |IOP_Analog_Proto|AI_FIFO_S:AI_FIFO_S_inst|scfifo:scfifo_component|a_fffifo:subfifo|a_fefifo:fifo_state                                     ;
+;                     |lpm_compare:is_almost_empty_compare ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |IOP_Analog_Proto|AI_FIFO_S:AI_FIFO_S_inst|scfifo:scfifo_component|a_fffifo:subfifo|a_fefifo:fifo_state|lpm_compare:is_almost_empty_compare ;
+;                     |lpm_compare:is_almost_full_compare  ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |IOP_Analog_Proto|AI_FIFO_S:AI_FIFO_S_inst|scfifo:scfifo_component|a_fffifo:subfifo|a_fefifo:fifo_state|lpm_compare:is_almost_full_compare  ;
+;                 |lpm_ff:last_data_node[0]                ; 0.01 mW (0.01 mW)                    ; 0.01 mW (0.01 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |IOP_Analog_Proto|AI_FIFO_S:AI_FIFO_S_inst|scfifo:scfifo_component|a_fffifo:subfifo|lpm_ff:last_data_node[0]                                ;
+;                 |lpm_ff:last_data_node[1]                ; 0.01 mW (0.01 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.01 mW (0.01 mW)                 ; |IOP_Analog_Proto|AI_FIFO_S:AI_FIFO_S_inst|scfifo:scfifo_component|a_fffifo:subfifo|lpm_ff:last_data_node[1]                                ;
+;                 |lpm_ff:last_data_node[2]                ; 0.01 mW (0.01 mW)                    ; 0.01 mW (0.01 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |IOP_Analog_Proto|AI_FIFO_S:AI_FIFO_S_inst|scfifo:scfifo_component|a_fffifo:subfifo|lpm_ff:last_data_node[2]                                ;
+;                 |lpm_ff:last_data_node[3]                ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |IOP_Analog_Proto|AI_FIFO_S:AI_FIFO_S_inst|scfifo:scfifo_component|a_fffifo:subfifo|lpm_ff:last_data_node[3]                                ;
+;                 |lpm_ff:last_data_node[4]                ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |IOP_Analog_Proto|AI_FIFO_S:AI_FIFO_S_inst|scfifo:scfifo_component|a_fffifo:subfifo|lpm_ff:last_data_node[4]                                ;
+;                 |lpm_ff:last_data_node[5]                ; 0.01 mW (0.01 mW)                    ; 0.01 mW (0.01 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |IOP_Analog_Proto|AI_FIFO_S:AI_FIFO_S_inst|scfifo:scfifo_component|a_fffifo:subfifo|lpm_ff:last_data_node[5]                                ;
+;                 |lpm_ff:last_data_node[6]                ; 0.01 mW (0.01 mW)                    ; 0.01 mW (0.01 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |IOP_Analog_Proto|AI_FIFO_S:AI_FIFO_S_inst|scfifo:scfifo_component|a_fffifo:subfifo|lpm_ff:last_data_node[6]                                ;
+;                 |lpm_ff:last_data_node[7]                ; 0.01 mW (0.01 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |IOP_Analog_Proto|AI_FIFO_S:AI_FIFO_S_inst|scfifo:scfifo_component|a_fffifo:subfifo|lpm_ff:last_data_node[7]                                ;
+;                 |lpm_ff:last_data_node[8]                ; 0.01 mW (0.01 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |IOP_Analog_Proto|AI_FIFO_S:AI_FIFO_S_inst|scfifo:scfifo_component|a_fffifo:subfifo|lpm_ff:last_data_node[8]                                ;
+;                 |lpm_ff:last_data_node[9]                ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |IOP_Analog_Proto|AI_FIFO_S:AI_FIFO_S_inst|scfifo:scfifo_component|a_fffifo:subfifo|lpm_ff:last_data_node[9]                                ;
+;                 |lpm_ff:last_data_node[10]               ; 0.01 mW (0.01 mW)                    ; 0.01 mW (0.01 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |IOP_Analog_Proto|AI_FIFO_S:AI_FIFO_S_inst|scfifo:scfifo_component|a_fffifo:subfifo|lpm_ff:last_data_node[10]                               ;
+;                 |lpm_ff:last_data_node[11]               ; 0.01 mW (0.01 mW)                    ; 0.01 mW (0.01 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |IOP_Analog_Proto|AI_FIFO_S:AI_FIFO_S_inst|scfifo:scfifo_component|a_fffifo:subfifo|lpm_ff:last_data_node[11]                               ;
+;                 |lpm_ff:last_data_node[12]               ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |IOP_Analog_Proto|AI_FIFO_S:AI_FIFO_S_inst|scfifo:scfifo_component|a_fffifo:subfifo|lpm_ff:last_data_node[12]                               ;
+;                 |lpm_ff:last_data_node[13]               ; 0.01 mW (0.01 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |IOP_Analog_Proto|AI_FIFO_S:AI_FIFO_S_inst|scfifo:scfifo_component|a_fffifo:subfifo|lpm_ff:last_data_node[13]                               ;
+;                 |lpm_ff:last_data_node[14]               ; 0.01 mW (0.01 mW)                    ; 0.01 mW (0.01 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |IOP_Analog_Proto|AI_FIFO_S:AI_FIFO_S_inst|scfifo:scfifo_component|a_fffifo:subfifo|lpm_ff:last_data_node[14]                               ;
+;                 |lpm_ff:last_data_node[15]               ; 0.01 mW (0.01 mW)                    ; 0.01 mW (0.01 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |IOP_Analog_Proto|AI_FIFO_S:AI_FIFO_S_inst|scfifo:scfifo_component|a_fffifo:subfifo|lpm_ff:last_data_node[15]                               ;
+;                 |lpm_ff:last_data_node[16]               ; 0.01 mW (0.01 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |IOP_Analog_Proto|AI_FIFO_S:AI_FIFO_S_inst|scfifo:scfifo_component|a_fffifo:subfifo|lpm_ff:last_data_node[16]                               ;
+;                 |lpm_ff:last_data_node[17]               ; 0.01 mW (0.01 mW)                    ; 0.01 mW (0.01 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |IOP_Analog_Proto|AI_FIFO_S:AI_FIFO_S_inst|scfifo:scfifo_component|a_fffifo:subfifo|lpm_ff:last_data_node[17]                               ;
+;                 |lpm_ff:last_data_node[18]               ; 0.01 mW (0.01 mW)                    ; 0.01 mW (0.01 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |IOP_Analog_Proto|AI_FIFO_S:AI_FIFO_S_inst|scfifo:scfifo_component|a_fffifo:subfifo|lpm_ff:last_data_node[18]                               ;
+;                 |lpm_ff:last_data_node[19]               ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |IOP_Analog_Proto|AI_FIFO_S:AI_FIFO_S_inst|scfifo:scfifo_component|a_fffifo:subfifo|lpm_ff:last_data_node[19]                               ;
+;                 |lpm_ff:last_data_node[20]               ; 0.01 mW (0.01 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |IOP_Analog_Proto|AI_FIFO_S:AI_FIFO_S_inst|scfifo:scfifo_component|a_fffifo:subfifo|lpm_ff:last_data_node[20]                               ;
+;                 |lpm_ff:last_data_node[21]               ; 0.01 mW (0.01 mW)                    ; 0.01 mW (0.01 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |IOP_Analog_Proto|AI_FIFO_S:AI_FIFO_S_inst|scfifo:scfifo_component|a_fffifo:subfifo|lpm_ff:last_data_node[21]                               ;
+;                 |lpm_ff:last_data_node[22]               ; 0.01 mW (0.01 mW)                    ; 0.01 mW (0.01 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |IOP_Analog_Proto|AI_FIFO_S:AI_FIFO_S_inst|scfifo:scfifo_component|a_fffifo:subfifo|lpm_ff:last_data_node[22]                               ;
+;                 |lpm_ff:last_data_node[23]               ; 0.01 mW (0.01 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |IOP_Analog_Proto|AI_FIFO_S:AI_FIFO_S_inst|scfifo:scfifo_component|a_fffifo:subfifo|lpm_ff:last_data_node[23]                               ;
+;                 |lpm_ff:last_data_node[24]               ; 0.01 mW (0.01 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |IOP_Analog_Proto|AI_FIFO_S:AI_FIFO_S_inst|scfifo:scfifo_component|a_fffifo:subfifo|lpm_ff:last_data_node[24]                               ;
+;                 |lpm_ff:last_data_node[25]               ; 0.01 mW (0.01 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |IOP_Analog_Proto|AI_FIFO_S:AI_FIFO_S_inst|scfifo:scfifo_component|a_fffifo:subfifo|lpm_ff:last_data_node[25]                               ;
+;                 |lpm_ff:last_data_node[26]               ; 0.01 mW (0.01 mW)                    ; 0.01 mW (0.01 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |IOP_Analog_Proto|AI_FIFO_S:AI_FIFO_S_inst|scfifo:scfifo_component|a_fffifo:subfifo|lpm_ff:last_data_node[26]                               ;
+;                 |lpm_ff:last_data_node[27]               ; 0.01 mW (0.01 mW)                    ; 0.01 mW (0.01 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |IOP_Analog_Proto|AI_FIFO_S:AI_FIFO_S_inst|scfifo:scfifo_component|a_fffifo:subfifo|lpm_ff:last_data_node[27]                               ;
+;                 |lpm_ff:last_data_node[28]               ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |IOP_Analog_Proto|AI_FIFO_S:AI_FIFO_S_inst|scfifo:scfifo_component|a_fffifo:subfifo|lpm_ff:last_data_node[28]                               ;
+;                 |lpm_ff:last_data_node[29]               ; 0.01 mW (0.01 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |IOP_Analog_Proto|AI_FIFO_S:AI_FIFO_S_inst|scfifo:scfifo_component|a_fffifo:subfifo|lpm_ff:last_data_node[29]                               ;
+;                 |lpm_ff:last_data_node[30]               ; 0.01 mW (0.01 mW)                    ; 0.01 mW (0.01 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |IOP_Analog_Proto|AI_FIFO_S:AI_FIFO_S_inst|scfifo:scfifo_component|a_fffifo:subfifo|lpm_ff:last_data_node[30]                               ;
+;                 |lpm_ff:last_data_node[31]               ; 0.01 mW (0.01 mW)                    ; 0.01 mW (0.01 mW)               ; --                                ; 0.01 mW (0.01 mW)                 ; |IOP_Analog_Proto|AI_FIFO_S:AI_FIFO_S_inst|scfifo:scfifo_component|a_fffifo:subfifo|lpm_ff:last_data_node[31]                               ;
+;                 |lpm_mux:last_row_data_out_mux           ; 0.04 mW (0.00 mW)                    ; 0.03 mW (0.00 mW)               ; --                                ; 0.02 mW (0.00 mW)                 ; |IOP_Analog_Proto|AI_FIFO_S:AI_FIFO_S_inst|scfifo:scfifo_component|a_fffifo:subfifo|lpm_mux:last_row_data_out_mux                           ;
+;                     |mux_rcc:auto_generated              ; 0.04 mW (0.04 mW)                    ; 0.03 mW (0.03 mW)               ; --                                ; 0.02 mW (0.02 mW)                 ; |IOP_Analog_Proto|AI_FIFO_S:AI_FIFO_S_inst|scfifo:scfifo_component|a_fffifo:subfifo|lpm_mux:last_row_data_out_mux|mux_rcc:auto_generated    ;
+;                 |lpm_ff:output_buffer                    ; 0.01 mW (0.01 mW)                    ; 0.01 mW (0.01 mW)               ; --                                ; 0.01 mW (0.01 mW)                 ; |IOP_Analog_Proto|AI_FIFO_S:AI_FIFO_S_inst|scfifo:scfifo_component|a_fffifo:subfifo|lpm_ff:output_buffer                                    ;
+;                 |lpm_counter:rd_ptr                      ; 0.05 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.05 mW (0.00 mW)                 ; |IOP_Analog_Proto|AI_FIFO_S:AI_FIFO_S_inst|scfifo:scfifo_component|a_fffifo:subfifo|lpm_counter:rd_ptr                                      ;
+;                     |cntr_bpe:auto_generated             ; 0.05 mW (0.05 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.05 mW (0.05 mW)                 ; |IOP_Analog_Proto|AI_FIFO_S:AI_FIFO_S_inst|scfifo:scfifo_component|a_fffifo:subfifo|lpm_counter:rd_ptr|cntr_bpe:auto_generated              ;
++----------------------------------------------------------+--------------------------------------+---------------------------------+-----------------------------------+-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------+
+(1) Value in parentheses is the power consumed at that level of hierarchy. Value not in parentheses is the power consumed at that level of hierarchy plus the power consumed by all levels of hierarchy below it.
+
+(2) The "Block Thermal Static Power" for all levels of hierarchy except the top-level hierarchy is part of the "Core Static Thermal Power Dissipation" value found on the PowerPlay Power Analyzer-->Summary report panel. The "Core Static Thermal Power Dissipation" also contains the thermal static power dissipated by the routing.
+
+
++--------------------------------------------------------------------+
+; Core Dynamic Thermal Power Dissipation by Clock Domain             ;
++-----------------+-----------------------+--------------------------+
+; Clock Domain    ; Clock Frequency (MHz) ; Total Core Dynamic Power ;
++-----------------+-----------------------+--------------------------+
+; No clock domain ; 0.00                  ; 1.18                     ;
++-----------------+-----------------------+--------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Current Drawn from Voltage Supplies Summary                                                                                        ;
++----------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+; Voltage Supply ; Total Current Drawn (1) ; Dynamic Current Drawn (1) ; Static Current Drawn (1) ; Minimum Power Supply Current (2) ;
++----------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+; VCCIO          ; 2.18 mA                 ; 0.17 mA                   ; 2.01 mA                  ; 2.18 mA                          ;
+; VCCINT         ; 12.66 mA                ; 0.60 mA                   ; 12.05 mA                 ; 12.66 mA                         ;
++----------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+(1) Currents reported in columns "Total Current Drawn", "Dynamic Current Drawn", and "Static Current Drawn" are sufficient for user operation of the device.  
+(2) Currents reported in column "Minimum Power Supply Current" are sufficient for power-up, configuration, and user operation of the device.
+
+
++-----------------------------------------------------------------------------------------------+
+; VCCIO Supply Current Drawn by I/O Bank                                                        ;
++----------+---------------+---------------------+-----------------------+----------------------+
+; I/O Bank ; VCCIO Voltage ; Total Current Drawn ; Dynamic Current Drawn ; Static Current Drawn ;
++----------+---------------+---------------------+-----------------------+----------------------+
+; 1        ; 3.3V          ; 0.55 mA             ; 0.05 mA               ; 0.50 mA              ;
+; 2        ; 3.3V          ; 0.54 mA             ; 0.03 mA               ; 0.50 mA              ;
+; 3        ; 3.3V          ; 0.53 mA             ; 0.02 mA               ; 0.50 mA              ;
+; 4        ; 3.3V          ; 0.57 mA             ; 0.06 mA               ; 0.50 mA              ;
++----------+---------------+---------------------+-----------------------+----------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; VCCIO Supply Current Drawn by Voltage                                                                                             ;
++---------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+; VCCIO Voltage ; Total Current Drawn (1) ; Dynamic Current Drawn (1) ; Static Current Drawn (1) ; Minimum Power Supply Current (2) ;
++---------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+; 3.3V          ; 2.18 mA                 ; 0.17 mA                   ; 2.01 mA                  ; 2.18 mA                          ;
++---------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+(1) Currents reported in columns "Total Current Drawn", "Dynamic Current Drawn", and "Static Current Drawn" are sufficient for user operation of the device.  
+(2) Currents reported in column "Minimum Power Supply Current" are sufficient for power-up, configuration, and user operation of the device.
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Confidence Metric Details                                                                                                                            ;
++----------------------------------------------------------------------------------------+---------------+--------------+--------------+---------------+
+; Data Source                                                                            ; Total         ; Pin          ; Registered   ; Combinational ;
++----------------------------------------------------------------------------------------+---------------+--------------+--------------+---------------+
+; Simulation (from file)                                                                 ;               ;              ;              ;               ;
+;     -- Number of signals with Toggle Rate from Simulation                              ; 0 (0.0%)      ; 0 (0.0%)     ; 0 (0.0%)     ; 0 (0.0%)      ;
+;     -- Number of signals with Static Probability from Simulation                       ; 0 (0.0%)      ; 0 (0.0%)     ; 0 (0.0%)     ; 0 (0.0%)      ;
+;                                                                                        ;               ;              ;              ;               ;
+; Node, entity or clock assignment                                                       ;               ;              ;              ;               ;
+;     -- Number of signals with Toggle Rate from Node, entity or clock assignment        ; 0 (0.0%)      ; 0 (0.0%)     ; 0 (0.0%)     ; 0 (0.0%)      ;
+;     -- Number of signals with Static Probability from Node, entity or clock assignment ; 0 (0.0%)      ; 0 (0.0%)     ; 0 (0.0%)     ; 0 (0.0%)      ;
+;                                                                                        ;               ;              ;              ;               ;
+; Vectorless estimation                                                                  ;               ;              ;              ;               ;
+;     -- Number of signals with Toggle Rate from Vectorless estimation                   ; 0 (0.0%)      ; 0 (0.0%)     ; 0 (0.0%)     ; 0 (0.0%)      ;
+;     -- Number of signals with Static Probability from Vectorless estimation            ; 0 (0.0%)      ; 0 (0.0%)     ; 0 (0.0%)     ; 0 (0.0%)      ;
+;                                                                                        ;               ;              ;              ;               ;
+; Default assignment                                                                     ;               ;              ;              ;               ;
+;     -- Number of signals with Toggle Rate from Default assignment                      ; 2115 (100.0%) ; 141 (100.0%) ; 836 (100.0%) ; 1138 (100.0%) ;
+;     -- Number of signals with Static Probability from Default assignment               ; 2115 (100.0%) ; 141 (100.0%) ; 836 (100.0%) ; 1138 (100.0%) ;
+;                                                                                        ;               ;              ;              ;               ;
+; Assumed 0                                                                              ;               ;              ;              ;               ;
+;     -- Number of signals with Toggle Rate assumed 0                                    ; 0 (0.0%)      ; 0 (0.0%)     ; 0 (0.0%)     ; 0 (0.0%)      ;
++----------------------------------------------------------------------------------------+---------------+--------------+--------------+---------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Activities                                                                                                                           ;
++--------+------+---------------------------------------------+-------------------------+--------------------+--------------------------------+
+; Signal ; Type ; Toggle Rate (millions of transitions / sec) ; Toggle Rate Data Source ; Static Probability ; Static Probability Data Source ;
++--------+------+---------------------------------------------+-------------------------+--------------------+--------------------------------+
+(1) The "Signal Activity" Table has been hidden. To show this table, please select the "Write signal activities to report file" option under "PowerPlay Power Analyzer Settings".
+
+
++-----------------------------------+
+; PowerPlay Power Analyzer Messages ;
++-----------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II PowerPlay Power Analyzer
+    Info: Version 11.0 Build 208 07/03/2011 Service Pack 1 SJ Web Edition
+    Info: Processing started: Thu Jan 05 11:18:22 2012
+Info: Command: quartus_pow --read_settings_files=on --write_settings_files=off IOP_Analog_Proto -c IOP_Analog_Proto
+Warning: Ignored assignments for entity "IOP" -- entity does not exist in design
+    Warning: Assignment for entity set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity IOP -section_id Top was ignored
+    Warning: Assignment for entity set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -entity IOP -section_id Top was ignored
+    Warning: Assignment for entity set_global_assignment -name PARTITION_PRESERVE_HIGH_SPEED_TILES ON -entity IOP -section_id Top was ignored
+    Warning: Assignment for entity set_global_assignment -name PARTITION_IGNORE_SOURCE_FILE_CHANGES OFF -entity IOP -section_id Top was ignored
+    Warning: Assignment for entity set_global_assignment -name PARTITION_ALWAYS_USE_QXP_NETLIST OFF -entity IOP -section_id Top was ignored
+    Warning: Assignment for entity set_global_assignment -name PARTITION_COLOR 16764057 -entity IOP -section_id Top was ignored
+    Warning: Assignment for entity set_global_assignment -name PARTITION_IMPORT_ASSIGNMENTS ON -entity IOP -section_id Top was ignored
+    Warning: Assignment for entity set_global_assignment -name PARTITION_IMPORT_EXISTING_ASSIGNMENTS REPLACE_CONFLICTING -entity IOP -section_id Top was ignored
+    Warning: Assignment for entity set_global_assignment -name PARTITION_IMPORT_EXISTING_LOGICLOCK_REGIONS REPLACE_CONFLICTING -entity IOP -section_id Top was ignored
+    Warning: Assignment for entity set_global_assignment -name PARTITION_IMPORT_PIN_ASSIGNMENTS ON -entity IOP -section_id Top was ignored
+    Warning: Assignment for entity set_global_assignment -name PARTITION_IMPORT_PROMOTE_ASSIGNMENTS ON -entity IOP -section_id Top was ignored
+    Warning: Assignment for entity set_global_assignment -name PARTITION_TYPE STANDARD_PARTITION -entity IOP -section_id Top was ignored
+    Warning: Assignment for entity set_global_assignment -name ALLOW_MULTIPLE_PERSONAS OFF -entity IOP -section_id Top was ignored
+Info: Low junction temperature is -40 degrees C
+Info: High junction temperature is 100 degrees C
+Critical Warning: Synopsys Design Constraints File file not found: 'IOP_Analog_Proto.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Warning: Node: AICLK was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: SerialCLK was determined to be a clock but was found without an associated clock assignment.
+Warning: No clocks defined in design.
+Warning: Found 64 output pins without output pin load capacitance assignment
+    Warning: Pin "H1" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "H2" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "H3" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "H4" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "H5" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "ADC_RESET" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "ADC_PD" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "ADC_CONVSTn" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "ADC_RDn" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "ADC_CSn" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "SDIN_DAC1" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "SCK_DAC1" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "CLEAR1" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "LATCH1" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "SDIN_DAC2" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "SCK_DAC2" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "CLEAR2" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "LATCH2" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "SCK_DAC3" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "SDIN_DAC3" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "SDIN_DAC4" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "SCK_ADC" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "CLEAR3" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "LATCH4" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "LATCH3" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "SDIN_ADC" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "CLEAR4" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "SCK_DAC4" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "P_SDI" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "P_CLOCK" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "P_LE" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "MUX_A3" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "MUX_A2" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "MUX_A1" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "MUX_A0" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "MUX_A4" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "CS_ADC2n" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "CS_ADC1n" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "CS_ADC3n" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "CS_ADC4n" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "EXTRA29" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "EXTRA28" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "EXTRA16" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "EXTRA15" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "EXTRA14" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "EXTRA13" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "EXTRA12" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "P_DATA[0]" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "P_DATA[1]" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "P_DATA[2]" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "P_DATA[3]" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "P_DATA[4]" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "P_DATA[5]" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "P_DATA[6]" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "P_DATA[7]" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "P_DATA[8]" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "P_DATA[9]" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "P_DATA[10]" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "P_DATA[11]" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "P_DATA[12]" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "P_DATA[13]" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "P_DATA[14]" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "P_DATA[15]" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+    Warning: Pin "IRQ" has no specified output pin load capacitance -- assuming default load capacitance of 10 pF for Power Estimation
+Info: Average toggle rate for this design is 0.100 millions of transitions / sec
+Info: Total thermal power estimate for the design is 48.99 mW
+Info: Quartus II PowerPlay Power Analyzer was successful. 0 errors, 83 warnings
+    Info: Peak virtual memory: 234 megabytes
+    Info: Processing ended: Thu Jan 05 11:18:39 2012
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:18
+
+

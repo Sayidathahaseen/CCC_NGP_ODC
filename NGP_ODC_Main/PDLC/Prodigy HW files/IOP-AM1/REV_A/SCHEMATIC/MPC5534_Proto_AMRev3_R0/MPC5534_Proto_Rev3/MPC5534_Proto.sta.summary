@@ -1,0 +1,17 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Setup 'TAKE_CONTROL'
+Slack : -9.000
+TNS   : -9.000
+
+Type  : Hold 'TAKE_CONTROL'
+Slack : 5.800
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'TAKE_CONTROL'
+Slack : -3.500
+TNS   : -14.000
+
+------------------------------------------------------------

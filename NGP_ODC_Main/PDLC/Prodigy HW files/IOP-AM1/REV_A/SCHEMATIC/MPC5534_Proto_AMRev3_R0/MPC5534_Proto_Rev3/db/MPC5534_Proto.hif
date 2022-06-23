@@ -1,0 +1,75 @@
+Quartus II 32-bit
+Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Edition
+33
+2241
+OFF
+OFF
+OFF
+ON
+ON
+OFF
+FV_OFF
+Level2
+0
+0
+0
+0
+VRSM_ON
+VHSM_ON
+altsyn.lmf
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+MPC5534_Proto
+# storage
+db|MPC5534_Proto.(0).cnf
+db|MPC5534_Proto.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+mpc5534_proto.vhd
+2a59cccccc6dbf96a45e34eda8aaf57
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+HealthyLogic
+# storage
+db|MPC5534_Proto.(1).cnf
+db|MPC5534_Proto.(1).cnf
+# case_insensitive
+# source_file
+healthylogic.bdf
+46567874c81a5e514d597a2ee6b9ed7b
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+HealthyLogic:HealthyLogic_inst
+}
+# macro_sequence
+
+# end
+# complete
+

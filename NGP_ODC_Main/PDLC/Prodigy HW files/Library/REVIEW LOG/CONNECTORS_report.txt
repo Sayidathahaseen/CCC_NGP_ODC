@@ -1,0 +1,6 @@
+30c30
+< |CON-TH_RA-9-1734354-1                    |        |D-SUB                                |TE CONNECTIVITY              |1734354-1          |DB9_FEMALE                |CONNECTOR,D-SUB,9,TH,RA                    |YES  |TH,RA       |Female                     |-      |CON_1734354-1            |                
+---
+> |CON-TH_RA-9-1734354-1                    |        |D-SUB                                |TE CONNECTIVITY              |1734354-1          |DB9_FEMALE                |CONNECTOR,D-SUB,9,TH,RA                    |YES  |TH,RA       |Female                     |-      |CON_1734354-1            |9               
+34a35
+> |CON-TH_VR-12X8-10052842-101LF            |        |RECEPTACLE                           |FCI                          |10052842-101LF     |CON_3                     |RECEPTACLE,12 x 8,2mm,TH,VERTICAL          |YES  |TH,VR       |-                          |2mm    |CON_10052842-101LF       |12x8            

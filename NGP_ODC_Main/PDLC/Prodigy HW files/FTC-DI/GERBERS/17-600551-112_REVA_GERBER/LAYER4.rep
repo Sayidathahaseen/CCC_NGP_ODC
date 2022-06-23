@@ -1,0 +1,29 @@
+
+
+Photo-Plotter Apertures Report
+==============================
+Position  Width  Hgt/ID  Shape    Qty
+========  =====  ======  =====    ===
+   10        1       0    RND       1
+   11        8       0    RND      96
+   13       10       0    RND      29
+   15       15       0    RND       5
+   25      107      63    RECT      2
+   49       60       0    RND      63
+   50       70       0    SQR       2
+   51       70       0    RND       4
+   52      90.55       0    SQR       2
+   59       50       0    RND     115
+   60       20       0    RND      25
+   63       40       0    RND      13
+   64      90.55       0    RND      34
+   70      129.92       0    RND       4
+   71        6       0    RND       4
+   96      311.81       0    RND       4
+   97       72     100    RECT     16
+   141      100      72    RECT     32
+
+
+
+
+

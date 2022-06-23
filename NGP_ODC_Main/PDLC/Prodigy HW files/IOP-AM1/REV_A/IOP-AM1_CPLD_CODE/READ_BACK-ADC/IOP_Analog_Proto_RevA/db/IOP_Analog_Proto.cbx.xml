@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="IOP_Analog_Proto">
+		<CBX_INST_ENTRY INSTANCE_NAME="|IOP_Analog_Proto|AI_FIFO_S:AI_FIFO_S_inst|scfifo:scfifo_component|a_fffifo:subfifo|a_fefifo:fifo_state|lpm_compare:is_almost_empty_compare" CBX_FILE_NAME="cmpr_htf.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|IOP_Analog_Proto|AI_FIFO_S:AI_FIFO_S_inst|scfifo:scfifo_component|a_fffifo:subfifo|a_fefifo:fifo_state|lpm_compare:is_almost_full_compare" CBX_FILE_NAME="cmpr_htf.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|IOP_Analog_Proto|AI_FIFO_S:AI_FIFO_S_inst|scfifo:scfifo_component|a_fffifo:subfifo|lpm_counter:rd_ptr" CBX_FILE_NAME="cntr_bpe.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|IOP_Analog_Proto|AI_FIFO_S:AI_FIFO_S_inst|scfifo:scfifo_component|a_fffifo:subfifo|lpm_mux:last_row_data_out_mux" CBX_FILE_NAME="mux_rcc.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

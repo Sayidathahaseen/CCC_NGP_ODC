@@ -1,0 +1,45 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Setup 'AICLK'
+Slack : -13.327
+TNS   : -4966.616
+
+Type  : Setup 'SerialCLK'
+Slack : -9.537
+TNS   : -2795.996
+
+Type  : Hold 'AICLK'
+Slack : -2.387
+TNS   : -7.786
+
+Type  : Hold 'SerialCLK'
+Slack : 1.078
+TNS   : 0.000
+
+Type  : Recovery 'AICLK'
+Slack : -13.713
+TNS   : -339.072
+
+Type  : Recovery 'SerialCLK'
+Slack : -6.081
+TNS   : -164.119
+
+Type  : Removal 'AICLK'
+Slack : 2.903
+TNS   : 0.000
+
+Type  : Removal 'SerialCLK'
+Slack : 3.622
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'AICLK'
+Slack : -2.289
+TNS   : -2.289
+
+Type  : Minimum Pulse Width 'SerialCLK'
+Slack : 0.234
+TNS   : 0.000
+
+------------------------------------------------------------

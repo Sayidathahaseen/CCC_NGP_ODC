@@ -1,0 +1,15 @@
+
+State Machine - |IOP|SPI_DAC:inst|state_dac
+Name state_dac.control_read state_dac.dread state_dac.ddata state_dac.control 
+state_dac.control 0 0 0 0 
+state_dac.ddata 0 0 1 1 
+state_dac.dread 0 1 0 1 
+state_dac.control_read 1 0 0 1 
+
+State Machine - |IOP|SPI_DAC:inst|state
+Name state.nxt state.idle state.check state.send state.ready 
+state.ready 0 0 0 0 0 
+state.send 0 0 0 1 1 
+state.check 0 0 1 0 1 
+state.idle 0 1 0 0 1 
+state.nxt 1 0 0 0 1 

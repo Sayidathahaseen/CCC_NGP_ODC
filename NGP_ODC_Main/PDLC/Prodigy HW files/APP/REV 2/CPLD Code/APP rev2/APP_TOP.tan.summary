@@ -1,0 +1,46 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 20.600 ns
+From           : HIGHAFTER300US
+To             : ENET_PHY_RESET_bar
+From Clock     : CLK_IN_25MHz
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 17.100 ns
+From           : PWR_GOOD_DDR3
+To             : ENET_PHY_RESET_bar
+From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Clock Setup: 'CLK_IN_25MHz'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 44.05 MHz ( period = 22.700 ns )
+From           : COUNT300US[1]
+To             : HIGHAFTER100US
+From Clock     : CLK_IN_25MHz
+To Clock       : CLK_IN_25MHz
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+

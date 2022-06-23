@@ -1,0 +1,1190 @@
+.HEADER
+BOARD_FILE    3.0    "PADS Layout 9.4"    2013/11/12.17:54:03    1
+"d:\pads\back plane\121113\17-600100-001_revc_121113-1745.emn"    THOU
+.END_HEADER
+.BOARD_OUTLINE    UNOWNED
+103.5
+0     0.0                           39.37                         0     
+0     17000.0                       39.37                         0     
+0     17000.0                       392.72                        0     
+0     16909.45                      392.72                        0     
+0     16909.45                      747.05                        -171.6    
+0     17000.0                       747.05                        0     
+0     17000.0                       3345.47                       0     
+0     16922.44                      3345.47                       0     
+0     16922.44                      3699.8                        -180.0    
+0     17000.0                       3699.8                        0     
+0     17000.0                       8463.39                       0     
+0     16922.44                      8463.39                       0     
+0     16922.44                      8817.72                       -180.8    
+0     17000.0                       8817.72                       0     
+0     17000.0                       12400.59                      0     
+0     16910.63                      12400.59                      0     
+0     16745.3                       12574.8                       -85.3     
+0     11749.19                      12574.8                       0     
+0     11394.91                      12574.8                       -178.1    
+0     5528.72                       12574.8                       0     
+0     5174.43                       12574.8                       -178.1    
+0     257.06                        12574.8                       0     
+0     91.73                         12400.59                      -83.4     
+0     0.0                           12400.59                      0     
+0     0.0                           10925.79                      0     
+0     79.92                         10925.79                      0     
+0     79.92                         10571.46                      -180.0    
+0     0.0                           10571.46                      0     
+0     0.0                           3699.8                        0     
+0     91.73                         3699.8                        0     
+0     91.73                         3345.47                       -180.0    
+0     0.0                           3345.47                       0     
+0     0.0                           747.05                        0     
+0     90.55                         747.05                        0     
+0     90.55                         392.72                        -180.8    
+0     0.0                           392.72                        0     
+0     0.0                           39.37                         0     
+.END_BOARD_OUTLINE
+.DRILLED_HOLES
+.END_DRILLED_HOLES
+.PLACEMENT
+CASE_X-7343-43                               CAP-10UF-50V-CASE_X-10_-T495X106K050ATE_     C1                                           
+1000.0                        9500.0                        0.0                           270.0     TOP       PLACED    
+CASE_X-7343-43                               CAP-10UF-50V-CASE_X-10_-T495X106K050ATE_     C101                                         
+3750.0                        9100.0                        0.0                           270.0     TOP       PLACED    
+CASE_X-7343-43                               CAP-10UF-50V-CASE_X-10_-T495X106K050ATE_     C107                                         
+4625.0                        9100.0                        0.0                           270.0     TOP       PLACED    
+CASE_X-7343-43                               CAP-10UF-50V-CASE_X-10_-T495X106K050ATE_     C11                                          
+15375.0                       9250.0                        0.0                           180.0     TOP       PLACED    
+CASE_X-7343-43                               CAP-10UF-50V-CASE_X-10_-T495X106K050ATE_     C113                                         
+5525.0                        9100.0                        0.0                           270.0     TOP       PLACED    
+CASE_X-7343-43                               CAP-10UF-50V-CASE_X-10_-T495X106K050ATE_     C119                                         
+6425.0                        9100.0                        0.0                           270.0     TOP       PLACED    
+CASE_X-7343-43                               CAP-10UF-50V-CASE_X-10_-T495X106K050ATE_     C125                                         
+7300.0                        9100.0                        0.0                           270.0     TOP       PLACED    
+CASE_X-7343-43                               CAP-10UF-50V-CASE_X-10_-T495X106K050ATE_     C13                                          
+16560.0                       10280.0                       0.0                           90.0      TOP       PLACED    
+CASE_X-7343-43                               CAP-10UF-50V-CASE_X-10_-T495X106K050ATE_     C131                                         
+8175.0                        9100.0                        0.0                           270.0     TOP       PLACED    
+CASE_X-7343-43                               CAP-10UF-50V-CASE_X-10_-T495X106K050ATE_     C137                                         
+9050.0                        9100.0                        0.0                           270.0     TOP       PLACED    
+CASE_X-7343-43                               CAP-10UF-50V-CASE_X-10_-T495X106K050ATE_     C143                                         
+9950.0                        9100.0                        0.0                           270.0     TOP       PLACED    
+CASE_X-7343-43                               CAP-10UF-50V-CASE_X-10_-T495X106K050ATE_     C149                                         
+10850.0                       9100.0                        0.0                           270.0     TOP       PLACED    
+CASE_X-7343-43                               CAP-10UF-50V-CASE_X-10_-T495X106K050ATE_     C15                                          
+900.0                         11450.0                       0.0                           0.0       TOP       PLACED    
+CASE_X-7343-43                               CAP-10UF-50V-CASE_X-10_-T495X106K050ATE_     C155                                         
+11725.0                       9100.0                        0.0                           270.0     TOP       PLACED    
+CASE_X-7343-43                               CAP-10UF-50V-CASE_X-10_-T495X106K050ATE_     C161                                         
+11500.0                       9100.0                        0.0                           270.0     TOP       PLACED    
+CASE_X-7343-43                               CAP-10UF-50V-CASE_X-10_-T495X106K050ATE_     C167                                         
+13500.0                       9100.0                        0.0                           270.0     TOP       PLACED    
+CASE_X-7343-43                               CAP-10UF-50V-CASE_X-10_-T495X106K050ATE_     C17                                          
+1500.0                        11450.0                       0.0                           0.0       TOP       PLACED    
+CASE_X-7343-43                               CAP-10UF-50V-CASE_X-10_-T495X106K050ATE_     C19                                          
+1060.0                        8540.0                        0.0                           0.0       TOP       PLACED    
+CASE_X-7343-43                               CAP-10UF-50V-CASE_X-10_-T495X106K050ATE_     C205                                         
+3300.0                        11450.0                       0.0                           0.0       TOP       PLACED    
+CASE_X-7343-43                               CAP-10UF-50V-CASE_X-10_-T495X106K050ATE_     C207                                         
+3900.0                        11450.0                       0.0                           0.0       TOP       PLACED    
+CASE_X-7343-43                               CAP-10UF-50V-CASE_X-10_-T495X106K050ATE_     C21                                          
+15350.0                       8562.99                       0.0                           180.0     TOP       PLACED    
+CASE_C-6032-28                               CAP-10UF-16V-CASE_C-10_-TPSC106K016R0500     C23                                          
+15650.0                       7310.0                        0.0                           270.0     TOP       PLACED    
+CASE_C-6032-28                               CAP-10UF-16V-CASE_C-10_-TPSC106K016R0500     C25                                          
+13180.0                       12110.0                       0.0                           0.0       TOP       PLACED    
+CASE_C-6032-28                               CAP-10UF-16V-CASE_C-10_-TPSC106K016R0500     C27                                          
+13180.0                       11760.0                       0.0                           0.0       TOP       PLACED    
+CASE_C-6032-28                               CAP-10UF-16V-CASE_C-10_-TPSC106K016R0500     C29                                          
+16140.0                       11740.0                       0.0                           0.0       TOP       PLACED    
+CASE_C-6032-28                               CAP-10UF-16V-CASE_C-10_-TPSC106K016R0500     C3                                           
+1100.0                        6950.0                        0.0                           270.0     TOP       PLACED    
+CASE_C-6032-28                               CAP-10UF-16V-CASE_C-10_-TPSC106K016R0500     C31                                          
+16140.0                       12110.0                       0.0                           0.0       TOP       PLACED    
+CASE_C-6032-28                               CAP-10UF-16V-CASE_C-10_-TPSC106K016R0500     C33                                          
+2100.0                        9300.0                        0.0                           270.0     TOP       PLACED    
+CASE_C-6032-28                               CAP-10UF-16V-CASE_C-10_-TPSC106K016R0500     C35                                          
+2400.0                        10275.0                       0.0                           90.0      TOP       PLACED    
+CASE_C-6032-28                               CAP-10UF-16V-CASE_C-10_-TPSC106K016R0500     C37                                          
+15620.0                       10290.0                       0.0                           90.0      TOP       PLACED    
+CASE_C-6032-28                               CAP-10UF-16V-CASE_C-10_-TPSC106K016R0500     C39                                          
+15375.0                       9450.0                        0.0                           0.0       TOP       PLACED    
+CASE_C-6032-28                               CAP-10UF-16V-CASE_C-10_-TPSC106K016R0500     C41                                          
+3300.0                        10250.0                       0.0                           90.0      TOP       PLACED    
+CASE_C-6032-28                               CAP-10UF-16V-CASE_C-10_-TPSC106K016R0500     C43                                          
+2875.0                        9300.0                        0.0                           270.0     TOP       PLACED    
+CASE_C-6032-28                               CAP-10UF-16V-CASE_C-10_-TPSC106K016R0500     C45                                          
+14800.0                       10275.0                       0.0                           90.0      TOP       PLACED    
+CASE_C-6032-28                               CAP-10UF-16V-CASE_C-10_-TPSC106K016R0500     C47                                          
+14450.0                       9325.0                        0.0                           270.0     TOP       PLACED    
+CASE_C-6032-28                               CAP-10UF-16V-CASE_C-10_-TPSC106K016R0500     C49                                          
+4075.0                        9500.0                        0.0                           270.0     TOP       PLACED    
+CASE_C-6032-28                               CAP-10UF-16V-CASE_C-10_-TPSC106K016R0500     C53                                          
+4950.0                        9500.0                        0.0                           270.0     TOP       PLACED    
+CASE_C-6032-28                               CAP-10UF-16V-CASE_C-10_-TPSC106K016R0500     C55                                          
+4950.0                        10150.0                       0.0                           90.0      TOP       PLACED    
+CASE_C-6032-28                               CAP-10UF-16V-CASE_C-10_-TPSC106K016R0500     C57                                          
+5850.0                        9500.0                        0.0                           270.0     TOP       PLACED    
+CASE_C-6032-28                               CAP-10UF-16V-CASE_C-10_-TPSC106K016R0500     C59                                          
+5850.0                        10150.0                       0.0                           90.0      TOP       PLACED    
+CASE_C-6032-28                               CAP-10UF-16V-CASE_C-10_-TPSC106K016R0500     C61                                          
+6725.0                        9500.0                        0.0                           270.0     TOP       PLACED    
+CASE_C-6032-28                               CAP-10UF-16V-CASE_C-10_-TPSC106K016R0500     C63                                          
+6725.0                        10150.0                       0.0                           90.0      TOP       PLACED    
+CASE_C-6032-28                               CAP-10UF-16V-CASE_C-10_-TPSC106K016R0500     C65                                          
+7625.0                        9500.0                        0.0                           270.0     TOP       PLACED    
+CASE_C-6032-28                               CAP-10UF-16V-CASE_C-10_-TPSC106K016R0500     C67                                          
+7625.0                        10150.0                       0.0                           90.0      TOP       PLACED    
+CASE_C-6032-28                               CAP-10UF-16V-CASE_C-10_-TPSC106K016R0500     C69                                          
+8500.0                        9500.0                        0.0                           270.0     TOP       PLACED    
+CASE_X-7343-43                               CAP-10UF-50V-CASE_X-10_-T495X106K050ATE_     C7                                           
+2100.0                        11450.0                       0.0                           0.0       TOP       PLACED    
+CASE_C-6032-28                               CAP-10UF-16V-CASE_C-10_-TPSC106K016R0500     C71                                          
+8500.0                        10150.0                       0.0                           90.0      TOP       PLACED    
+CASE_C-6032-28                               CAP-10UF-16V-CASE_C-10_-TPSC106K016R0500     C73                                          
+9400.0                        9500.0                        0.0                           270.0     TOP       PLACED    
+CASE_C-6032-28                               CAP-10UF-16V-CASE_C-10_-TPSC106K016R0500     C75                                          
+9400.0                        10150.0                       0.0                           90.0      TOP       PLACED    
+CASE_C-6032-28                               CAP-10UF-16V-CASE_C-10_-TPSC106K016R0500     C77                                          
+10275.0                       9500.0                        0.0                           270.0     TOP       PLACED    
+CASE_C-6032-28                               CAP-10UF-16V-CASE_C-10_-TPSC106K016R0500     C79                                          
+10275.0                       10150.0                       0.0                           90.0      TOP       PLACED    
+CASE_C-6032-28                               CAP-10UF-16V-CASE_C-10_-TPSC106K016R0500     C81                                          
+11175.0                       9500.0                        0.0                           270.0     TOP       PLACED    
+CASE_C-6032-28                               CAP-10UF-16V-CASE_C-10_-TPSC106K016R0500     C83                                          
+11175.0                       10150.0                       0.0                           90.0      TOP       PLACED    
+CASE_C-6032-28                               CAP-10UF-16V-CASE_C-10_-TPSC106K016R0500     C85                                          
+12050.0                       9500.0                        0.0                           270.0     TOP       PLACED    
+CASE_C-6032-28                               CAP-10UF-16V-CASE_C-10_-TPSC106K016R0500     C87                                          
+12050.0                       10150.0                       0.0                           90.0      TOP       PLACED    
+CASE_C-6032-28                               CAP-10UF-16V-CASE_C-10_-TPSC106K016R0500     C89                                          
+12925.0                       9500.0                        0.0                           270.0     TOP       PLACED    
+CASE_X-7343-43                               CAP-10UF-50V-CASE_X-10_-T495X106K050ATE_     C9                                           
+2700.0                        11450.0                       0.0                           0.0       TOP       PLACED    
+CASE_C-6032-28                               CAP-10UF-16V-CASE_C-10_-TPSC106K016R0500     C91                                          
+12925.0                       10150.0                       0.0                           90.0      TOP       PLACED    
+CASE_C-6032-28                               CAP-10UF-16V-CASE_C-10_-TPSC106K016R0500     C93                                          
+13800.0                       9500.0                        0.0                           270.0     TOP       PLACED    
+CASE_C-6032-28                               CAP-10UF-16V-CASE_C-10_-TPSC106K016R0500     C95                                          
+13800.0                       10150.0                       0.0                           90.0      TOP       PLACED    
+CASE_X-7343-43                               CAP-10UF-50V-CASE_X-10_-T495X106K050ATE_     C257                                         
+13275.0                       9100.0                        0.0                           270.0     TOP       PLACED    
+CASE_X-7343-43                               CAP-10UF-50V-CASE_X-10_-T495X106K050ATE_     C259                                         
+12600.0                       9105.0                        0.0                           270.0     TOP       PLACED    
+CASE_X-7343-43                               CAP-10UF-50V-CASE_X-10_-T495X106K050ATE_     C261                                         
+12375.0                       9105.0                        0.0                           270.0     TOP       PLACED    
+CASE_X-7343-43                               CAP-10UF-50V-CASE_X-10_-T495X106K050ATE_     C263                                         
+10625.0                       9100.0                        0.0                           270.0     TOP       PLACED    
+CASE_X-7343-43                               CAP-10UF-50V-CASE_X-10_-T495X106K050ATE_     C265                                         
+9725.0                        9100.0                        0.0                           270.0     TOP       PLACED    
+CASE_X-7343-43                               CAP-10UF-50V-CASE_X-10_-T495X106K050ATE_     C267                                         
+8825.0                        9100.0                        0.0                           270.0     TOP       PLACED    
+CASE_X-7343-43                               CAP-10UF-50V-CASE_X-10_-T495X106K050ATE_     C269                                         
+7950.0                        9100.0                        0.0                           270.0     TOP       PLACED    
+CASE_X-7343-43                               CAP-10UF-50V-CASE_X-10_-T495X106K050ATE_     C271                                         
+7075.0                        9100.0                        0.0                           270.0     TOP       PLACED    
+CASE_X-7343-43                               CAP-10UF-50V-CASE_X-10_-T495X106K050ATE_     C273                                         
+6200.0                        9100.0                        0.0                           270.0     TOP       PLACED    
+CASE_X-7343-43                               CAP-10UF-50V-CASE_X-10_-T495X106K050ATE_     C275                                         
+5300.0                        9100.0                        0.0                           270.0     TOP       PLACED    
+CASE_X-7343-43                               CAP-10UF-50V-CASE_X-10_-T495X106K050ATE_     C277                                         
+4400.0                        9100.0                        0.0                           270.0     TOP       PLACED    
+CASE_X-7343-43                               CAP-10UF-50V-CASE_X-10_-T495X106K050ATE_     C279                                         
+3500.0                        9100.0                        0.0                           270.0     TOP       PLACED    
+MHD600H355                                   MEC-MH-6_0X3_55                              MH27                                         
+5862.2                        1257.15                       0.0                           0.0       TOP       PLACED    
+MHD600H355                                   MEC-MH-6_0X3_55                              MH28                                         
+11251.97                      1257.15                       0.0                           0.0       TOP       PLACED    
+MHD600H355                                   MEC-MH-6_0X3_55                              MH29                                         
+16641.73                      1257.15                       0.0                           0.0       TOP       PLACED    
+MHD600H355                                   MEC-MH-6_0X3_55                              MH30                                         
+16641.89                      3886.06                       0.0                           0.0       TOP       PLACED    
+MHD600H355                                   MEC-MH-6_0X3_55                              MH32                                         
+8557.17                       3886.06                       0.0                           0.0       TOP       PLACED    
+MHD600H355                                   MEC-MH-6_0X3_55                              MH34                                         
+472.44                        3886.06                       0.0                           0.0       TOP       PLACED    
+MHD600H355                                   MEC-MH-6_0X3_55                              MH35                                         
+4514.8                        6327.0                        0.0                           0.0       TOP       PLACED    
+MHD600H355                                   MEC-MH-6_0X3_55                              MH36                                         
+8557.17                       6327.0                        0.0                           0.0       TOP       PLACED    
+MHD600H355                                   MEC-MH-6_0X3_55                              MH37                                         
+12599.53                      6327.0                        0.0                           0.0       TOP       PLACED    
+MHD600H355                                   MEC-MH-6_0X3_55                              MH38                                         
+16641.89                      6327.0                        0.0                           0.0       TOP       PLACED    
+MHD600H355                                   MEC-MH-6_0X3_55                              MH39                                         
+16641.89                      8767.95                       0.0                           0.0       TOP       PLACED    
+MHD600H355                                   MEC-MH-6_0X3_55                              MH43                                         
+472.44                        12377.95                      0.0                           0.0       TOP       PLACED    
+MHD600H355                                   MEC-MH-6_0X3_55                              MH44                                         
+6649.61                       12377.95                      0.0                           0.0       TOP       PLACED    
+MHD600H355                                   MEC-MH-6_0X3_55                              MH45                                         
+11251.97                      12377.95                      0.0                           0.0       TOP       PLACED    
+MHD600H355                                   MEC-MH-6_0X3_55                              MH46                                         
+16641.73                      12377.95                      0.0                           0.0       TOP       PLACED    
+MHD600H355                                   MEC-MH-6_0X3_55                              MH47                                         
+472.44                        1257.15                       0.0                           0.0       TOP       PLACED    
+MHD600H355                                   MEC-MH-6_0X3_55                              MH48                                         
+472.44                        5657.71                       0.0                           0.0       TOP       PLACED    
+CON_FCI_2X14P                                CON-FREE_HANG-14-20020620-M141A01LF          J1                                           
+2101.14                       11911.97                      0.0                           180.0     TOP       MCAD      
+MHD600H355                                   MEC-MH-6_0X3_55                              MH65                                         
+472.44                        9830.94                       0.0                           0.0       TOP       PLACED    
+51740-10401204AA                             CON-TH_VR-8POWER_12SIGNAL-51740-104012_      J2-L                                         
+450.55                        9547.26                       0.0                           90.0      TOP       PLACED    
+51740-10401204AA                             CON-TH_VR-8POWER_12SIGNAL-51740-104012_      J3-R                                         
+16060.67                      9547.26                       0.0                           90.0      TOP       MCAD      
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C36                                          
+2250.0                        10250.0                       0.0                           90.0      TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C10                                          
+2700.0                        11275.0                       0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C100                                         
+3475.0                        6400.0                        0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C102                                         
+3925.0                        9200.0                        0.0                           270.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C250                                         
+2500.0                        2068.11                       0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C254                                         
+275.0                         2218.11                       0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C108                                         
+4800.0                        9200.0                        0.0                           270.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C110                                         
+5100.0                        6400.0                        0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C112                                         
+5300.0                        6400.0                        0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C114                                         
+5700.0                        9200.0                        0.0                           270.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C116                                         
+5925.0                        6400.0                        0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C118                                         
+6125.0                        6400.0                        0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C12                                          
+15375.0                       9100.0                        0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C120                                         
+6600.0                        9200.0                        0.0                           270.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C122                                         
+6850.0                        6400.0                        0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C124                                         
+7050.0                        6400.0                        0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C126                                         
+7475.0                        9200.0                        0.0                           270.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C128                                         
+7700.0                        6400.0                        0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C130                                         
+7900.0                        6400.0                        0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C132                                         
+8350.0                        9200.0                        0.0                           270.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C134                                         
+8700.0                        6075.0                        0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C136                                         
+8875.0                        6075.0                        0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C138                                         
+9225.0                        9200.0                        0.0                           270.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C14                                          
+15770.0                       10290.0                       0.0                           90.0      TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C140                                         
+9500.0                        6400.0                        0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C142                                         
+9700.0                        6400.0                        0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C144                                         
+10125.0                       9200.0                        0.0                           270.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C146                                         
+10375.0                       6400.0                        0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C148                                         
+10575.0                       6400.0                        0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C150                                         
+11025.0                       9200.0                        0.0                           270.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C152                                         
+11275.0                       6400.0                        0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C154                                         
+11475.0                       6400.0                        0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C156                                         
+11900.0                       9200.0                        0.0                           270.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C158                                         
+12100.0                       6400.0                        0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C16                                          
+900.0                         11275.0                       0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C160                                         
+12300.0                       6400.0                        0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C162                                         
+11325.0                       9200.0                        0.0                           270.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C164                                         
+13075.0                       6400.0                        0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C166                                         
+13275.0                       6400.0                        0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C168                                         
+13675.0                       9200.0                        0.0                           270.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C170                                         
+275.0                         2518.11                       0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C172                                         
+275.0                         2818.11                       0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C174                                         
+1275.0                        1893.11                       0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C176                                         
+3075.0                        3118.11                       0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C178                                         
+3075.0                        2818.11                       0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C18                                          
+1600.0                        11280.0                       0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C224                                         
+12750.0                       1893.11                       0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C182                                         
+5950.0                        3118.11                       0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C184                                         
+5950.0                        2818.11                       0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C232                                         
+9900.0                        1893.11                       0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C188                                         
+8825.0                        3118.11                       0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C190                                         
+8825.0                        2818.11                       0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C240                                         
+7045.0                        1893.11                       0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C194                                         
+11600.0                       3118.11                       0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C196                                         
+11600.0                       2818.11                       0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C248                                         
+4175.0                        1893.11                       0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C2                                           
+1150.0                        9525.0                        0.0                           270.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C20                                          
+1050.0                        8390.0                        0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C200                                         
+15175.0                       1893.11                       0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C180                                         
+3075.0                        2518.11                       0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C204                                         
+15625.0                       1893.11                       0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C206                                         
+3300.0                        11275.0                       0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C208                                         
+3900.0                        11275.0                       0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C210                                         
+14425.0                       2518.11                       0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C212                                         
+14425.0                       2218.11                       0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C214                                         
+14425.0                       3118.11                       0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C216                                         
+14425.0                       2818.11                       0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C22                                          
+15575.0                       8366.14                       0.0                           270.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C220                                         
+11970.0                       3338.11                       0.0                           90.0      TOP       MCAD      
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C222                                         
+11600.0                       2218.11                       0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C192                                         
+8825.0                        2518.11                       0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C228                                         
+9055.0                        3338.11                       0.0                           90.0      TOP       MCAD      
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C230                                         
+8825.0                        2218.11                       0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C284                                         
+3725.0                        1893.11                       0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C236                                         
+6330.0                        3338.11                       0.0                           90.0      TOP       MCAD      
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C238                                         
+5950.0                        2218.11                       0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C24                                          
+15500.0                       7390.0                        0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C288                                         
+9450.0                        1893.11                       0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C244                                         
+3625.0                        3338.11                       0.0                           90.0      TOP       MCAD      
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C246                                         
+3075.0                        2218.11                       0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C292                                         
+14800.0                       3338.11                       0.0                           90.0      TOP       MCAD      
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C104                                         
+4025.0                        6400.0                        0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C252                                         
+275.0                         3118.11                       0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C106                                         
+4225.0                        6400.0                        0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C256                                         
+800.0                         3338.11                       0.0                           90.0      TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C26                                          
+13180.0                       11980.0                       0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C28                                          
+13180.0                       11890.0                       0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C30                                          
+16150.0                       11870.0                       0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C32                                          
+16150.0                       11980.0                       0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C34                                          
+1950.0                        9350.0                        0.0                           270.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C38                                          
+15500.0                       10280.0                       0.0                           90.0      TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C4                                           
+960.0                         6970.0                        0.0                           270.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C40                                          
+15100.0                       9450.0                        0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C42                                          
+3150.0                        10250.0                       0.0                           90.0      TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C44                                          
+3025.0                        9325.0                        0.0                           270.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C46                                          
+14650.0                       10275.0                       0.0                           90.0      TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C48                                          
+14300.0                       9325.0                        0.0                           270.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C50                                          
+4075.0                        9725.0                        0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C52                                          
+4075.0                        9925.0                        0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C54                                          
+4950.0                        9725.0                        0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C56                                          
+4950.0                        9925.0                        0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C58                                          
+5850.0                        9725.0                        0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C6                                           
+1270.0                        8870.0                        0.0                           270.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C60                                          
+5850.0                        9925.0                        0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C62                                          
+6725.0                        9725.0                        0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C64                                          
+6725.0                        9925.0                        0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C66                                          
+7625.0                        9725.0                        0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C68                                          
+7625.0                        9925.0                        0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C70                                          
+8500.0                        9725.0                        0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C72                                          
+8500.0                        9925.0                        0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C74                                          
+9400.0                        9725.0                        0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C76                                          
+9400.0                        9925.0                        0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C78                                          
+10275.0                       9725.0                        0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C8                                           
+2100.0                        11275.0                       0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C80                                          
+10275.0                       9925.0                        0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C82                                          
+11175.0                       9725.0                        0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C84                                          
+11175.0                       9925.0                        0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C86                                          
+12050.0                       9725.0                        0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C88                                          
+12050.0                       9925.0                        0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C90                                          
+12925.0                       9725.0                        0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C92                                          
+12925.0                       9925.0                        0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C94                                          
+13800.0                       9725.0                        0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C96                                          
+13800.0                       9925.0                        0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C98                                          
+3250.0                        6400.0                        0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C258                                         
+13100.0                       9200.0                        0.0                           270.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C260                                         
+12775.0                       9200.0                        0.0                           270.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C262                                         
+12200.0                       9200.0                        0.0                           270.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C264                                         
+10450.0                       9200.0                        0.0                           270.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C266                                         
+9550.0                        9200.0                        0.0                           270.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C268                                         
+8650.0                        9200.0                        0.0                           270.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C270                                         
+7775.0                        9200.0                        0.0                           270.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C272                                         
+6900.0                        9200.0                        0.0                           270.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C274                                         
+6025.0                        9200.0                        0.0                           270.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C276                                         
+5125.0                        9200.0                        0.0                           270.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C278                                         
+4225.0                        9200.0                        0.0                           270.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C280                                         
+3325.0                        9200.0                        0.0                           270.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C282                                         
+1050.0                        1893.11                       0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C202                                         
+15425.0                       1893.11                       0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C218                                         
+12550.0                       1893.11                       0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C226                                         
+9700.0                        1893.11                       0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C234                                         
+6875.0                        1893.11                       0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C242                                         
+3965.0                        1893.11                       0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C296                                         
+2500.0                        2668.11                       0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C294                                         
+2500.0                        2368.11                       0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C298                                         
+2500.0                        2968.11                       0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C300                                         
+1950.0                        3338.11                       0.0                           90.0      TOP       MCAD      
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C302                                         
+825.0                         1893.11                       0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C304                                         
+1875.0                        1893.11                       0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C186                                         
+5950.0                        2518.11                       0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C198                                         
+11600.0                       2518.11                       0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C286                                         
+6570.0                        1893.11                       0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C290                                         
+12350.0                       1893.11                       0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C306                                         
+3650.0                        6400.0                        0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C308                                         
+3825.0                        6400.0                        0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C310                                         
+4575.0                        6075.0                        0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C312                                         
+4825.0                        6075.0                        0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C314                                         
+5475.0                        6400.0                        0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C316                                         
+5675.0                        6400.0                        0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C318                                         
+7250.0                        6400.0                        0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C320                                         
+7450.0                        6400.0                        0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C322                                         
+8100.0                        6400.0                        0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C324                                         
+8300.0                        6400.0                        0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C326                                         
+10775.0                       6400.0                        0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C328                                         
+10975.0                       6400.0                        0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C330                                         
+12575.0                       6075.0                        0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C332                                         
+12875.0                       6400.0                        0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C334                                         
+6325.0                        6400.0                        0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C336                                         
+6525.0                        6400.0                        0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C338                                         
+9900.0                        6400.0                        0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C340                                         
+10100.0                       6400.0                        0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C342                                         
+11675.0                       6400.0                        0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C344                                         
+11875.0                       6400.0                        0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C346                                         
+13475.0                       6400.0                        0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C348                                         
+13675.0                       6400.0                        0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C350                                         
+9100.0                        6400.0                        0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C352                                         
+9300.0                        6400.0                        0.0                           180.0     TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C354                                         
+5350.0                        2068.11                       0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C356                                         
+5350.0                        2368.11                       0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C358                                         
+5350.0                        2668.11                       0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C360                                         
+5350.0                        2968.11                       0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C362                                         
+4875.0                        3338.11                       0.0                           90.0      TOP       MCAD      
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C364                                         
+4805.0                        1893.11                       0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C366                                         
+8275.0                        2068.11                       0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C368                                         
+8275.0                        2368.11                       0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C370                                         
+8275.0                        2668.11                       0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C372                                         
+8275.0                        2968.11                       0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C374                                         
+7770.0                        3338.11                       0.0                           90.0      TOP       MCAD      
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C376                                         
+7650.0                        1893.11                       0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C378                                         
+11050.0                       2068.11                       0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C380                                         
+11050.0                       2368.11                       0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C382                                         
+11050.0                       2668.11                       0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C384                                         
+11050.0                       2968.11                       0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C386                                         
+10600.0                       3338.11                       0.0                           90.0      TOP       MCAD      
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C388                                         
+10475.0                       1893.11                       0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C390                                         
+13950.0                       2068.11                       0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C392                                         
+13950.0                       2368.11                       0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C394                                         
+13950.0                       2668.11                       0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C396                                         
+13950.0                       2968.11                       0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C398                                         
+13450.0                       3338.11                       0.0                           90.0      TOP       MCAD      
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C400                                         
+13385.0                       1893.11                       0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C402                                         
+16725.0                       2068.11                       0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C404                                         
+16725.0                       2368.11                       0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C406                                         
+16725.0                       2668.11                       0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C408                                         
+16725.0                       2968.11                       0.0                           0.0       TOP       PLACED    
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C410                                         
+16235.0                       3338.11                       0.0                           90.0      TOP       MCAD      
+C0805                                        CAP-0_1UF-50V-0805-10_-08055C104KAT2A        C412                                         
+16150.0                       1893.11                       0.0                           0.0       TOP       PLACED    
+GUIDE_PIN                                    GUIDE_PIN                                    G9                                           
+1898.82                       10311.02                      0.0                           0.0       TOP       MCAD      
+GUIDE_PIN                                    GUIDE_PIN                                    G1                                           
+520.87                        10311.02                      0.0                           90.0      TOP       MCAD      
+GUIDE_PIN                                    GUIDE_PIN                                    G11                                          
+15186.22                      10311.02                      0.0                           0.0       TOP       MCAD      
+GUIDE_PIN                                    GUIDE_PIN                                    G13                                          
+2784.65                       10311.02                      0.0                           270.0     TOP       MCAD      
+GUIDE_PIN                                    GUIDE_PIN                                    G14                                          
+2784.65                       6129.92                       0.0                           270.0     TOP       MCAD      
+GUIDE_PIN                                    GUIDE_PIN                                    G15                                          
+14300.39                      10311.02                      0.0                           270.0     TOP       MCAD      
+GUIDE_PIN                                    GUIDE_PIN                                    G16                                          
+14300.39                      6129.92                       0.0                           270.0     TOP       MCAD      
+GUIDE_PIN                                    GUIDE_PIN                                    G17                                          
+3670.47                       10311.02                      0.0                           180.0     TOP       MCAD      
+GUIDE_PIN                                    GUIDE_PIN                                    G18                                          
+4556.3                        10311.02                      0.0                           180.0     TOP       MCAD      
+GUIDE_PIN                                    GUIDE_PIN                                    G19                                          
+5442.13                       10311.02                      0.0                           180.0     TOP       MCAD      
+GUIDE_PIN                                    GUIDE_PIN                                    G2                                           
+520.87                        6129.92                       0.0                           90.0      TOP       MCAD      
+GUIDE_PIN                                    GUIDE_PIN                                    G20                                          
+6327.95                       10311.02                      0.0                           180.0     TOP       MCAD      
+GUIDE_PIN                                    GUIDE_PIN                                    G21                                          
+7213.78                       10311.02                      0.0                           180.0     TOP       MCAD      
+GUIDE_PINA                                   GUIDE_PIN                                    G23                                          
+8985.43                       10311.02                      0.0                           180.0     TOP       PLACED    
+GUIDE_PIN                                    GUIDE_PIN                                    G24                                          
+9871.26                       10311.02                      0.0                           180.0     TOP       MCAD      
+GUIDE_PIN                                    GUIDE_PIN                                    G25                                          
+10757.09                      10311.02                      0.0                           180.0     TOP       MCAD      
+GUIDE_PIN                                    GUIDE_PIN                                    G26                                          
+11642.91                      10311.02                      0.0                           180.0     TOP       MCAD      
+GUIDE_PIN                                    GUIDE_PIN                                    G27                                          
+12528.74                      10311.02                      0.0                           180.0     TOP       MCAD      
+GUIDE_PIN                                    GUIDE_PIN                                    G28                                          
+13414.57                      10311.02                      0.0                           180.0     TOP       MCAD      
+GUIDE_PIN                                    GUIDE_PIN                                    G10                                          
+1898.82                       6129.92                       0.0                           0.0       TOP       MCAD      
+GUIDE_PIN                                    GUIDE_PIN                                    G3                                           
+16131.1                       10311.02                      0.0                           90.0      TOP       MCAD      
+GUIDE_PIN                                    GUIDE_PIN                                    G12                                          
+15186.22                      6129.92                       0.0                           0.0       TOP       MCAD      
+GUIDE_PIN                                    GUIDE_PIN                                    G6                                           
+8228.74                       12020.47                      0.0                           0.0       TOP       MCAD      
+GUIDE_PIN                                    GUIDE_PIN                                    G8                                           
+14561.81                      12020.47                      0.0                           90.0      TOP       MCAD      
+GUIDE_PIN                                    GUIDE_PIN                                    G4                                           
+16131.1                       6129.92                       0.0                           90.0      TOP       MCAD      
+GUIDE_PIN                                    GUIDE_PIN                                    G5                                           
+4812.2                        12020.47                      0.0                           90.0      TOP       MCAD      
+GUIDE_PIN                                    GUIDE_PIN                                    G7                                           
+11645.28                      12020.47                      0.0                           90.0      TOP       MCAD      
+CASE_C-6032-28                               CAP-10UF-16V-CASE_C-10_-TPSC106K016R0500     C51                                          
+4075.0                        10150.0                       0.0                           90.0      TOP       PLACED    
+CON_10043546-101LF                           CON-TH-9X6-10043546-101LF                    J11-LT                                       
+1630.31                       7689.76                       0.0                           270.0     TOP       MCAD      
+CON_10043546-101LF                           CON-TH-9X6-10043546-101LF                    J8-RT                                        
+14917.72                      7689.76                       0.0                           270.0     TOP       MCAD      
+CON_10043546-101LF                           CON-TH-9X6-10043546-101LF                    J5                                           
+12881.89                      11754.72                      0.0                           0.0       TOP       MCAD      
+CON_10043546-101LF                           CON-TH-9X6-10043546-101LF                    J6                                           
+9715.35                       11754.72                      0.0                           0.0       TOP       MCAD      
+CON_10043546-101LF                           CON-TH-9X6-10043546-101LF                    J7                                           
+6298.82                       11754.72                      0.0                           0.0       TOP       MCAD      
+CON_10043546-101LF                           CON-TH-9X6-10043546-101LF                    J4                                           
+15798.43                      11754.72                      0.0                           0.0       TOP       MCAD      
+CON_10045271-101LF                           CON-TH-9X8-10045271-101LF                    J14-LT                                       
+2734.65                       7886.81                       0.0                           270.0     TOP       MCAD      
+CON_10045271-101LF                           CON-TH-9X8-10045271-101LF                    J10-RB                                       
+15136.22                      6905.71                       0.0                           270.0     TOP       MCAD      
+CON_10045271-101LF                           CON-TH-9X8-10045271-101LF                    J9-LB                                        
+1848.82                       6905.71                       0.0                           270.0     TOP       MCAD      
+CON_10045271-101LF                           CON-TH-9X8-10045271-101LF                    J15-LB                                       
+2734.65                       6905.71                       0.0                           270.0     TOP       MCAD      
+CON_10045271-101LF                           CON-TH-9X8-10045271-101LF                    J16-RT                                       
+14250.39                      7886.81                       0.0                           270.0     TOP       MCAD      
+CON_10045271-101LF                           CON-TH-9X8-10045271-101LF                    J17-RB                                       
+14250.39                      6905.71                       0.0                           270.0     TOP       MCAD      
+CON_10045271-101LF                           CON-TH-9X8-10045271-101LF                    J26-T                                        
+5392.13                       7886.81                       0.0                           270.0     TOP       MCAD      
+CON_10045271-101LF                           CON-TH-9X8-10045271-101LF                    J27-B                                        
+5392.13                       6905.71                       0.0                           270.0     TOP       MCAD      
+CON_10045271-101LF                           CON-TH-9X8-10045271-101LF                    J29-T                                        
+6277.95                       7886.81                       0.0                           270.0     TOP       MCAD      
+CON_10045271-101LF                           CON-TH-9X8-10045271-101LF                    J30-B                                        
+6277.95                       6905.71                       0.0                           270.0     TOP       MCAD      
+CON_10045271-101LF                           CON-TH-9X8-10045271-101LF                    J32-T                                        
+7163.78                       7886.81                       0.0                           270.0     TOP       MCAD      
+CON_10045271-101LF                           CON-TH-9X8-10045271-101LF                    J33-B                                        
+7163.78                       6905.71                       0.0                           270.0     TOP       MCAD      
+CON_10045271-101LF                           CON-TH-9X8-10045271-101LF                    J35-T                                        
+8049.61                       7886.81                       0.0                           270.0     TOP       MCAD      
+CON_10045271-101LF                           CON-TH-9X8-10045271-101LF                    J36-B                                        
+8049.61                       6905.71                       0.0                           270.0     TOP       MCAD      
+CON_10045271-101LF                           CON-TH-9X8-10045271-101LF                    J39-B                                        
+8935.43                       6905.71                       0.0                           270.0     TOP       PLACED    
+CON_10045271-101LF                           CON-TH-9X8-10045271-101LF                    J38-T                                        
+8935.43                       7886.81                       0.0                           270.0     TOP       PLACED    
+CON_10045271-101LF                           CON-TH-9X8-10045271-101LF                    J42-B                                        
+9821.26                       6905.71                       0.0                           270.0     TOP       PLACED    
+CON_10045271-101LF                           CON-TH-9X8-10045271-101LF                    J41-T                                        
+9821.26                       7886.81                       0.0                           270.0     TOP       MCAD      
+CON_10045271-101LF                           CON-TH-9X8-10045271-101LF                    J44-T                                        
+10707.09                      7886.81                       0.0                           270.0     TOP       MCAD      
+CON_10045271-101LF                           CON-TH-9X8-10045271-101LF                    J45-B                                        
+10707.09                      6905.71                       0.0                           270.0     TOP       MCAD      
+CON_10045271-101LF                           CON-TH-9X8-10045271-101LF                    J47-T                                        
+11592.91                      7886.81                       0.0                           270.0     TOP       MCAD      
+CON_10045271-101LF                           CON-TH-9X8-10045271-101LF                    J48-B                                        
+11592.91                      6905.71                       0.0                           270.0     TOP       MCAD      
+CON_10045271-101LF                           CON-TH-9X8-10045271-101LF                    J50-T                                        
+12478.74                      7886.81                       0.0                           270.0     TOP       MCAD      
+CON_10045271-101LF                           CON-TH-9X8-10045271-101LF                    J51-B                                        
+12478.74                      6905.71                       0.0                           270.0     TOP       MCAD      
+CON_10045271-101LF                           CON-TH-9X8-10045271-101LF                    J53-T                                        
+13364.57                      7886.81                       0.0                           270.0     TOP       MCAD      
+CON_10045271-101LF                           CON-TH-9X8-10045271-101LF                    J54-B                                        
+13364.57                      6905.71                       0.0                           270.0     TOP       MCAD      
+CON_10045271-101LF                           CON-TH-9X8-10045271-101LF                    J20-T                                        
+3620.47                       7886.81                       0.0                           270.0     TOP       PLACED    
+CON_10045271-101LF                           CON-TH-9X8-10045271-101LF                    J23-T                                        
+4506.3                        7886.81                       0.0                           270.0     TOP       PLACED    
+CON_10045271-101LF                           CON-TH-9X8-10045271-101LF                    J21-B                                        
+3620.47                       6905.71                       0.0                           270.0     TOP       MCAD      
+CON_10045271-101LF                           CON-TH-9X8-10045271-101LF                    J24-B                                        
+4506.3                        6905.71                       0.0                           270.0     TOP       MCAD      
+POWER_CON-24P                                CON-TH-6P-10061290-554555PLF                 J18                                          
+3632.09                       9700.59                       0.0                           270.0     TOP       MCAD      
+POWER_CON-24P                                CON-TH-6P-10061290-554555PLF                 J19                                          
+4517.91                       9700.59                       0.0                           270.0     TOP       MCAD      
+POWER_CON-24P                                CON-TH-6P-10061290-554555PLF                 J22                                          
+5403.74                       9700.59                       0.0                           270.0     TOP       MCAD      
+POWER_CON-24P                                CON-TH-6P-10061290-554555PLF                 J25                                          
+6289.57                       9700.59                       0.0                           270.0     TOP       MCAD      
+POWER_CON-24P                                CON-TH-6P-10061290-554555PLF                 J28                                          
+7175.39                       9700.59                       0.0                           270.0     TOP       MCAD      
+POWER_CON-24P                                CON-TH-6P-10061290-554555PLF                 J31                                          
+8061.22                       9700.59                       0.0                           270.0     TOP       MCAD      
+POWER_CON-24P                                CON-TH-6P-10061290-554555PLF                 J34                                          
+8947.05                       9700.59                       0.0                           270.0     TOP       MCAD      
+POWER_CON-24P                                CON-TH-6P-10061290-554555PLF                 J37                                          
+9832.87                       9700.59                       0.0                           270.0     TOP       MCAD      
+POWER_CON-24P                                CON-TH-6P-10061290-554555PLF                 J40                                          
+10718.7                       9700.59                       0.0                           270.0     TOP       MCAD      
+POWER_CON-24P                                CON-TH-6P-10061290-554555PLF                 J43                                          
+11604.53                      9700.59                       0.0                           270.0     TOP       MCAD      
+POWER_CON-24P                                CON-TH-6P-10061290-554555PLF                 J46                                          
+12490.35                      9700.59                       0.0                           270.0     TOP       MCAD      
+POWER_CON-24P                                CON-TH-6P-10061290-554555PLF                 J49                                          
+13376.18                      9700.59                       0.0                           270.0     TOP       PLACED    
+POWER_CON                                    CON-TH_VR-2X2-10028916-4554P00LF             J13                                          
+2761.61                       9818.46                       0.0                           270.0     TOP       MCAD      
+POWER_CON                                    CON-TH_VR-2X2-10028916-4554P00LF             J12                                          
+1875.78                       9818.46                       0.0                           270.0     TOP       PLACED    
+POWER_CON                                    CON-TH_VR-2X2-10028916-4554P00LF             J52                                          
+14277.35                      9818.46                       0.0                           270.0     TOP       MCAD      
+POWER_CON                                    CON-TH_VR-2X2-10028916-4554P00LF             J55                                          
+15163.18                      9818.46                       0.0                           270.0     TOP       MCAD      
+CON_10016537-101LF                           CON-TH_VR-10X15-10016537-101LF               J56-L                                        
+1279.53                       2151.18                       0.0                           0.0       TOP       MCAD      
+CON_10016537-101LF                           CON-TH_VR-10X15-10016537-101LF               J57-R                                        
+2147.64                       2151.18                       0.0                           0.0       TOP       MCAD      
+CON_10016537-101LF                           CON-TH_VR-10X15-10016537-101LF               J58-L                                        
+4135.83                       2151.18                       0.0                           0.0       TOP       PLACED    
+CON_10016537-101LF                           CON-TH_VR-10X15-10016537-101LF               J59-R                                        
+5003.94                       2151.18                       0.0                           0.0       TOP       PLACED    
+CON_10016537-101LF                           CON-TH_VR-10X15-10016537-101LF               J60-L                                        
+6992.13                       2151.18                       0.0                           0.0       TOP       MCAD      
+CON_10016537-101LF                           CON-TH_VR-10X15-10016537-101LF               J62-L                                        
+9848.43                       2151.18                       0.0                           0.0       TOP       MCAD      
+CON_10016537-101LF                           CON-TH_VR-10X15-10016537-101LF               J63-R                                        
+10716.54                      2151.18                       0.0                           0.0       TOP       MCAD      
+CON_10016537-101LF                           CON-TH_VR-10X15-10016537-101LF               J64-L                                        
+12704.72                      2151.18                       0.0                           0.0       TOP       MCAD      
+CON_10016537-101LF                           CON-TH_VR-10X15-10016537-101LF               J65-R                                        
+13572.83                      2151.18                       0.0                           0.0       TOP       MCAD      
+CON_10016537-101LF                           CON-TH_VR-10X15-10016537-101LF               J61-R                                        
+7860.24                       2151.18                       0.0                           0.0       TOP       MCAD      
+CON_10016537-101LF                           CON-TH_VR-10X15-10016537-101LF               J66-L                                        
+15561.02                      2151.18                       0.0                           0.0       TOP       MCAD      
+CON_10016537-101LF                           CON-TH_VR-10X15-10016537-101LF               J67-R                                        
+16429.13                      2151.18                       0.0                           0.0       TOP       MCAD      
+CASE_X-7343-43                               CAP-10UF-50V-CASE_X-10_-T495X106K050ATE_     C5                                           
+1090.0                        8880.0                        0.0                           270.0     TOP       PLACED    
+C1812                                        CAP-4_7UF-50V-1812-10_-C1812X475K5RACTU      C103                                         
+4025.0                        6225.0                        0.0                           270.0     TOP       PLACED    
+C1812                                        CAP-4_7UF-50V-1812-10_-C1812X475K5RACTU      C105                                         
+4225.0                        6225.0                        0.0                           270.0     TOP       PLACED    
+C1812                                        CAP-4_7UF-50V-1812-10_-C1812X475K5RACTU      C109                                         
+5075.0                        6225.0                        0.0                           270.0     TOP       PLACED    
+C1812                                        CAP-4_7UF-50V-1812-10_-C1812X475K5RACTU      C111                                         
+5275.0                        6225.0                        0.0                           270.0     TOP       PLACED    
+C1812                                        CAP-4_7UF-50V-1812-10_-C1812X475K5RACTU      C115                                         
+5925.0                        6225.0                        0.0                           270.0     TOP       PLACED    
+C1812                                        CAP-4_7UF-50V-1812-10_-C1812X475K5RACTU      C117                                         
+6125.0                        6225.0                        0.0                           270.0     TOP       PLACED    
+C1812                                        CAP-4_7UF-50V-1812-10_-C1812X475K5RACTU      C121                                         
+6850.0                        6225.0                        0.0                           270.0     TOP       PLACED    
+C1812                                        CAP-4_7UF-50V-1812-10_-C1812X475K5RACTU      C123                                         
+7050.0                        6225.0                        0.0                           270.0     TOP       PLACED    
+C1812                                        CAP-4_7UF-50V-1812-10_-C1812X475K5RACTU      C127                                         
+7700.0                        6225.0                        0.0                           270.0     TOP       PLACED    
+C1812                                        CAP-4_7UF-50V-1812-10_-C1812X475K5RACTU      C129                                         
+7900.0                        6225.0                        0.0                           270.0     TOP       PLACED    
+C1812                                        CAP-4_7UF-50V-1812-10_-C1812X475K5RACTU      C133                                         
+8675.0                        5900.0                        0.0                           270.0     TOP       PLACED    
+C1812                                        CAP-4_7UF-50V-1812-10_-C1812X475K5RACTU      C135                                         
+8875.0                        5900.0                        0.0                           270.0     TOP       PLACED    
+C1812                                        CAP-4_7UF-50V-1812-10_-C1812X475K5RACTU      C139                                         
+9500.0                        6225.0                        0.0                           270.0     TOP       PLACED    
+C1812                                        CAP-4_7UF-50V-1812-10_-C1812X475K5RACTU      C141                                         
+9700.0                        6225.0                        0.0                           270.0     TOP       PLACED    
+C1812                                        CAP-4_7UF-50V-1812-10_-C1812X475K5RACTU      C145                                         
+10375.0                       6225.0                        0.0                           270.0     TOP       PLACED    
+C1812                                        CAP-4_7UF-50V-1812-10_-C1812X475K5RACTU      C147                                         
+10575.0                       6225.0                        0.0                           270.0     TOP       PLACED    
+C1812                                        CAP-4_7UF-50V-1812-10_-C1812X475K5RACTU      C151                                         
+11275.0                       6225.0                        0.0                           270.0     TOP       PLACED    
+C1812                                        CAP-4_7UF-50V-1812-10_-C1812X475K5RACTU      C153                                         
+11475.0                       6225.0                        0.0                           270.0     TOP       PLACED    
+C1812                                        CAP-4_7UF-50V-1812-10_-C1812X475K5RACTU      C157                                         
+12100.0                       6225.0                        0.0                           270.0     TOP       PLACED    
+C1812                                        CAP-4_7UF-50V-1812-10_-C1812X475K5RACTU      C159                                         
+12300.0                       6225.0                        0.0                           270.0     TOP       PLACED    
+C1812                                        CAP-4_7UF-50V-1812-10_-C1812X475K5RACTU      C163                                         
+13075.0                       6225.0                        0.0                           270.0     TOP       PLACED    
+C1812                                        CAP-4_7UF-50V-1812-10_-C1812X475K5RACTU      C165                                         
+13275.0                       6225.0                        0.0                           270.0     TOP       PLACED    
+C1812                                        CAP-4_7UF-50V-1812-10_-C1812X475K5RACTU      C305                                         
+3625.0                        6225.0                        0.0                           270.0     TOP       PLACED    
+C1812                                        CAP-4_7UF-50V-1812-10_-C1812X475K5RACTU      C307                                         
+3825.0                        6225.0                        0.0                           270.0     TOP       PLACED    
+C1812                                        CAP-4_7UF-50V-1812-10_-C1812X475K5RACTU      C309                                         
+4575.0                        5900.0                        0.0                           270.0     TOP       PLACED    
+C1812                                        CAP-4_7UF-50V-1812-10_-C1812X475K5RACTU      C311                                         
+4815.0                        5900.0                        0.0                           270.0     TOP       PLACED    
+C1812                                        CAP-4_7UF-50V-1812-10_-C1812X475K5RACTU      C313                                         
+5475.0                        6225.0                        0.0                           270.0     TOP       PLACED    
+C1812                                        CAP-4_7UF-50V-1812-10_-C1812X475K5RACTU      C315                                         
+5675.0                        6225.0                        0.0                           270.0     TOP       PLACED    
+C1812                                        CAP-4_7UF-50V-1812-10_-C1812X475K5RACTU      C317                                         
+7250.0                        6225.0                        0.0                           270.0     TOP       PLACED    
+C1812                                        CAP-4_7UF-50V-1812-10_-C1812X475K5RACTU      C319                                         
+7450.0                        6225.0                        0.0                           270.0     TOP       PLACED    
+C1812                                        CAP-4_7UF-50V-1812-10_-C1812X475K5RACTU      C321                                         
+8100.0                        6225.0                        0.0                           270.0     TOP       PLACED    
+C1812                                        CAP-4_7UF-50V-1812-10_-C1812X475K5RACTU      C323                                         
+8300.0                        6225.0                        0.0                           270.0     TOP       PLACED    
+C1812                                        CAP-4_7UF-50V-1812-10_-C1812X475K5RACTU      C325                                         
+10775.0                       6225.0                        0.0                           270.0     TOP       PLACED    
+C1812                                        CAP-4_7UF-50V-1812-10_-C1812X475K5RACTU      C327                                         
+10975.0                       6225.0                        0.0                           270.0     TOP       PLACED    
+C1812                                        CAP-4_7UF-50V-1812-10_-C1812X475K5RACTU      C329                                         
+12575.0                       5900.0                        0.0                           270.0     TOP       PLACED    
+C1812                                        CAP-4_7UF-50V-1812-10_-C1812X475K5RACTU      C331                                         
+12875.0                       6225.0                        0.0                           270.0     TOP       PLACED    
+C1812                                        CAP-4_7UF-50V-1812-10_-C1812X475K5RACTU      C333                                         
+6325.0                        6225.0                        0.0                           270.0     TOP       PLACED    
+C1812                                        CAP-4_7UF-50V-1812-10_-C1812X475K5RACTU      C335                                         
+6525.0                        6225.0                        0.0                           270.0     TOP       PLACED    
+C1812                                        CAP-4_7UF-50V-1812-10_-C1812X475K5RACTU      C337                                         
+9900.0                        6225.0                        0.0                           270.0     TOP       PLACED    
+C1812                                        CAP-4_7UF-50V-1812-10_-C1812X475K5RACTU      C339                                         
+10100.0                       6225.0                        0.0                           270.0     TOP       PLACED    
+C1812                                        CAP-4_7UF-50V-1812-10_-C1812X475K5RACTU      C341                                         
+11675.0                       6225.0                        0.0                           270.0     TOP       PLACED    
+C1812                                        CAP-4_7UF-50V-1812-10_-C1812X475K5RACTU      C343                                         
+11875.0                       6225.0                        0.0                           270.0     TOP       PLACED    
+C1812                                        CAP-4_7UF-50V-1812-10_-C1812X475K5RACTU      C345                                         
+13475.0                       6225.0                        0.0                           270.0     TOP       PLACED    
+C1812                                        CAP-4_7UF-50V-1812-10_-C1812X475K5RACTU      C347                                         
+13675.0                       6225.0                        0.0                           270.0     TOP       PLACED    
+C1812                                        CAP-4_7UF-50V-1812-10_-C1812X475K5RACTU      C349                                         
+9100.0                        6225.0                        0.0                           270.0     TOP       PLACED    
+C1812                                        CAP-4_7UF-50V-1812-10_-C1812X475K5RACTU      C351                                         
+9295.0                        6225.0                        0.0                           270.0     TOP       PLACED    
+C1812                                        CAP-4_7UF-50V-1812-10_-C1812X475K5RACTU      C97                                          
+3225.0                        6225.0                        0.0                           270.0     TOP       PLACED    
+C1812                                        CAP-4_7UF-50V-1812-10_-C1812X475K5RACTU      C99                                          
+3425.0                        6225.0                        0.0                           270.0     TOP       PLACED    
+KF2-632-ET                                   MEC-MH-KF2-632-ET                            MH49                                         
+414.37                        1767.32                       0.0                           0.0       TOP       PLACED    
+KF2-632-ET                                   MEC-MH-KF2-632-ET                            MH50                                         
+2304.13                       3302.76                       0.0                           0.0       TOP       PLACED    
+KF2-632-ET                                   MEC-MH-KF2-632-ET                            MH51                                         
+3270.67                       1767.32                       0.0                           0.0       TOP       PLACED    
+KF2-632-ET                                   MEC-MH-KF2-632-ET                            MH52                                         
+5160.43                       3302.76                       0.0                           0.0       TOP       PLACED    
+KF2-632-ET                                   MEC-MH-KF2-632-ET                            MH53                                         
+6126.97                       1767.32                       0.0                           0.0       TOP       PLACED    
+KF2-632-ET                                   MEC-MH-KF2-632-ET                            MH54                                         
+8016.73                       3302.76                       0.0                           0.0       TOP       PLACED    
+KF2-632-ET                                   MEC-MH-KF2-632-ET                            MH55                                         
+8983.27                       1767.32                       0.0                           0.0       TOP       PLACED    
+KF2-632-ET                                   MEC-MH-KF2-632-ET                            MH56                                         
+10873.03                      3302.76                       0.0                           0.0       TOP       PLACED    
+KF2-632-ET                                   MEC-MH-KF2-632-ET                            MH57                                         
+11839.57                      1767.32                       0.0                           0.0       TOP       PLACED    
+KF2-632-ET                                   MEC-MH-KF2-632-ET                            MH58                                         
+13729.33                      3302.76                       0.0                           0.0       TOP       PLACED    
+KF2-632-ET                                   MEC-MH-KF2-632-ET                            MH59                                         
+14695.87                      1767.32                       0.0                           0.0       TOP       PLACED    
+KF2-632-ET                                   MEC-MH-KF2-632-ET                            MH60                                         
+16585.63                      3302.76                       0.0                           0.0       TOP       PLACED    
+MHD600H355                                   MEC-MH-6_0X3_55                              MH6                                          
+5351.57                       8640.55                       0.0                           0.0       TOP       PLACED    
+MHD600H355                                   MEC-MH-6_0X3_55                              MH5                                          
+11572.05                      8640.55                       0.0                           0.0       TOP       PLACED    
+MHD600H355                                   MEC-MH-6_0X3_55                              MH4                                          
+5701.97                       3522.64                       0.0                           0.0       TOP       PLACED    
+MHD600H355                                   MEC-MH-6_0X3_55                              MH3                                          
+11312.2                       3522.64                       0.0                           0.0       TOP       PLACED    
+MHD600H355                                   MEC-MH-6_0X3_55                              MH1                                          
+5701.97                       569.88                        0.0                           0.0       TOP       PLACED    
+MHD600H355                                   MEC-MH-6_0X3_55                              MH2                                          
+11312.2                       569.88                        0.0                           0.0       TOP       PLACED    
+MHD600H355                                   MEC-MH-6_0X3_55                              MH41                                         
+8557.17                       8767.95                       0.0                           0.0       TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C169                                         
+275.0                         2368.11                       0.0                           180.0     TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C171                                         
+275.0                         2668.11                       0.0                           180.0     TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C173                                         
+1275.0                        1643.11                       0.0                           270.0     TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C175                                         
+3075.0                        2968.11                       0.0                           180.0     TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C177                                         
+3075.0                        2668.11                       0.0                           180.0     TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C179                                         
+3075.0                        2368.11                       0.0                           180.0     TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C181                                         
+5950.0                        2968.11                       0.0                           180.0     TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C183                                         
+5950.0                        2668.11                       0.0                           180.0     TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C185                                         
+5950.0                        2368.11                       0.0                           180.0     TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C187                                         
+8825.0                        2968.11                       0.0                           180.0     TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C189                                         
+8825.0                        2668.11                       0.0                           180.0     TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C191                                         
+8825.0                        2368.11                       0.0                           180.0     TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C193                                         
+11600.0                       2968.11                       0.0                           180.0     TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C195                                         
+11600.0                       2668.11                       0.0                           180.0     TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C197                                         
+11600.0                       2368.11                       0.0                           180.0     TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C201                                         
+15430.0                       1643.11                       0.0                           270.0     TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C203                                         
+15640.0                       1643.11                       0.0                           270.0     TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C209                                         
+14425.0                       2368.11                       0.0                           180.0     TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C211                                         
+14425.0                       2068.11                       0.0                           180.0     TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C213                                         
+14425.0                       2968.11                       0.0                           180.0     TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C215                                         
+14425.0                       2668.11                       0.0                           180.0     TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C217                                         
+12565.0                       1643.11                       0.0                           270.0     TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C219                                         
+12115.0                       3338.11                       0.0                           90.0      TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C221                                         
+11600.0                       2068.11                       0.0                           180.0     TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C223                                         
+12765.0                       1643.11                       0.0                           270.0     TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C225                                         
+9700.0                        1643.11                       0.0                           270.0     TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C227                                         
+9230.0                        3338.11                       0.0                           90.0      TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C229                                         
+8825.0                        2068.11                       0.0                           180.0     TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C231                                         
+9900.0                        1643.11                       0.0                           270.0     TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C233                                         
+6870.0                        1643.11                       0.0                           270.0     TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C235                                         
+6175.0                        3338.11                       0.0                           90.0      TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C237                                         
+5950.0                        2068.11                       0.0                           180.0     TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C239                                         
+7065.0                        1643.11                       0.0                           270.0     TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C241                                         
+3950.0                        1643.11                       0.0                           270.0     TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C243                                         
+3475.0                        3338.11                       0.0                           90.0      TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C245                                         
+3075.0                        2068.11                       0.0                           180.0     TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C247                                         
+4175.0                        1643.11                       0.0                           270.0     TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C251                                         
+275.0                         2968.11                       0.0                           180.0     TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C253                                         
+275.0                         2068.11                       0.0                           180.0     TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C255                                         
+640.0                         3338.11                       0.0                           90.0      TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C281                                         
+1050.0                        1643.11                       0.0                           270.0     TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C283                                         
+3725.0                        1643.11                       0.0                           270.0     TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C285                                         
+6600.0                        1643.11                       0.0                           270.0     TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C287                                         
+9460.0                        1643.11                       0.0                           270.0     TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C289                                         
+12355.0                       1643.11                       0.0                           270.0     TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C291                                         
+14955.0                       3338.11                       0.0                           90.0      TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C293                                         
+2500.0                        2218.11                       0.0                           0.0       TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C295                                         
+2500.0                        2518.11                       0.0                           0.0       TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C297                                         
+2500.0                        2818.11                       0.0                           0.0       TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C299                                         
+1775.0                        3338.11                       0.0                           90.0      TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C301                                         
+825.0                         1643.11                       0.0                           270.0     TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C353                                         
+5350.0                        1918.11                       0.0                           0.0       TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C355                                         
+5350.0                        2218.11                       0.0                           0.0       TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C357                                         
+5350.0                        2518.11                       0.0                           0.0       TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C359                                         
+5350.0                        2818.11                       0.0                           0.0       TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C361                                         
+4700.0                        3338.11                       0.0                           90.0      TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C363                                         
+4800.0                        1643.11                       0.0                           270.0     TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C365                                         
+8275.0                        1918.11                       0.0                           0.0       TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C367                                         
+8275.0                        2218.11                       0.0                           0.0       TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C369                                         
+8275.0                        2518.11                       0.0                           0.0       TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C371                                         
+8275.0                        2818.11                       0.0                           0.0       TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C373                                         
+7575.0                        3338.11                       0.0                           90.0      TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C375                                         
+7625.0                        1643.11                       0.0                           270.0     TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C377                                         
+11050.0                       1918.11                       0.0                           0.0       TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C379                                         
+11050.0                       2218.11                       0.0                           0.0       TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C381                                         
+11050.0                       2518.11                       0.0                           0.0       TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C383                                         
+11050.0                       2818.11                       0.0                           0.0       TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C385                                         
+10425.0                       3338.11                       0.0                           90.0      TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C387                                         
+10475.0                       1643.11                       0.0                           270.0     TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C389                                         
+13950.0                       1918.11                       0.0                           0.0       TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C391                                         
+13950.0                       2218.11                       0.0                           0.0       TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C393                                         
+13950.0                       2518.11                       0.0                           0.0       TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C395                                         
+13950.0                       2818.11                       0.0                           0.0       TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C397                                         
+13275.0                       3338.11                       0.0                           90.0      TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C399                                         
+13375.0                       1643.11                       0.0                           270.0     TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C401                                         
+16725.0                       1918.11                       0.0                           0.0       TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C403                                         
+16725.0                       2218.11                       0.0                           0.0       TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C405                                         
+16725.0                       2518.11                       0.0                           0.0       TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C407                                         
+16725.0                       2818.11                       0.0                           0.0       TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C409                                         
+16085.0                       3338.11                       0.0                           90.0      TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C411                                         
+16150.0                       1643.11                       0.0                           270.0     TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C199                                         
+15180.0                       1643.11                       0.0                           270.0     TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C249                                         
+2500.0                        1918.11                       0.0                           0.0       TOP       PLACED    
+CASE_D-7343-31                               CAP-10UF-50V-CASE_D-10_-TR3D106K050C0450     C303                                         
+1875.0                        1643.11                       0.0                           270.0     TOP       PLACED    
+GUIDE_PINA                                   GUIDE_PIN                                    G22                                          
+8099.61                       10311.02                      0.0                           180.0     TOP       PLACED    
+C0603                                        CAP-0_1UF-50V-0603-10_-06035C104KAT2A        C413                                         
+1946.89                       5415.0                        0.0                           180.0     TOP       PLACED    
+R0603                                        RES-10K-R0603-RC0603FR-0710KL                R2                                           
+14661.42                      5670.0                        0.0                           270.0     TOP       PLACED    
+R0603                                        RES-10K-R0603-RC0603FR-0710KL                R3                                           
+14582.68                      5670.0                        0.0                           270.0     TOP       PLACED    
+R0603                                        RES-10K-R0603-RC0603FR-0710KL                R6                                           
+2186.89                       5670.0                        0.0                           270.0     TOP       PLACED    
+R0603                                        RES-10K-R0603-RC0603FR-0710KL                R7                                           
+2116.89                       5670.0                        0.0                           270.0     TOP       PLACED    
+SWITCH_R_SMD6                                SWH-DIP-SH-7070T                             SW1                                          
+15158.31                      8854.33                       0.0                           0.0       TOP       MCAD      
+C1206                                        CAP-1UF-50V-1206-10_-C1206C105K5RAC          C415                                         
+2436.89                       5140.0                        0.0                           270.0     TOP       PLACED    
+C1206                                        CAP-1UF-50V-1206-10_-C1206C105K5RAC          C416                                         
+14887.8                       5140.0                        0.0                           270.0     TOP       PLACED    
+DFLS160                                      DIO-POWERDI123-DFLS160-7                     D1                                           
+2536.89                       5250.0                        0.0                           90.0      TOP       PLACED    
+DFLS160                                      DIO-POWERDI123-DFLS160-7                     D2                                           
+2631.89                       5250.0                        0.0                           90.0      TOP       PLACED    
+DFLS160                                      DIO-POWERDI123-DFLS160-7                     D3                                           
+15098.43                      5250.0                        0.0                           90.0      TOP       PLACED    
+DFLS160                                      DIO-POWERDI123-DFLS160-7                     D4                                           
+14996.06                      5250.0                        0.0                           90.0      TOP       PLACED    
+TP_40_SM                                     MEC-TPD-_                                    TP_3V3_A                                     
+1971.0                        5018.0                        0.0                           0.0       TOP       PLACED    
+TP_40_SM                                     MEC-TPD-_                                    TP_3V3_B                                     
+14485.0                       5060.0                        0.0                           0.0       TOP       PLACED    
+C0603                                        CAP-0_1UF-06033C104KA                        C417                                         
+2341.89                       5315.0                        0.0                           180.0     TOP       PLACED    
+C0603                                        CAP-0_1UF-06033C104KA                        C419                                         
+14759.84                      5285.43                       0.0                           180.0     TOP       PLACED    
+C0603                                        CAP-0_1UF-50V-0603-10_-06035C104KAT2A        C414                                         
+14405.51                      5415.0                        0.0                           180.0     TOP       PLACED    
+PFM-DPACK                                    IC-REGULATOR-LM2936_3V3                      U3                                           
+2241.89                       5000.0                        0.0                           270.0     TOP       PLACED    
+PFM-DPACKA                                   IC-REGULATOR-LM2936_3V3                      U4                                           
+14694.88                      5000.0                        0.0                           270.0     TOP       PLACED    
+C-1210                                       CAP-22UF-C1210X226K8RACTU                    C418                                         
+1956.89                       5180.0                        0.0                           180.0     TOP       PLACED    
+C-1210                                       CAP-22UF-C1210X226K8RACTU                    C420                                         
+14425.2                       5180.0                        0.0                           180.0     TOP       PLACED    
+F2018                                        POLYFUS-1_2A-60V-MF-SMDF050-2                F1                                           
+2341.89                       5540.0                        0.0                           270.0     TOP       PLACED    
+F2018                                        POLYFUS-1_2A-60V-MF-SMDF050-2                F2                                           
+2566.89                       5540.0                        0.0                           270.0     TOP       PLACED    
+F2018                                        POLYFUS-1_2A-60V-MF-SMDF050-2                F4                                           
+14823.35                      5540.0                        0.0                           270.0     TOP       PLACED    
+F2018                                        POLYFUS-1_2A-60V-MF-SMDF050-2                F3                                           
+15049.21                      5540.0                        0.0                           270.0     TOP       PLACED    
+SOIC127P600X175-8NA                          IC-EEPROM-8SOIC-M24256-DFMN6TP               U1                                           
+2121.89                       5420.0                        0.0                           90.0      TOP       PLACED    
+SOIC127P600X175-8N                           IC-EEPROM-8SOIC-M24256-DFMN6TP               U2                                           
+14582.68                      5420.0                        0.0                           90.0      TOP       PLACED    
+.END_PLACEMENT

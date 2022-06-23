@@ -1,0 +1,971 @@
+Classic Timing Analyzer report for IOP_Analog_Proto
+Sat Jan 12 20:16:48 2013
+Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Timing Analyzer Settings
+  4. Clock Settings Summary
+  5. Parallel Compilation
+  6. Clock Setup: 'AICLK'
+  7. Clock Hold: 'AICLK'
+  8. tsu
+  9. tco
+ 10. tpd
+ 11. th
+ 12. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                                                                                                                                                     ;
++------------------------------+------------------------------------------+---------------+----------------------------------+----------------+------------------------+------------+----------+--------------+
+; Type                         ; Slack                                    ; Required Time ; Actual Time                      ; From           ; To                     ; From Clock ; To Clock ; Failed Paths ;
++------------------------------+------------------------------------------+---------------+----------------------------------+----------------+------------------------+------------+----------+--------------+
+; Worst-case tsu               ; N/A                                      ; None          ; 15.262 ns                        ; P_ADDR[11]     ; MPCDataInternal[13]    ; --         ; AICLK    ; 0            ;
+; Worst-case tco               ; N/A                                      ; None          ; 15.068 ns                        ; CLEAR1~reg0    ; CLEAR3                 ; AICLK      ; --       ; 0            ;
+; Worst-case tpd               ; N/A                                      ; None          ; 10.256 ns                        ; P_CSn          ; P_DATA[13]             ; --         ; --       ; 0            ;
+; Worst-case th                ; N/A                                      ; None          ; 2.898 ns                         ; SDO_ADC_C      ; AOCh33V3HealthRBReg[0] ; --         ; AICLK    ; 0            ;
+; Clock Setup: 'AICLK'         ; N/A                                      ; None          ; 42.63 MHz ( period = 23.456 ns ) ; AORBChannel[0] ; AOCh4LowRBReg[2]       ; AICLK      ; AICLK    ; 0            ;
+; Clock Hold: 'AICLK'          ; Not operational: Clock Skew > Data Delay ; None          ; N/A                              ; LEDTrigger     ; P_OE~reg0              ; AICLK      ; AICLK    ; 1            ;
+; Total number of failed paths ;                                          ;               ;                                  ;                ;                        ;            ;          ; 1            ;
++------------------------------+------------------------------------------+---------------+----------------------------------+----------------+------------------------+------------+----------+--------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Settings                                                                                                                            ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+; Option                                                                                               ; Setting            ; From ; To ; Entity Name ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+; Device Name                                                                                          ; EPM2210F256I5      ;      ;    ;             ;
+; Timing Models                                                                                        ; Final              ;      ;    ;             ;
+; Default hold multicycle                                                                              ; Same as Multicycle ;      ;    ;             ;
+; Cut paths between unrelated clock domains                                                            ; On                 ;      ;    ;             ;
+; Cut off read during write signal paths                                                               ; On                 ;      ;    ;             ;
+; Cut off feedback from I/O pins                                                                       ; On                 ;      ;    ;             ;
+; Report Combined Fast/Slow Timing                                                                     ; Off                ;      ;    ;             ;
+; Ignore Clock Settings                                                                                ; Off                ;      ;    ;             ;
+; Analyze latches as synchronous elements                                                              ; On                 ;      ;    ;             ;
+; Enable Recovery/Removal analysis                                                                     ; Off                ;      ;    ;             ;
+; Enable Clock Latency                                                                                 ; Off                ;      ;    ;             ;
+; Use TimeQuest Timing Analyzer                                                                        ; Off                ;      ;    ;             ;
+; Minimum Core Junction Temperature                                                                    ; -40                ;      ;    ;             ;
+; Maximum Core Junction Temperature                                                                    ; 100                ;      ;    ;             ;
+; Number of source nodes to report per destination node                                                ; 10                 ;      ;    ;             ;
+; Number of destination nodes to report                                                                ; 10                 ;      ;    ;             ;
+; Number of paths to report                                                                            ; 200                ;      ;    ;             ;
+; Report Minimum Timing Checks                                                                         ; Off                ;      ;    ;             ;
+; Use Fast Timing Models                                                                               ; Off                ;      ;    ;             ;
+; Report IO Paths Separately                                                                           ; Off                ;      ;    ;             ;
+; Perform Multicorner Analysis                                                                         ; Off                ;      ;    ;             ;
+; Reports the worst-case path for each clock domain and analysis                                       ; Off                ;      ;    ;             ;
+; Reports worst-case timing paths for each clock domain and analysis                                   ; On                 ;      ;    ;             ;
+; Specifies the maximum number of worst-case timing paths to report for each clock domain and analysis ; 100                ;      ;    ;             ;
+; Removes common clock path pessimism (CCPP) during slack computation                                  ; Off                ;      ;    ;             ;
+; Output I/O Timing Endpoint                                                                           ; Near End           ;      ;    ;             ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Settings Summary                                                                                                                                                             ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; Clock Node Name ; Clock Setting Name ; Type     ; Fmax Requirement ; Early Latency ; Late Latency ; Based on ; Multiply Base Fmax by ; Divide Base Fmax by ; Offset ; Phase offset ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; AICLK           ;                    ; User Pin ; None             ; 0.000 ns      ; 0.000 ns     ; --       ; N/A                   ; N/A                 ; N/A    ;              ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 2      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Setup: 'AICLK'                                                                                                                                                                                                                                                                                                   ;
++-----------------------------------------+-----------------------------------------------------+------------------------------+-----------------------------------------------------------------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+; Slack                                   ; Actual fmax (period)                                ; From                         ; To                                                                          ; From Clock ; To Clock ; Required Setup Relationship ; Required Longest P2P Time ; Actual Longest P2P Time ;
++-----------------------------------------+-----------------------------------------------------+------------------------------+-----------------------------------------------------------------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+; N/A                                     ; 42.63 MHz ( period = 23.456 ns )                    ; AORBChannel[0]               ; AOCh3LowRBReg[2]                                                            ; AICLK      ; AICLK    ; None                        ; None                      ; 11.019 ns               ;
+; N/A                                     ; 42.63 MHz ( period = 23.456 ns )                    ; AORBChannel[0]               ; AOCh4LowRBReg[2]                                                            ; AICLK      ; AICLK    ; None                        ; None                      ; 11.019 ns               ;
+; N/A                                     ; 43.14 MHz ( period = 23.178 ns )                    ; AORBInputEnable              ; AOCh3LowRBReg[2]                                                            ; AICLK      ; AICLK    ; None                        ; None                      ; 10.880 ns               ;
+; N/A                                     ; 43.14 MHz ( period = 23.178 ns )                    ; AORBInputEnable              ; AOCh4LowRBReg[2]                                                            ; AICLK      ; AICLK    ; None                        ; None                      ; 10.880 ns               ;
+; N/A                                     ; 44.46 MHz ( period = 22.490 ns )                    ; AORBChannel[0]               ; AOCh1LowRBReg[6]                                                            ; AICLK      ; AICLK    ; None                        ; None                      ; 10.536 ns               ;
+; N/A                                     ; 44.66 MHz ( period = 22.392 ns )                    ; AORBChannel[0]               ; AOCh2LowRBReg[2]                                                            ; AICLK      ; AICLK    ; None                        ; None                      ; 10.487 ns               ;
+; N/A                                     ; 45.22 MHz ( period = 22.114 ns )                    ; AORBInputEnable              ; AOCh2LowRBReg[2]                                                            ; AICLK      ; AICLK    ; None                        ; None                      ; 10.348 ns               ;
+; N/A                                     ; 45.48 MHz ( period = 21.986 ns )                    ; AORBChannel[1]               ; AOCh13V3HealthRBReg[1]                                                      ; AICLK      ; AICLK    ; None                        ; None                      ; 10.284 ns               ;
+; N/A                                     ; 45.48 MHz ( period = 21.986 ns )                    ; AORBChannel[1]               ; AOCh23V3HealthRBReg[1]                                                      ; AICLK      ; AICLK    ; None                        ; None                      ; 10.284 ns               ;
+; N/A                                     ; 45.83 MHz ( period = 21.822 ns )                    ; EnableDACClocks              ; SCK_DAC4~reg0                                                               ; AICLK      ; AICLK    ; None                        ; None                      ; 5.654 ns                ;
+; N/A                                     ; 46.44 MHz ( period = 21.532 ns )                    ; AORBStateMachineInProgress   ; MPCDataInternal[11]                                                         ; AICLK      ; AICLK    ; None                        ; None                      ; 5.509 ns                ;
+; N/A                                     ; 46.63 MHz ( period = 21.444 ns )                    ; DACCommInProgress            ; MPCDataInternal[12]                                                         ; AICLK      ; AICLK    ; None                        ; None                      ; 5.465 ns                ;
+; N/A                                     ; 46.90 MHz ( period = 21.324 ns )                    ; AORBChannel[1]               ; AOCh43V3HealthRBReg[3]                                                      ; AICLK      ; AICLK    ; None                        ; None                      ; 9.953 ns                ;
+; N/A                                     ; 46.90 MHz ( period = 21.324 ns )                    ; AORBChannel[1]               ; AOCh13V3HealthRBReg[3]                                                      ; AICLK      ; AICLK    ; None                        ; None                      ; 9.953 ns                ;
+; N/A                                     ; 46.90 MHz ( period = 21.324 ns )                    ; AORBChannel[1]               ; AOCh23V3HealthRBReg[3]                                                      ; AICLK      ; AICLK    ; None                        ; None                      ; 9.953 ns                ;
+; N/A                                     ; 47.25 MHz ( period = 21.164 ns )                    ; AORBChannel[1]               ; AOCh3PowerRBReg[2]                                                          ; AICLK      ; AICLK    ; None                        ; None                      ; 9.873 ns                ;
+; N/A                                     ; 47.25 MHz ( period = 21.164 ns )                    ; AORBChannel[1]               ; AOCh2PowerRBReg[2]                                                          ; AICLK      ; AICLK    ; None                        ; None                      ; 9.873 ns                ;
+; N/A                                     ; 47.25 MHz ( period = 21.164 ns )                    ; AORBChannel[1]               ; AOCh4PowerRBReg[2]                                                          ; AICLK      ; AICLK    ; None                        ; None                      ; 9.873 ns                ;
+; N/A                                     ; 47.25 MHz ( period = 21.164 ns )                    ; AORBChannel[1]               ; AOCh1PowerRBReg[2]                                                          ; AICLK      ; AICLK    ; None                        ; None                      ; 9.873 ns                ;
+; N/A                                     ; 47.31 MHz ( period = 21.138 ns )                    ; DACCommInProgress            ; MPCDataInternal[9]                                                          ; AICLK      ; AICLK    ; None                        ; None                      ; 5.312 ns                ;
+; N/A                                     ; 47.75 MHz ( period = 20.944 ns )                    ; AORBInputEnable              ; AOCh2LowRBReg[9]                                                            ; AICLK      ; AICLK    ; None                        ; None                      ; 9.763 ns                ;
+; N/A                                     ; 47.75 MHz ( period = 20.944 ns )                    ; AORBInputEnable              ; AOCh4LowRBReg[9]                                                            ; AICLK      ; AICLK    ; None                        ; None                      ; 9.763 ns                ;
+; N/A                                     ; 48.60 MHz ( period = 20.578 ns )                    ; EnableDACClocks              ; SCK_DAC3~reg0                                                               ; AICLK      ; AICLK    ; None                        ; None                      ; 5.032 ns                ;
+; N/A                                     ; 48.63 MHz ( period = 20.562 ns )                    ; AORBChannel[0]               ; AOCh33V3HealthRBReg[10]                                                     ; AICLK      ; AICLK    ; None                        ; None                      ; 9.572 ns                ;
+; N/A                                     ; 48.63 MHz ( period = 20.562 ns )                    ; AORBChannel[0]               ; AOCh43V3HealthRBReg[10]                                                     ; AICLK      ; AICLK    ; None                        ; None                      ; 9.572 ns                ;
+; N/A                                     ; 48.63 MHz ( period = 20.562 ns )                    ; AORBChannel[0]               ; AOCh13V3HealthRBReg[10]                                                     ; AICLK      ; AICLK    ; None                        ; None                      ; 9.572 ns                ;
+; N/A                                     ; 48.63 MHz ( period = 20.562 ns )                    ; AORBChannel[0]               ; AOCh23V3HealthRBReg[10]                                                     ; AICLK      ; AICLK    ; None                        ; None                      ; 9.572 ns                ;
+; N/A                                     ; 48.65 MHz ( period = 20.556 ns )                    ; AORBInputEnable              ; AOCh1LowRBReg[6]                                                            ; AICLK      ; AICLK    ; None                        ; None                      ; 9.569 ns                ;
+; N/A                                     ; 48.67 MHz ( period = 20.548 ns )                    ; AORBChannel[1]               ; AOCh33V3HealthRBReg[10]                                                     ; AICLK      ; AICLK    ; None                        ; None                      ; 9.565 ns                ;
+; N/A                                     ; 48.67 MHz ( period = 20.548 ns )                    ; AORBChannel[1]               ; AOCh43V3HealthRBReg[10]                                                     ; AICLK      ; AICLK    ; None                        ; None                      ; 9.565 ns                ;
+; N/A                                     ; 48.67 MHz ( period = 20.548 ns )                    ; AORBChannel[1]               ; AOCh13V3HealthRBReg[10]                                                     ; AICLK      ; AICLK    ; None                        ; None                      ; 9.565 ns                ;
+; N/A                                     ; 48.67 MHz ( period = 20.548 ns )                    ; AORBChannel[1]               ; AOCh23V3HealthRBReg[10]                                                     ; AICLK      ; AICLK    ; None                        ; None                      ; 9.565 ns                ;
+; N/A                                     ; 48.76 MHz ( period = 20.510 ns )                    ; AORBInputEnable              ; AOCh33V3HealthRBReg[10]                                                     ; AICLK      ; AICLK    ; None                        ; None                      ; 9.546 ns                ;
+; N/A                                     ; 48.76 MHz ( period = 20.510 ns )                    ; AORBInputEnable              ; AOCh43V3HealthRBReg[10]                                                     ; AICLK      ; AICLK    ; None                        ; None                      ; 9.546 ns                ;
+; N/A                                     ; 48.76 MHz ( period = 20.510 ns )                    ; AORBInputEnable              ; AOCh13V3HealthRBReg[10]                                                     ; AICLK      ; AICLK    ; None                        ; None                      ; 9.546 ns                ;
+; N/A                                     ; 48.76 MHz ( period = 20.510 ns )                    ; AORBInputEnable              ; AOCh23V3HealthRBReg[10]                                                     ; AICLK      ; AICLK    ; None                        ; None                      ; 9.546 ns                ;
+; N/A                                     ; 48.88 MHz ( period = 20.460 ns )                    ; AORBChannel[1]               ; AOCh3LowRBReg[1]                                                            ; AICLK      ; AICLK    ; None                        ; None                      ; 9.521 ns                ;
+; N/A                                     ; 48.88 MHz ( period = 20.460 ns )                    ; AORBChannel[1]               ; AOCh2LowRBReg[1]                                                            ; AICLK      ; AICLK    ; None                        ; None                      ; 9.521 ns                ;
+; N/A                                     ; 48.94 MHz ( period = 20.434 ns )                    ; AORBChannel[1]               ; AOCh1LowRBReg[1]                                                            ; AICLK      ; AICLK    ; None                        ; None                      ; 9.508 ns                ;
+; N/A                                     ; 48.94 MHz ( period = 20.434 ns )                    ; AORBChannel[1]               ; AOCh4LowRBReg[1]                                                            ; AICLK      ; AICLK    ; None                        ; None                      ; 9.508 ns                ;
+; N/A                                     ; 49.15 MHz ( period = 20.344 ns )                    ; AORBChannel[1]               ; AOCh3LowRBReg[2]                                                            ; AICLK      ; AICLK    ; None                        ; None                      ; 9.463 ns                ;
+; N/A                                     ; 49.15 MHz ( period = 20.344 ns )                    ; AORBChannel[1]               ; AOCh4LowRBReg[2]                                                            ; AICLK      ; AICLK    ; None                        ; None                      ; 9.463 ns                ;
+; N/A                                     ; 49.22 MHz ( period = 20.316 ns )                    ; AORBChannel[1]               ; AOCh1HighRBReg[13]                                                          ; AICLK      ; AICLK    ; None                        ; None                      ; 9.449 ns                ;
+; N/A                                     ; 49.22 MHz ( period = 20.316 ns )                    ; AORBChannel[1]               ; AOCh2HighRBReg[13]                                                          ; AICLK      ; AICLK    ; None                        ; None                      ; 9.449 ns                ;
+; N/A                                     ; 49.22 MHz ( period = 20.316 ns )                    ; AORBChannel[1]               ; AOCh3HighRBReg[13]                                                          ; AICLK      ; AICLK    ; None                        ; None                      ; 9.449 ns                ;
+; N/A                                     ; 49.22 MHz ( period = 20.316 ns )                    ; AORBChannel[1]               ; AOCh4HighRBReg[13]                                                          ; AICLK      ; AICLK    ; None                        ; None                      ; 9.449 ns                ;
+; N/A                                     ; 49.33 MHz ( period = 20.272 ns )                    ; AORBChannel[1]               ; AOCh1HighRBReg[3]                                                           ; AICLK      ; AICLK    ; None                        ; None                      ; 9.427 ns                ;
+; N/A                                     ; 49.33 MHz ( period = 20.272 ns )                    ; AORBChannel[1]               ; AOCh2HighRBReg[3]                                                           ; AICLK      ; AICLK    ; None                        ; None                      ; 9.427 ns                ;
+; N/A                                     ; 49.33 MHz ( period = 20.272 ns )                    ; AORBChannel[1]               ; AOCh3HighRBReg[3]                                                           ; AICLK      ; AICLK    ; None                        ; None                      ; 9.427 ns                ;
+; N/A                                     ; 49.33 MHz ( period = 20.272 ns )                    ; AORBChannel[1]               ; AOCh4HighRBReg[3]                                                           ; AICLK      ; AICLK    ; None                        ; None                      ; 9.427 ns                ;
+; N/A                                     ; 49.86 MHz ( period = 20.058 ns )                    ; AORBChannel[0]               ; AOCh43V3HealthRBReg[3]                                                      ; AICLK      ; AICLK    ; None                        ; None                      ; 9.320 ns                ;
+; N/A                                     ; 49.86 MHz ( period = 20.058 ns )                    ; AORBChannel[0]               ; AOCh13V3HealthRBReg[3]                                                      ; AICLK      ; AICLK    ; None                        ; None                      ; 9.320 ns                ;
+; N/A                                     ; 49.86 MHz ( period = 20.058 ns )                    ; AORBChannel[0]               ; AOCh23V3HealthRBReg[3]                                                      ; AICLK      ; AICLK    ; None                        ; None                      ; 9.320 ns                ;
+; N/A                                     ; 50.45 MHz ( period = 19.820 ns )                    ; AORBChannel[1]               ; AOCh1LowRBReg[6]                                                            ; AICLK      ; AICLK    ; None                        ; None                      ; 9.201 ns                ;
+; N/A                                     ; 50.68 MHz ( period = 19.730 ns )                    ; EnableSCK_ADC                ; SCK_ADC~reg0                                                                ; AICLK      ; AICLK    ; None                        ; None                      ; 4.608 ns                ;
+; N/A                                     ; 50.77 MHz ( period = 19.696 ns )                    ; AORBChannel[1]               ; AOCh4LowRBReg[3]                                                            ; AICLK      ; AICLK    ; None                        ; None                      ; 9.139 ns                ;
+; N/A                                     ; 50.95 MHz ( period = 19.628 ns )                    ; AORBChannel[1]               ; AOCh33V3HealthRBReg[3]                                                      ; AICLK      ; AICLK    ; None                        ; None                      ; 9.105 ns                ;
+; N/A                                     ; 51.01 MHz ( period = 19.604 ns )                    ; AORBChannel[1]               ; AOCh33V3HealthRBReg[1]                                                      ; AICLK      ; AICLK    ; None                        ; None                      ; 9.093 ns                ;
+; N/A                                     ; 51.01 MHz ( period = 19.604 ns )                    ; AORBChannel[1]               ; AOCh43V3HealthRBReg[1]                                                      ; AICLK      ; AICLK    ; None                        ; None                      ; 9.093 ns                ;
+; N/A                                     ; 51.06 MHz ( period = 19.584 ns )                    ; AORBChannel[0]               ; AOCh3PowerRBReg[2]                                                          ; AICLK      ; AICLK    ; None                        ; None                      ; 9.083 ns                ;
+; N/A                                     ; 51.06 MHz ( period = 19.584 ns )                    ; AORBChannel[0]               ; AOCh2PowerRBReg[2]                                                          ; AICLK      ; AICLK    ; None                        ; None                      ; 9.083 ns                ;
+; N/A                                     ; 51.06 MHz ( period = 19.584 ns )                    ; AORBChannel[0]               ; AOCh4PowerRBReg[2]                                                          ; AICLK      ; AICLK    ; None                        ; None                      ; 9.083 ns                ;
+; N/A                                     ; 51.06 MHz ( period = 19.584 ns )                    ; AORBChannel[0]               ; AOCh1PowerRBReg[2]                                                          ; AICLK      ; AICLK    ; None                        ; None                      ; 9.083 ns                ;
+; N/A                                     ; 51.25 MHz ( period = 19.512 ns )                    ; AORBInputEnable              ; AOCh43V3HealthRBReg[3]                                                      ; AICLK      ; AICLK    ; None                        ; None                      ; 9.047 ns                ;
+; N/A                                     ; 51.25 MHz ( period = 19.512 ns )                    ; AORBInputEnable              ; AOCh13V3HealthRBReg[3]                                                      ; AICLK      ; AICLK    ; None                        ; None                      ; 9.047 ns                ;
+; N/A                                     ; 51.25 MHz ( period = 19.512 ns )                    ; AORBInputEnable              ; AOCh23V3HealthRBReg[3]                                                      ; AICLK      ; AICLK    ; None                        ; None                      ; 9.047 ns                ;
+; N/A                                     ; 51.45 MHz ( period = 19.438 ns )                    ; AORBInputEnable              ; AOCh3LowRBReg[4]                                                            ; AICLK      ; AICLK    ; None                        ; None                      ; 9.010 ns                ;
+; N/A                                     ; 51.45 MHz ( period = 19.438 ns )                    ; AORBInputEnable              ; AOCh1LowRBReg[4]                                                            ; AICLK      ; AICLK    ; None                        ; None                      ; 9.010 ns                ;
+; N/A                                     ; 51.45 MHz ( period = 19.438 ns )                    ; AORBInputEnable              ; AOCh4LowRBReg[4]                                                            ; AICLK      ; AICLK    ; None                        ; None                      ; 9.010 ns                ;
+; N/A                                     ; 51.51 MHz ( period = 19.414 ns )                    ; EnableDACClocks              ; SCK_DAC2~reg0                                                               ; AICLK      ; AICLK    ; None                        ; None                      ; 4.450 ns                ;
+; N/A                                     ; 51.56 MHz ( period = 19.394 ns )                    ; AORBChannel[0]               ; AOCh3PowerRBReg[6]                                                          ; AICLK      ; AICLK    ; None                        ; None                      ; 8.988 ns                ;
+; N/A                                     ; 51.56 MHz ( period = 19.394 ns )                    ; AORBChannel[0]               ; AOCh2PowerRBReg[6]                                                          ; AICLK      ; AICLK    ; None                        ; None                      ; 8.988 ns                ;
+; N/A                                     ; 51.56 MHz ( period = 19.394 ns )                    ; AORBChannel[0]               ; AOCh4PowerRBReg[6]                                                          ; AICLK      ; AICLK    ; None                        ; None                      ; 8.988 ns                ;
+; N/A                                     ; 51.56 MHz ( period = 19.394 ns )                    ; AORBChannel[0]               ; AOCh1PowerRBReg[6]                                                          ; AICLK      ; AICLK    ; None                        ; None                      ; 8.988 ns                ;
+; N/A                                     ; 51.62 MHz ( period = 19.372 ns )                    ; AORBChannel[1]               ; AOCh3PowerRBReg[3]                                                          ; AICLK      ; AICLK    ; None                        ; None                      ; 8.977 ns                ;
+; N/A                                     ; 51.62 MHz ( period = 19.372 ns )                    ; AORBChannel[1]               ; AOCh2PowerRBReg[3]                                                          ; AICLK      ; AICLK    ; None                        ; None                      ; 8.977 ns                ;
+; N/A                                     ; 51.62 MHz ( period = 19.372 ns )                    ; AORBChannel[1]               ; AOCh4PowerRBReg[3]                                                          ; AICLK      ; AICLK    ; None                        ; None                      ; 8.977 ns                ;
+; N/A                                     ; 51.62 MHz ( period = 19.372 ns )                    ; AORBChannel[1]               ; AOCh1PowerRBReg[3]                                                          ; AICLK      ; AICLK    ; None                        ; None                      ; 8.977 ns                ;
+; N/A                                     ; 51.87 MHz ( period = 19.280 ns )                    ; AORBChannel[1]               ; AOCh2LowRBReg[2]                                                            ; AICLK      ; AICLK    ; None                        ; None                      ; 8.931 ns                ;
+; N/A                                     ; 51.95 MHz ( period = 19.248 ns )                    ; AORBCommandReg[5]            ; MPCDataInternal[8]                                                          ; AICLK      ; AICLK    ; None                        ; None                      ; 4.367 ns                ;
+; N/A                                     ; 52.17 MHz ( period = 19.168 ns )                    ; AORBInputEnable              ; AOCh4LowRBReg[0]                                                            ; AICLK      ; AICLK    ; None                        ; None                      ; 8.875 ns                ;
+; N/A                                     ; 52.37 MHz ( period = 19.094 ns )                    ; AORBInputEnable              ; AOCh1LowRBReg[11]                                                           ; AICLK      ; AICLK    ; None                        ; None                      ; 8.838 ns                ;
+; N/A                                     ; 52.46 MHz ( period = 19.062 ns )                    ; Config_DatainEnb             ; ConfigData1RBReg[0]                                                         ; AICLK      ; AICLK    ; None                        ; None                      ; 8.822 ns                ;
+; N/A                                     ; 52.62 MHz ( period = 19.004 ns )                    ; AORBChannel[0]               ; AOCh1LowRBReg[11]                                                           ; AICLK      ; AICLK    ; None                        ; None                      ; 8.793 ns                ;
+; N/A                                     ; 52.64 MHz ( period = 18.998 ns )                    ; AORBInputEnable              ; AOCh3PowerRBReg[2]                                                          ; AICLK      ; AICLK    ; None                        ; None                      ; 8.790 ns                ;
+; N/A                                     ; 52.64 MHz ( period = 18.998 ns )                    ; AORBInputEnable              ; AOCh2PowerRBReg[2]                                                          ; AICLK      ; AICLK    ; None                        ; None                      ; 8.790 ns                ;
+; N/A                                     ; 52.64 MHz ( period = 18.998 ns )                    ; AORBInputEnable              ; AOCh4PowerRBReg[2]                                                          ; AICLK      ; AICLK    ; None                        ; None                      ; 8.790 ns                ;
+; N/A                                     ; 52.64 MHz ( period = 18.998 ns )                    ; AORBInputEnable              ; AOCh1PowerRBReg[2]                                                          ; AICLK      ; AICLK    ; None                        ; None                      ; 8.790 ns                ;
+; N/A                                     ; 52.64 MHz ( period = 18.998 ns )                    ; AORBChannel[0]               ; AOCh3LowRBReg[4]                                                            ; AICLK      ; AICLK    ; None                        ; None                      ; 8.790 ns                ;
+; N/A                                     ; 52.64 MHz ( period = 18.998 ns )                    ; AORBChannel[0]               ; AOCh1LowRBReg[4]                                                            ; AICLK      ; AICLK    ; None                        ; None                      ; 8.790 ns                ;
+; N/A                                     ; 52.64 MHz ( period = 18.998 ns )                    ; AORBChannel[0]               ; AOCh4LowRBReg[4]                                                            ; AICLK      ; AICLK    ; None                        ; None                      ; 8.790 ns                ;
+; N/A                                     ; 52.86 MHz ( period = 18.918 ns )                    ; AORBChannel[1]               ; AOCh33V3HealthRBReg[2]                                                      ; AICLK      ; AICLK    ; None                        ; None                      ; 8.750 ns                ;
+; N/A                                     ; 52.86 MHz ( period = 18.918 ns )                    ; AORBChannel[1]               ; AOCh43V3HealthRBReg[2]                                                      ; AICLK      ; AICLK    ; None                        ; None                      ; 8.750 ns                ;
+; N/A                                     ; 52.86 MHz ( period = 18.918 ns )                    ; AORBChannel[1]               ; AOCh13V3HealthRBReg[2]                                                      ; AICLK      ; AICLK    ; None                        ; None                      ; 8.750 ns                ;
+; N/A                                     ; 52.86 MHz ( period = 18.918 ns )                    ; AORBChannel[1]               ; AOCh23V3HealthRBReg[2]                                                      ; AICLK      ; AICLK    ; None                        ; None                      ; 8.750 ns                ;
+; N/A                                     ; 53.04 MHz ( period = 18.854 ns )                    ; AORBChannel[1]               ; AOCh3PowerRBReg[1]                                                          ; AICLK      ; AICLK    ; None                        ; None                      ; 8.718 ns                ;
+; N/A                                     ; 53.04 MHz ( period = 18.854 ns )                    ; AORBChannel[1]               ; AOCh2PowerRBReg[1]                                                          ; AICLK      ; AICLK    ; None                        ; None                      ; 8.718 ns                ;
+; N/A                                     ; 53.04 MHz ( period = 18.854 ns )                    ; AORBChannel[1]               ; AOCh4PowerRBReg[1]                                                          ; AICLK      ; AICLK    ; None                        ; None                      ; 8.718 ns                ;
+; N/A                                     ; 53.04 MHz ( period = 18.854 ns )                    ; AORBChannel[1]               ; AOCh1PowerRBReg[1]                                                          ; AICLK      ; AICLK    ; None                        ; None                      ; 8.718 ns                ;
+; N/A                                     ; 53.10 MHz ( period = 18.832 ns )                    ; AORBCommandReg[6]            ; MPCDataInternal[7]                                                          ; AICLK      ; AICLK    ; None                        ; None                      ; 4.159 ns                ;
+; N/A                                     ; 53.16 MHz ( period = 18.812 ns )                    ; AORBChannel[1]               ; AOCh3LowRBReg[3]                                                            ; AICLK      ; AICLK    ; None                        ; None                      ; 8.697 ns                ;
+; N/A                                     ; 53.16 MHz ( period = 18.812 ns )                    ; AORBChannel[1]               ; AOCh2LowRBReg[3]                                                            ; AICLK      ; AICLK    ; None                        ; None                      ; 8.697 ns                ;
+; N/A                                     ; 53.16 MHz ( period = 18.812 ns )                    ; AORBChannel[1]               ; AOCh1LowRBReg[3]                                                            ; AICLK      ; AICLK    ; None                        ; None                      ; 8.697 ns                ;
+; N/A                                     ; 53.40 MHz ( period = 18.726 ns )                    ; AORBChannel[1]               ; AOCh2LowRBReg[9]                                                            ; AICLK      ; AICLK    ; None                        ; None                      ; 8.654 ns                ;
+; N/A                                     ; 53.40 MHz ( period = 18.726 ns )                    ; AORBChannel[1]               ; AOCh4LowRBReg[9]                                                            ; AICLK      ; AICLK    ; None                        ; None                      ; 8.654 ns                ;
+; N/A                                     ; 53.71 MHz ( period = 18.618 ns )                    ; AORBChannel[0]               ; AOCh4LowRBReg[6]                                                            ; AICLK      ; AICLK    ; None                        ; None                      ; 8.600 ns                ;
+; N/A                                     ; 53.80 MHz ( period = 18.586 ns )                    ; AORBInputEnable              ; AOCh2PowerRBReg[0]                                                          ; AICLK      ; AICLK    ; None                        ; None                      ; 8.584 ns                ;
+; N/A                                     ; 53.80 MHz ( period = 18.586 ns )                    ; AORBInputEnable              ; AOCh4PowerRBReg[0]                                                          ; AICLK      ; AICLK    ; None                        ; None                      ; 8.584 ns                ;
+; N/A                                     ; 53.80 MHz ( period = 18.586 ns )                    ; AORBInputEnable              ; AOCh1PowerRBReg[0]                                                          ; AICLK      ; AICLK    ; None                        ; None                      ; 8.584 ns                ;
+; N/A                                     ; 53.95 MHz ( period = 18.534 ns )                    ; AORBChannel[0]               ; AOCh13V3HealthRBReg[1]                                                      ; AICLK      ; AICLK    ; None                        ; None                      ; 8.558 ns                ;
+; N/A                                     ; 53.95 MHz ( period = 18.534 ns )                    ; AORBChannel[0]               ; AOCh23V3HealthRBReg[1]                                                      ; AICLK      ; AICLK    ; None                        ; None                      ; 8.558 ns                ;
+; N/A                                     ; 54.22 MHz ( period = 18.444 ns )                    ; AORBInputEnable              ; AOCh4PowerRBReg[15]                                                         ; AICLK      ; AICLK    ; None                        ; None                      ; 8.513 ns                ;
+; N/A                                     ; 54.22 MHz ( period = 18.444 ns )                    ; AORBInputEnable              ; AOCh1PowerRBReg[15]                                                         ; AICLK      ; AICLK    ; None                        ; None                      ; 8.513 ns                ;
+; N/A                                     ; 54.22 MHz ( period = 18.444 ns )                    ; AORBInputEnable              ; AOCh2PowerRBReg[15]                                                         ; AICLK      ; AICLK    ; None                        ; None                      ; 8.513 ns                ;
+; N/A                                     ; 54.27 MHz ( period = 18.428 ns )                    ; AORBChannel[0]               ; AOCh4LowRBReg[3]                                                            ; AICLK      ; AICLK    ; None                        ; None                      ; 8.505 ns                ;
+; N/A                                     ; 54.35 MHz ( period = 18.400 ns )                    ; \UpdateAODACs:DACBitIndex[3] ; SDIN_DAC1~reg0                                                              ; AICLK      ; AICLK    ; None                        ; None                      ; 17.691 ns               ;
+; N/A                                     ; 54.35 MHz ( period = 18.398 ns )                    ; AORBInputEnable              ; AOCh3LowRBReg[7]                                                            ; AICLK      ; AICLK    ; None                        ; None                      ; 8.490 ns                ;
+; N/A                                     ; 54.35 MHz ( period = 18.398 ns )                    ; AORBInputEnable              ; AOCh4LowRBReg[7]                                                            ; AICLK      ; AICLK    ; None                        ; None                      ; 8.490 ns                ;
+; N/A                                     ; 54.44 MHz ( period = 18.370 ns )                    ; AORBChannel[0]               ; AOCh33V3HealthRBReg[6]                                                      ; AICLK      ; AICLK    ; None                        ; None                      ; 8.476 ns                ;
+; N/A                                     ; 54.44 MHz ( period = 18.370 ns )                    ; AORBChannel[0]               ; AOCh43V3HealthRBReg[6]                                                      ; AICLK      ; AICLK    ; None                        ; None                      ; 8.476 ns                ;
+; N/A                                     ; 54.44 MHz ( period = 18.370 ns )                    ; AORBChannel[0]               ; AOCh13V3HealthRBReg[6]                                                      ; AICLK      ; AICLK    ; None                        ; None                      ; 8.476 ns                ;
+; N/A                                     ; 54.44 MHz ( period = 18.370 ns )                    ; AORBChannel[0]               ; AOCh23V3HealthRBReg[6]                                                      ; AICLK      ; AICLK    ; None                        ; None                      ; 8.476 ns                ;
+; N/A                                     ; 54.46 MHz ( period = 18.362 ns )                    ; AORBChannel[0]               ; AOCh33V3HealthRBReg[3]                                                      ; AICLK      ; AICLK    ; None                        ; None                      ; 8.472 ns                ;
+; N/A                                     ; 54.82 MHz ( period = 18.240 ns )                    ; AORBInputEnable              ; AOCh2LowRBReg[7]                                                            ; AICLK      ; AICLK    ; None                        ; None                      ; 8.411 ns                ;
+; N/A                                     ; 54.82 MHz ( period = 18.240 ns )                    ; AORBInputEnable              ; AOCh1LowRBReg[7]                                                            ; AICLK      ; AICLK    ; None                        ; None                      ; 8.411 ns                ;
+; N/A                                     ; 54.93 MHz ( period = 18.206 ns )                    ; AORBChannel[1]               ; AOCh2LowRBReg[14]                                                           ; AICLK      ; AICLK    ; None                        ; None                      ; 8.394 ns                ;
+; N/A                                     ; 54.93 MHz ( period = 18.206 ns )                    ; AORBChannel[1]               ; AOCh3LowRBReg[14]                                                           ; AICLK      ; AICLK    ; None                        ; None                      ; 8.394 ns                ;
+; N/A                                     ; 54.93 MHz ( period = 18.206 ns )                    ; AORBChannel[1]               ; AOCh4LowRBReg[14]                                                           ; AICLK      ; AICLK    ; None                        ; None                      ; 8.394 ns                ;
+; N/A                                     ; 54.93 MHz ( period = 18.206 ns )                    ; AORBChannel[1]               ; AOCh1LowRBReg[14]                                                           ; AICLK      ; AICLK    ; None                        ; None                      ; 8.394 ns                ;
+; N/A                                     ; 54.98 MHz ( period = 18.190 ns )                    ; AORBChannel[0]               ; AOCh1HighRBReg[15]                                                          ; AICLK      ; AICLK    ; None                        ; None                      ; 8.386 ns                ;
+; N/A                                     ; 55.13 MHz ( period = 18.138 ns )                    ; AI_FIFO_Read                 ; AI_FIFO_S:AI_FIFO_S_inst|scfifo:scfifo_component|a_f2fifo:subfifo|rd_out[0] ; AICLK      ; AICLK    ; None                        ; None                      ; 8.360 ns                ;
+; N/A                                     ; 55.13 MHz ( period = 18.138 ns )                    ; AI_FIFO_Read                 ; AI_FIFO_S:AI_FIFO_S_inst|scfifo:scfifo_component|a_f2fifo:subfifo|rd_out[1] ; AICLK      ; AICLK    ; None                        ; None                      ; 8.360 ns                ;
+; N/A                                     ; 55.13 MHz ( period = 18.138 ns )                    ; AI_FIFO_Read                 ; AI_FIFO_S:AI_FIFO_S_inst|scfifo:scfifo_component|a_f2fifo:subfifo|rd_out[2] ; AICLK      ; AICLK    ; None                        ; None                      ; 8.360 ns                ;
+; N/A                                     ; 55.13 MHz ( period = 18.138 ns )                    ; AI_FIFO_Read                 ; AI_FIFO_S:AI_FIFO_S_inst|scfifo:scfifo_component|a_f2fifo:subfifo|rd_out[3] ; AICLK      ; AICLK    ; None                        ; None                      ; 8.360 ns                ;
+; N/A                                     ; 55.25 MHz ( period = 18.100 ns )                    ; AORBChannel[0]               ; AOCh1HighRBReg[13]                                                          ; AICLK      ; AICLK    ; None                        ; None                      ; 8.341 ns                ;
+; N/A                                     ; 55.25 MHz ( period = 18.100 ns )                    ; AORBChannel[0]               ; AOCh2HighRBReg[13]                                                          ; AICLK      ; AICLK    ; None                        ; None                      ; 8.341 ns                ;
+; N/A                                     ; 55.25 MHz ( period = 18.100 ns )                    ; AORBChannel[0]               ; AOCh3HighRBReg[13]                                                          ; AICLK      ; AICLK    ; None                        ; None                      ; 8.341 ns                ;
+; N/A                                     ; 55.25 MHz ( period = 18.100 ns )                    ; AORBChannel[0]               ; AOCh4HighRBReg[13]                                                          ; AICLK      ; AICLK    ; None                        ; None                      ; 8.341 ns                ;
+; N/A                                     ; 55.33 MHz ( period = 18.074 ns )                    ; AORBChannel[0]               ; AOCh1HighRBReg[6]                                                           ; AICLK      ; AICLK    ; None                        ; None                      ; 8.328 ns                ;
+; N/A                                     ; 55.33 MHz ( period = 18.074 ns )                    ; AORBChannel[0]               ; AOCh2HighRBReg[6]                                                           ; AICLK      ; AICLK    ; None                        ; None                      ; 8.328 ns                ;
+; N/A                                     ; 55.33 MHz ( period = 18.074 ns )                    ; AORBChannel[0]               ; AOCh3HighRBReg[6]                                                           ; AICLK      ; AICLK    ; None                        ; None                      ; 8.328 ns                ;
+; N/A                                     ; 55.33 MHz ( period = 18.074 ns )                    ; AORBChannel[0]               ; AOCh4HighRBReg[6]                                                           ; AICLK      ; AICLK    ; None                        ; None                      ; 8.328 ns                ;
+; N/A                                     ; 55.47 MHz ( period = 18.028 ns )                    ; AORBInputEnable              ; AOCh1HighRBReg[13]                                                          ; AICLK      ; AICLK    ; None                        ; None                      ; 8.305 ns                ;
+; N/A                                     ; 55.47 MHz ( period = 18.028 ns )                    ; AORBInputEnable              ; AOCh2HighRBReg[13]                                                          ; AICLK      ; AICLK    ; None                        ; None                      ; 8.305 ns                ;
+; N/A                                     ; 55.47 MHz ( period = 18.028 ns )                    ; AORBInputEnable              ; AOCh3HighRBReg[13]                                                          ; AICLK      ; AICLK    ; None                        ; None                      ; 8.305 ns                ;
+; N/A                                     ; 55.47 MHz ( period = 18.028 ns )                    ; AORBInputEnable              ; AOCh4HighRBReg[13]                                                          ; AICLK      ; AICLK    ; None                        ; None                      ; 8.305 ns                ;
+; N/A                                     ; 55.61 MHz ( period = 17.982 ns )                    ; AORBInputEnable              ; AOCh1HighRBReg[3]                                                           ; AICLK      ; AICLK    ; None                        ; None                      ; 8.282 ns                ;
+; N/A                                     ; 55.61 MHz ( period = 17.982 ns )                    ; AORBInputEnable              ; AOCh2HighRBReg[3]                                                           ; AICLK      ; AICLK    ; None                        ; None                      ; 8.282 ns                ;
+; N/A                                     ; 55.61 MHz ( period = 17.982 ns )                    ; AORBInputEnable              ; AOCh3HighRBReg[3]                                                           ; AICLK      ; AICLK    ; None                        ; None                      ; 8.282 ns                ;
+; N/A                                     ; 55.61 MHz ( period = 17.982 ns )                    ; AORBInputEnable              ; AOCh4HighRBReg[3]                                                           ; AICLK      ; AICLK    ; None                        ; None                      ; 8.282 ns                ;
+; N/A                                     ; 55.69 MHz ( period = 17.956 ns )                    ; AORBChannel[0]               ; AOCh3PowerRBReg[12]                                                         ; AICLK      ; AICLK    ; None                        ; None                      ; 8.269 ns                ;
+; N/A                                     ; 55.69 MHz ( period = 17.956 ns )                    ; AORBChannel[0]               ; AOCh2PowerRBReg[12]                                                         ; AICLK      ; AICLK    ; None                        ; None                      ; 8.269 ns                ;
+; N/A                                     ; 55.69 MHz ( period = 17.956 ns )                    ; AORBChannel[0]               ; AOCh4PowerRBReg[12]                                                         ; AICLK      ; AICLK    ; None                        ; None                      ; 8.269 ns                ;
+; N/A                                     ; 55.83 MHz ( period = 17.912 ns )                    ; AORBInputEnable              ; AOCh13V3HealthRBReg[0]                                                      ; AICLK      ; AICLK    ; None                        ; None                      ; 8.247 ns                ;
+; N/A                                     ; 55.83 MHz ( period = 17.912 ns )                    ; AORBInputEnable              ; AOCh23V3HealthRBReg[0]                                                      ; AICLK      ; AICLK    ; None                        ; None                      ; 8.247 ns                ;
+; N/A                                     ; 55.86 MHz ( period = 17.902 ns )                    ; AORBInputEnable              ; AOCh13V3HealthRBReg[12]                                                     ; AICLK      ; AICLK    ; None                        ; None                      ; 8.242 ns                ;
+; N/A                                     ; 55.86 MHz ( period = 17.902 ns )                    ; AORBInputEnable              ; AOCh23V3HealthRBReg[12]                                                     ; AICLK      ; AICLK    ; None                        ; None                      ; 8.242 ns                ;
+; N/A                                     ; 55.93 MHz ( period = 17.880 ns )                    ; Config_DatainEnb             ; ConfigData1RBReg[5]                                                         ; AICLK      ; AICLK    ; None                        ; None                      ; 8.231 ns                ;
+; N/A                                     ; 55.93 MHz ( period = 17.880 ns )                    ; Config_DatainEnb             ; ConfigData3RBReg[5]                                                         ; AICLK      ; AICLK    ; None                        ; None                      ; 8.231 ns                ;
+; N/A                                     ; 55.97 MHz ( period = 17.868 ns )                    ; AORBInputEnable              ; AOCh4LowRBReg[3]                                                            ; AICLK      ; AICLK    ; None                        ; None                      ; 8.225 ns                ;
+; N/A                                     ; 56.11 MHz ( period = 17.822 ns )                    ; AOCh2HighReg[0]              ; SDIN_DAC2~reg0                                                              ; AICLK      ; AICLK    ; None                        ; None                      ; 12.750 ns               ;
+; N/A                                     ; 56.12 MHz ( period = 17.818 ns )                    ; AORBInputEnable              ; AOCh3PowerRBReg[6]                                                          ; AICLK      ; AICLK    ; None                        ; None                      ; 8.200 ns                ;
+; N/A                                     ; 56.12 MHz ( period = 17.818 ns )                    ; AORBInputEnable              ; AOCh2PowerRBReg[6]                                                          ; AICLK      ; AICLK    ; None                        ; None                      ; 8.200 ns                ;
+; N/A                                     ; 56.12 MHz ( period = 17.818 ns )                    ; AORBInputEnable              ; AOCh4PowerRBReg[6]                                                          ; AICLK      ; AICLK    ; None                        ; None                      ; 8.200 ns                ;
+; N/A                                     ; 56.12 MHz ( period = 17.818 ns )                    ; AORBInputEnable              ; AOCh1PowerRBReg[6]                                                          ; AICLK      ; AICLK    ; None                        ; None                      ; 8.200 ns                ;
+; N/A                                     ; 56.13 MHz ( period = 17.816 ns )                    ; AORBInputEnable              ; AOCh33V3HealthRBReg[3]                                                      ; AICLK      ; AICLK    ; None                        ; None                      ; 8.199 ns                ;
+; N/A                                     ; 56.17 MHz ( period = 17.802 ns )                    ; AORBChannel[0]               ; AOCh2LowRBReg[10]                                                           ; AICLK      ; AICLK    ; None                        ; None                      ; 8.192 ns                ;
+; N/A                                     ; 56.22 MHz ( period = 17.788 ns )                    ; AORBChannel[1]               ; AOCh2LowRBReg[10]                                                           ; AICLK      ; AICLK    ; None                        ; None                      ; 8.185 ns                ;
+; N/A                                     ; 56.26 MHz ( period = 17.776 ns )                    ; AORBInputEnable              ; AOCh3PowerRBReg[9]                                                          ; AICLK      ; AICLK    ; None                        ; None                      ; 8.179 ns                ;
+; N/A                                     ; 56.26 MHz ( period = 17.776 ns )                    ; AORBInputEnable              ; AOCh2PowerRBReg[9]                                                          ; AICLK      ; AICLK    ; None                        ; None                      ; 8.179 ns                ;
+; N/A                                     ; 56.26 MHz ( period = 17.776 ns )                    ; AORBInputEnable              ; AOCh4PowerRBReg[9]                                                          ; AICLK      ; AICLK    ; None                        ; None                      ; 8.179 ns                ;
+; N/A                                     ; 56.26 MHz ( period = 17.776 ns )                    ; AORBInputEnable              ; AOCh1PowerRBReg[9]                                                          ; AICLK      ; AICLK    ; None                        ; None                      ; 8.179 ns                ;
+; N/A                                     ; 56.28 MHz ( period = 17.768 ns )                    ; AORBInputEnable              ; AOCh3PowerRBReg[10]                                                         ; AICLK      ; AICLK    ; None                        ; None                      ; 8.175 ns                ;
+; N/A                                     ; 56.28 MHz ( period = 17.768 ns )                    ; AORBInputEnable              ; AOCh2PowerRBReg[10]                                                         ; AICLK      ; AICLK    ; None                        ; None                      ; 8.175 ns                ;
+; N/A                                     ; 56.28 MHz ( period = 17.768 ns )                    ; AORBInputEnable              ; AOCh4PowerRBReg[10]                                                         ; AICLK      ; AICLK    ; None                        ; None                      ; 8.175 ns                ;
+; N/A                                     ; 56.28 MHz ( period = 17.768 ns )                    ; AORBInputEnable              ; AOCh1PowerRBReg[10]                                                         ; AICLK      ; AICLK    ; None                        ; None                      ; 8.175 ns                ;
+; N/A                                     ; 56.30 MHz ( period = 17.762 ns )                    ; AORBInputEnable              ; AOCh1HighRBReg[1]                                                           ; AICLK      ; AICLK    ; None                        ; None                      ; 8.172 ns                ;
+; N/A                                     ; 56.30 MHz ( period = 17.762 ns )                    ; AORBInputEnable              ; AOCh2HighRBReg[1]                                                           ; AICLK      ; AICLK    ; None                        ; None                      ; 8.172 ns                ;
+; N/A                                     ; 56.30 MHz ( period = 17.762 ns )                    ; AORBInputEnable              ; AOCh3HighRBReg[1]                                                           ; AICLK      ; AICLK    ; None                        ; None                      ; 8.172 ns                ;
+; N/A                                     ; 56.30 MHz ( period = 17.762 ns )                    ; AORBInputEnable              ; AOCh4HighRBReg[1]                                                           ; AICLK      ; AICLK    ; None                        ; None                      ; 8.172 ns                ;
+; N/A                                     ; 56.31 MHz ( period = 17.760 ns )                    ; AORBInputEnable              ; AOCh1LowRBReg[0]                                                            ; AICLK      ; AICLK    ; None                        ; None                      ; 8.171 ns                ;
+; N/A                                     ; 56.31 MHz ( period = 17.760 ns )                    ; AORBInputEnable              ; AOCh2LowRBReg[10]                                                           ; AICLK      ; AICLK    ; None                        ; None                      ; 8.171 ns                ;
+; N/A                                     ; 56.40 MHz ( period = 17.732 ns )                    ; AORBChannel[0]               ; AOCh1HighRBReg[3]                                                           ; AICLK      ; AICLK    ; None                        ; None                      ; 8.157 ns                ;
+; N/A                                     ; 56.40 MHz ( period = 17.732 ns )                    ; AORBChannel[0]               ; AOCh2HighRBReg[3]                                                           ; AICLK      ; AICLK    ; None                        ; None                      ; 8.157 ns                ;
+; N/A                                     ; 56.40 MHz ( period = 17.732 ns )                    ; AORBChannel[0]               ; AOCh3HighRBReg[3]                                                           ; AICLK      ; AICLK    ; None                        ; None                      ; 8.157 ns                ;
+; N/A                                     ; 56.40 MHz ( period = 17.732 ns )                    ; AORBChannel[0]               ; AOCh4HighRBReg[3]                                                           ; AICLK      ; AICLK    ; None                        ; None                      ; 8.157 ns                ;
+; N/A                                     ; 56.50 MHz ( period = 17.700 ns )                    ; AORBChannel[0]               ; AOCh1LowRBReg[2]                                                            ; AICLK      ; AICLK    ; None                        ; None                      ; 8.141 ns                ;
+; N/A                                     ; 56.52 MHz ( period = 17.692 ns )                    ; Config_DatainEnb             ; ConfigData1RBReg[13]                                                        ; AICLK      ; AICLK    ; None                        ; None                      ; 8.137 ns                ;
+; N/A                                     ; 56.52 MHz ( period = 17.692 ns )                    ; Config_DatainEnb             ; ConfigData3RBReg[13]                                                        ; AICLK      ; AICLK    ; None                        ; None                      ; 8.137 ns                ;
+; N/A                                     ; 56.64 MHz ( period = 17.654 ns )                    ; AORBChannel[0]               ; AOCh2LowRBReg[9]                                                            ; AICLK      ; AICLK    ; None                        ; None                      ; 8.118 ns                ;
+; N/A                                     ; 56.64 MHz ( period = 17.654 ns )                    ; AORBChannel[0]               ; AOCh4LowRBReg[9]                                                            ; AICLK      ; AICLK    ; None                        ; None                      ; 8.118 ns                ;
+; N/A                                     ; 56.73 MHz ( period = 17.626 ns )                    ; AORBChannel[1]               ; AOCh4LowRBReg[5]                                                            ; AICLK      ; AICLK    ; None                        ; None                      ; 8.104 ns                ;
+; N/A                                     ; 56.78 MHz ( period = 17.612 ns )                    ; AORBChannel[0]               ; AOCh2LowRBReg[12]                                                           ; AICLK      ; AICLK    ; None                        ; None                      ; 8.097 ns                ;
+; N/A                                     ; 56.78 MHz ( period = 17.612 ns )                    ; AORBChannel[0]               ; AOCh1LowRBReg[12]                                                           ; AICLK      ; AICLK    ; None                        ; None                      ; 8.097 ns                ;
+; N/A                                     ; 56.78 MHz ( period = 17.612 ns )                    ; AORBChannel[0]               ; AOCh4LowRBReg[12]                                                           ; AICLK      ; AICLK    ; None                        ; None                      ; 8.097 ns                ;
+; N/A                                     ; 56.86 MHz ( period = 17.586 ns )                    ; AORBInputEnable              ; AOCh13V3HealthRBReg[1]                                                      ; AICLK      ; AICLK    ; None                        ; None                      ; 8.084 ns                ;
+; N/A                                     ; 56.86 MHz ( period = 17.586 ns )                    ; AORBInputEnable              ; AOCh23V3HealthRBReg[1]                                                      ; AICLK      ; AICLK    ; None                        ; None                      ; 8.084 ns                ;
+; N/A                                     ; 56.89 MHz ( period = 17.578 ns )                    ; AORBChannel[1]               ; AOCh33V3HealthRBReg[5]                                                      ; AICLK      ; AICLK    ; None                        ; None                      ; 8.080 ns                ;
+; N/A                                     ; 56.89 MHz ( period = 17.578 ns )                    ; AORBChannel[1]               ; AOCh43V3HealthRBReg[5]                                                      ; AICLK      ; AICLK    ; None                        ; None                      ; 8.080 ns                ;
+; N/A                                     ; 56.89 MHz ( period = 17.578 ns )                    ; AORBChannel[1]               ; AOCh13V3HealthRBReg[5]                                                      ; AICLK      ; AICLK    ; None                        ; None                      ; 8.080 ns                ;
+; Timing analysis restricted to 200 rows. ; To change the limit use Settings (Assignments menu) ;                              ;                                                                             ;            ;          ;                             ;                           ;                         ;
++-----------------------------------------+-----------------------------------------------------+------------------------------+-----------------------------------------------------------------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Hold: 'AICLK'                                                                                                                                                            ;
++------------------------------------------+------------+-----------+------------+----------+----------------------------+----------------------------+--------------------------+
+; Minimum Slack                            ; From       ; To        ; From Clock ; To Clock ; Required Hold Relationship ; Required Shortest P2P Time ; Actual Shortest P2P Time ;
++------------------------------------------+------------+-----------+------------+----------+----------------------------+----------------------------+--------------------------+
+; Not operational: Clock Skew > Data Delay ; LEDTrigger ; P_OE~reg0 ; AICLK      ; AICLK    ; None                       ; None                       ; 3.700 ns                 ;
++------------------------------------------+------------+-----------+------------+----------+----------------------------+----------------------------+--------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; tsu                                                                                                                                                      ;
++-----------------------------------------+-----------------------------------------------------+------------+------------+---------------------+----------+
+; Slack                                   ; Required tsu                                        ; Actual tsu ; From       ; To                  ; To Clock ;
++-----------------------------------------+-----------------------------------------------------+------------+------------+---------------------+----------+
+; N/A                                     ; None                                                ; 15.262 ns  ; P_ADDR[11] ; MPCDataInternal[13] ; AICLK    ;
+; N/A                                     ; None                                                ; 15.239 ns  ; P_ADDR[6]  ; MPCDataInternal[4]  ; AICLK    ;
+; N/A                                     ; None                                                ; 15.185 ns  ; P_ADDR[4]  ; MPCDataInternal[13] ; AICLK    ;
+; N/A                                     ; None                                                ; 15.125 ns  ; P_ADDR[10] ; MPCDataInternal[13] ; AICLK    ;
+; N/A                                     ; None                                                ; 14.987 ns  ; P_ADDR[2]  ; MPCDataInternal[13] ; AICLK    ;
+; N/A                                     ; None                                                ; 14.945 ns  ; P_ADDR[11] ; MPCDataInternal[14] ; AICLK    ;
+; N/A                                     ; None                                                ; 14.917 ns  ; P_ADDR[12] ; MPCDataInternal[13] ; AICLK    ;
+; N/A                                     ; None                                                ; 14.870 ns  ; P_ADDR[11] ; MPCDataInternal[7]  ; AICLK    ;
+; N/A                                     ; None                                                ; 14.868 ns  ; P_ADDR[4]  ; MPCDataInternal[14] ; AICLK    ;
+; N/A                                     ; None                                                ; 14.808 ns  ; P_ADDR[10] ; MPCDataInternal[14] ; AICLK    ;
+; N/A                                     ; None                                                ; 14.793 ns  ; P_ADDR[4]  ; MPCDataInternal[7]  ; AICLK    ;
+; N/A                                     ; None                                                ; 14.780 ns  ; P_ADDR[5]  ; MPCDataInternal[4]  ; AICLK    ;
+; N/A                                     ; None                                                ; 14.762 ns  ; P_ADDR[7]  ; MPCDataInternal[4]  ; AICLK    ;
+; N/A                                     ; None                                                ; 14.756 ns  ; P_ADDR[3]  ; MPCDataInternal[13] ; AICLK    ;
+; N/A                                     ; None                                                ; 14.736 ns  ; P_ADDR[8]  ; MPCDataInternal[13] ; AICLK    ;
+; N/A                                     ; None                                                ; 14.733 ns  ; P_ADDR[10] ; MPCDataInternal[7]  ; AICLK    ;
+; N/A                                     ; None                                                ; 14.670 ns  ; P_ADDR[2]  ; MPCDataInternal[14] ; AICLK    ;
+; N/A                                     ; None                                                ; 14.636 ns  ; P_ADDR[9]  ; MPCDataInternal[13] ; AICLK    ;
+; N/A                                     ; None                                                ; 14.612 ns  ; P_ADDR[1]  ; MPCDataInternal[13] ; AICLK    ;
+; N/A                                     ; None                                                ; 14.600 ns  ; P_ADDR[12] ; MPCDataInternal[14] ; AICLK    ;
+; N/A                                     ; None                                                ; 14.595 ns  ; P_ADDR[2]  ; MPCDataInternal[7]  ; AICLK    ;
+; N/A                                     ; None                                                ; 14.525 ns  ; P_ADDR[12] ; MPCDataInternal[7]  ; AICLK    ;
+; N/A                                     ; None                                                ; 14.459 ns  ; P_ADDR[12] ; MPCDataInternal[0]  ; AICLK    ;
+; N/A                                     ; None                                                ; 14.458 ns  ; P_ADDR[12] ; MPCDataInternal[12] ; AICLK    ;
+; N/A                                     ; None                                                ; 14.439 ns  ; P_ADDR[11] ; MPCDataInternal[3]  ; AICLK    ;
+; N/A                                     ; None                                                ; 14.439 ns  ; P_ADDR[3]  ; MPCDataInternal[14] ; AICLK    ;
+; N/A                                     ; None                                                ; 14.419 ns  ; P_ADDR[8]  ; MPCDataInternal[14] ; AICLK    ;
+; N/A                                     ; None                                                ; 14.415 ns  ; P_ADDR[5]  ; MPCDataInternal[0]  ; AICLK    ;
+; N/A                                     ; None                                                ; 14.414 ns  ; P_ADDR[5]  ; MPCDataInternal[12] ; AICLK    ;
+; N/A                                     ; None                                                ; 14.398 ns  ; P_ADDR[0]  ; MPCDataInternal[13] ; AICLK    ;
+; N/A                                     ; None                                                ; 14.364 ns  ; P_ADDR[3]  ; MPCDataInternal[7]  ; AICLK    ;
+; N/A                                     ; None                                                ; 14.362 ns  ; P_ADDR[4]  ; MPCDataInternal[3]  ; AICLK    ;
+; N/A                                     ; None                                                ; 14.344 ns  ; P_ADDR[8]  ; MPCDataInternal[7]  ; AICLK    ;
+; N/A                                     ; None                                                ; 14.319 ns  ; P_ADDR[9]  ; MPCDataInternal[14] ; AICLK    ;
+; N/A                                     ; None                                                ; 14.302 ns  ; P_ADDR[10] ; MPCDataInternal[3]  ; AICLK    ;
+; N/A                                     ; None                                                ; 14.295 ns  ; P_ADDR[1]  ; MPCDataInternal[14] ; AICLK    ;
+; N/A                                     ; None                                                ; 14.244 ns  ; P_ADDR[9]  ; MPCDataInternal[7]  ; AICLK    ;
+; N/A                                     ; None                                                ; 14.222 ns  ; P_ADDR[11] ; MPCDataInternal[12] ; AICLK    ;
+; N/A                                     ; None                                                ; 14.220 ns  ; P_ADDR[1]  ; MPCDataInternal[7]  ; AICLK    ;
+; N/A                                     ; None                                                ; 14.164 ns  ; P_ADDR[2]  ; MPCDataInternal[3]  ; AICLK    ;
+; N/A                                     ; None                                                ; 14.161 ns  ; P_ADDR[12] ; MPCDataInternal[4]  ; AICLK    ;
+; N/A                                     ; None                                                ; 14.145 ns  ; P_ADDR[4]  ; MPCDataInternal[12] ; AICLK    ;
+; N/A                                     ; None                                                ; 14.136 ns  ; P_ADDR[12] ; MPCDataInternal[6]  ; AICLK    ;
+; N/A                                     ; None                                                ; 14.094 ns  ; P_ADDR[12] ; MPCDataInternal[3]  ; AICLK    ;
+; N/A                                     ; None                                                ; 14.092 ns  ; P_ADDR[5]  ; MPCDataInternal[6]  ; AICLK    ;
+; N/A                                     ; None                                                ; 14.085 ns  ; P_ADDR[10] ; MPCDataInternal[12] ; AICLK    ;
+; N/A                                     ; None                                                ; 14.081 ns  ; P_ADDR[0]  ; MPCDataInternal[14] ; AICLK    ;
+; N/A                                     ; None                                                ; 14.064 ns  ; P_ADDR[11] ; MPCDataInternal[2]  ; AICLK    ;
+; N/A                                     ; None                                                ; 14.059 ns  ; P_ADDR[5]  ; MPCDataInternal[13] ; AICLK    ;
+; N/A                                     ; None                                                ; 14.006 ns  ; P_ADDR[0]  ; MPCDataInternal[7]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.988 ns  ; P_ADDR[13] ; MPCDataInternal[0]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.987 ns  ; P_ADDR[4]  ; MPCDataInternal[2]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.987 ns  ; P_ADDR[13] ; MPCDataInternal[12] ; AICLK    ;
+; N/A                                     ; None                                                ; 13.959 ns  ; P_ADDR[7]  ; MPCDataInternal[0]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.958 ns  ; P_ADDR[7]  ; MPCDataInternal[12] ; AICLK    ;
+; N/A                                     ; None                                                ; 13.947 ns  ; P_ADDR[2]  ; MPCDataInternal[12] ; AICLK    ;
+; N/A                                     ; None                                                ; 13.933 ns  ; P_ADDR[3]  ; MPCDataInternal[3]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.927 ns  ; P_ADDR[10] ; MPCDataInternal[2]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.914 ns  ; P_ADDR[11] ; MPCDataInternal[10] ; AICLK    ;
+; N/A                                     ; None                                                ; 13.913 ns  ; P_ADDR[8]  ; MPCDataInternal[3]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.877 ns  ; P_ADDR[11] ; MPCDataInternal[6]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.837 ns  ; P_ADDR[4]  ; MPCDataInternal[10] ; AICLK    ;
+; N/A                                     ; None                                                ; 13.813 ns  ; P_ADDR[9]  ; MPCDataInternal[3]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.800 ns  ; P_ADDR[4]  ; MPCDataInternal[6]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.789 ns  ; P_ADDR[2]  ; MPCDataInternal[2]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.789 ns  ; P_ADDR[1]  ; MPCDataInternal[3]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.788 ns  ; P_ADDR[6]  ; MPCDataInternal[1]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.785 ns  ; P_ADDR[11] ; MPCDataInternal[4]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.777 ns  ; P_ADDR[10] ; MPCDataInternal[10] ; AICLK    ;
+; N/A                                     ; None                                                ; 13.775 ns  ; P_ADDR[10] ; MPCDataInternal[4]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.740 ns  ; P_ADDR[10] ; MPCDataInternal[6]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.719 ns  ; P_ADDR[12] ; MPCDataInternal[2]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.716 ns  ; P_ADDR[3]  ; MPCDataInternal[12] ; AICLK    ;
+; N/A                                     ; None                                                ; 13.708 ns  ; P_ADDR[4]  ; MPCDataInternal[4]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.702 ns  ; P_ADDR[11] ; MPCDataInternal[1]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.696 ns  ; P_ADDR[8]  ; MPCDataInternal[12] ; AICLK    ;
+; N/A                                     ; None                                                ; 13.690 ns  ; P_ADDR[13] ; MPCDataInternal[4]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.665 ns  ; P_ADDR[13] ; MPCDataInternal[6]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.647 ns  ; P_ADDR[13] ; MPCDataInternal[2]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.639 ns  ; P_ADDR[2]  ; MPCDataInternal[10] ; AICLK    ;
+; N/A                                     ; None                                                ; 13.636 ns  ; P_ADDR[7]  ; MPCDataInternal[6]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.632 ns  ; P_ADDR[13] ; MPCDataInternal[13] ; AICLK    ;
+; N/A                                     ; None                                                ; 13.625 ns  ; P_ADDR[4]  ; MPCDataInternal[1]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.609 ns  ; P_ADDR[10] ; MPCDataInternal[0]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.603 ns  ; P_ADDR[7]  ; MPCDataInternal[13] ; AICLK    ;
+; N/A                                     ; None                                                ; 13.602 ns  ; P_ADDR[2]  ; MPCDataInternal[6]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.596 ns  ; P_ADDR[9]  ; MPCDataInternal[12] ; AICLK    ;
+; N/A                                     ; None                                                ; 13.594 ns  ; P_ADDR[12] ; MPCDataInternal[15] ; AICLK    ;
+; N/A                                     ; None                                                ; 13.580 ns  ; P_ADDR[4]  ; MPCDataInternal[0]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.575 ns  ; P_ADDR[0]  ; MPCDataInternal[3]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.572 ns  ; P_ADDR[1]  ; MPCDataInternal[12] ; AICLK    ;
+; N/A                                     ; None                                                ; 13.566 ns  ; P_ADDR[12] ; MPCDataInternal[10] ; AICLK    ;
+; N/A                                     ; None                                                ; 13.565 ns  ; P_ADDR[10] ; MPCDataInternal[1]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.558 ns  ; P_ADDR[3]  ; MPCDataInternal[2]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.552 ns  ; P_ADDR[11] ; MPCDataInternal[8]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.538 ns  ; P_ADDR[8]  ; MPCDataInternal[2]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.510 ns  ; P_ADDR[2]  ; MPCDataInternal[4]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.475 ns  ; P_ADDR[4]  ; MPCDataInternal[8]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.472 ns  ; P_ADDR[11] ; MPCDataInternal[0]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.438 ns  ; P_ADDR[9]  ; MPCDataInternal[2]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.427 ns  ; P_ADDR[2]  ; MPCDataInternal[1]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.415 ns  ; P_ADDR[10] ; MPCDataInternal[8]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.414 ns  ; P_ADDR[1]  ; MPCDataInternal[2]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.408 ns  ; P_ADDR[3]  ; MPCDataInternal[10] ; AICLK    ;
+; N/A                                     ; None                                                ; 13.407 ns  ; P_ADDR[13] ; MPCDataInternal[10] ; AICLK    ;
+; N/A                                     ; None                                                ; 13.388 ns  ; P_ADDR[8]  ; MPCDataInternal[10] ; AICLK    ;
+; N/A                                     ; None                                                ; 13.371 ns  ; P_ADDR[3]  ; MPCDataInternal[6]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.358 ns  ; P_ADDR[0]  ; MPCDataInternal[12] ; AICLK    ;
+; N/A                                     ; None                                                ; 13.354 ns  ; P_ADDR[12] ; MPCDataInternal[1]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.353 ns  ; P_ADDR[13] ; MPCDataInternal[14] ; AICLK    ;
+; N/A                                     ; None                                                ; 13.351 ns  ; P_ADDR[8]  ; MPCDataInternal[6]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.329 ns  ; P_ADDR[5]  ; MPCDataInternal[1]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.311 ns  ; P_ADDR[7]  ; MPCDataInternal[1]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.305 ns  ; P_ADDR[11] ; MPCDataInternal[9]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.288 ns  ; P_ADDR[9]  ; MPCDataInternal[10] ; AICLK    ;
+; N/A                                     ; None                                                ; 13.286 ns  ; P_ADDR[9]  ; MPCDataInternal[4]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.283 ns  ; P_ADDR[11] ; MPCDataInternal[11] ; AICLK    ;
+; N/A                                     ; None                                                ; 13.279 ns  ; P_ADDR[3]  ; MPCDataInternal[4]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.277 ns  ; P_ADDR[2]  ; MPCDataInternal[8]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.264 ns  ; P_ADDR[1]  ; MPCDataInternal[10] ; AICLK    ;
+; N/A                                     ; None                                                ; 13.259 ns  ; P_ADDR[8]  ; MPCDataInternal[4]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.251 ns  ; P_ADDR[9]  ; MPCDataInternal[6]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.228 ns  ; P_ADDR[4]  ; MPCDataInternal[9]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.227 ns  ; P_ADDR[1]  ; MPCDataInternal[6]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.208 ns  ; P_ADDR[10] ; MPCDataInternal[15] ; AICLK    ;
+; N/A                                     ; None                                                ; 13.206 ns  ; P_ADDR[4]  ; MPCDataInternal[11] ; AICLK    ;
+; N/A                                     ; None                                                ; 13.204 ns  ; P_ADDR[12] ; MPCDataInternal[8]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.200 ns  ; P_ADDR[0]  ; MPCDataInternal[2]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.197 ns  ; P_ADDR[2]  ; MPCDataInternal[0]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.196 ns  ; P_ADDR[3]  ; MPCDataInternal[1]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.180 ns  ; P_ADDR[11] ; MPCDataInternal[15] ; AICLK    ;
+; N/A                                     ; None                                                ; 13.176 ns  ; P_ADDR[8]  ; MPCDataInternal[1]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.168 ns  ; P_ADDR[10] ; MPCDataInternal[9]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.155 ns  ; P_ADDR[5]  ; MPCDataInternal[2]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.146 ns  ; P_ADDR[10] ; MPCDataInternal[11] ; AICLK    ;
+; N/A                                     ; None                                                ; 13.135 ns  ; P_ADDR[1]  ; MPCDataInternal[4]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.131 ns  ; P_ADDR[8]  ; MPCDataInternal[0]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.123 ns  ; P_ADDR[13] ; MPCDataInternal[15] ; AICLK    ;
+; N/A                                     ; None                                                ; 13.120 ns  ; P_ADDR[9]  ; MPCDataInternal[0]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.103 ns  ; P_ADDR[4]  ; MPCDataInternal[15] ; AICLK    ;
+; N/A                                     ; None                                                ; 13.076 ns  ; P_ADDR[9]  ; MPCDataInternal[1]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.072 ns  ; P_ADDR[7]  ; MPCDataInternal[14] ; AICLK    ;
+; N/A                                     ; None                                                ; 13.052 ns  ; P_ADDR[1]  ; MPCDataInternal[1]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.050 ns  ; P_ADDR[0]  ; MPCDataInternal[10] ; AICLK    ;
+; N/A                                     ; None                                                ; 13.046 ns  ; P_ADDR[3]  ; MPCDataInternal[8]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.044 ns  ; P_ADDR[6]  ; MPCDataInternal[13] ; AICLK    ;
+; N/A                                     ; None                                                ; 13.030 ns  ; P_ADDR[2]  ; MPCDataInternal[9]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.026 ns  ; P_ADDR[8]  ; MPCDataInternal[8]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.017 ns  ; P_ADDR[13] ; MPCDataInternal[7]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.014 ns  ; P_ADDR[12] ; MPCDataInternal[9]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.013 ns  ; P_ADDR[0]  ; MPCDataInternal[6]  ; AICLK    ;
+; N/A                                     ; None                                                ; 13.008 ns  ; P_ADDR[2]  ; MPCDataInternal[11] ; AICLK    ;
+; N/A                                     ; None                                                ; 13.007 ns  ; P_ADDR[1]  ; MPCDataInternal[0]  ; AICLK    ;
+; N/A                                     ; None                                                ; 12.990 ns  ; P_ADDR[6]  ; MPCDataInternal[12] ; AICLK    ;
+; N/A                                     ; None                                                ; 12.966 ns  ; P_ADDR[3]  ; MPCDataInternal[0]  ; AICLK    ;
+; N/A                                     ; None                                                ; 12.935 ns  ; P_ADDR[12] ; MPCDataInternal[11] ; AICLK    ;
+; N/A                                     ; None                                                ; 12.926 ns  ; P_ADDR[9]  ; MPCDataInternal[8]  ; AICLK    ;
+; N/A                                     ; None                                                ; 12.921 ns  ; P_ADDR[0]  ; MPCDataInternal[4]  ; AICLK    ;
+; N/A                                     ; None                                                ; 12.905 ns  ; P_ADDR[2]  ; MPCDataInternal[15] ; AICLK    ;
+; N/A                                     ; None                                                ; 12.902 ns  ; P_ADDR[1]  ; MPCDataInternal[8]  ; AICLK    ;
+; N/A                                     ; None                                                ; 12.843 ns  ; P_ADDR[13] ; MPCDataInternal[1]  ; AICLK    ;
+; N/A                                     ; None                                                ; 12.838 ns  ; P_ADDR[0]  ; MPCDataInternal[1]  ; AICLK    ;
+; N/A                                     ; None                                                ; 12.831 ns  ; P_ADDR[5]  ; MPCDataInternal[11] ; AICLK    ;
+; N/A                                     ; None                                                ; 12.829 ns  ; P_ADDR[5]  ; MPCDataInternal[7]  ; AICLK    ;
+; N/A                                     ; None                                                ; 12.808 ns  ; P_ADDR[14] ; MPCDataInternal[2]  ; AICLK    ;
+; N/A                                     ; None                                                ; 12.804 ns  ; P_ADDR[5]  ; MPCDataInternal[15] ; AICLK    ;
+; N/A                                     ; None                                                ; 12.799 ns  ; P_ADDR[3]  ; MPCDataInternal[9]  ; AICLK    ;
+; N/A                                     ; None                                                ; 12.793 ns  ; P_ADDR[0]  ; MPCDataInternal[0]  ; AICLK    ;
+; N/A                                     ; None                                                ; 12.779 ns  ; P_ADDR[8]  ; MPCDataInternal[9]  ; AICLK    ;
+; N/A                                     ; None                                                ; 12.777 ns  ; P_ADDR[3]  ; MPCDataInternal[11] ; AICLK    ;
+; N/A                                     ; None                                                ; 12.775 ns  ; P_ADDR[7]  ; MPCDataInternal[7]  ; AICLK    ;
+; N/A                                     ; None                                                ; 12.771 ns  ; P_ADDR[5]  ; MPCDataInternal[9]  ; AICLK    ;
+; N/A                                     ; None                                                ; 12.757 ns  ; P_ADDR[8]  ; MPCDataInternal[11] ; AICLK    ;
+; N/A                                     ; None                                                ; 12.727 ns  ; P_ADDR[6]  ; MPCDataInternal[14] ; AICLK    ;
+; N/A                                     ; None                                                ; 12.719 ns  ; P_ADDR[9]  ; MPCDataInternal[15] ; AICLK    ;
+; N/A                                     ; None                                                ; 12.699 ns  ; P_ADDR[7]  ; MPCDataInternal[2]  ; AICLK    ;
+; N/A                                     ; None                                                ; 12.688 ns  ; P_ADDR[0]  ; MPCDataInternal[8]  ; AICLK    ;
+; N/A                                     ; None                                                ; 12.688 ns  ; P_ADDR[6]  ; MPCDataInternal[7]  ; AICLK    ;
+; N/A                                     ; None                                                ; 12.679 ns  ; P_ADDR[9]  ; MPCDataInternal[9]  ; AICLK    ;
+; N/A                                     ; None                                                ; 12.674 ns  ; P_ADDR[3]  ; MPCDataInternal[15] ; AICLK    ;
+; N/A                                     ; None                                                ; 12.657 ns  ; P_ADDR[9]  ; MPCDataInternal[11] ; AICLK    ;
+; N/A                                     ; None                                                ; 12.655 ns  ; P_ADDR[1]  ; MPCDataInternal[9]  ; AICLK    ;
+; N/A                                     ; None                                                ; 12.654 ns  ; P_ADDR[8]  ; MPCDataInternal[15] ; AICLK    ;
+; N/A                                     ; None                                                ; 12.633 ns  ; P_ADDR[1]  ; MPCDataInternal[11] ; AICLK    ;
+; N/A                                     ; None                                                ; 12.620 ns  ; P_ADDR[13] ; MPCDataInternal[3]  ; AICLK    ;
+; N/A                                     ; None                                                ; 12.619 ns  ; P_ADDR[5]  ; MPCDataInternal[3]  ; AICLK    ;
+; N/A                                     ; None                                                ; 12.572 ns  ; P_ADDR[5]  ; MPCDataInternal[8]  ; AICLK    ;
+; N/A                                     ; None                                                ; 12.568 ns  ; P_ADDR[14] ; MPCDataInternal[10] ; AICLK    ;
+; N/A                                     ; None                                                ; 12.566 ns  ; P_ADDR[7]  ; MPCDataInternal[3]  ; AICLK    ;
+; N/A                                     ; None                                                ; 12.543 ns  ; P_ADDR[13] ; MPCDataInternal[9]  ; AICLK    ;
+; N/A                                     ; None                                                ; 12.530 ns  ; P_ADDR[1]  ; MPCDataInternal[15] ; AICLK    ;
+; N/A                                     ; None                                                ; 12.520 ns  ; P_ADDR[5]  ; MPCDataInternal[10] ; AICLK    ;
+; N/A                                     ; None                                                ; 12.506 ns  ; P_ADDR[11] ; MPCDataInternal[5]  ; AICLK    ;
+; N/A                                     ; None                                                ; 12.488 ns  ; P_ADDR[12] ; MPCDataInternal[5]  ; AICLK    ;
+; N/A                                     ; None                                                ; 12.474 ns  ; P_ADDR[6]  ; MPCDataInternal[6]  ; AICLK    ;
+; N/A                                     ; None                                                ; 12.468 ns  ; P_ADDR[14] ; MPCDataInternal[6]  ; AICLK    ;
+; N/A                                     ; None                                                ; 12.460 ns  ; P_ADDR[7]  ; MPCDataInternal[8]  ; AICLK    ;
+; N/A                                     ; None                                                ; 12.446 ns  ; P_ADDR[14] ; MPCDataInternal[0]  ; AICLK    ;
+; N/A                                     ; None                                                ; 12.445 ns  ; P_ADDR[14] ; MPCDataInternal[12] ; AICLK    ;
+; N/A                                     ; None                                                ; 12.441 ns  ; P_ADDR[0]  ; MPCDataInternal[9]  ; AICLK    ;
+; Timing analysis restricted to 200 rows. ; To change the limit use Settings (Assignments menu) ;            ;            ;                     ;          ;
++-----------------------------------------+-----------------------------------------------------+------------+------------+---------------------+----------+
+
+
++------------------------------------------------------------------------------------+
+; tco                                                                                ;
++-------+--------------+------------+---------------------+-------------+------------+
+; Slack ; Required tco ; Actual tco ; From                ; To          ; From Clock ;
++-------+--------------+------------+---------------------+-------------+------------+
+; N/A   ; None         ; 15.068 ns  ; CLEAR1~reg0         ; CLEAR3      ; AICLK      ;
+; N/A   ; None         ; 14.657 ns  ; CLEAR1~reg0         ; CLEAR1      ; AICLK      ;
+; N/A   ; None         ; 14.393 ns  ; LATCH1~reg0         ; LATCH3      ; AICLK      ;
+; N/A   ; None         ; 14.393 ns  ; LATCH1~reg0         ; LATCH2      ; AICLK      ;
+; N/A   ; None         ; 14.276 ns  ; CNV1~reg0           ; CNV4        ; AICLK      ;
+; N/A   ; None         ; 13.965 ns  ; CNV1~reg0           ; CNV2        ; AICLK      ;
+; N/A   ; None         ; 13.949 ns  ; CLEAR1~reg0         ; CLEAR4      ; AICLK      ;
+; N/A   ; None         ; 13.696 ns  ; CNV1~reg0           ; CNV3        ; AICLK      ;
+; N/A   ; None         ; 13.452 ns  ; SDIN_DAC1~reg0      ; SDIN_DAC1   ; AICLK      ;
+; N/A   ; None         ; 13.416 ns  ; P_LE~reg0           ; P_LE        ; AICLK      ;
+; N/A   ; None         ; 13.382 ns  ; CLEAR1~reg0         ; CLEAR2      ; AICLK      ;
+; N/A   ; None         ; 13.260 ns  ; P_OE~reg0           ; P_OE        ; AICLK      ;
+; N/A   ; None         ; 13.199 ns  ; CNV1~reg0           ; CNV1        ; AICLK      ;
+; N/A   ; None         ; 11.987 ns  ; SDIN_DAC2~reg0      ; SDIN_DAC2   ; AICLK      ;
+; N/A   ; None         ; 11.973 ns  ; LATCH4~reg0         ; LATCH4      ; AICLK      ;
+; N/A   ; None         ; 11.973 ns  ; SDIN_DAC4~reg0      ; SDIN_DAC4   ; AICLK      ;
+; N/A   ; None         ; 11.973 ns  ; SDIN_DAC3~reg0      ; SDIN_DAC3   ; AICLK      ;
+; N/A   ; None         ; 11.967 ns  ; SDIN_ADC~reg0       ; SDIN_ADC    ; AICLK      ;
+; N/A   ; None         ; 11.967 ns  ; P_SDI~reg0          ; P_SDI       ; AICLK      ;
+; N/A   ; None         ; 11.967 ns  ; LATCH1~reg0         ; LATCH1      ; AICLK      ;
+; N/A   ; None         ; 10.224 ns  ; HA3~reg0            ; HA3         ; AICLK      ;
+; N/A   ; None         ; 10.177 ns  ; HA3~reg0            ; HB3         ; AICLK      ;
+; N/A   ; None         ; 10.122 ns  ; HA2~reg0            ; HB2         ; AICLK      ;
+; N/A   ; None         ; 9.938 ns   ; HA2~reg0            ; HA2         ; AICLK      ;
+; N/A   ; None         ; 9.873 ns   ; MPCDataInternal[8]  ; P_DATA[7]   ; AICLK      ;
+; N/A   ; None         ; 9.574 ns   ; MPCDataInternal[7]  ; P_DATA[8]   ; AICLK      ;
+; N/A   ; None         ; 9.448 ns   ; MPCDataInternal[11] ; P_DATA[4]   ; AICLK      ;
+; N/A   ; None         ; 9.419 ns   ; MPCDataInternal[5]  ; P_DATA[10]  ; AICLK      ;
+; N/A   ; None         ; 9.329 ns   ; MPCDataInternal[0]  ; P_DATA[15]  ; AICLK      ;
+; N/A   ; None         ; 9.234 ns   ; MPCDataInternal[15] ; P_DATA[0]   ; AICLK      ;
+; N/A   ; None         ; 9.185 ns   ; HA4~reg0            ; HA4         ; AICLK      ;
+; N/A   ; None         ; 8.858 ns   ; ADC_RESET~reg0      ; ADC_RDn     ; AICLK      ;
+; N/A   ; None         ; 8.825 ns   ; ADC_RESET~reg0      ; ADC_CSn     ; AICLK      ;
+; N/A   ; None         ; 8.825 ns   ; ADC_RESET~reg0      ; ADC_RESET   ; AICLK      ;
+; N/A   ; None         ; 8.721 ns   ; MPCDataInternal[3]  ; P_DATA[12]  ; AICLK      ;
+; N/A   ; None         ; 8.638 ns   ; HA1~reg0            ; HB1         ; AICLK      ;
+; N/A   ; None         ; 8.624 ns   ; MPCDataInternal[12] ; P_DATA[3]   ; AICLK      ;
+; N/A   ; None         ; 8.541 ns   ; SCK_DAC1~reg0       ; SCK_DAC1    ; AICLK      ;
+; N/A   ; None         ; 8.537 ns   ; MUX_A3~reg0         ; MUX_A3      ; AICLK      ;
+; N/A   ; None         ; 8.508 ns   ; SCK_DAC4~reg0       ; SCK_DAC4    ; AICLK      ;
+; N/A   ; None         ; 8.504 ns   ; MPCDataInternal[9]  ; P_DATA[6]   ; AICLK      ;
+; N/A   ; None         ; 8.104 ns   ; ADC_RESET~reg0      ; ADC_PD      ; AICLK      ;
+; N/A   ; None         ; 8.078 ns   ; MUX_A2~reg0         ; MUX_A2      ; AICLK      ;
+; N/A   ; None         ; 7.462 ns   ; H5~reg0             ; H5          ; AICLK      ;
+; N/A   ; None         ; 7.454 ns   ; HA4~reg0            ; HB4         ; AICLK      ;
+; N/A   ; None         ; 7.439 ns   ; MPCDataInternal[14] ; P_DATA[1]   ; AICLK      ;
+; N/A   ; None         ; 7.439 ns   ; MPCDataInternal[2]  ; P_DATA[13]  ; AICLK      ;
+; N/A   ; None         ; 7.437 ns   ; MPCDataInternal[10] ; P_DATA[5]   ; AICLK      ;
+; N/A   ; None         ; 7.432 ns   ; SCK_DAC2~reg0       ; SCK_DAC2    ; AICLK      ;
+; N/A   ; None         ; 7.429 ns   ; MUX_A1~reg0         ; MUX_A1      ; AICLK      ;
+; N/A   ; None         ; 7.429 ns   ; ADC_CONVSTn~reg0    ; ADC_CONVSTn ; AICLK      ;
+; N/A   ; None         ; 7.425 ns   ; MPCDataInternal[4]  ; P_DATA[11]  ; AICLK      ;
+; N/A   ; None         ; 7.425 ns   ; MPCDataInternal[6]  ; P_DATA[9]   ; AICLK      ;
+; N/A   ; None         ; 7.425 ns   ; MUX_A4~reg0         ; MUX_A4      ; AICLK      ;
+; N/A   ; None         ; 7.425 ns   ; SCK_DAC3~reg0       ; SCK_DAC3    ; AICLK      ;
+; N/A   ; None         ; 7.424 ns   ; MUX_A0~reg0         ; MUX_A0      ; AICLK      ;
+; N/A   ; None         ; 7.419 ns   ; MPCDataInternal[13] ; P_DATA[2]   ; AICLK      ;
+; N/A   ; None         ; 7.419 ns   ; SCK_ADC~reg0        ; SCK_ADC     ; AICLK      ;
+; N/A   ; None         ; 7.419 ns   ; P_CLOCK~reg0        ; P_CLOCK     ; AICLK      ;
+; N/A   ; None         ; 7.419 ns   ; HA1~reg0            ; HA1         ; AICLK      ;
+; N/A   ; None         ; 7.418 ns   ; MPCDataInternal[1]  ; P_DATA[14]  ; AICLK      ;
++-------+--------------+------------+---------------------+-------------+------------+
+
+
++------------------------------------------------------------------+
+; tpd                                                              ;
++-------+-------------------+-----------------+-------+------------+
+; Slack ; Required P2P Time ; Actual P2P Time ; From  ; To         ;
++-------+-------------------+-----------------+-------+------------+
+; N/A   ; None              ; 10.256 ns       ; P_CSn ; P_DATA[13] ;
+; N/A   ; None              ; 10.243 ns       ; P_CSn ; P_DATA[12] ;
+; N/A   ; None              ; 9.492 ns        ; P_OEn ; P_DATA[13] ;
+; N/A   ; None              ; 9.479 ns        ; P_OEn ; P_DATA[12] ;
+; N/A   ; None              ; 9.426 ns        ; P_CSn ; P_DATA[15] ;
+; N/A   ; None              ; 9.426 ns        ; P_CSn ; P_DATA[14] ;
+; N/A   ; None              ; 9.384 ns        ; P_CSn ; P_DATA[4]  ;
+; N/A   ; None              ; 9.384 ns        ; P_CSn ; P_DATA[2]  ;
+; N/A   ; None              ; 9.384 ns        ; P_CSn ; P_DATA[3]  ;
+; N/A   ; None              ; 9.346 ns        ; P_CSn ; P_DATA[5]  ;
+; N/A   ; None              ; 9.346 ns        ; P_CSn ; P_DATA[6]  ;
+; N/A   ; None              ; 9.289 ns        ; P_CSn ; P_DATA[7]  ;
+; N/A   ; None              ; 9.095 ns        ; P_CSn ; P_DATA[8]  ;
+; N/A   ; None              ; 9.095 ns        ; P_CSn ; P_DATA[11] ;
+; N/A   ; None              ; 9.095 ns        ; P_CSn ; P_DATA[10] ;
+; N/A   ; None              ; 9.095 ns        ; P_CSn ; P_DATA[9]  ;
+; N/A   ; None              ; 9.024 ns        ; P_CSn ; P_DATA[1]  ;
+; N/A   ; None              ; 9.024 ns        ; P_CSn ; P_DATA[0]  ;
+; N/A   ; None              ; 8.662 ns        ; P_OEn ; P_DATA[15] ;
+; N/A   ; None              ; 8.662 ns        ; P_OEn ; P_DATA[14] ;
+; N/A   ; None              ; 8.620 ns        ; P_OEn ; P_DATA[4]  ;
+; N/A   ; None              ; 8.620 ns        ; P_OEn ; P_DATA[2]  ;
+; N/A   ; None              ; 8.620 ns        ; P_OEn ; P_DATA[3]  ;
+; N/A   ; None              ; 8.582 ns        ; P_OEn ; P_DATA[5]  ;
+; N/A   ; None              ; 8.582 ns        ; P_OEn ; P_DATA[6]  ;
+; N/A   ; None              ; 8.525 ns        ; P_OEn ; P_DATA[7]  ;
+; N/A   ; None              ; 8.331 ns        ; P_OEn ; P_DATA[8]  ;
+; N/A   ; None              ; 8.331 ns        ; P_OEn ; P_DATA[11] ;
+; N/A   ; None              ; 8.331 ns        ; P_OEn ; P_DATA[10] ;
+; N/A   ; None              ; 8.331 ns        ; P_OEn ; P_DATA[9]  ;
+; N/A   ; None              ; 8.260 ns        ; P_OEn ; P_DATA[1]  ;
+; N/A   ; None              ; 8.260 ns        ; P_OEn ; P_DATA[0]  ;
++-------+-------------------+-----------------+-------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; th                                                                                                                                                         ;
++-----------------------------------------+-----------------------------------------------------+-----------+-----------+-------------------------+----------+
+; Minimum Slack                           ; Required th                                         ; Actual th ; From      ; To                      ; To Clock ;
++-----------------------------------------+-----------------------------------------------------+-----------+-----------+-------------------------+----------+
+; N/A                                     ; None                                                ; 2.898 ns  ; SDO_ADC_C ; AOCh33V3HealthRBReg[0]  ; AICLK    ;
+; N/A                                     ; None                                                ; 2.885 ns  ; SDO_ADC_C ; AOCh3HighRBReg[0]       ; AICLK    ;
+; N/A                                     ; None                                                ; 2.882 ns  ; SDO_ADC_C ; AOCh3HighRBReg[10]      ; AICLK    ;
+; N/A                                     ; None                                                ; 2.869 ns  ; SDO_ADC_C ; AOCh3PowerRBReg[9]      ; AICLK    ;
+; N/A                                     ; None                                                ; 2.868 ns  ; SDO_ADC_C ; AOCh3PowerRBReg[10]     ; AICLK    ;
+; N/A                                     ; None                                                ; 2.847 ns  ; SDO_ADC_C ; AOCh3HighRBReg[8]       ; AICLK    ;
+; N/A                                     ; None                                                ; 2.839 ns  ; SDO_ADC_C ; AOCh3HighRBReg[11]      ; AICLK    ;
+; N/A                                     ; None                                                ; 2.824 ns  ; SDO_ADC_D ; AOCh43V3HealthRBReg[12] ; AICLK    ;
+; N/A                                     ; None                                                ; 2.820 ns  ; SDO_ADC_D ; AOCh4HighRBReg[12]      ; AICLK    ;
+; N/A                                     ; None                                                ; 2.687 ns  ; SDO_ADC_B ; AOCh2PowerRBReg[11]     ; AICLK    ;
+; N/A                                     ; None                                                ; 2.477 ns  ; SDO_ADC_D ; AOCh4PowerRBReg[4]      ; AICLK    ;
+; N/A                                     ; None                                                ; 2.477 ns  ; SDO_ADC_D ; AOCh4PowerRBReg[5]      ; AICLK    ;
+; N/A                                     ; None                                                ; 2.433 ns  ; SDO_ADC_B ; AOCh2PowerRBReg[14]     ; AICLK    ;
+; N/A                                     ; None                                                ; 2.432 ns  ; SDO_ADC_C ; AOCh3HighRBReg[5]       ; AICLK    ;
+; N/A                                     ; None                                                ; 2.432 ns  ; SDO_ADC_A ; AOCh1LowRBReg[0]        ; AICLK    ;
+; N/A                                     ; None                                                ; 2.431 ns  ; SDO_ADC_B ; AOCh23V3HealthRBReg[14] ; AICLK    ;
+; N/A                                     ; None                                                ; 2.407 ns  ; SDO_ADC_B ; AOCh2HighRBReg[5]       ; AICLK    ;
+; N/A                                     ; None                                                ; 2.373 ns  ; SDO_ADC_B ; AOCh2HighRBReg[6]       ; AICLK    ;
+; N/A                                     ; None                                                ; 2.372 ns  ; SDO_ADC_C ; AOCh3LowRBReg[9]        ; AICLK    ;
+; N/A                                     ; None                                                ; 2.362 ns  ; SDO_ADC_C ; ConfigData3RBReg[9]     ; AICLK    ;
+; N/A                                     ; None                                                ; 2.355 ns  ; SDO_ADC_B ; AOCh2PowerRBReg[5]      ; AICLK    ;
+; N/A                                     ; None                                                ; 2.351 ns  ; SDO_ADC_B ; AOCh2PowerRBReg[4]      ; AICLK    ;
+; N/A                                     ; None                                                ; 2.335 ns  ; SDO_ADC_D ; AOCh4PowerRBReg[11]     ; AICLK    ;
+; N/A                                     ; None                                                ; 2.321 ns  ; SDO_ADC_B ; AOCh2LowRBReg[10]       ; AICLK    ;
+; N/A                                     ; None                                                ; 2.318 ns  ; SDO_ADC_B ; AOCh2LowRBReg[6]        ; AICLK    ;
+; N/A                                     ; None                                                ; 2.294 ns  ; SDO_ADC_D ; AOCh4HighRBReg[0]       ; AICLK    ;
+; N/A                                     ; None                                                ; 2.282 ns  ; SDO_ADC_D ; AOCh4HighRBReg[6]       ; AICLK    ;
+; N/A                                     ; None                                                ; 2.246 ns  ; SDO_ADC_B ; AOCh2HighRBReg[0]       ; AICLK    ;
+; N/A                                     ; None                                                ; 2.215 ns  ; SDO_ADC_D ; AOCh43V3HealthRBReg[7]  ; AICLK    ;
+; N/A                                     ; None                                                ; 2.215 ns  ; SDO_ADC_D ; AOCh4LowRBReg[8]        ; AICLK    ;
+; N/A                                     ; None                                                ; 2.213 ns  ; SDO_ADC_D ; AOCh4HighRBReg[7]       ; AICLK    ;
+; N/A                                     ; None                                                ; 2.209 ns  ; SDO_ADC_C ; AOCh33V3HealthRBReg[14] ; AICLK    ;
+; N/A                                     ; None                                                ; 2.208 ns  ; SDO_ADC_C ; AOCh3PowerRBReg[14]     ; AICLK    ;
+; N/A                                     ; None                                                ; 2.198 ns  ; SDO_ADC_C ; AOCh33V3HealthRBReg[7]  ; AICLK    ;
+; N/A                                     ; None                                                ; 2.194 ns  ; SDO_ADC_C ; AOCh3HighRBReg[7]       ; AICLK    ;
+; N/A                                     ; None                                                ; 2.192 ns  ; SDO_ADC_C ; ConfigData3RBReg[2]     ; AICLK    ;
+; N/A                                     ; None                                                ; 2.160 ns  ; SDO_ADC_D ; AOCh43V3HealthRBReg[8]  ; AICLK    ;
+; N/A                                     ; None                                                ; 2.158 ns  ; SDO_ADC_D ; AOCh43V3HealthRBReg[11] ; AICLK    ;
+; N/A                                     ; None                                                ; 2.135 ns  ; SDO_ADC_C ; AOCh3LowRBReg[12]       ; AICLK    ;
+; N/A                                     ; None                                                ; 2.126 ns  ; SDO_ADC_B ; AOCh2HighRBReg[4]       ; AICLK    ;
+; N/A                                     ; None                                                ; 2.105 ns  ; SDO_ADC_C ; AOCh3PowerRBReg[4]      ; AICLK    ;
+; N/A                                     ; None                                                ; 2.099 ns  ; SDO_ADC_C ; AOCh3PowerRBReg[6]      ; AICLK    ;
+; N/A                                     ; None                                                ; 2.098 ns  ; SDO_ADC_C ; AOCh3PowerRBReg[12]     ; AICLK    ;
+; N/A                                     ; None                                                ; 2.094 ns  ; SDO_ADC_C ; AOCh3PowerRBReg[5]      ; AICLK    ;
+; N/A                                     ; None                                                ; 2.053 ns  ; SDO_ADC_C ; ConfigData3RBReg[11]    ; AICLK    ;
+; N/A                                     ; None                                                ; 1.915 ns  ; SDO_ADC_B ; AOCh2PowerRBReg[7]      ; AICLK    ;
+; N/A                                     ; None                                                ; 1.911 ns  ; SDO_ADC_B ; AOCh2PowerRBReg[8]      ; AICLK    ;
+; N/A                                     ; None                                                ; 1.898 ns  ; SDO_ADC_B ; AOCh23V3HealthRBReg[15] ; AICLK    ;
+; N/A                                     ; None                                                ; 1.868 ns  ; SDO_ADC_C ; AOCh33V3HealthRBReg[11] ; AICLK    ;
+; N/A                                     ; None                                                ; 1.861 ns  ; SDO_ADC_C ; AOCh33V3HealthRBReg[8]  ; AICLK    ;
+; N/A                                     ; None                                                ; 1.835 ns  ; SDO_ADC_B ; AOCh2PowerRBReg[13]     ; AICLK    ;
+; N/A                                     ; None                                                ; 1.832 ns  ; SDO_ADC_B ; AOCh2HighRBReg[8]       ; AICLK    ;
+; N/A                                     ; None                                                ; 1.830 ns  ; SDO_ADC_B ; AOCh2LowRBReg[13]       ; AICLK    ;
+; N/A                                     ; None                                                ; 1.826 ns  ; SDO_ADC_B ; AOCh2HighRBReg[11]      ; AICLK    ;
+; N/A                                     ; None                                                ; 1.810 ns  ; SDO_ADC_B ; AOCh2HighRBReg[10]      ; AICLK    ;
+; N/A                                     ; None                                                ; 1.740 ns  ; SDO_ADC_D ; AOCh43V3HealthRBReg[0]  ; AICLK    ;
+; N/A                                     ; None                                                ; 1.736 ns  ; SDO_ADC_D ; AOCh4HighRBReg[10]      ; AICLK    ;
+; N/A                                     ; None                                                ; 1.733 ns  ; SDO_ADC_D ; AOCh4HighRBReg[5]       ; AICLK    ;
+; N/A                                     ; None                                                ; 1.730 ns  ; SDO_ADC_D ; AOCh4HighRBReg[4]       ; AICLK    ;
+; N/A                                     ; None                                                ; 1.722 ns  ; SDO_ADC_C ; AOCh3PowerRBReg[11]     ; AICLK    ;
+; N/A                                     ; None                                                ; 1.713 ns  ; SDO_ADC_A ; AOCh1LowRBReg[15]       ; AICLK    ;
+; N/A                                     ; None                                                ; 1.662 ns  ; SDO_ADC_C ; AOCh3LowRBReg[8]        ; AICLK    ;
+; N/A                                     ; None                                                ; 1.658 ns  ; SDO_ADC_C ; ConfigData3RBReg[8]     ; AICLK    ;
+; N/A                                     ; None                                                ; 1.630 ns  ; SDO_ADC_B ; AOCh2PowerRBReg[10]     ; AICLK    ;
+; N/A                                     ; None                                                ; 1.624 ns  ; SDO_ADC_B ; AOCh2PowerRBReg[9]      ; AICLK    ;
+; N/A                                     ; None                                                ; 1.613 ns  ; SDO_ADC_D ; AOCh43V3HealthRBReg[14] ; AICLK    ;
+; N/A                                     ; None                                                ; 1.613 ns  ; SDO_ADC_D ; AOCh4PowerRBReg[14]     ; AICLK    ;
+; N/A                                     ; None                                                ; 1.592 ns  ; SDO_ADC_D ; AOCh4PowerRBReg[9]      ; AICLK    ;
+; N/A                                     ; None                                                ; 1.589 ns  ; SDO_ADC_D ; AOCh4PowerRBReg[10]     ; AICLK    ;
+; N/A                                     ; None                                                ; 1.587 ns  ; SDO_ADC_D ; AOCh4HighRBReg[8]       ; AICLK    ;
+; N/A                                     ; None                                                ; 1.586 ns  ; SDO_ADC_D ; AOCh4HighRBReg[11]      ; AICLK    ;
+; N/A                                     ; None                                                ; 1.580 ns  ; SDO_ADC_D ; AOCh4LowRBReg[0]        ; AICLK    ;
+; N/A                                     ; None                                                ; 1.573 ns  ; SDO_ADC_D ; AOCh4LowRBReg[12]       ; AICLK    ;
+; N/A                                     ; None                                                ; 1.569 ns  ; SDO_ADC_A ; AOCh1HighRBReg[9]       ; AICLK    ;
+; N/A                                     ; None                                                ; 1.565 ns  ; SDO_ADC_A ; AOCh13V3HealthRBReg[9]  ; AICLK    ;
+; N/A                                     ; None                                                ; 1.562 ns  ; SDO_ADC_D ; AOCh43V3HealthRBReg[6]  ; AICLK    ;
+; N/A                                     ; None                                                ; 1.555 ns  ; SDO_ADC_C ; ConfigData3RBReg[0]     ; AICLK    ;
+; N/A                                     ; None                                                ; 1.516 ns  ; SDO_ADC_C ; AOCh3HighRBReg[6]       ; AICLK    ;
+; N/A                                     ; None                                                ; 1.514 ns  ; SDO_ADC_A ; AOCh1PowerRBReg[0]      ; AICLK    ;
+; N/A                                     ; None                                                ; 1.512 ns  ; SDO_ADC_A ; AOCh1PowerRBReg[15]     ; AICLK    ;
+; N/A                                     ; None                                                ; 1.510 ns  ; SDO_ADC_A ; ConfigData1RBReg[7]     ; AICLK    ;
+; N/A                                     ; None                                                ; 1.510 ns  ; SDO_ADC_A ; AOCh1LowRBReg[7]        ; AICLK    ;
+; N/A                                     ; None                                                ; 1.498 ns  ; SDO_ADC_C ; AOCh3HighRBReg[12]      ; AICLK    ;
+; N/A                                     ; None                                                ; 1.496 ns  ; SDO_ADC_D ; AOCh43V3HealthRBReg[9]  ; AICLK    ;
+; N/A                                     ; None                                                ; 1.496 ns  ; SDO_ADC_C ; AOCh33V3HealthRBReg[12] ; AICLK    ;
+; N/A                                     ; None                                                ; 1.479 ns  ; SDO_ADC_C ; AOCh33V3HealthRBReg[9]  ; AICLK    ;
+; N/A                                     ; None                                                ; 1.473 ns  ; SDO_ADC_C ; AOCh3HighRBReg[9]       ; AICLK    ;
+; N/A                                     ; None                                                ; 1.455 ns  ; SDO_ADC_C ; AOCh3HighRBReg[4]       ; AICLK    ;
+; N/A                                     ; None                                                ; 1.452 ns  ; SDO_ADC_C ; ConfigData3RBReg[12]    ; AICLK    ;
+; N/A                                     ; None                                                ; 1.446 ns  ; SDO_ADC_D ; AOCh4PowerRBReg[8]      ; AICLK    ;
+; N/A                                     ; None                                                ; 1.445 ns  ; SDO_ADC_D ; AOCh4PowerRBReg[7]      ; AICLK    ;
+; N/A                                     ; None                                                ; 1.437 ns  ; SDO_ADC_D ; AOCh43V3HealthRBReg[15] ; AICLK    ;
+; N/A                                     ; None                                                ; 1.423 ns  ; SDO_ADC_D ; AOCh4HighRBReg[15]      ; AICLK    ;
+; N/A                                     ; None                                                ; 1.392 ns  ; SDO_ADC_B ; AOCh2HighRBReg[14]      ; AICLK    ;
+; N/A                                     ; None                                                ; 1.375 ns  ; SDO_ADC_D ; AOCh4HighRBReg[9]       ; AICLK    ;
+; N/A                                     ; None                                                ; 1.310 ns  ; SDO_ADC_D ; AOCh4PowerRBReg[6]      ; AICLK    ;
+; N/A                                     ; None                                                ; 1.307 ns  ; SDO_ADC_D ; AOCh4PowerRBReg[12]     ; AICLK    ;
+; N/A                                     ; None                                                ; 1.292 ns  ; SDO_ADC_B ; AOCh2LowRBReg[7]        ; AICLK    ;
+; N/A                                     ; None                                                ; 1.280 ns  ; SDO_ADC_B ; AOCh2LowRBReg[8]        ; AICLK    ;
+; N/A                                     ; None                                                ; 1.279 ns  ; SDO_ADC_B ; AOCh2LowRBReg[11]       ; AICLK    ;
+; N/A                                     ; None                                                ; 1.271 ns  ; SDO_ADC_B ; AOCh2PowerRBReg[12]     ; AICLK    ;
+; N/A                                     ; None                                                ; 1.269 ns  ; SDO_ADC_B ; AOCh2PowerRBReg[6]      ; AICLK    ;
+; N/A                                     ; None                                                ; 1.188 ns  ; SDO_ADC_B ; AOCh2PowerRBReg[0]      ; AICLK    ;
+; N/A                                     ; None                                                ; 1.186 ns  ; SDO_ADC_B ; AOCh2PowerRBReg[15]     ; AICLK    ;
+; N/A                                     ; None                                                ; 1.170 ns  ; SDO_ADC_B ; AOCh2LowRBReg[0]        ; AICLK    ;
+; N/A                                     ; None                                                ; 1.169 ns  ; SDO_ADC_B ; AOCh23V3HealthRBReg[0]  ; AICLK    ;
+; N/A                                     ; None                                                ; 1.162 ns  ; SDO_ADC_B ; AOCh23V3HealthRBReg[11] ; AICLK    ;
+; N/A                                     ; None                                                ; 1.161 ns  ; SDO_ADC_B ; AOCh23V3HealthRBReg[8]  ; AICLK    ;
+; N/A                                     ; None                                                ; 1.134 ns  ; SDO_ADC_C ; AOCh33V3HealthRBReg[4]  ; AICLK    ;
+; N/A                                     ; None                                                ; 1.106 ns  ; SDO_ADC_B ; AOCh2HighRBReg[7]       ; AICLK    ;
+; N/A                                     ; None                                                ; 1.105 ns  ; SDO_ADC_B ; AOCh23V3HealthRBReg[7]  ; AICLK    ;
+; N/A                                     ; None                                                ; 1.075 ns  ; SDO_ADC_B ; AOCh2HighRBReg[12]      ; AICLK    ;
+; N/A                                     ; None                                                ; 1.057 ns  ; SDO_ADC_B ; AOCh2HighRBReg[9]       ; AICLK    ;
+; N/A                                     ; None                                                ; 1.049 ns  ; SDO_ADC_B ; AOCh23V3HealthRBReg[9]  ; AICLK    ;
+; N/A                                     ; None                                                ; 1.034 ns  ; SDO_ADC_A ; AOCh1LowRBReg[12]       ; AICLK    ;
+; N/A                                     ; None                                                ; 1.014 ns  ; SDO_ADC_A ; AOCh13V3HealthRBReg[0]  ; AICLK    ;
+; N/A                                     ; None                                                ; 1.005 ns  ; SDO_ADC_A ; ConfigData1RBReg[6]     ; AICLK    ;
+; N/A                                     ; None                                                ; 0.975 ns  ; SDO_ADC_A ; AOCh1PowerRBReg[11]     ; AICLK    ;
+; N/A                                     ; None                                                ; 0.965 ns  ; SDO_ADC_B ; AOCh2LowRBReg[15]       ; AICLK    ;
+; N/A                                     ; None                                                ; 0.960 ns  ; SDO_ADC_B ; AOCh2HighRBReg[15]      ; AICLK    ;
+; N/A                                     ; None                                                ; 0.955 ns  ; SDO_ADC_A ; AOCh1LowRBReg[13]       ; AICLK    ;
+; N/A                                     ; None                                                ; 0.950 ns  ; SDO_ADC_C ; AOCh3LowRBReg[11]       ; AICLK    ;
+; N/A                                     ; None                                                ; 0.948 ns  ; SDO_ADC_A ; AOCh1PowerRBReg[13]     ; AICLK    ;
+; N/A                                     ; None                                                ; 0.937 ns  ; SDO_ADC_C ; AOCh3LowRBReg[0]        ; AICLK    ;
+; N/A                                     ; None                                                ; 0.937 ns  ; SDO_ADC_C ; AOCh3PowerRBReg[8]      ; AICLK    ;
+; N/A                                     ; None                                                ; 0.928 ns  ; SDO_ADC_C ; AOCh3PowerRBReg[7]      ; AICLK    ;
+; N/A                                     ; None                                                ; 0.920 ns  ; SDO_ADC_C ; ConfigData3RBReg[7]     ; AICLK    ;
+; N/A                                     ; None                                                ; 0.903 ns  ; SDO_ADC_A ; AOCh13V3HealthRBReg[15] ; AICLK    ;
+; N/A                                     ; None                                                ; 0.895 ns  ; SDO_ADC_A ; AOCh1PowerRBReg[8]      ; AICLK    ;
+; N/A                                     ; None                                                ; 0.861 ns  ; SDO_ADC_D ; AOCh4LowRBReg[11]       ; AICLK    ;
+; N/A                                     ; None                                                ; 0.776 ns  ; SDO_ADC_D ; AOCh4PowerRBReg[0]      ; AICLK    ;
+; N/A                                     ; None                                                ; 0.774 ns  ; SDO_ADC_D ; AOCh4PowerRBReg[15]     ; AICLK    ;
+; N/A                                     ; None                                                ; 0.764 ns  ; SDO_ADC_C ; AOCh3PowerRBReg[13]     ; AICLK    ;
+; N/A                                     ; None                                                ; 0.756 ns  ; SDO_ADC_C ; AOCh3LowRBReg[13]       ; AICLK    ;
+; N/A                                     ; None                                                ; 0.754 ns  ; SDO_ADC_C ; AOCh33V3HealthRBReg[15] ; AICLK    ;
+; N/A                                     ; None                                                ; 0.753 ns  ; SDO_ADC_A ; AOCh13V3HealthRBReg[12] ; AICLK    ;
+; N/A                                     ; None                                                ; 0.752 ns  ; SDO_ADC_C ; AOCh3PowerRBReg[15]     ; AICLK    ;
+; N/A                                     ; None                                                ; 0.743 ns  ; SDO_ADC_A ; AOCh13V3HealthRBReg[6]  ; AICLK    ;
+; N/A                                     ; None                                                ; 0.731 ns  ; SDO_ADC_C ; AOCh3PowerRBReg[0]      ; AICLK    ;
+; N/A                                     ; None                                                ; 0.728 ns  ; SDO_ADC_A ; AOCh13V3HealthRBReg[4]  ; AICLK    ;
+; N/A                                     ; None                                                ; 0.666 ns  ; SDO_ADC_A ; AOCh1PowerRBReg[7]      ; AICLK    ;
+; N/A                                     ; None                                                ; 0.661 ns  ; SDO_ADC_B ; AOCh2LowRBReg[12]       ; AICLK    ;
+; N/A                                     ; None                                                ; 0.611 ns  ; SDO_ADC_D ; AOCh4LowRBReg[15]       ; AICLK    ;
+; N/A                                     ; None                                                ; 0.604 ns  ; SDO_ADC_B ; AOCh2LowRBReg[14]       ; AICLK    ;
+; N/A                                     ; None                                                ; 0.603 ns  ; SDO_ADC_B ; AOCh23V3HealthRBReg[12] ; AICLK    ;
+; N/A                                     ; None                                                ; 0.602 ns  ; SDO_ADC_B ; AOCh23V3HealthRBReg[6]  ; AICLK    ;
+; N/A                                     ; None                                                ; 0.598 ns  ; SDO_ADC_B ; AOCh2PowerRBReg[3]      ; AICLK    ;
+; N/A                                     ; None                                                ; 0.598 ns  ; SDO_ADC_B ; AOCh2LowRBReg[3]        ; AICLK    ;
+; N/A                                     ; None                                                ; 0.595 ns  ; SDO_ADC_B ; AOCh2PowerRBReg[2]      ; AICLK    ;
+; N/A                                     ; None                                                ; 0.548 ns  ; SDO_ADC_A ; AOCh13V3HealthRBReg[11] ; AICLK    ;
+; N/A                                     ; None                                                ; 0.542 ns  ; SDO_ADC_A ; AOCh13V3HealthRBReg[8]  ; AICLK    ;
+; N/A                                     ; None                                                ; 0.453 ns  ; SDO_ADC_B ; AOCh23V3HealthRBReg[4]  ; AICLK    ;
+; N/A                                     ; None                                                ; 0.448 ns  ; SDO_ADC_B ; AOCh2LowRBReg[4]        ; AICLK    ;
+; N/A                                     ; None                                                ; 0.446 ns  ; SDO_ADC_A ; ConfigData1RBReg[5]     ; AICLK    ;
+; N/A                                     ; None                                                ; 0.446 ns  ; SDO_ADC_A ; AOCh13V3HealthRBReg[5]  ; AICLK    ;
+; N/A                                     ; None                                                ; 0.446 ns  ; SDO_ADC_A ; ConfigData1RBReg[10]    ; AICLK    ;
+; N/A                                     ; None                                                ; 0.444 ns  ; SDO_ADC_A ; AOCh1LowRBReg[10]       ; AICLK    ;
+; N/A                                     ; None                                                ; 0.442 ns  ; SDO_ADC_A ; AOCh13V3HealthRBReg[10] ; AICLK    ;
+; N/A                                     ; None                                                ; 0.441 ns  ; SDO_ADC_D ; AOCh4LowRBReg[10]       ; AICLK    ;
+; N/A                                     ; None                                                ; 0.438 ns  ; SDO_ADC_A ; AOCh1LowRBReg[5]        ; AICLK    ;
+; N/A                                     ; None                                                ; 0.303 ns  ; SDO_ADC_D ; AOCh4PowerRBReg[13]     ; AICLK    ;
+; N/A                                     ; None                                                ; 0.297 ns  ; SDO_ADC_D ; AOCh4LowRBReg[13]       ; AICLK    ;
+; N/A                                     ; None                                                ; 0.291 ns  ; SDO_ADC_A ; AOCh1HighRBReg[4]       ; AICLK    ;
+; N/A                                     ; None                                                ; 0.291 ns  ; SDO_ADC_A ; AOCh1HighRBReg[12]      ; AICLK    ;
+; N/A                                     ; None                                                ; 0.290 ns  ; SDO_ADC_A ; ConfigData1RBReg[12]    ; AICLK    ;
+; N/A                                     ; None                                                ; 0.287 ns  ; SDO_ADC_A ; AOCh1PowerRBReg[5]      ; AICLK    ;
+; N/A                                     ; None                                                ; 0.286 ns  ; SDO_ADC_A ; AOCh1PowerRBReg[4]      ; AICLK    ;
+; N/A                                     ; None                                                ; 0.286 ns  ; SDO_ADC_A ; AOCh1HighRBReg[5]       ; AICLK    ;
+; N/A                                     ; None                                                ; 0.278 ns  ; SDO_ADC_A ; AOCh1HighRBReg[15]      ; AICLK    ;
+; N/A                                     ; None                                                ; 0.275 ns  ; SDO_ADC_A ; AOCh1HighRBReg[6]       ; AICLK    ;
+; N/A                                     ; None                                                ; 0.240 ns  ; SDO_ADC_D ; AOCh4LowRBReg[7]        ; AICLK    ;
+; N/A                                     ; None                                                ; 0.196 ns  ; SDO_ADC_A ; AOCh1LowRBReg[8]        ; AICLK    ;
+; N/A                                     ; None                                                ; 0.195 ns  ; SDO_ADC_C ; ConfigData3RBReg[6]     ; AICLK    ;
+; N/A                                     ; None                                                ; 0.191 ns  ; SDO_ADC_C ; AOCh3LowRBReg[6]        ; AICLK    ;
+; N/A                                     ; None                                                ; 0.188 ns  ; SDO_ADC_A ; ConfigData1RBReg[8]     ; AICLK    ;
+; N/A                                     ; None                                                ; 0.181 ns  ; SDO_ADC_C ; ConfigData3RBReg[10]    ; AICLK    ;
+; N/A                                     ; None                                                ; 0.180 ns  ; SDO_ADC_C ; AOCh3LowRBReg[10]       ; AICLK    ;
+; N/A                                     ; None                                                ; 0.179 ns  ; SDO_ADC_B ; AOCh2LowRBReg[9]        ; AICLK    ;
+; N/A                                     ; None                                                ; 0.148 ns  ; SDO_ADC_A ; AOCh1PowerRBReg[6]      ; AICLK    ;
+; N/A                                     ; None                                                ; 0.088 ns  ; SDO_ADC_B ; AOCh2PowerRBReg[1]      ; AICLK    ;
+; N/A                                     ; None                                                ; 0.046 ns  ; SDO_ADC_D ; AOCh43V3HealthRBReg[4]  ; AICLK    ;
+; N/A                                     ; None                                                ; -0.021 ns ; SDO_ADC_A ; AOCh1PowerRBReg[14]     ; AICLK    ;
+; N/A                                     ; None                                                ; -0.022 ns ; SDO_ADC_A ; AOCh13V3HealthRBReg[14] ; AICLK    ;
+; N/A                                     ; None                                                ; -0.039 ns ; SDO_ADC_B ; AOCh23V3HealthRBReg[1]  ; AICLK    ;
+; N/A                                     ; None                                                ; -0.040 ns ; SDO_ADC_B ; AOCh23V3HealthRBReg[2]  ; AICLK    ;
+; N/A                                     ; None                                                ; -0.194 ns ; RST_INn   ; AORBChannel[0]          ; AICLK    ;
+; N/A                                     ; None                                                ; -0.196 ns ; RST_INn   ; AORBChannel[1]          ; AICLK    ;
+; N/A                                     ; None                                                ; -0.199 ns ; SDO_ADC_A ; AOCh1LowRBReg[2]        ; AICLK    ;
+; N/A                                     ; None                                                ; -0.220 ns ; SDO_ADC_A ; ConfigData1RBReg[2]     ; AICLK    ;
+; N/A                                     ; None                                                ; -0.244 ns ; SDO_ADC_A ; AOCh1PowerRBReg[10]     ; AICLK    ;
+; N/A                                     ; None                                                ; -0.245 ns ; SDO_ADC_A ; AOCh1PowerRBReg[9]      ; AICLK    ;
+; N/A                                     ; None                                                ; -0.258 ns ; SDO_ADC_C ; AOCh33V3HealthRBReg[13] ; AICLK    ;
+; N/A                                     ; None                                                ; -0.268 ns ; SDO_ADC_B ; AOCh2HighRBReg[2]       ; AICLK    ;
+; N/A                                     ; None                                                ; -0.271 ns ; SDO_ADC_B ; AOCh2HighRBReg[1]       ; AICLK    ;
+; N/A                                     ; None                                                ; -0.299 ns ; SDO_ADC_A ; AOCh1HighRBReg[8]       ; AICLK    ;
+; N/A                                     ; None                                                ; -0.300 ns ; SDO_ADC_A ; AOCh1HighRBReg[11]      ; AICLK    ;
+; N/A                                     ; None                                                ; -0.341 ns ; SDO_ADC_A ; AOCh1LowRBReg[9]        ; AICLK    ;
+; N/A                                     ; None                                                ; -0.352 ns ; RST_INn   ; SDIN_DAC2~reg0          ; AICLK    ;
+; N/A                                     ; None                                                ; -0.354 ns ; SDO_ADC_A ; ConfigData1RBReg[9]     ; AICLK    ;
+; N/A                                     ; None                                                ; -0.359 ns ; SDO_ADC_C ; AOCh33V3HealthRBReg[6]  ; AICLK    ;
+; Timing analysis restricted to 200 rows. ; To change the limit use Settings (Assignments menu) ;           ;           ;                         ;          ;
++-----------------------------------------+-----------------------------------------------------+-----------+-----------+-------------------------+----------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Classic Timing Analyzer
+    Info: Version 9.1 Build 222 10/21/2009 SJ Web Edition
+    Info: Processing started: Sat Jan 12 20:16:43 2013
+Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off IOP_Analog_Proto -c IOP_Analog_Proto
+Info: Started post-fitting delay annotation
+Info: Delay annotation completed successfully
+Warning: Found pins functioning as undefined clocks and/or memory enables
+    Info: Assuming node "AICLK" is an undefined clock
+Warning: Found 1 node(s) in clock paths which may be acting as ripple and/or gated clocks -- node(s) analyzed as buffer(s) resulting in clock skew
+    Info: Detected ripple clock "SerialCLK" as buffer
+Info: Clock "AICLK" has Internal fmax of 42.63 MHz between source register "AORBChannel[0]" and destination register "AOCh3LowRBReg[2]" (period= 23.456 ns)
+    Info: + Longest register to register delay is 11.019 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LC_X13_Y10_N1; Fanout = 69; REG Node = 'AORBChannel[0]'
+        Info: 2: + IC(4.362 ns) + CELL(0.914 ns) = 5.276 ns; Loc. = LC_X18_Y8_N1; Fanout = 4; COMB Node = 'AOCh1LowRBReg[2]~2'
+        Info: 3: + IC(4.500 ns) + CELL(1.243 ns) = 11.019 ns; Loc. = LC_X18_Y1_N4; Fanout = 1; REG Node = 'AOCh3LowRBReg[2]'
+        Info: Total cell delay = 2.157 ns ( 19.58 % )
+        Info: Total interconnect delay = 8.862 ns ( 80.42 % )
+    Info: - Smallest clock skew is 0.000 ns
+        Info: + Shortest clock path from clock "AICLK" to destination register is 8.501 ns
+            Info: 1: + IC(0.000 ns) + CELL(1.163 ns) = 1.163 ns; Loc. = PIN_H5; Fanout = 813; CLK Node = 'AICLK'
+            Info: 2: + IC(1.872 ns) + CELL(1.294 ns) = 4.329 ns; Loc. = LC_X14_Y3_N6; Fanout = 344; REG Node = 'SerialCLK'
+            Info: 3: + IC(3.254 ns) + CELL(0.918 ns) = 8.501 ns; Loc. = LC_X18_Y1_N4; Fanout = 1; REG Node = 'AOCh3LowRBReg[2]'
+            Info: Total cell delay = 3.375 ns ( 39.70 % )
+            Info: Total interconnect delay = 5.126 ns ( 60.30 % )
+        Info: - Longest clock path from clock "AICLK" to source register is 8.501 ns
+            Info: 1: + IC(0.000 ns) + CELL(1.163 ns) = 1.163 ns; Loc. = PIN_H5; Fanout = 813; CLK Node = 'AICLK'
+            Info: 2: + IC(1.872 ns) + CELL(1.294 ns) = 4.329 ns; Loc. = LC_X14_Y3_N6; Fanout = 344; REG Node = 'SerialCLK'
+            Info: 3: + IC(3.254 ns) + CELL(0.918 ns) = 8.501 ns; Loc. = LC_X13_Y10_N1; Fanout = 69; REG Node = 'AORBChannel[0]'
+            Info: Total cell delay = 3.375 ns ( 39.70 % )
+            Info: Total interconnect delay = 5.126 ns ( 60.30 % )
+    Info: + Micro clock to output delay of source is 0.376 ns
+    Info: + Micro setup delay of destination is 0.333 ns
+    Info: Delay path is controlled by inverted clocks -- if clock duty cycle is 50%, fmax is divided by two
+Warning: Circuit may not operate. Detected 1 non-operational path(s) clocked by clock "AICLK" with clock skew larger than data delay. See Compilation Report for details.
+Info: Found hold time violation between source  pin or register "LEDTrigger" and destination pin or register "P_OE~reg0" for clock "AICLK" (Hold time is 693 ps)
+    Info: + Largest clock skew is 4.548 ns
+        Info: + Longest clock path from clock "AICLK" to destination register is 8.501 ns
+            Info: 1: + IC(0.000 ns) + CELL(1.163 ns) = 1.163 ns; Loc. = PIN_H5; Fanout = 813; CLK Node = 'AICLK'
+            Info: 2: + IC(1.872 ns) + CELL(1.294 ns) = 4.329 ns; Loc. = LC_X14_Y3_N6; Fanout = 344; REG Node = 'SerialCLK'
+            Info: 3: + IC(3.254 ns) + CELL(0.918 ns) = 8.501 ns; Loc. = LC_X14_Y13_N5; Fanout = 2; REG Node = 'P_OE~reg0'
+            Info: Total cell delay = 3.375 ns ( 39.70 % )
+            Info: Total interconnect delay = 5.126 ns ( 60.30 % )
+        Info: - Shortest clock path from clock "AICLK" to source register is 3.953 ns
+            Info: 1: + IC(0.000 ns) + CELL(1.163 ns) = 1.163 ns; Loc. = PIN_H5; Fanout = 813; CLK Node = 'AICLK'
+            Info: 2: + IC(1.872 ns) + CELL(0.918 ns) = 3.953 ns; Loc. = LC_X15_Y11_N4; Fanout = 6; REG Node = 'LEDTrigger'
+            Info: Total cell delay = 2.081 ns ( 52.64 % )
+            Info: Total interconnect delay = 1.872 ns ( 47.36 % )
+    Info: - Micro clock to output delay of source is 0.376 ns
+    Info: - Shortest register to register delay is 3.700 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LC_X15_Y11_N4; Fanout = 6; REG Node = 'LEDTrigger'
+        Info: 2: + IC(2.639 ns) + CELL(1.061 ns) = 3.700 ns; Loc. = LC_X14_Y13_N5; Fanout = 2; REG Node = 'P_OE~reg0'
+        Info: Total cell delay = 1.061 ns ( 28.68 % )
+        Info: Total interconnect delay = 2.639 ns ( 71.32 % )
+    Info: + Micro hold delay of destination is 0.221 ns
+    Info: Delay path is controlled by inverted clocks -- if clock duty cycle is 50%, fmax is divided by two
+Info: tsu for register "MPCDataInternal[13]" (data pin = "P_ADDR[11]", clock pin = "AICLK") is 15.262 ns
+    Info: + Longest pin to register delay is 18.882 ns
+        Info: 1: + IC(0.000 ns) + CELL(1.132 ns) = 1.132 ns; Loc. = PIN_E15; Fanout = 7; PIN Node = 'P_ADDR[11]'
+        Info: 2: + IC(2.560 ns) + CELL(0.914 ns) = 4.606 ns; Loc. = LC_X16_Y9_N4; Fanout = 3; COMB Node = 'Equal8~3'
+        Info: 3: + IC(0.800 ns) + CELL(0.511 ns) = 5.917 ns; Loc. = LC_X16_Y9_N7; Fanout = 18; COMB Node = 'Equal9~0'
+        Info: 4: + IC(1.991 ns) + CELL(0.200 ns) = 8.108 ns; Loc. = LC_X16_Y10_N2; Fanout = 17; COMB Node = 'Equal17~0'
+        Info: 5: + IC(5.409 ns) + CELL(0.200 ns) = 13.717 ns; Loc. = LC_X16_Y2_N6; Fanout = 1; COMB Node = 'Selector2~2'
+        Info: 6: + IC(2.647 ns) + CELL(0.740 ns) = 17.104 ns; Loc. = LC_X20_Y5_N9; Fanout = 1; COMB Node = 'Selector2~4'
+        Info: 7: + IC(0.717 ns) + CELL(1.061 ns) = 18.882 ns; Loc. = LC_X20_Y5_N8; Fanout = 1; REG Node = 'MPCDataInternal[13]'
+        Info: Total cell delay = 4.758 ns ( 25.20 % )
+        Info: Total interconnect delay = 14.124 ns ( 74.80 % )
+    Info: + Micro setup delay of destination is 0.333 ns
+    Info: - Shortest clock path from clock "AICLK" to destination register is 3.953 ns
+        Info: 1: + IC(0.000 ns) + CELL(1.163 ns) = 1.163 ns; Loc. = PIN_H5; Fanout = 813; CLK Node = 'AICLK'
+        Info: 2: + IC(1.872 ns) + CELL(0.918 ns) = 3.953 ns; Loc. = LC_X20_Y5_N8; Fanout = 1; REG Node = 'MPCDataInternal[13]'
+        Info: Total cell delay = 2.081 ns ( 52.64 % )
+        Info: Total interconnect delay = 1.872 ns ( 47.36 % )
+Info: tco from clock "AICLK" to destination pin "CLEAR3" through register "CLEAR1~reg0" is 15.068 ns
+    Info: + Longest clock path from clock "AICLK" to source register is 8.501 ns
+        Info: 1: + IC(0.000 ns) + CELL(1.163 ns) = 1.163 ns; Loc. = PIN_H5; Fanout = 813; CLK Node = 'AICLK'
+        Info: 2: + IC(1.872 ns) + CELL(1.294 ns) = 4.329 ns; Loc. = LC_X14_Y3_N6; Fanout = 344; REG Node = 'SerialCLK'
+        Info: 3: + IC(3.254 ns) + CELL(0.918 ns) = 8.501 ns; Loc. = LC_X11_Y7_N9; Fanout = 5; REG Node = 'CLEAR1~reg0'
+        Info: Total cell delay = 3.375 ns ( 39.70 % )
+        Info: Total interconnect delay = 5.126 ns ( 60.30 % )
+    Info: + Micro clock to output delay of source is 0.376 ns
+    Info: + Longest register to pin delay is 6.191 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LC_X11_Y7_N9; Fanout = 5; REG Node = 'CLEAR1~reg0'
+        Info: 2: + IC(3.869 ns) + CELL(2.322 ns) = 6.191 ns; Loc. = PIN_E1; Fanout = 0; PIN Node = 'CLEAR3'
+        Info: Total cell delay = 2.322 ns ( 37.51 % )
+        Info: Total interconnect delay = 3.869 ns ( 62.49 % )
+Info: Longest tpd from source pin "P_CSn" to destination pin "P_DATA[13]" is 10.256 ns
+    Info: 1: + IC(0.000 ns) + CELL(1.132 ns) = 1.132 ns; Loc. = PIN_C14; Fanout = 5; PIN Node = 'P_CSn'
+    Info: 2: + IC(2.666 ns) + CELL(0.511 ns) = 4.309 ns; Loc. = LC_X17_Y11_N6; Fanout = 32; COMB Node = 'P_DATA~32'
+    Info: 3: + IC(4.343 ns) + CELL(1.604 ns) = 10.256 ns; Loc. = PIN_P15; Fanout = 0; PIN Node = 'P_DATA[13]'
+    Info: Total cell delay = 3.247 ns ( 31.66 % )
+    Info: Total interconnect delay = 7.009 ns ( 68.34 % )
+Info: th for register "AOCh33V3HealthRBReg[0]" (data pin = "SDO_ADC_C", clock pin = "AICLK") is 2.898 ns
+    Info: + Longest clock path from clock "AICLK" to destination register is 8.501 ns
+        Info: 1: + IC(0.000 ns) + CELL(1.163 ns) = 1.163 ns; Loc. = PIN_H5; Fanout = 813; CLK Node = 'AICLK'
+        Info: 2: + IC(1.872 ns) + CELL(1.294 ns) = 4.329 ns; Loc. = LC_X14_Y3_N6; Fanout = 344; REG Node = 'SerialCLK'
+        Info: 3: + IC(3.254 ns) + CELL(0.918 ns) = 8.501 ns; Loc. = LC_X19_Y10_N4; Fanout = 1; REG Node = 'AOCh33V3HealthRBReg[0]'
+        Info: Total cell delay = 3.375 ns ( 39.70 % )
+        Info: Total interconnect delay = 5.126 ns ( 60.30 % )
+    Info: + Micro hold delay of destination is 0.221 ns
+    Info: - Shortest pin to register delay is 5.824 ns
+        Info: 1: + IC(0.000 ns) + CELL(1.132 ns) = 1.132 ns; Loc. = PIN_C13; Fanout = 78; PIN Node = 'SDO_ADC_C'
+        Info: 2: + IC(4.412 ns) + CELL(0.280 ns) = 5.824 ns; Loc. = LC_X19_Y10_N4; Fanout = 1; REG Node = 'AOCh33V3HealthRBReg[0]'
+        Info: Total cell delay = 1.412 ns ( 24.24 % )
+        Info: Total interconnect delay = 4.412 ns ( 75.76 % )
+Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 132 megabytes
+    Info: Processing ended: Sat Jan 12 20:16:48 2013
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:06
+
+

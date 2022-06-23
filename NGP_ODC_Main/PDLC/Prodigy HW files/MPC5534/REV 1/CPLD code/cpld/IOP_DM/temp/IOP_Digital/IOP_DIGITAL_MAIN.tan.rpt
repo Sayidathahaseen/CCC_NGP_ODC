@@ -1,0 +1,605 @@
+Classic Timing Analyzer report for IOP_DIGITAL_MAIN
+Mon Aug 08 15:20:04 2011
+Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Timing Analyzer Settings
+  4. Clock Settings Summary
+  5. Parallel Compilation
+  6. Clock Setup: 'CPLD_CLK'
+  7. tsu
+  8. tco
+  9. th
+ 10. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                                                                                                                      ;
++------------------------------+-------+---------------+----------------------------------+----------------------+----------------------+------------+----------+--------------+
+; Type                         ; Slack ; Required Time ; Actual Time                      ; From                 ; To                   ; From Clock ; To Clock ; Failed Paths ;
++------------------------------+-------+---------------+----------------------------------+----------------------+----------------------+------------+----------+--------------+
+; Worst-case tsu               ; N/A   ; None          ; 4.542 ns                         ; MPC_CS3n             ; CPLD_READ_ADD_BUF[5] ; --         ; CPLD_CLK ; 0            ;
+; Worst-case tco               ; N/A   ; None          ; 11.291 ns                        ; LED_REGISTER1[3]     ; DI4_ACTIVE           ; CPLD_CLK   ; --       ; 0            ;
+; Worst-case th                ; N/A   ; None          ; -1.143 ns                        ; B_MPC_DATA[4]        ; LED_REGISTER2[4]     ; --         ; CPLD_CLK ; 0            ;
+; Clock Setup: 'CPLD_CLK'      ; N/A   ; None          ; 95.89 MHz ( period = 10.429 ns ) ; CPLD_READ_ADD_BUF[7] ; LED_REGISTER1[15]    ; CPLD_CLK   ; CPLD_CLK ; 0            ;
+; Total number of failed paths ;       ;               ;                                  ;                      ;                      ;            ;          ; 0            ;
++------------------------------+-------+---------------+----------------------------------+----------------------+----------------------+------------+----------+--------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Settings                                                                                                                            ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+; Option                                                                                               ; Setting            ; From ; To ; Entity Name ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+; Device Name                                                                                          ; EPM2210F256I5      ;      ;    ;             ;
+; Timing Models                                                                                        ; Final              ;      ;    ;             ;
+; Default hold multicycle                                                                              ; Same as Multicycle ;      ;    ;             ;
+; Cut paths between unrelated clock domains                                                            ; On                 ;      ;    ;             ;
+; Cut off read during write signal paths                                                               ; On                 ;      ;    ;             ;
+; Cut off feedback from I/O pins                                                                       ; On                 ;      ;    ;             ;
+; Report Combined Fast/Slow Timing                                                                     ; Off                ;      ;    ;             ;
+; Ignore Clock Settings                                                                                ; Off                ;      ;    ;             ;
+; Analyze latches as synchronous elements                                                              ; On                 ;      ;    ;             ;
+; Enable Recovery/Removal analysis                                                                     ; Off                ;      ;    ;             ;
+; Enable Clock Latency                                                                                 ; Off                ;      ;    ;             ;
+; Use TimeQuest Timing Analyzer                                                                        ; Off                ;      ;    ;             ;
+; Minimum Core Junction Temperature                                                                    ; -40                ;      ;    ;             ;
+; Maximum Core Junction Temperature                                                                    ; 100                ;      ;    ;             ;
+; Number of source nodes to report per destination node                                                ; 10                 ;      ;    ;             ;
+; Number of destination nodes to report                                                                ; 10                 ;      ;    ;             ;
+; Number of paths to report                                                                            ; 200                ;      ;    ;             ;
+; Report Minimum Timing Checks                                                                         ; Off                ;      ;    ;             ;
+; Use Fast Timing Models                                                                               ; Off                ;      ;    ;             ;
+; Report IO Paths Separately                                                                           ; Off                ;      ;    ;             ;
+; Perform Multicorner Analysis                                                                         ; Off                ;      ;    ;             ;
+; Reports the worst-case path for each clock domain and analysis                                       ; Off                ;      ;    ;             ;
+; Reports worst-case timing paths for each clock domain and analysis                                   ; On                 ;      ;    ;             ;
+; Specifies the maximum number of worst-case timing paths to report for each clock domain and analysis ; 100                ;      ;    ;             ;
+; Removes common clock path pessimism (CCPP) during slack computation                                  ; Off                ;      ;    ;             ;
+; Output I/O Timing Endpoint                                                                           ; Near End           ;      ;    ;             ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Settings Summary                                                                                                                                                             ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; Clock Node Name ; Clock Setting Name ; Type     ; Fmax Requirement ; Early Latency ; Late Latency ; Based on ; Multiply Base Fmax by ; Divide Base Fmax by ; Offset ; Phase offset ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; CPLD_CLK        ;                    ; User Pin ; None             ; 0.000 ns      ; 0.000 ns     ; --       ; N/A                   ; N/A                 ; N/A    ;              ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 2      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Setup: 'CPLD_CLK'                                                                                                                                                                                                                               ;
++-----------------------------------------+-----------------------------------------------------+-----------------------+-------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+; Slack                                   ; Actual fmax (period)                                ; From                  ; To                ; From Clock ; To Clock ; Required Setup Relationship ; Required Longest P2P Time ; Actual Longest P2P Time ;
++-----------------------------------------+-----------------------------------------------------+-----------------------+-------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+; N/A                                     ; 95.89 MHz ( period = 10.429 ns )                    ; CPLD_READ_ADD_BUF[7]  ; LED_REGISTER1[11] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.720 ns                ;
+; N/A                                     ; 95.89 MHz ( period = 10.429 ns )                    ; CPLD_READ_ADD_BUF[7]  ; LED_REGISTER1[12] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.720 ns                ;
+; N/A                                     ; 95.89 MHz ( period = 10.429 ns )                    ; CPLD_READ_ADD_BUF[7]  ; LED_REGISTER1[13] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.720 ns                ;
+; N/A                                     ; 95.89 MHz ( period = 10.429 ns )                    ; CPLD_READ_ADD_BUF[7]  ; LED_REGISTER1[14] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.720 ns                ;
+; N/A                                     ; 95.89 MHz ( period = 10.429 ns )                    ; CPLD_READ_ADD_BUF[7]  ; LED_REGISTER1[15] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.720 ns                ;
+; N/A                                     ; 97.23 MHz ( period = 10.285 ns )                    ; CPLD_READ_ADD_BUF[8]  ; LED_REGISTER1[11] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.576 ns                ;
+; N/A                                     ; 97.23 MHz ( period = 10.285 ns )                    ; CPLD_READ_ADD_BUF[8]  ; LED_REGISTER1[12] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.576 ns                ;
+; N/A                                     ; 97.23 MHz ( period = 10.285 ns )                    ; CPLD_READ_ADD_BUF[8]  ; LED_REGISTER1[13] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.576 ns                ;
+; N/A                                     ; 97.23 MHz ( period = 10.285 ns )                    ; CPLD_READ_ADD_BUF[8]  ; LED_REGISTER1[14] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.576 ns                ;
+; N/A                                     ; 97.23 MHz ( period = 10.285 ns )                    ; CPLD_READ_ADD_BUF[8]  ; LED_REGISTER1[15] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.576 ns                ;
+; N/A                                     ; 97.68 MHz ( period = 10.238 ns )                    ; CPLD_READ_ADD_BUF[7]  ; LED_REGISTER2[11] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.529 ns                ;
+; N/A                                     ; 97.68 MHz ( period = 10.238 ns )                    ; CPLD_READ_ADD_BUF[7]  ; LED_REGISTER2[12] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.529 ns                ;
+; N/A                                     ; 97.68 MHz ( period = 10.238 ns )                    ; CPLD_READ_ADD_BUF[7]  ; LED_REGISTER2[13] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.529 ns                ;
+; N/A                                     ; 97.68 MHz ( period = 10.238 ns )                    ; CPLD_READ_ADD_BUF[7]  ; LED_REGISTER2[14] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.529 ns                ;
+; N/A                                     ; 97.68 MHz ( period = 10.238 ns )                    ; CPLD_READ_ADD_BUF[7]  ; LED_REGISTER2[15] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.529 ns                ;
+; N/A                                     ; 99.07 MHz ( period = 10.094 ns )                    ; CPLD_READ_ADD_BUF[8]  ; LED_REGISTER2[11] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.385 ns                ;
+; N/A                                     ; 99.07 MHz ( period = 10.094 ns )                    ; CPLD_READ_ADD_BUF[8]  ; LED_REGISTER2[12] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.385 ns                ;
+; N/A                                     ; 99.07 MHz ( period = 10.094 ns )                    ; CPLD_READ_ADD_BUF[8]  ; LED_REGISTER2[13] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.385 ns                ;
+; N/A                                     ; 99.07 MHz ( period = 10.094 ns )                    ; CPLD_READ_ADD_BUF[8]  ; LED_REGISTER2[14] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.385 ns                ;
+; N/A                                     ; 99.07 MHz ( period = 10.094 ns )                    ; CPLD_READ_ADD_BUF[8]  ; LED_REGISTER2[15] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.385 ns                ;
+; N/A                                     ; 99.43 MHz ( period = 10.057 ns )                    ; CPLD_READ_ADD_BUF[7]  ; LED_REGISTER1[0]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.348 ns                ;
+; N/A                                     ; 99.43 MHz ( period = 10.057 ns )                    ; CPLD_READ_ADD_BUF[7]  ; LED_REGISTER1[1]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.348 ns                ;
+; N/A                                     ; 99.43 MHz ( period = 10.057 ns )                    ; CPLD_READ_ADD_BUF[7]  ; LED_REGISTER1[2]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.348 ns                ;
+; N/A                                     ; 99.43 MHz ( period = 10.057 ns )                    ; CPLD_READ_ADD_BUF[7]  ; LED_REGISTER1[3]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.348 ns                ;
+; N/A                                     ; 99.43 MHz ( period = 10.057 ns )                    ; CPLD_READ_ADD_BUF[7]  ; LED_REGISTER1[8]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.348 ns                ;
+; N/A                                     ; 100.36 MHz ( period = 9.964 ns )                    ; CPLD_READ_ADD_BUF[7]  ; LED_REGISTER2[6]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.255 ns                ;
+; N/A                                     ; 100.65 MHz ( period = 9.935 ns )                    ; CPLD_READ_ADD_BUF[7]  ; LED_REGISTER2[0]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.226 ns                ;
+; N/A                                     ; 100.65 MHz ( period = 9.935 ns )                    ; CPLD_READ_ADD_BUF[7]  ; LED_REGISTER2[1]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.226 ns                ;
+; N/A                                     ; 100.65 MHz ( period = 9.935 ns )                    ; CPLD_READ_ADD_BUF[7]  ; LED_REGISTER2[2]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.226 ns                ;
+; N/A                                     ; 100.65 MHz ( period = 9.935 ns )                    ; CPLD_READ_ADD_BUF[7]  ; LED_REGISTER2[3]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.226 ns                ;
+; N/A                                     ; 100.65 MHz ( period = 9.935 ns )                    ; CPLD_READ_ADD_BUF[7]  ; LED_REGISTER2[8]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.226 ns                ;
+; N/A                                     ; 100.88 MHz ( period = 9.913 ns )                    ; CPLD_READ_ADD_BUF[8]  ; LED_REGISTER1[0]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.204 ns                ;
+; N/A                                     ; 100.88 MHz ( period = 9.913 ns )                    ; CPLD_READ_ADD_BUF[8]  ; LED_REGISTER1[1]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.204 ns                ;
+; N/A                                     ; 100.88 MHz ( period = 9.913 ns )                    ; CPLD_READ_ADD_BUF[8]  ; LED_REGISTER1[2]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.204 ns                ;
+; N/A                                     ; 100.88 MHz ( period = 9.913 ns )                    ; CPLD_READ_ADD_BUF[8]  ; LED_REGISTER1[3]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.204 ns                ;
+; N/A                                     ; 100.88 MHz ( period = 9.913 ns )                    ; CPLD_READ_ADD_BUF[8]  ; LED_REGISTER1[8]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.204 ns                ;
+; N/A                                     ; 100.92 MHz ( period = 9.909 ns )                    ; CPLD_READ_ADD_BUF[7]  ; LED_REGISTER1[4]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.200 ns                ;
+; N/A                                     ; 100.92 MHz ( period = 9.909 ns )                    ; CPLD_READ_ADD_BUF[7]  ; LED_REGISTER1[5]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.200 ns                ;
+; N/A                                     ; 100.92 MHz ( period = 9.909 ns )                    ; CPLD_READ_ADD_BUF[7]  ; LED_REGISTER1[7]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.200 ns                ;
+; N/A                                     ; 100.92 MHz ( period = 9.909 ns )                    ; CPLD_READ_ADD_BUF[7]  ; LED_REGISTER1[9]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.200 ns                ;
+; N/A                                     ; 100.92 MHz ( period = 9.909 ns )                    ; CPLD_READ_ADD_BUF[7]  ; LED_REGISTER1[10] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.200 ns                ;
+; N/A                                     ; 101.08 MHz ( period = 9.893 ns )                    ; CPLD_READ_ADD_BUF[10] ; LED_REGISTER1[11] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.184 ns                ;
+; N/A                                     ; 101.08 MHz ( period = 9.893 ns )                    ; CPLD_READ_ADD_BUF[10] ; LED_REGISTER1[12] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.184 ns                ;
+; N/A                                     ; 101.08 MHz ( period = 9.893 ns )                    ; CPLD_READ_ADD_BUF[10] ; LED_REGISTER1[13] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.184 ns                ;
+; N/A                                     ; 101.08 MHz ( period = 9.893 ns )                    ; CPLD_READ_ADD_BUF[10] ; LED_REGISTER1[14] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.184 ns                ;
+; N/A                                     ; 101.08 MHz ( period = 9.893 ns )                    ; CPLD_READ_ADD_BUF[10] ; LED_REGISTER1[15] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.184 ns                ;
+; N/A                                     ; 101.83 MHz ( period = 9.820 ns )                    ; CPLD_READ_ADD_BUF[8]  ; LED_REGISTER2[6]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.111 ns                ;
+; N/A                                     ; 102.13 MHz ( period = 9.791 ns )                    ; CPLD_READ_ADD_BUF[8]  ; LED_REGISTER2[0]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.082 ns                ;
+; N/A                                     ; 102.13 MHz ( period = 9.791 ns )                    ; CPLD_READ_ADD_BUF[8]  ; LED_REGISTER2[1]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.082 ns                ;
+; N/A                                     ; 102.13 MHz ( period = 9.791 ns )                    ; CPLD_READ_ADD_BUF[8]  ; LED_REGISTER2[2]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.082 ns                ;
+; N/A                                     ; 102.13 MHz ( period = 9.791 ns )                    ; CPLD_READ_ADD_BUF[8]  ; LED_REGISTER2[3]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.082 ns                ;
+; N/A                                     ; 102.13 MHz ( period = 9.791 ns )                    ; CPLD_READ_ADD_BUF[8]  ; LED_REGISTER2[8]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.082 ns                ;
+; N/A                                     ; 102.41 MHz ( period = 9.765 ns )                    ; CPLD_READ_ADD_BUF[8]  ; LED_REGISTER1[4]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.056 ns                ;
+; N/A                                     ; 102.41 MHz ( period = 9.765 ns )                    ; CPLD_READ_ADD_BUF[8]  ; LED_REGISTER1[5]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.056 ns                ;
+; N/A                                     ; 102.41 MHz ( period = 9.765 ns )                    ; CPLD_READ_ADD_BUF[8]  ; LED_REGISTER1[7]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.056 ns                ;
+; N/A                                     ; 102.41 MHz ( period = 9.765 ns )                    ; CPLD_READ_ADD_BUF[8]  ; LED_REGISTER1[9]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.056 ns                ;
+; N/A                                     ; 102.41 MHz ( period = 9.765 ns )                    ; CPLD_READ_ADD_BUF[8]  ; LED_REGISTER1[10] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.056 ns                ;
+; N/A                                     ; 102.56 MHz ( period = 9.750 ns )                    ; CPLD_READ_ADD_BUF[2]  ; LED_REGISTER1[11] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.041 ns                ;
+; N/A                                     ; 102.56 MHz ( period = 9.750 ns )                    ; CPLD_READ_ADD_BUF[2]  ; LED_REGISTER1[12] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.041 ns                ;
+; N/A                                     ; 102.56 MHz ( period = 9.750 ns )                    ; CPLD_READ_ADD_BUF[2]  ; LED_REGISTER1[13] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.041 ns                ;
+; N/A                                     ; 102.56 MHz ( period = 9.750 ns )                    ; CPLD_READ_ADD_BUF[2]  ; LED_REGISTER1[14] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.041 ns                ;
+; N/A                                     ; 102.56 MHz ( period = 9.750 ns )                    ; CPLD_READ_ADD_BUF[2]  ; LED_REGISTER1[15] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.041 ns                ;
+; N/A                                     ; 102.59 MHz ( period = 9.748 ns )                    ; CPLD_READ_ADD_BUF[11] ; LED_REGISTER1[11] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.039 ns                ;
+; N/A                                     ; 102.59 MHz ( period = 9.748 ns )                    ; CPLD_READ_ADD_BUF[11] ; LED_REGISTER1[12] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.039 ns                ;
+; N/A                                     ; 102.59 MHz ( period = 9.748 ns )                    ; CPLD_READ_ADD_BUF[11] ; LED_REGISTER1[13] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.039 ns                ;
+; N/A                                     ; 102.59 MHz ( period = 9.748 ns )                    ; CPLD_READ_ADD_BUF[11] ; LED_REGISTER1[14] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.039 ns                ;
+; N/A                                     ; 102.59 MHz ( period = 9.748 ns )                    ; CPLD_READ_ADD_BUF[11] ; LED_REGISTER1[15] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.039 ns                ;
+; N/A                                     ; 102.72 MHz ( period = 9.735 ns )                    ; CPLD_READ_ADD_BUF[6]  ; LED_REGISTER1[11] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.026 ns                ;
+; N/A                                     ; 102.72 MHz ( period = 9.735 ns )                    ; CPLD_READ_ADD_BUF[6]  ; LED_REGISTER1[12] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.026 ns                ;
+; N/A                                     ; 102.72 MHz ( period = 9.735 ns )                    ; CPLD_READ_ADD_BUF[6]  ; LED_REGISTER1[13] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.026 ns                ;
+; N/A                                     ; 102.72 MHz ( period = 9.735 ns )                    ; CPLD_READ_ADD_BUF[6]  ; LED_REGISTER1[14] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.026 ns                ;
+; N/A                                     ; 102.72 MHz ( period = 9.735 ns )                    ; CPLD_READ_ADD_BUF[6]  ; LED_REGISTER1[15] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 9.026 ns                ;
+; N/A                                     ; 103.07 MHz ( period = 9.702 ns )                    ; CPLD_READ_ADD_BUF[10] ; LED_REGISTER2[11] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.993 ns                ;
+; N/A                                     ; 103.07 MHz ( period = 9.702 ns )                    ; CPLD_READ_ADD_BUF[10] ; LED_REGISTER2[12] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.993 ns                ;
+; N/A                                     ; 103.07 MHz ( period = 9.702 ns )                    ; CPLD_READ_ADD_BUF[10] ; LED_REGISTER2[13] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.993 ns                ;
+; N/A                                     ; 103.07 MHz ( period = 9.702 ns )                    ; CPLD_READ_ADD_BUF[10] ; LED_REGISTER2[14] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.993 ns                ;
+; N/A                                     ; 103.07 MHz ( period = 9.702 ns )                    ; CPLD_READ_ADD_BUF[10] ; LED_REGISTER2[15] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.993 ns                ;
+; N/A                                     ; 103.86 MHz ( period = 9.628 ns )                    ; CPLD_READ_ADD_BUF[3]  ; LED_REGISTER1[11] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.919 ns                ;
+; N/A                                     ; 103.86 MHz ( period = 9.628 ns )                    ; CPLD_READ_ADD_BUF[3]  ; LED_REGISTER1[12] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.919 ns                ;
+; N/A                                     ; 103.86 MHz ( period = 9.628 ns )                    ; CPLD_READ_ADD_BUF[3]  ; LED_REGISTER1[13] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.919 ns                ;
+; N/A                                     ; 103.86 MHz ( period = 9.628 ns )                    ; CPLD_READ_ADD_BUF[3]  ; LED_REGISTER1[14] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.919 ns                ;
+; N/A                                     ; 103.86 MHz ( period = 9.628 ns )                    ; CPLD_READ_ADD_BUF[3]  ; LED_REGISTER1[15] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.919 ns                ;
+; N/A                                     ; 104.61 MHz ( period = 9.559 ns )                    ; CPLD_READ_ADD_BUF[2]  ; LED_REGISTER2[11] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.850 ns                ;
+; N/A                                     ; 104.61 MHz ( period = 9.559 ns )                    ; CPLD_READ_ADD_BUF[2]  ; LED_REGISTER2[12] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.850 ns                ;
+; N/A                                     ; 104.61 MHz ( period = 9.559 ns )                    ; CPLD_READ_ADD_BUF[2]  ; LED_REGISTER2[13] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.850 ns                ;
+; N/A                                     ; 104.61 MHz ( period = 9.559 ns )                    ; CPLD_READ_ADD_BUF[2]  ; LED_REGISTER2[14] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.850 ns                ;
+; N/A                                     ; 104.61 MHz ( period = 9.559 ns )                    ; CPLD_READ_ADD_BUF[2]  ; LED_REGISTER2[15] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.850 ns                ;
+; N/A                                     ; 104.64 MHz ( period = 9.557 ns )                    ; CPLD_READ_ADD_BUF[11] ; LED_REGISTER2[11] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.848 ns                ;
+; N/A                                     ; 104.64 MHz ( period = 9.557 ns )                    ; CPLD_READ_ADD_BUF[11] ; LED_REGISTER2[12] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.848 ns                ;
+; N/A                                     ; 104.64 MHz ( period = 9.557 ns )                    ; CPLD_READ_ADD_BUF[11] ; LED_REGISTER2[13] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.848 ns                ;
+; N/A                                     ; 104.64 MHz ( period = 9.557 ns )                    ; CPLD_READ_ADD_BUF[11] ; LED_REGISTER2[14] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.848 ns                ;
+; N/A                                     ; 104.64 MHz ( period = 9.557 ns )                    ; CPLD_READ_ADD_BUF[11] ; LED_REGISTER2[15] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.848 ns                ;
+; N/A                                     ; 104.78 MHz ( period = 9.544 ns )                    ; CPLD_READ_ADD_BUF[6]  ; LED_REGISTER2[11] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.835 ns                ;
+; N/A                                     ; 104.78 MHz ( period = 9.544 ns )                    ; CPLD_READ_ADD_BUF[6]  ; LED_REGISTER2[12] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.835 ns                ;
+; N/A                                     ; 104.78 MHz ( period = 9.544 ns )                    ; CPLD_READ_ADD_BUF[6]  ; LED_REGISTER2[13] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.835 ns                ;
+; N/A                                     ; 104.78 MHz ( period = 9.544 ns )                    ; CPLD_READ_ADD_BUF[6]  ; LED_REGISTER2[14] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.835 ns                ;
+; N/A                                     ; 104.78 MHz ( period = 9.544 ns )                    ; CPLD_READ_ADD_BUF[6]  ; LED_REGISTER2[15] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.835 ns                ;
+; N/A                                     ; 105.03 MHz ( period = 9.521 ns )                    ; CPLD_READ_ADD_BUF[10] ; LED_REGISTER1[0]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.812 ns                ;
+; N/A                                     ; 105.03 MHz ( period = 9.521 ns )                    ; CPLD_READ_ADD_BUF[10] ; LED_REGISTER1[1]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.812 ns                ;
+; N/A                                     ; 105.03 MHz ( period = 9.521 ns )                    ; CPLD_READ_ADD_BUF[10] ; LED_REGISTER1[2]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.812 ns                ;
+; N/A                                     ; 105.03 MHz ( period = 9.521 ns )                    ; CPLD_READ_ADD_BUF[10] ; LED_REGISTER1[3]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.812 ns                ;
+; N/A                                     ; 105.03 MHz ( period = 9.521 ns )                    ; CPLD_READ_ADD_BUF[10] ; LED_REGISTER1[8]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.812 ns                ;
+; N/A                                     ; 105.97 MHz ( period = 9.437 ns )                    ; CPLD_READ_ADD_BUF[3]  ; LED_REGISTER2[11] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.728 ns                ;
+; N/A                                     ; 105.97 MHz ( period = 9.437 ns )                    ; CPLD_READ_ADD_BUF[3]  ; LED_REGISTER2[12] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.728 ns                ;
+; N/A                                     ; 105.97 MHz ( period = 9.437 ns )                    ; CPLD_READ_ADD_BUF[3]  ; LED_REGISTER2[13] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.728 ns                ;
+; N/A                                     ; 105.97 MHz ( period = 9.437 ns )                    ; CPLD_READ_ADD_BUF[3]  ; LED_REGISTER2[14] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.728 ns                ;
+; N/A                                     ; 105.97 MHz ( period = 9.437 ns )                    ; CPLD_READ_ADD_BUF[3]  ; LED_REGISTER2[15] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.728 ns                ;
+; N/A                                     ; 106.07 MHz ( period = 9.428 ns )                    ; CPLD_READ_ADD_BUF[10] ; LED_REGISTER2[6]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.719 ns                ;
+; N/A                                     ; 106.39 MHz ( period = 9.399 ns )                    ; CPLD_READ_ADD_BUF[10] ; LED_REGISTER2[0]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.690 ns                ;
+; N/A                                     ; 106.39 MHz ( period = 9.399 ns )                    ; CPLD_READ_ADD_BUF[10] ; LED_REGISTER2[1]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.690 ns                ;
+; N/A                                     ; 106.39 MHz ( period = 9.399 ns )                    ; CPLD_READ_ADD_BUF[10] ; LED_REGISTER2[2]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.690 ns                ;
+; N/A                                     ; 106.39 MHz ( period = 9.399 ns )                    ; CPLD_READ_ADD_BUF[10] ; LED_REGISTER2[3]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.690 ns                ;
+; N/A                                     ; 106.39 MHz ( period = 9.399 ns )                    ; CPLD_READ_ADD_BUF[10] ; LED_REGISTER2[8]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.690 ns                ;
+; N/A                                     ; 106.63 MHz ( period = 9.378 ns )                    ; CPLD_READ_ADD_BUF[2]  ; LED_REGISTER1[0]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.669 ns                ;
+; N/A                                     ; 106.63 MHz ( period = 9.378 ns )                    ; CPLD_READ_ADD_BUF[2]  ; LED_REGISTER1[1]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.669 ns                ;
+; N/A                                     ; 106.63 MHz ( period = 9.378 ns )                    ; CPLD_READ_ADD_BUF[2]  ; LED_REGISTER1[2]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.669 ns                ;
+; N/A                                     ; 106.63 MHz ( period = 9.378 ns )                    ; CPLD_READ_ADD_BUF[2]  ; LED_REGISTER1[3]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.669 ns                ;
+; N/A                                     ; 106.63 MHz ( period = 9.378 ns )                    ; CPLD_READ_ADD_BUF[2]  ; LED_REGISTER1[8]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.669 ns                ;
+; N/A                                     ; 106.66 MHz ( period = 9.376 ns )                    ; CPLD_READ_ADD_BUF[11] ; LED_REGISTER1[0]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.667 ns                ;
+; N/A                                     ; 106.66 MHz ( period = 9.376 ns )                    ; CPLD_READ_ADD_BUF[11] ; LED_REGISTER1[1]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.667 ns                ;
+; N/A                                     ; 106.66 MHz ( period = 9.376 ns )                    ; CPLD_READ_ADD_BUF[11] ; LED_REGISTER1[2]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.667 ns                ;
+; N/A                                     ; 106.66 MHz ( period = 9.376 ns )                    ; CPLD_READ_ADD_BUF[11] ; LED_REGISTER1[3]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.667 ns                ;
+; N/A                                     ; 106.66 MHz ( period = 9.376 ns )                    ; CPLD_READ_ADD_BUF[11] ; LED_REGISTER1[8]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.667 ns                ;
+; N/A                                     ; 106.69 MHz ( period = 9.373 ns )                    ; CPLD_READ_ADD_BUF[10] ; LED_REGISTER1[4]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.664 ns                ;
+; N/A                                     ; 106.69 MHz ( period = 9.373 ns )                    ; CPLD_READ_ADD_BUF[10] ; LED_REGISTER1[5]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.664 ns                ;
+; N/A                                     ; 106.69 MHz ( period = 9.373 ns )                    ; CPLD_READ_ADD_BUF[10] ; LED_REGISTER1[7]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.664 ns                ;
+; N/A                                     ; 106.69 MHz ( period = 9.373 ns )                    ; CPLD_READ_ADD_BUF[10] ; LED_REGISTER1[9]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.664 ns                ;
+; N/A                                     ; 106.69 MHz ( period = 9.373 ns )                    ; CPLD_READ_ADD_BUF[10] ; LED_REGISTER1[10] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.664 ns                ;
+; N/A                                     ; 106.80 MHz ( period = 9.363 ns )                    ; CPLD_READ_ADD_BUF[6]  ; LED_REGISTER1[0]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.654 ns                ;
+; N/A                                     ; 106.80 MHz ( period = 9.363 ns )                    ; CPLD_READ_ADD_BUF[6]  ; LED_REGISTER1[1]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.654 ns                ;
+; N/A                                     ; 106.80 MHz ( period = 9.363 ns )                    ; CPLD_READ_ADD_BUF[6]  ; LED_REGISTER1[2]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.654 ns                ;
+; N/A                                     ; 106.80 MHz ( period = 9.363 ns )                    ; CPLD_READ_ADD_BUF[6]  ; LED_REGISTER1[3]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.654 ns                ;
+; N/A                                     ; 106.80 MHz ( period = 9.363 ns )                    ; CPLD_READ_ADD_BUF[6]  ; LED_REGISTER1[8]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.654 ns                ;
+; N/A                                     ; 107.70 MHz ( period = 9.285 ns )                    ; CPLD_READ_ADD_BUF[2]  ; LED_REGISTER2[6]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.576 ns                ;
+; N/A                                     ; 107.72 MHz ( period = 9.283 ns )                    ; CPLD_READ_ADD_BUF[11] ; LED_REGISTER2[6]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.574 ns                ;
+; N/A                                     ; 107.87 MHz ( period = 9.270 ns )                    ; CPLD_READ_ADD_BUF[6]  ; LED_REGISTER2[6]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.561 ns                ;
+; N/A                                     ; 108.04 MHz ( period = 9.256 ns )                    ; CPLD_READ_ADD_BUF[3]  ; LED_REGISTER1[0]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.547 ns                ;
+; N/A                                     ; 108.04 MHz ( period = 9.256 ns )                    ; CPLD_READ_ADD_BUF[2]  ; LED_REGISTER2[0]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.547 ns                ;
+; N/A                                     ; 108.04 MHz ( period = 9.256 ns )                    ; CPLD_READ_ADD_BUF[3]  ; LED_REGISTER1[1]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.547 ns                ;
+; N/A                                     ; 108.04 MHz ( period = 9.256 ns )                    ; CPLD_READ_ADD_BUF[2]  ; LED_REGISTER2[1]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.547 ns                ;
+; N/A                                     ; 108.04 MHz ( period = 9.256 ns )                    ; CPLD_READ_ADD_BUF[3]  ; LED_REGISTER1[2]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.547 ns                ;
+; N/A                                     ; 108.04 MHz ( period = 9.256 ns )                    ; CPLD_READ_ADD_BUF[2]  ; LED_REGISTER2[2]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.547 ns                ;
+; N/A                                     ; 108.04 MHz ( period = 9.256 ns )                    ; CPLD_READ_ADD_BUF[3]  ; LED_REGISTER1[3]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.547 ns                ;
+; N/A                                     ; 108.04 MHz ( period = 9.256 ns )                    ; CPLD_READ_ADD_BUF[2]  ; LED_REGISTER2[3]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.547 ns                ;
+; N/A                                     ; 108.04 MHz ( period = 9.256 ns )                    ; CPLD_READ_ADD_BUF[2]  ; LED_REGISTER2[8]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.547 ns                ;
+; N/A                                     ; 108.04 MHz ( period = 9.256 ns )                    ; CPLD_READ_ADD_BUF[3]  ; LED_REGISTER1[8]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.547 ns                ;
+; N/A                                     ; 108.06 MHz ( period = 9.254 ns )                    ; CPLD_READ_ADD_BUF[11] ; LED_REGISTER2[0]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.545 ns                ;
+; N/A                                     ; 108.06 MHz ( period = 9.254 ns )                    ; CPLD_READ_ADD_BUF[11] ; LED_REGISTER2[1]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.545 ns                ;
+; N/A                                     ; 108.06 MHz ( period = 9.254 ns )                    ; CPLD_READ_ADD_BUF[11] ; LED_REGISTER2[2]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.545 ns                ;
+; N/A                                     ; 108.06 MHz ( period = 9.254 ns )                    ; CPLD_READ_ADD_BUF[11] ; LED_REGISTER2[3]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.545 ns                ;
+; N/A                                     ; 108.06 MHz ( period = 9.254 ns )                    ; CPLD_READ_ADD_BUF[11] ; LED_REGISTER2[8]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.545 ns                ;
+; N/A                                     ; 108.21 MHz ( period = 9.241 ns )                    ; CPLD_READ_ADD_BUF[6]  ; LED_REGISTER2[0]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.532 ns                ;
+; N/A                                     ; 108.21 MHz ( period = 9.241 ns )                    ; CPLD_READ_ADD_BUF[6]  ; LED_REGISTER2[1]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.532 ns                ;
+; N/A                                     ; 108.21 MHz ( period = 9.241 ns )                    ; CPLD_READ_ADD_BUF[6]  ; LED_REGISTER2[2]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.532 ns                ;
+; N/A                                     ; 108.21 MHz ( period = 9.241 ns )                    ; CPLD_READ_ADD_BUF[6]  ; LED_REGISTER2[3]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.532 ns                ;
+; N/A                                     ; 108.21 MHz ( period = 9.241 ns )                    ; CPLD_READ_ADD_BUF[6]  ; LED_REGISTER2[8]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.532 ns                ;
+; N/A                                     ; 108.34 MHz ( period = 9.230 ns )                    ; CPLD_READ_ADD_BUF[2]  ; LED_REGISTER1[4]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.521 ns                ;
+; N/A                                     ; 108.34 MHz ( period = 9.230 ns )                    ; CPLD_READ_ADD_BUF[2]  ; LED_REGISTER1[5]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.521 ns                ;
+; N/A                                     ; 108.34 MHz ( period = 9.230 ns )                    ; CPLD_READ_ADD_BUF[2]  ; LED_REGISTER1[7]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.521 ns                ;
+; N/A                                     ; 108.34 MHz ( period = 9.230 ns )                    ; CPLD_READ_ADD_BUF[2]  ; LED_REGISTER1[9]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.521 ns                ;
+; N/A                                     ; 108.34 MHz ( period = 9.230 ns )                    ; CPLD_READ_ADD_BUF[2]  ; LED_REGISTER1[10] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.521 ns                ;
+; N/A                                     ; 108.37 MHz ( period = 9.228 ns )                    ; CPLD_READ_ADD_BUF[11] ; LED_REGISTER1[4]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.519 ns                ;
+; N/A                                     ; 108.37 MHz ( period = 9.228 ns )                    ; CPLD_READ_ADD_BUF[11] ; LED_REGISTER1[5]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.519 ns                ;
+; N/A                                     ; 108.37 MHz ( period = 9.228 ns )                    ; CPLD_READ_ADD_BUF[11] ; LED_REGISTER1[7]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.519 ns                ;
+; N/A                                     ; 108.37 MHz ( period = 9.228 ns )                    ; CPLD_READ_ADD_BUF[11] ; LED_REGISTER1[9]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.519 ns                ;
+; N/A                                     ; 108.37 MHz ( period = 9.228 ns )                    ; CPLD_READ_ADD_BUF[11] ; LED_REGISTER1[10] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.519 ns                ;
+; N/A                                     ; 108.52 MHz ( period = 9.215 ns )                    ; CPLD_READ_ADD_BUF[6]  ; LED_REGISTER1[4]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.506 ns                ;
+; N/A                                     ; 108.52 MHz ( period = 9.215 ns )                    ; CPLD_READ_ADD_BUF[6]  ; LED_REGISTER1[5]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.506 ns                ;
+; N/A                                     ; 108.52 MHz ( period = 9.215 ns )                    ; CPLD_READ_ADD_BUF[6]  ; LED_REGISTER1[7]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.506 ns                ;
+; N/A                                     ; 108.52 MHz ( period = 9.215 ns )                    ; CPLD_READ_ADD_BUF[6]  ; LED_REGISTER1[9]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.506 ns                ;
+; N/A                                     ; 108.52 MHz ( period = 9.215 ns )                    ; CPLD_READ_ADD_BUF[6]  ; LED_REGISTER1[10] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.506 ns                ;
+; N/A                                     ; 108.61 MHz ( period = 9.207 ns )                    ; CPLD_READ_ADD_BUF[12] ; LED_REGISTER1[11] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.498 ns                ;
+; N/A                                     ; 108.61 MHz ( period = 9.207 ns )                    ; CPLD_READ_ADD_BUF[12] ; LED_REGISTER1[12] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.498 ns                ;
+; N/A                                     ; 108.61 MHz ( period = 9.207 ns )                    ; CPLD_READ_ADD_BUF[12] ; LED_REGISTER1[13] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.498 ns                ;
+; N/A                                     ; 108.61 MHz ( period = 9.207 ns )                    ; CPLD_READ_ADD_BUF[12] ; LED_REGISTER1[14] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.498 ns                ;
+; N/A                                     ; 108.61 MHz ( period = 9.207 ns )                    ; CPLD_READ_ADD_BUF[12] ; LED_REGISTER1[15] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.498 ns                ;
+; N/A                                     ; 109.13 MHz ( period = 9.163 ns )                    ; CPLD_READ_ADD_BUF[3]  ; LED_REGISTER2[6]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.454 ns                ;
+; N/A                                     ; 109.15 MHz ( period = 9.162 ns )                    ; CPLD_READ_ADD_BUF[7]  ; LED_REGISTER2[4]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.453 ns                ;
+; N/A                                     ; 109.15 MHz ( period = 9.162 ns )                    ; CPLD_READ_ADD_BUF[7]  ; LED_REGISTER2[5]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.453 ns                ;
+; N/A                                     ; 109.15 MHz ( period = 9.162 ns )                    ; CPLD_READ_ADD_BUF[7]  ; LED_REGISTER2[7]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.453 ns                ;
+; N/A                                     ; 109.15 MHz ( period = 9.162 ns )                    ; CPLD_READ_ADD_BUF[7]  ; LED_REGISTER2[9]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.453 ns                ;
+; N/A                                     ; 109.15 MHz ( period = 9.162 ns )                    ; CPLD_READ_ADD_BUF[7]  ; LED_REGISTER2[10] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.453 ns                ;
+; N/A                                     ; 109.48 MHz ( period = 9.134 ns )                    ; CPLD_READ_ADD_BUF[3]  ; LED_REGISTER2[0]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.425 ns                ;
+; N/A                                     ; 109.48 MHz ( period = 9.134 ns )                    ; CPLD_READ_ADD_BUF[3]  ; LED_REGISTER2[1]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.425 ns                ;
+; N/A                                     ; 109.48 MHz ( period = 9.134 ns )                    ; CPLD_READ_ADD_BUF[3]  ; LED_REGISTER2[2]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.425 ns                ;
+; N/A                                     ; 109.48 MHz ( period = 9.134 ns )                    ; CPLD_READ_ADD_BUF[3]  ; LED_REGISTER2[3]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.425 ns                ;
+; N/A                                     ; 109.48 MHz ( period = 9.134 ns )                    ; CPLD_READ_ADD_BUF[3]  ; LED_REGISTER2[8]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.425 ns                ;
+; N/A                                     ; 109.73 MHz ( period = 9.113 ns )                    ; CPLD_READ_ADD_BUF[4]  ; LED_REGISTER1[11] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.404 ns                ;
+; N/A                                     ; 109.73 MHz ( period = 9.113 ns )                    ; CPLD_READ_ADD_BUF[4]  ; LED_REGISTER1[12] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.404 ns                ;
+; N/A                                     ; 109.73 MHz ( period = 9.113 ns )                    ; CPLD_READ_ADD_BUF[4]  ; LED_REGISTER1[13] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.404 ns                ;
+; N/A                                     ; 109.73 MHz ( period = 9.113 ns )                    ; CPLD_READ_ADD_BUF[4]  ; LED_REGISTER1[14] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.404 ns                ;
+; N/A                                     ; 109.73 MHz ( period = 9.113 ns )                    ; CPLD_READ_ADD_BUF[4]  ; LED_REGISTER1[15] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.404 ns                ;
+; N/A                                     ; 109.79 MHz ( period = 9.108 ns )                    ; CPLD_READ_ADD_BUF[3]  ; LED_REGISTER1[4]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.399 ns                ;
+; N/A                                     ; 109.79 MHz ( period = 9.108 ns )                    ; CPLD_READ_ADD_BUF[3]  ; LED_REGISTER1[5]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.399 ns                ;
+; N/A                                     ; 109.79 MHz ( period = 9.108 ns )                    ; CPLD_READ_ADD_BUF[3]  ; LED_REGISTER1[7]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.399 ns                ;
+; N/A                                     ; 109.79 MHz ( period = 9.108 ns )                    ; CPLD_READ_ADD_BUF[3]  ; LED_REGISTER1[9]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.399 ns                ;
+; N/A                                     ; 109.79 MHz ( period = 9.108 ns )                    ; CPLD_READ_ADD_BUF[3]  ; LED_REGISTER1[10] ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.399 ns                ;
+; N/A                                     ; 110.89 MHz ( period = 9.018 ns )                    ; CPLD_READ_ADD_BUF[8]  ; LED_REGISTER2[5]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.309 ns                ;
+; N/A                                     ; 110.89 MHz ( period = 9.018 ns )                    ; CPLD_READ_ADD_BUF[8]  ; LED_REGISTER2[7]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.309 ns                ;
+; N/A                                     ; 110.89 MHz ( period = 9.018 ns )                    ; CPLD_READ_ADD_BUF[8]  ; LED_REGISTER2[9]  ; CPLD_CLK   ; CPLD_CLK ; None                        ; None                      ; 8.309 ns                ;
+; Timing analysis restricted to 200 rows. ; To change the limit use Settings (Assignments menu) ;                       ;                   ;            ;          ;                             ;                           ;                         ;
++-----------------------------------------+-----------------------------------------------------+-----------------------+-------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+
+
++---------------------------------------------------------------------------------------+
+; tsu                                                                                   ;
++-------+--------------+------------+----------------+-----------------------+----------+
+; Slack ; Required tsu ; Actual tsu ; From           ; To                    ; To Clock ;
++-------+--------------+------------+----------------+-----------------------+----------+
+; N/A   ; None         ; 4.542 ns   ; MPC_CS3n       ; CPLD_READ_ADD_BUF[1]  ; CPLD_CLK ;
+; N/A   ; None         ; 4.542 ns   ; MPC_CS3n       ; CPLD_READ_ADD_BUF[0]  ; CPLD_CLK ;
+; N/A   ; None         ; 4.542 ns   ; MPC_CS3n       ; CPLD_READ_ADD_BUF[12] ; CPLD_CLK ;
+; N/A   ; None         ; 4.542 ns   ; MPC_CS3n       ; CPLD_READ_ADD_BUF[11] ; CPLD_CLK ;
+; N/A   ; None         ; 4.542 ns   ; MPC_CS3n       ; CPLD_READ_ADD_BUF[10] ; CPLD_CLK ;
+; N/A   ; None         ; 4.542 ns   ; MPC_CS3n       ; CPLD_READ_ADD_BUF[13] ; CPLD_CLK ;
+; N/A   ; None         ; 4.542 ns   ; MPC_CS3n       ; CPLD_READ_ADD_BUF[9]  ; CPLD_CLK ;
+; N/A   ; None         ; 4.542 ns   ; MPC_CS3n       ; CPLD_READ_ADD_BUF[5]  ; CPLD_CLK ;
+; N/A   ; None         ; 4.140 ns   ; MPC_CS3n       ; CPLD_READ_ADD_BUF[8]  ; CPLD_CLK ;
+; N/A   ; None         ; 4.140 ns   ; MPC_CS3n       ; CPLD_READ_ADD_BUF[7]  ; CPLD_CLK ;
+; N/A   ; None         ; 4.140 ns   ; MPC_CS3n       ; CPLD_READ_ADD_BUF[6]  ; CPLD_CLK ;
+; N/A   ; None         ; 4.140 ns   ; MPC_CS3n       ; CPLD_READ_ADD_BUF[4]  ; CPLD_CLK ;
+; N/A   ; None         ; 4.140 ns   ; MPC_CS3n       ; CPLD_READ_ADD_BUF[3]  ; CPLD_CLK ;
+; N/A   ; None         ; 4.140 ns   ; MPC_CS3n       ; CPLD_READ_ADD_BUF[2]  ; CPLD_CLK ;
+; N/A   ; None         ; 2.583 ns   ; B_MPC_ADDR[0]  ; CPLD_READ_ADD_BUF[0]  ; CPLD_CLK ;
+; N/A   ; None         ; 2.502 ns   ; MPC_CS3n       ; CPLD_RD               ; CPLD_CLK ;
+; N/A   ; None         ; 2.373 ns   ; MPC_CS3n       ; MPC_CS3n_dly          ; CPLD_CLK ;
+; N/A   ; None         ; 2.280 ns   ; B_MPC_ADDR[2]  ; CPLD_READ_ADD_BUF[2]  ; CPLD_CLK ;
+; N/A   ; None         ; 2.206 ns   ; B_MPC_DATA[7]  ; LED_REGISTER2[7]      ; CPLD_CLK ;
+; N/A   ; None         ; 2.206 ns   ; B_MPC_DATA[6]  ; LED_REGISTER2[6]      ; CPLD_CLK ;
+; N/A   ; None         ; 2.204 ns   ; B_MPC_DATA[7]  ; LED_REGISTER1[7]      ; CPLD_CLK ;
+; N/A   ; None         ; 2.187 ns   ; MPC_CS3n       ; CPLD_WR               ; CPLD_CLK ;
+; N/A   ; None         ; 2.183 ns   ; B_MPC_ADDR[11] ; CPLD_READ_ADD_BUF[11] ; CPLD_CLK ;
+; N/A   ; None         ; 2.175 ns   ; B_MPC_ADDR[10] ; CPLD_READ_ADD_BUF[10] ; CPLD_CLK ;
+; N/A   ; None         ; 2.155 ns   ; B_MPC_ADDR[13] ; CPLD_READ_ADD_BUF[13] ; CPLD_CLK ;
+; N/A   ; None         ; 2.138 ns   ; B_MPC_DATA[12] ; LED_REGISTER1[12]     ; CPLD_CLK ;
+; N/A   ; None         ; 2.137 ns   ; B_MPC_DATA[12] ; LED_REGISTER2[12]     ; CPLD_CLK ;
+; N/A   ; None         ; 2.136 ns   ; B_MPC_DATA[1]  ; LED_REGISTER1[1]      ; CPLD_CLK ;
+; N/A   ; None         ; 2.134 ns   ; B_MPC_DATA[8]  ; LED_REGISTER2[8]      ; CPLD_CLK ;
+; N/A   ; None         ; 2.127 ns   ; B_MPC_DATA[8]  ; LED_REGISTER1[8]      ; CPLD_CLK ;
+; N/A   ; None         ; 2.124 ns   ; B_MPC_DATA[5]  ; LED_REGISTER1[5]      ; CPLD_CLK ;
+; N/A   ; None         ; 2.118 ns   ; B_MPC_DATA[5]  ; LED_REGISTER2[5]      ; CPLD_CLK ;
+; N/A   ; None         ; 2.095 ns   ; B_MPC_DATA[0]  ; LED_REGISTER2[0]      ; CPLD_CLK ;
+; N/A   ; None         ; 2.094 ns   ; B_MPC_DATA[0]  ; LED_REGISTER1[0]      ; CPLD_CLK ;
+; N/A   ; None         ; 2.092 ns   ; B_MPC_DATA[14] ; LED_REGISTER1[14]     ; CPLD_CLK ;
+; N/A   ; None         ; 2.091 ns   ; B_MPC_DATA[14] ; LED_REGISTER2[14]     ; CPLD_CLK ;
+; N/A   ; None         ; 2.090 ns   ; MPC_RD_WRn     ; CPLD_WR               ; CPLD_CLK ;
+; N/A   ; None         ; 2.075 ns   ; B_MPC_DATA[2]  ; LED_REGISTER2[2]      ; CPLD_CLK ;
+; N/A   ; None         ; 2.071 ns   ; B_MPC_DATA[2]  ; LED_REGISTER1[2]      ; CPLD_CLK ;
+; N/A   ; None         ; 2.065 ns   ; B_MPC_ADDR[6]  ; CPLD_READ_ADD_BUF[6]  ; CPLD_CLK ;
+; N/A   ; None         ; 2.063 ns   ; B_MPC_ADDR[5]  ; CPLD_READ_ADD_BUF[5]  ; CPLD_CLK ;
+; N/A   ; None         ; 2.051 ns   ; B_MPC_DATA[11] ; LED_REGISTER2[11]     ; CPLD_CLK ;
+; N/A   ; None         ; 2.050 ns   ; B_MPC_DATA[11] ; LED_REGISTER1[11]     ; CPLD_CLK ;
+; N/A   ; None         ; 2.034 ns   ; B_MPC_DATA[10] ; LED_REGISTER1[10]     ; CPLD_CLK ;
+; N/A   ; None         ; 2.026 ns   ; B_MPC_DATA[10] ; LED_REGISTER2[10]     ; CPLD_CLK ;
+; N/A   ; None         ; 2.008 ns   ; B_MPC_DATA[13] ; LED_REGISTER2[13]     ; CPLD_CLK ;
+; N/A   ; None         ; 2.006 ns   ; B_MPC_DATA[13] ; LED_REGISTER1[13]     ; CPLD_CLK ;
+; N/A   ; None         ; 1.981 ns   ; B_MPC_ADDR[3]  ; CPLD_READ_ADD_BUF[3]  ; CPLD_CLK ;
+; N/A   ; None         ; 1.967 ns   ; B_MPC_ADDR[12] ; CPLD_READ_ADD_BUF[12] ; CPLD_CLK ;
+; N/A   ; None         ; 1.932 ns   ; B_MPC_DATA[15] ; LED_REGISTER1[15]     ; CPLD_CLK ;
+; N/A   ; None         ; 1.925 ns   ; B_MPC_DATA[15] ; LED_REGISTER2[15]     ; CPLD_CLK ;
+; N/A   ; None         ; 1.914 ns   ; B_MPC_ADDR[1]  ; CPLD_READ_ADD_BUF[1]  ; CPLD_CLK ;
+; N/A   ; None         ; 1.911 ns   ; B_MPC_ADDR[9]  ; CPLD_READ_ADD_BUF[9]  ; CPLD_CLK ;
+; N/A   ; None         ; 1.899 ns   ; B_MPC_DATA[6]  ; LED_REGISTER1[6]      ; CPLD_CLK ;
+; N/A   ; None         ; 1.888 ns   ; B_MPC_ADDR[7]  ; CPLD_READ_ADD_BUF[7]  ; CPLD_CLK ;
+; N/A   ; None         ; 1.882 ns   ; MPC_RD_WRn     ; CPLD_RD               ; CPLD_CLK ;
+; N/A   ; None         ; 1.868 ns   ; B_MPC_ADDR[4]  ; CPLD_READ_ADD_BUF[4]  ; CPLD_CLK ;
+; N/A   ; None         ; 1.826 ns   ; B_MPC_DATA[9]  ; LED_REGISTER2[9]      ; CPLD_CLK ;
+; N/A   ; None         ; 1.818 ns   ; B_MPC_DATA[9]  ; LED_REGISTER1[9]      ; CPLD_CLK ;
+; N/A   ; None         ; 1.796 ns   ; B_MPC_ADDR[8]  ; CPLD_READ_ADD_BUF[8]  ; CPLD_CLK ;
+; N/A   ; None         ; 1.731 ns   ; B_MPC_DATA[4]  ; LED_REGISTER1[4]      ; CPLD_CLK ;
+; N/A   ; None         ; 1.720 ns   ; B_MPC_DATA[1]  ; LED_REGISTER2[1]      ; CPLD_CLK ;
+; N/A   ; None         ; 1.703 ns   ; B_MPC_DATA[3]  ; LED_REGISTER1[3]      ; CPLD_CLK ;
+; N/A   ; None         ; 1.700 ns   ; B_MPC_DATA[3]  ; LED_REGISTER2[3]      ; CPLD_CLK ;
+; N/A   ; None         ; 1.697 ns   ; B_MPC_DATA[4]  ; LED_REGISTER2[4]      ; CPLD_CLK ;
++-------+--------------+------------+----------------+-----------------------+----------+
+
+
++--------------------------------------------------------------------------------------+
+; tco                                                                                  ;
++-------+--------------+------------+--------------------+----------------+------------+
+; Slack ; Required tco ; Actual tco ; From               ; To             ; From Clock ;
++-------+--------------+------------+--------------------+----------------+------------+
+; N/A   ; None         ; 11.291 ns  ; LED_REGISTER1[3]   ; DI4_ACTIVE     ; CPLD_CLK   ;
+; N/A   ; None         ; 11.207 ns  ; LED_REGISTER1[2]   ; DI3_ACTIVE     ; CPLD_CLK   ;
+; N/A   ; None         ; 11.130 ns  ; LED_REGISTER1[0]   ; DI1_ACTIVE     ; CPLD_CLK   ;
+; N/A   ; None         ; 11.112 ns  ; LED_REGISTER1[1]   ; DI2_ACTIVE     ; CPLD_CLK   ;
+; N/A   ; None         ; 11.076 ns  ; LED_REGISTER1[6]   ; DI7_FQ2_ACTIVE ; CPLD_CLK   ;
+; N/A   ; None         ; 10.430 ns  ; LED_REGISTER2[6]   ; DI7_FQ2_FAULT  ; CPLD_CLK   ;
+; N/A   ; None         ; 10.426 ns  ; LED_REGISTER1[5]   ; DI6_FQ1_ACTIVE ; CPLD_CLK   ;
+; N/A   ; None         ; 10.372 ns  ; LED_REGISTER2[1]   ; DI2_FAULT      ; CPLD_CLK   ;
+; N/A   ; None         ; 10.357 ns  ; LED_REGISTER2[7]   ; DI8_FQ3_FAULT  ; CPLD_CLK   ;
+; N/A   ; None         ; 10.340 ns  ; LED_REGISTER2[9]   ; DI10_FAULT     ; CPLD_CLK   ;
+; N/A   ; None         ; 10.285 ns  ; LED_REGISTER1[4]   ; DI5_ACTIVE     ; CPLD_CLK   ;
+; N/A   ; None         ; 10.265 ns  ; LED_REGISTER2[5]   ; DI6_FQ1_FAULT  ; CPLD_CLK   ;
+; N/A   ; None         ; 10.240 ns  ; LED_REGISTER2[8]   ; DI9_FAULT      ; CPLD_CLK   ;
+; N/A   ; None         ; 10.229 ns  ; LED_REGISTER1[7]   ; DI8_FQ3_ACTIVE ; CPLD_CLK   ;
+; N/A   ; None         ; 10.226 ns  ; LED_REGISTER2[4]   ; DI5_FAULT      ; CPLD_CLK   ;
+; N/A   ; None         ; 10.206 ns  ; LED_REGISTER2[3]   ; DI4_FAULT      ; CPLD_CLK   ;
+; N/A   ; None         ; 9.944 ns   ; B_MPC_DATA_int[0]  ; B_MPC_DATA[0]  ; CPLD_CLK   ;
+; N/A   ; None         ; 9.880 ns   ; LED_REGISTER2[15]  ; D06_FAULT      ; CPLD_CLK   ;
+; N/A   ; None         ; 9.849 ns   ; LED_REGISTER2[13]  ; D04_FAULT      ; CPLD_CLK   ;
+; N/A   ; None         ; 9.813 ns   ; LED_REGISTER2[14]  ; D05_FAULT      ; CPLD_CLK   ;
+; N/A   ; None         ; 9.806 ns   ; LED_REGISTER2[10]  ; D01_FAULT      ; CPLD_CLK   ;
+; N/A   ; None         ; 9.801 ns   ; B_MPC_DATA_int[7]  ; B_MPC_DATA[7]  ; CPLD_CLK   ;
+; N/A   ; None         ; 9.799 ns   ; B_MPC_DATA_int[6]  ; B_MPC_DATA[6]  ; CPLD_CLK   ;
+; N/A   ; None         ; 9.793 ns   ; LED_REGISTER2[12]  ; D03_FAULT      ; CPLD_CLK   ;
+; N/A   ; None         ; 9.784 ns   ; LED_REGISTER2[11]  ; D02_FAULT      ; CPLD_CLK   ;
+; N/A   ; None         ; 9.768 ns   ; LED_REGISTER2[0]   ; DI1_FAULT      ; CPLD_CLK   ;
+; N/A   ; None         ; 9.652 ns   ; LED_REGISTER2[2]   ; DI3_FAULT      ; CPLD_CLK   ;
+; N/A   ; None         ; 9.634 ns   ; B_MPC_DATA_int[8]  ; B_MPC_DATA[8]  ; CPLD_CLK   ;
+; N/A   ; None         ; 9.585 ns   ; B_MPC_DATA_int[11] ; B_MPC_DATA[11] ; CPLD_CLK   ;
+; N/A   ; None         ; 9.545 ns   ; B_MPC_DATA_int[10] ; B_MPC_DATA[10] ; CPLD_CLK   ;
+; N/A   ; None         ; 9.461 ns   ; B_MPC_DATA_int[1]  ; B_MPC_DATA[1]  ; CPLD_CLK   ;
+; N/A   ; None         ; 9.317 ns   ; CPLD_RD            ; B_MPC_DATA[9]  ; CPLD_CLK   ;
+; N/A   ; None         ; 9.311 ns   ; B_MPC_DATA_int[2]  ; B_MPC_DATA[2]  ; CPLD_CLK   ;
+; N/A   ; None         ; 9.306 ns   ; B_MPC_DATA_int[5]  ; B_MPC_DATA[5]  ; CPLD_CLK   ;
+; N/A   ; None         ; 9.301 ns   ; B_MPC_DATA_int[3]  ; B_MPC_DATA[3]  ; CPLD_CLK   ;
+; N/A   ; None         ; 9.252 ns   ; B_MPC_DATA_int[4]  ; B_MPC_DATA[4]  ; CPLD_CLK   ;
+; N/A   ; None         ; 9.148 ns   ; B_MPC_DATA_int[14] ; B_MPC_DATA[14] ; CPLD_CLK   ;
+; N/A   ; None         ; 9.079 ns   ; B_MPC_DATA_int[9]  ; B_MPC_DATA[9]  ; CPLD_CLK   ;
+; N/A   ; None         ; 9.072 ns   ; CPLD_RD            ; B_MPC_DATA[12] ; CPLD_CLK   ;
+; N/A   ; None         ; 9.070 ns   ; CPLD_RD            ; B_MPC_DATA[11] ; CPLD_CLK   ;
+; N/A   ; None         ; 9.048 ns   ; B_MPC_DATA_int[12] ; B_MPC_DATA[12] ; CPLD_CLK   ;
+; N/A   ; None         ; 9.046 ns   ; B_MPC_DATA_int[13] ; B_MPC_DATA[13] ; CPLD_CLK   ;
+; N/A   ; None         ; 8.895 ns   ; CPLD_RD            ; B_MPC_DATA[5]  ; CPLD_CLK   ;
+; N/A   ; None         ; 8.895 ns   ; CPLD_RD            ; B_MPC_DATA[4]  ; CPLD_CLK   ;
+; N/A   ; None         ; 8.895 ns   ; CPLD_RD            ; B_MPC_DATA[3]  ; CPLD_CLK   ;
+; N/A   ; None         ; 8.889 ns   ; CPLD_RD            ; B_MPC_DATA[7]  ; CPLD_CLK   ;
+; N/A   ; None         ; 8.889 ns   ; CPLD_RD            ; B_MPC_DATA[6]  ; CPLD_CLK   ;
+; N/A   ; None         ; 8.668 ns   ; CPLD_RD            ; B_MPC_DATA[10] ; CPLD_CLK   ;
+; N/A   ; None         ; 8.668 ns   ; CPLD_RD            ; B_MPC_DATA[8]  ; CPLD_CLK   ;
+; N/A   ; None         ; 8.488 ns   ; CPLD_RD            ; B_MPC_DATA[14] ; CPLD_CLK   ;
+; N/A   ; None         ; 8.488 ns   ; CPLD_RD            ; B_MPC_DATA[13] ; CPLD_CLK   ;
+; N/A   ; None         ; 8.484 ns   ; B_MPC_DATA_int[15] ; B_MPC_DATA[15] ; CPLD_CLK   ;
+; N/A   ; None         ; 7.885 ns   ; CPLD_RD            ; B_MPC_DATA[15] ; CPLD_CLK   ;
+; N/A   ; None         ; 7.885 ns   ; CPLD_RD            ; B_MPC_DATA[2]  ; CPLD_CLK   ;
+; N/A   ; None         ; 7.885 ns   ; CPLD_RD            ; B_MPC_DATA[1]  ; CPLD_CLK   ;
+; N/A   ; None         ; 7.885 ns   ; CPLD_RD            ; B_MPC_DATA[0]  ; CPLD_CLK   ;
++-------+--------------+------------+--------------------+----------------+------------+
+
+
++---------------------------------------------------------------------------------------------+
+; th                                                                                          ;
++---------------+-------------+-----------+----------------+-----------------------+----------+
+; Minimum Slack ; Required th ; Actual th ; From           ; To                    ; To Clock ;
++---------------+-------------+-----------+----------------+-----------------------+----------+
+; N/A           ; None        ; -1.143 ns ; B_MPC_DATA[4]  ; LED_REGISTER2[4]      ; CPLD_CLK ;
+; N/A           ; None        ; -1.146 ns ; B_MPC_DATA[3]  ; LED_REGISTER2[3]      ; CPLD_CLK ;
+; N/A           ; None        ; -1.149 ns ; B_MPC_DATA[3]  ; LED_REGISTER1[3]      ; CPLD_CLK ;
+; N/A           ; None        ; -1.166 ns ; B_MPC_DATA[1]  ; LED_REGISTER2[1]      ; CPLD_CLK ;
+; N/A           ; None        ; -1.177 ns ; B_MPC_DATA[4]  ; LED_REGISTER1[4]      ; CPLD_CLK ;
+; N/A           ; None        ; -1.242 ns ; B_MPC_ADDR[8]  ; CPLD_READ_ADD_BUF[8]  ; CPLD_CLK ;
+; N/A           ; None        ; -1.264 ns ; B_MPC_DATA[9]  ; LED_REGISTER1[9]      ; CPLD_CLK ;
+; N/A           ; None        ; -1.272 ns ; B_MPC_DATA[9]  ; LED_REGISTER2[9]      ; CPLD_CLK ;
+; N/A           ; None        ; -1.314 ns ; B_MPC_ADDR[4]  ; CPLD_READ_ADD_BUF[4]  ; CPLD_CLK ;
+; N/A           ; None        ; -1.328 ns ; MPC_RD_WRn     ; CPLD_RD               ; CPLD_CLK ;
+; N/A           ; None        ; -1.334 ns ; B_MPC_ADDR[7]  ; CPLD_READ_ADD_BUF[7]  ; CPLD_CLK ;
+; N/A           ; None        ; -1.345 ns ; B_MPC_DATA[6]  ; LED_REGISTER1[6]      ; CPLD_CLK ;
+; N/A           ; None        ; -1.357 ns ; B_MPC_ADDR[9]  ; CPLD_READ_ADD_BUF[9]  ; CPLD_CLK ;
+; N/A           ; None        ; -1.360 ns ; B_MPC_ADDR[1]  ; CPLD_READ_ADD_BUF[1]  ; CPLD_CLK ;
+; N/A           ; None        ; -1.371 ns ; B_MPC_DATA[15] ; LED_REGISTER2[15]     ; CPLD_CLK ;
+; N/A           ; None        ; -1.378 ns ; B_MPC_DATA[15] ; LED_REGISTER1[15]     ; CPLD_CLK ;
+; N/A           ; None        ; -1.413 ns ; B_MPC_ADDR[12] ; CPLD_READ_ADD_BUF[12] ; CPLD_CLK ;
+; N/A           ; None        ; -1.427 ns ; B_MPC_ADDR[3]  ; CPLD_READ_ADD_BUF[3]  ; CPLD_CLK ;
+; N/A           ; None        ; -1.452 ns ; B_MPC_DATA[13] ; LED_REGISTER1[13]     ; CPLD_CLK ;
+; N/A           ; None        ; -1.454 ns ; B_MPC_DATA[13] ; LED_REGISTER2[13]     ; CPLD_CLK ;
+; N/A           ; None        ; -1.472 ns ; B_MPC_DATA[10] ; LED_REGISTER2[10]     ; CPLD_CLK ;
+; N/A           ; None        ; -1.480 ns ; B_MPC_DATA[10] ; LED_REGISTER1[10]     ; CPLD_CLK ;
+; N/A           ; None        ; -1.496 ns ; B_MPC_DATA[11] ; LED_REGISTER1[11]     ; CPLD_CLK ;
+; N/A           ; None        ; -1.497 ns ; B_MPC_DATA[11] ; LED_REGISTER2[11]     ; CPLD_CLK ;
+; N/A           ; None        ; -1.509 ns ; B_MPC_ADDR[5]  ; CPLD_READ_ADD_BUF[5]  ; CPLD_CLK ;
+; N/A           ; None        ; -1.511 ns ; B_MPC_ADDR[6]  ; CPLD_READ_ADD_BUF[6]  ; CPLD_CLK ;
+; N/A           ; None        ; -1.517 ns ; B_MPC_DATA[2]  ; LED_REGISTER1[2]      ; CPLD_CLK ;
+; N/A           ; None        ; -1.521 ns ; B_MPC_DATA[2]  ; LED_REGISTER2[2]      ; CPLD_CLK ;
+; N/A           ; None        ; -1.536 ns ; MPC_RD_WRn     ; CPLD_WR               ; CPLD_CLK ;
+; N/A           ; None        ; -1.537 ns ; B_MPC_DATA[14] ; LED_REGISTER2[14]     ; CPLD_CLK ;
+; N/A           ; None        ; -1.538 ns ; B_MPC_DATA[14] ; LED_REGISTER1[14]     ; CPLD_CLK ;
+; N/A           ; None        ; -1.540 ns ; B_MPC_DATA[0]  ; LED_REGISTER1[0]      ; CPLD_CLK ;
+; N/A           ; None        ; -1.541 ns ; B_MPC_DATA[0]  ; LED_REGISTER2[0]      ; CPLD_CLK ;
+; N/A           ; None        ; -1.564 ns ; B_MPC_DATA[5]  ; LED_REGISTER2[5]      ; CPLD_CLK ;
+; N/A           ; None        ; -1.570 ns ; B_MPC_DATA[5]  ; LED_REGISTER1[5]      ; CPLD_CLK ;
+; N/A           ; None        ; -1.573 ns ; B_MPC_DATA[8]  ; LED_REGISTER1[8]      ; CPLD_CLK ;
+; N/A           ; None        ; -1.580 ns ; B_MPC_DATA[8]  ; LED_REGISTER2[8]      ; CPLD_CLK ;
+; N/A           ; None        ; -1.582 ns ; B_MPC_DATA[1]  ; LED_REGISTER1[1]      ; CPLD_CLK ;
+; N/A           ; None        ; -1.583 ns ; B_MPC_DATA[12] ; LED_REGISTER2[12]     ; CPLD_CLK ;
+; N/A           ; None        ; -1.584 ns ; B_MPC_DATA[12] ; LED_REGISTER1[12]     ; CPLD_CLK ;
+; N/A           ; None        ; -1.601 ns ; B_MPC_ADDR[13] ; CPLD_READ_ADD_BUF[13] ; CPLD_CLK ;
+; N/A           ; None        ; -1.621 ns ; B_MPC_ADDR[10] ; CPLD_READ_ADD_BUF[10] ; CPLD_CLK ;
+; N/A           ; None        ; -1.629 ns ; B_MPC_ADDR[11] ; CPLD_READ_ADD_BUF[11] ; CPLD_CLK ;
+; N/A           ; None        ; -1.633 ns ; MPC_CS3n       ; CPLD_WR               ; CPLD_CLK ;
+; N/A           ; None        ; -1.650 ns ; B_MPC_DATA[7]  ; LED_REGISTER1[7]      ; CPLD_CLK ;
+; N/A           ; None        ; -1.652 ns ; B_MPC_DATA[7]  ; LED_REGISTER2[7]      ; CPLD_CLK ;
+; N/A           ; None        ; -1.652 ns ; B_MPC_DATA[6]  ; LED_REGISTER2[6]      ; CPLD_CLK ;
+; N/A           ; None        ; -1.726 ns ; B_MPC_ADDR[2]  ; CPLD_READ_ADD_BUF[2]  ; CPLD_CLK ;
+; N/A           ; None        ; -1.819 ns ; MPC_CS3n       ; MPC_CS3n_dly          ; CPLD_CLK ;
+; N/A           ; None        ; -1.948 ns ; MPC_CS3n       ; CPLD_RD               ; CPLD_CLK ;
+; N/A           ; None        ; -2.029 ns ; B_MPC_ADDR[0]  ; CPLD_READ_ADD_BUF[0]  ; CPLD_CLK ;
+; N/A           ; None        ; -3.586 ns ; MPC_CS3n       ; CPLD_READ_ADD_BUF[8]  ; CPLD_CLK ;
+; N/A           ; None        ; -3.586 ns ; MPC_CS3n       ; CPLD_READ_ADD_BUF[7]  ; CPLD_CLK ;
+; N/A           ; None        ; -3.586 ns ; MPC_CS3n       ; CPLD_READ_ADD_BUF[6]  ; CPLD_CLK ;
+; N/A           ; None        ; -3.586 ns ; MPC_CS3n       ; CPLD_READ_ADD_BUF[4]  ; CPLD_CLK ;
+; N/A           ; None        ; -3.586 ns ; MPC_CS3n       ; CPLD_READ_ADD_BUF[3]  ; CPLD_CLK ;
+; N/A           ; None        ; -3.586 ns ; MPC_CS3n       ; CPLD_READ_ADD_BUF[2]  ; CPLD_CLK ;
+; N/A           ; None        ; -3.988 ns ; MPC_CS3n       ; CPLD_READ_ADD_BUF[1]  ; CPLD_CLK ;
+; N/A           ; None        ; -3.988 ns ; MPC_CS3n       ; CPLD_READ_ADD_BUF[0]  ; CPLD_CLK ;
+; N/A           ; None        ; -3.988 ns ; MPC_CS3n       ; CPLD_READ_ADD_BUF[12] ; CPLD_CLK ;
+; N/A           ; None        ; -3.988 ns ; MPC_CS3n       ; CPLD_READ_ADD_BUF[11] ; CPLD_CLK ;
+; N/A           ; None        ; -3.988 ns ; MPC_CS3n       ; CPLD_READ_ADD_BUF[10] ; CPLD_CLK ;
+; N/A           ; None        ; -3.988 ns ; MPC_CS3n       ; CPLD_READ_ADD_BUF[13] ; CPLD_CLK ;
+; N/A           ; None        ; -3.988 ns ; MPC_CS3n       ; CPLD_READ_ADD_BUF[9]  ; CPLD_CLK ;
+; N/A           ; None        ; -3.988 ns ; MPC_CS3n       ; CPLD_READ_ADD_BUF[5]  ; CPLD_CLK ;
++---------------+-------------+-----------+----------------+-----------------------+----------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Classic Timing Analyzer
+    Info: Version 9.1 Build 222 10/21/2009 SJ Web Edition
+    Info: Processing started: Mon Aug 08 15:20:02 2011
+Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off IOP_DIGITAL -c IOP_DIGITAL_MAIN
+Info: Started post-fitting delay annotation
+Info: Delay annotation completed successfully
+Warning: Found pins functioning as undefined clocks and/or memory enables
+    Info: Assuming node "CPLD_CLK" is an undefined clock
+Info: Clock "CPLD_CLK" has Internal fmax of 95.89 MHz between source register "CPLD_READ_ADD_BUF[7]" and destination register "LED_REGISTER1[11]" (period= 10.429 ns)
+    Info: + Longest register to register delay is 9.720 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LC_X11_Y4_N9; Fanout = 1; REG Node = 'CPLD_READ_ADD_BUF[7]'
+        Info: 2: + IC(1.278 ns) + CELL(0.914 ns) = 2.192 ns; Loc. = LC_X12_Y4_N5; Fanout = 1; COMB Node = 'Equal0~1'
+        Info: 3: + IC(0.701 ns) + CELL(0.914 ns) = 3.807 ns; Loc. = LC_X12_Y4_N8; Fanout = 18; COMB Node = 'Equal0~3'
+        Info: 4: + IC(0.754 ns) + CELL(0.200 ns) = 4.761 ns; Loc. = LC_X12_Y4_N0; Fanout = 16; COMB Node = 'process_6~0'
+        Info: 5: + IC(3.716 ns) + CELL(1.243 ns) = 9.720 ns; Loc. = LC_X2_Y5_N2; Fanout = 1; REG Node = 'LED_REGISTER1[11]'
+        Info: Total cell delay = 3.271 ns ( 33.65 % )
+        Info: Total interconnect delay = 6.449 ns ( 66.35 % )
+    Info: - Smallest clock skew is 0.000 ns
+        Info: + Shortest clock path from clock "CPLD_CLK" to destination register is 3.838 ns
+            Info: 1: + IC(0.000 ns) + CELL(1.163 ns) = 1.163 ns; Loc. = PIN_H12; Fanout = 65; CLK Node = 'CPLD_CLK'
+            Info: 2: + IC(1.757 ns) + CELL(0.918 ns) = 3.838 ns; Loc. = LC_X2_Y5_N2; Fanout = 1; REG Node = 'LED_REGISTER1[11]'
+            Info: Total cell delay = 2.081 ns ( 54.22 % )
+            Info: Total interconnect delay = 1.757 ns ( 45.78 % )
+        Info: - Longest clock path from clock "CPLD_CLK" to source register is 3.838 ns
+            Info: 1: + IC(0.000 ns) + CELL(1.163 ns) = 1.163 ns; Loc. = PIN_H12; Fanout = 65; CLK Node = 'CPLD_CLK'
+            Info: 2: + IC(1.757 ns) + CELL(0.918 ns) = 3.838 ns; Loc. = LC_X11_Y4_N9; Fanout = 1; REG Node = 'CPLD_READ_ADD_BUF[7]'
+            Info: Total cell delay = 2.081 ns ( 54.22 % )
+            Info: Total interconnect delay = 1.757 ns ( 45.78 % )
+    Info: + Micro clock to output delay of source is 0.376 ns
+    Info: + Micro setup delay of destination is 0.333 ns
+Info: tsu for register "CPLD_READ_ADD_BUF[1]" (data pin = "MPC_CS3n", clock pin = "CPLD_CLK") is 4.542 ns
+    Info: + Longest pin to register delay is 8.047 ns
+        Info: 1: + IC(0.000 ns) + CELL(1.132 ns) = 1.132 ns; Loc. = PIN_K3; Fanout = 4; PIN Node = 'MPC_CS3n'
+        Info: 2: + IC(3.694 ns) + CELL(0.914 ns) = 5.740 ns; Loc. = LC_X11_Y4_N2; Fanout = 14; COMB Node = 'process_2~0'
+        Info: 3: + IC(1.064 ns) + CELL(1.243 ns) = 8.047 ns; Loc. = LC_X12_Y4_N0; Fanout = 18; REG Node = 'CPLD_READ_ADD_BUF[1]'
+        Info: Total cell delay = 3.289 ns ( 40.87 % )
+        Info: Total interconnect delay = 4.758 ns ( 59.13 % )
+    Info: + Micro setup delay of destination is 0.333 ns
+    Info: - Shortest clock path from clock "CPLD_CLK" to destination register is 3.838 ns
+        Info: 1: + IC(0.000 ns) + CELL(1.163 ns) = 1.163 ns; Loc. = PIN_H12; Fanout = 65; CLK Node = 'CPLD_CLK'
+        Info: 2: + IC(1.757 ns) + CELL(0.918 ns) = 3.838 ns; Loc. = LC_X12_Y4_N0; Fanout = 18; REG Node = 'CPLD_READ_ADD_BUF[1]'
+        Info: Total cell delay = 2.081 ns ( 54.22 % )
+        Info: Total interconnect delay = 1.757 ns ( 45.78 % )
+Info: tco from clock "CPLD_CLK" to destination pin "DI4_ACTIVE" through register "LED_REGISTER1[3]" is 11.291 ns
+    Info: + Longest clock path from clock "CPLD_CLK" to source register is 3.838 ns
+        Info: 1: + IC(0.000 ns) + CELL(1.163 ns) = 1.163 ns; Loc. = PIN_H12; Fanout = 65; CLK Node = 'CPLD_CLK'
+        Info: 2: + IC(1.757 ns) + CELL(0.918 ns) = 3.838 ns; Loc. = LC_X8_Y11_N2; Fanout = 2; REG Node = 'LED_REGISTER1[3]'
+        Info: Total cell delay = 2.081 ns ( 54.22 % )
+        Info: Total interconnect delay = 1.757 ns ( 45.78 % )
+    Info: + Micro clock to output delay of source is 0.376 ns
+    Info: + Longest register to pin delay is 7.077 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LC_X8_Y11_N2; Fanout = 2; REG Node = 'LED_REGISTER1[3]'
+        Info: 2: + IC(4.755 ns) + CELL(2.322 ns) = 7.077 ns; Loc. = PIN_L16; Fanout = 0; PIN Node = 'DI4_ACTIVE'
+        Info: Total cell delay = 2.322 ns ( 32.81 % )
+        Info: Total interconnect delay = 4.755 ns ( 67.19 % )
+Info: th for register "LED_REGISTER2[4]" (data pin = "B_MPC_DATA[4]", clock pin = "CPLD_CLK") is -1.143 ns
+    Info: + Longest clock path from clock "CPLD_CLK" to destination register is 3.838 ns
+        Info: 1: + IC(0.000 ns) + CELL(1.163 ns) = 1.163 ns; Loc. = PIN_H12; Fanout = 65; CLK Node = 'CPLD_CLK'
+        Info: 2: + IC(1.757 ns) + CELL(0.918 ns) = 3.838 ns; Loc. = LC_X8_Y8_N4; Fanout = 2; REG Node = 'LED_REGISTER2[4]'
+        Info: Total cell delay = 2.081 ns ( 54.22 % )
+        Info: Total interconnect delay = 1.757 ns ( 45.78 % )
+    Info: + Micro hold delay of destination is 0.221 ns
+    Info: - Shortest pin to register delay is 5.202 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = PIN_T7; Fanout = 1; PIN Node = 'B_MPC_DATA[4]'
+        Info: 2: + IC(0.000 ns) + CELL(1.132 ns) = 1.132 ns; Loc. = IOC_X8_Y3_N0; Fanout = 2; COMB Node = 'B_MPC_DATA[4]~4'
+        Info: 3: + IC(2.887 ns) + CELL(1.183 ns) = 5.202 ns; Loc. = LC_X8_Y8_N4; Fanout = 2; REG Node = 'LED_REGISTER2[4]'
+        Info: Total cell delay = 2.315 ns ( 44.50 % )
+        Info: Total interconnect delay = 2.887 ns ( 55.50 % )
+Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 131 megabytes
+    Info: Processing ended: Mon Aug 08 15:20:04 2011
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
+
+

@@ -1,0 +1,398 @@
+Classic Timing Analyzer report for health_cpld
+Mon Aug 01 12:42:16 2011
+Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Timing Analyzer Settings
+  4. Clock Settings Summary
+  5. Parallel Compilation
+  6. Clock Setup: 'MPC_ENG_CLK'
+  7. tsu
+  8. tco
+  9. th
+ 10. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                                                                                                           ;
++------------------------------+-------+---------------+----------------------------------+---------------+-------------+--------------+-------------+--------------+
+; Type                         ; Slack ; Required Time ; Actual Time                      ; From          ; To          ; From Clock   ; To Clock    ; Failed Paths ;
++------------------------------+-------+---------------+----------------------------------+---------------+-------------+--------------+-------------+--------------+
+; Worst-case tsu               ; N/A   ; None          ; 6.300 ns                         ; ESC2_WDI_CPLD ; ESC2_WDI    ; --           ; MPC_ENG_CLK ; 0            ;
+; Worst-case tco               ; N/A   ; None          ; 16.500 ns                        ; CONTROL_OUT   ; CONTROL_INV ; TAKE_CONTROL ; --          ; 0            ;
+; Worst-case th                ; N/A   ; None          ; -2.000 ns                        ; ESC1_WDI_CPLD ; ESC1_WDI    ; --           ; MPC_ENG_CLK ; 0            ;
+; Clock Setup: 'MPC_ENG_CLK'   ; N/A   ; None          ; 99.01 MHz ( period = 10.100 ns ) ; WRAP_SIGNAL2  ; ESC2_WDI    ; MPC_ENG_CLK  ; MPC_ENG_CLK ; 0            ;
+; Total number of failed paths ;       ;               ;                                  ;               ;             ;              ;             ; 0            ;
++------------------------------+-------+---------------+----------------------------------+---------------+-------------+--------------+-------------+--------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Settings                                                                                                                            ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+; Option                                                                                               ; Setting            ; From ; To ; Entity Name ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+; Device Name                                                                                          ; EPM3064ATI44-10    ;      ;    ;             ;
+; Timing Models                                                                                        ; Final              ;      ;    ;             ;
+; Default hold multicycle                                                                              ; Same as Multicycle ;      ;    ;             ;
+; Cut paths between unrelated clock domains                                                            ; On                 ;      ;    ;             ;
+; Cut off read during write signal paths                                                               ; On                 ;      ;    ;             ;
+; Cut off feedback from I/O pins                                                                       ; On                 ;      ;    ;             ;
+; Report Combined Fast/Slow Timing                                                                     ; Off                ;      ;    ;             ;
+; Ignore Clock Settings                                                                                ; Off                ;      ;    ;             ;
+; Analyze latches as synchronous elements                                                              ; On                 ;      ;    ;             ;
+; Enable Recovery/Removal analysis                                                                     ; Off                ;      ;    ;             ;
+; Enable Clock Latency                                                                                 ; Off                ;      ;    ;             ;
+; Use TimeQuest Timing Analyzer                                                                        ; Off                ;      ;    ;             ;
+; Number of source nodes to report per destination node                                                ; 10                 ;      ;    ;             ;
+; Number of destination nodes to report                                                                ; 10                 ;      ;    ;             ;
+; Number of paths to report                                                                            ; 200                ;      ;    ;             ;
+; Report Minimum Timing Checks                                                                         ; Off                ;      ;    ;             ;
+; Use Fast Timing Models                                                                               ; Off                ;      ;    ;             ;
+; Report IO Paths Separately                                                                           ; Off                ;      ;    ;             ;
+; Perform Multicorner Analysis                                                                         ; Off                ;      ;    ;             ;
+; Reports the worst-case path for each clock domain and analysis                                       ; Off                ;      ;    ;             ;
+; Reports worst-case timing paths for each clock domain and analysis                                   ; On                 ;      ;    ;             ;
+; Specifies the maximum number of worst-case timing paths to report for each clock domain and analysis ; 100                ;      ;    ;             ;
+; Removes common clock path pessimism (CCPP) during slack computation                                  ; Off                ;      ;    ;             ;
+; Output I/O Timing Endpoint                                                                           ; Near End           ;      ;    ;             ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Settings Summary                                                                                                                                                             ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; Clock Node Name ; Clock Setting Name ; Type     ; Fmax Requirement ; Early Latency ; Late Latency ; Based on ; Multiply Base Fmax by ; Divide Base Fmax by ; Offset ; Phase offset ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; TAKE_CONTROL    ;                    ; User Pin ; None             ; 0.000 ns      ; 0.000 ns     ; --       ; N/A                   ; N/A                 ; N/A    ;              ;
+; MPC_ENG_CLK     ;                    ; User Pin ; None             ; 0.000 ns      ; 0.000 ns     ; --       ; N/A                   ; N/A                 ; N/A    ;              ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 2      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Setup: 'MPC_ENG_CLK'                                                                                                                                                                                                                ;
++-------+-----------------------------------+---------------------------------------+---------------------------------------+-------------+-------------+-----------------------------+---------------------------+-------------------------+
+; Slack ; Actual fmax (period)              ; From                                  ; To                                    ; From Clock  ; To Clock    ; Required Setup Relationship ; Required Longest P2P Time ; Actual Longest P2P Time ;
++-------+-----------------------------------+---------------------------------------+---------------------------------------+-------------+-------------+-----------------------------+---------------------------+-------------------------+
+; N/A   ; 99.01 MHz ( period = 10.100 ns )  ; lpm_counter:WD_COUNTER2_rtl_1|dffs[0] ; lpm_counter:WD_COUNTER2_rtl_1|dffs[0] ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.600 ns                ;
+; N/A   ; 99.01 MHz ( period = 10.100 ns )  ; WRAP_SIGNAL2                          ; lpm_counter:WD_COUNTER2_rtl_1|dffs[0] ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.600 ns                ;
+; N/A   ; 99.01 MHz ( period = 10.100 ns )  ; lpm_counter:WD_COUNTER2_rtl_1|dffs[0] ; lpm_counter:WD_COUNTER2_rtl_1|dffs[8] ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.600 ns                ;
+; N/A   ; 99.01 MHz ( period = 10.100 ns )  ; WRAP_SIGNAL2                          ; lpm_counter:WD_COUNTER2_rtl_1|dffs[8] ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.600 ns                ;
+; N/A   ; 99.01 MHz ( period = 10.100 ns )  ; lpm_counter:WD_COUNTER2_rtl_1|dffs[1] ; lpm_counter:WD_COUNTER2_rtl_1|dffs[8] ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.600 ns                ;
+; N/A   ; 99.01 MHz ( period = 10.100 ns )  ; lpm_counter:WD_COUNTER2_rtl_1|dffs[0] ; lpm_counter:WD_COUNTER2_rtl_1|dffs[1] ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.600 ns                ;
+; N/A   ; 99.01 MHz ( period = 10.100 ns )  ; WRAP_SIGNAL2                          ; lpm_counter:WD_COUNTER2_rtl_1|dffs[1] ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.600 ns                ;
+; N/A   ; 99.01 MHz ( period = 10.100 ns )  ; lpm_counter:WD_COUNTER2_rtl_1|dffs[1] ; lpm_counter:WD_COUNTER2_rtl_1|dffs[1] ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.600 ns                ;
+; N/A   ; 99.01 MHz ( period = 10.100 ns )  ; lpm_counter:WD_COUNTER2_rtl_1|dffs[0] ; lpm_counter:WD_COUNTER2_rtl_1|dffs[2] ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.600 ns                ;
+; N/A   ; 99.01 MHz ( period = 10.100 ns )  ; WRAP_SIGNAL2                          ; lpm_counter:WD_COUNTER2_rtl_1|dffs[2] ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.600 ns                ;
+; N/A   ; 99.01 MHz ( period = 10.100 ns )  ; lpm_counter:WD_COUNTER2_rtl_1|dffs[1] ; lpm_counter:WD_COUNTER2_rtl_1|dffs[2] ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.600 ns                ;
+; N/A   ; 99.01 MHz ( period = 10.100 ns )  ; lpm_counter:WD_COUNTER2_rtl_1|dffs[0] ; lpm_counter:WD_COUNTER2_rtl_1|dffs[3] ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.600 ns                ;
+; N/A   ; 99.01 MHz ( period = 10.100 ns )  ; WRAP_SIGNAL2                          ; lpm_counter:WD_COUNTER2_rtl_1|dffs[3] ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.600 ns                ;
+; N/A   ; 99.01 MHz ( period = 10.100 ns )  ; lpm_counter:WD_COUNTER2_rtl_1|dffs[1] ; lpm_counter:WD_COUNTER2_rtl_1|dffs[3] ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.600 ns                ;
+; N/A   ; 99.01 MHz ( period = 10.100 ns )  ; lpm_counter:WD_COUNTER2_rtl_1|dffs[0] ; lpm_counter:WD_COUNTER2_rtl_1|dffs[4] ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.600 ns                ;
+; N/A   ; 99.01 MHz ( period = 10.100 ns )  ; WRAP_SIGNAL2                          ; lpm_counter:WD_COUNTER2_rtl_1|dffs[4] ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.600 ns                ;
+; N/A   ; 99.01 MHz ( period = 10.100 ns )  ; lpm_counter:WD_COUNTER2_rtl_1|dffs[1] ; lpm_counter:WD_COUNTER2_rtl_1|dffs[4] ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.600 ns                ;
+; N/A   ; 99.01 MHz ( period = 10.100 ns )  ; lpm_counter:WD_COUNTER2_rtl_1|dffs[0] ; lpm_counter:WD_COUNTER2_rtl_1|dffs[5] ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.600 ns                ;
+; N/A   ; 99.01 MHz ( period = 10.100 ns )  ; WRAP_SIGNAL2                          ; lpm_counter:WD_COUNTER2_rtl_1|dffs[5] ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.600 ns                ;
+; N/A   ; 99.01 MHz ( period = 10.100 ns )  ; lpm_counter:WD_COUNTER2_rtl_1|dffs[1] ; lpm_counter:WD_COUNTER2_rtl_1|dffs[5] ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.600 ns                ;
+; N/A   ; 99.01 MHz ( period = 10.100 ns )  ; lpm_counter:WD_COUNTER2_rtl_1|dffs[0] ; lpm_counter:WD_COUNTER2_rtl_1|dffs[6] ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.600 ns                ;
+; N/A   ; 99.01 MHz ( period = 10.100 ns )  ; WRAP_SIGNAL2                          ; lpm_counter:WD_COUNTER2_rtl_1|dffs[6] ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.600 ns                ;
+; N/A   ; 99.01 MHz ( period = 10.100 ns )  ; lpm_counter:WD_COUNTER2_rtl_1|dffs[1] ; lpm_counter:WD_COUNTER2_rtl_1|dffs[6] ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.600 ns                ;
+; N/A   ; 99.01 MHz ( period = 10.100 ns )  ; lpm_counter:WD_COUNTER2_rtl_1|dffs[0] ; lpm_counter:WD_COUNTER2_rtl_1|dffs[7] ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.600 ns                ;
+; N/A   ; 99.01 MHz ( period = 10.100 ns )  ; WRAP_SIGNAL2                          ; lpm_counter:WD_COUNTER2_rtl_1|dffs[7] ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.600 ns                ;
+; N/A   ; 99.01 MHz ( period = 10.100 ns )  ; lpm_counter:WD_COUNTER2_rtl_1|dffs[1] ; lpm_counter:WD_COUNTER2_rtl_1|dffs[7] ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.600 ns                ;
+; N/A   ; 99.01 MHz ( period = 10.100 ns )  ; TEST_COUNTER[0]                       ; TEST_COUNTER[1]                       ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.600 ns                ;
+; N/A   ; 99.01 MHz ( period = 10.100 ns )  ; TEST_COUNTER[0]                       ; TEST_COUNTER[2]                       ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.600 ns                ;
+; N/A   ; 99.01 MHz ( period = 10.100 ns )  ; TEST_COUNTER[0]                       ; IOP_TO_IOP_SRH3~reg0                  ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.600 ns                ;
+; N/A   ; 99.01 MHz ( period = 10.100 ns )  ; WRAP_SIGNAL2                          ; ESC2_WDI                              ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.600 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; TEST_COUNTER[0]                       ; TEST_COUNTER[0]                       ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER_rtl_0|dffs[0]  ; lpm_counter:WD_COUNTER_rtl_0|dffs[0]  ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; WRAP_SIGNAL                           ; lpm_counter:WD_COUNTER_rtl_0|dffs[0]  ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER_rtl_0|dffs[0]  ; lpm_counter:WD_COUNTER_rtl_0|dffs[8]  ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; WRAP_SIGNAL                           ; lpm_counter:WD_COUNTER_rtl_0|dffs[8]  ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER_rtl_0|dffs[8]  ; lpm_counter:WD_COUNTER_rtl_0|dffs[8]  ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER_rtl_0|dffs[1]  ; lpm_counter:WD_COUNTER_rtl_0|dffs[8]  ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER_rtl_0|dffs[2]  ; lpm_counter:WD_COUNTER_rtl_0|dffs[8]  ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER_rtl_0|dffs[3]  ; lpm_counter:WD_COUNTER_rtl_0|dffs[8]  ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER_rtl_0|dffs[4]  ; lpm_counter:WD_COUNTER_rtl_0|dffs[8]  ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER_rtl_0|dffs[5]  ; lpm_counter:WD_COUNTER_rtl_0|dffs[8]  ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER_rtl_0|dffs[6]  ; lpm_counter:WD_COUNTER_rtl_0|dffs[8]  ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER_rtl_0|dffs[7]  ; lpm_counter:WD_COUNTER_rtl_0|dffs[8]  ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER_rtl_0|dffs[0]  ; lpm_counter:WD_COUNTER_rtl_0|dffs[1]  ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; WRAP_SIGNAL                           ; lpm_counter:WD_COUNTER_rtl_0|dffs[1]  ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER_rtl_0|dffs[1]  ; lpm_counter:WD_COUNTER_rtl_0|dffs[1]  ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER_rtl_0|dffs[0]  ; lpm_counter:WD_COUNTER_rtl_0|dffs[2]  ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; WRAP_SIGNAL                           ; lpm_counter:WD_COUNTER_rtl_0|dffs[2]  ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER_rtl_0|dffs[1]  ; lpm_counter:WD_COUNTER_rtl_0|dffs[2]  ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER_rtl_0|dffs[2]  ; lpm_counter:WD_COUNTER_rtl_0|dffs[2]  ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER_rtl_0|dffs[0]  ; lpm_counter:WD_COUNTER_rtl_0|dffs[3]  ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; WRAP_SIGNAL                           ; lpm_counter:WD_COUNTER_rtl_0|dffs[3]  ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER_rtl_0|dffs[1]  ; lpm_counter:WD_COUNTER_rtl_0|dffs[3]  ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER_rtl_0|dffs[2]  ; lpm_counter:WD_COUNTER_rtl_0|dffs[3]  ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER_rtl_0|dffs[3]  ; lpm_counter:WD_COUNTER_rtl_0|dffs[3]  ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER_rtl_0|dffs[0]  ; lpm_counter:WD_COUNTER_rtl_0|dffs[4]  ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; WRAP_SIGNAL                           ; lpm_counter:WD_COUNTER_rtl_0|dffs[4]  ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER_rtl_0|dffs[1]  ; lpm_counter:WD_COUNTER_rtl_0|dffs[4]  ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER_rtl_0|dffs[2]  ; lpm_counter:WD_COUNTER_rtl_0|dffs[4]  ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER_rtl_0|dffs[3]  ; lpm_counter:WD_COUNTER_rtl_0|dffs[4]  ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER_rtl_0|dffs[4]  ; lpm_counter:WD_COUNTER_rtl_0|dffs[4]  ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER_rtl_0|dffs[0]  ; lpm_counter:WD_COUNTER_rtl_0|dffs[5]  ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; WRAP_SIGNAL                           ; lpm_counter:WD_COUNTER_rtl_0|dffs[5]  ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER_rtl_0|dffs[1]  ; lpm_counter:WD_COUNTER_rtl_0|dffs[5]  ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER_rtl_0|dffs[2]  ; lpm_counter:WD_COUNTER_rtl_0|dffs[5]  ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER_rtl_0|dffs[3]  ; lpm_counter:WD_COUNTER_rtl_0|dffs[5]  ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER_rtl_0|dffs[4]  ; lpm_counter:WD_COUNTER_rtl_0|dffs[5]  ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER_rtl_0|dffs[5]  ; lpm_counter:WD_COUNTER_rtl_0|dffs[5]  ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER_rtl_0|dffs[0]  ; lpm_counter:WD_COUNTER_rtl_0|dffs[6]  ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; WRAP_SIGNAL                           ; lpm_counter:WD_COUNTER_rtl_0|dffs[6]  ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER_rtl_0|dffs[1]  ; lpm_counter:WD_COUNTER_rtl_0|dffs[6]  ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER_rtl_0|dffs[2]  ; lpm_counter:WD_COUNTER_rtl_0|dffs[6]  ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER_rtl_0|dffs[3]  ; lpm_counter:WD_COUNTER_rtl_0|dffs[6]  ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER_rtl_0|dffs[4]  ; lpm_counter:WD_COUNTER_rtl_0|dffs[6]  ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER_rtl_0|dffs[5]  ; lpm_counter:WD_COUNTER_rtl_0|dffs[6]  ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER_rtl_0|dffs[6]  ; lpm_counter:WD_COUNTER_rtl_0|dffs[6]  ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER_rtl_0|dffs[0]  ; lpm_counter:WD_COUNTER_rtl_0|dffs[7]  ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; WRAP_SIGNAL                           ; lpm_counter:WD_COUNTER_rtl_0|dffs[7]  ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER_rtl_0|dffs[1]  ; lpm_counter:WD_COUNTER_rtl_0|dffs[7]  ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER_rtl_0|dffs[2]  ; lpm_counter:WD_COUNTER_rtl_0|dffs[7]  ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER_rtl_0|dffs[3]  ; lpm_counter:WD_COUNTER_rtl_0|dffs[7]  ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER_rtl_0|dffs[4]  ; lpm_counter:WD_COUNTER_rtl_0|dffs[7]  ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER_rtl_0|dffs[5]  ; lpm_counter:WD_COUNTER_rtl_0|dffs[7]  ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER_rtl_0|dffs[6]  ; lpm_counter:WD_COUNTER_rtl_0|dffs[7]  ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER_rtl_0|dffs[7]  ; lpm_counter:WD_COUNTER_rtl_0|dffs[7]  ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER2_rtl_1|dffs[8] ; lpm_counter:WD_COUNTER2_rtl_1|dffs[8] ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER2_rtl_1|dffs[2] ; lpm_counter:WD_COUNTER2_rtl_1|dffs[8] ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER2_rtl_1|dffs[3] ; lpm_counter:WD_COUNTER2_rtl_1|dffs[8] ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER2_rtl_1|dffs[4] ; lpm_counter:WD_COUNTER2_rtl_1|dffs[8] ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER2_rtl_1|dffs[5] ; lpm_counter:WD_COUNTER2_rtl_1|dffs[8] ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER2_rtl_1|dffs[6] ; lpm_counter:WD_COUNTER2_rtl_1|dffs[8] ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER2_rtl_1|dffs[7] ; lpm_counter:WD_COUNTER2_rtl_1|dffs[8] ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER2_rtl_1|dffs[2] ; lpm_counter:WD_COUNTER2_rtl_1|dffs[2] ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER2_rtl_1|dffs[2] ; lpm_counter:WD_COUNTER2_rtl_1|dffs[3] ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER2_rtl_1|dffs[3] ; lpm_counter:WD_COUNTER2_rtl_1|dffs[3] ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER2_rtl_1|dffs[2] ; lpm_counter:WD_COUNTER2_rtl_1|dffs[4] ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER2_rtl_1|dffs[3] ; lpm_counter:WD_COUNTER2_rtl_1|dffs[4] ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER2_rtl_1|dffs[4] ; lpm_counter:WD_COUNTER2_rtl_1|dffs[4] ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER2_rtl_1|dffs[2] ; lpm_counter:WD_COUNTER2_rtl_1|dffs[5] ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER2_rtl_1|dffs[3] ; lpm_counter:WD_COUNTER2_rtl_1|dffs[5] ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER2_rtl_1|dffs[4] ; lpm_counter:WD_COUNTER2_rtl_1|dffs[5] ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER2_rtl_1|dffs[5] ; lpm_counter:WD_COUNTER2_rtl_1|dffs[5] ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER2_rtl_1|dffs[2] ; lpm_counter:WD_COUNTER2_rtl_1|dffs[6] ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER2_rtl_1|dffs[3] ; lpm_counter:WD_COUNTER2_rtl_1|dffs[6] ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER2_rtl_1|dffs[4] ; lpm_counter:WD_COUNTER2_rtl_1|dffs[6] ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER2_rtl_1|dffs[5] ; lpm_counter:WD_COUNTER2_rtl_1|dffs[6] ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER2_rtl_1|dffs[6] ; lpm_counter:WD_COUNTER2_rtl_1|dffs[6] ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER2_rtl_1|dffs[2] ; lpm_counter:WD_COUNTER2_rtl_1|dffs[7] ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER2_rtl_1|dffs[3] ; lpm_counter:WD_COUNTER2_rtl_1|dffs[7] ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER2_rtl_1|dffs[4] ; lpm_counter:WD_COUNTER2_rtl_1|dffs[7] ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER2_rtl_1|dffs[5] ; lpm_counter:WD_COUNTER2_rtl_1|dffs[7] ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER2_rtl_1|dffs[6] ; lpm_counter:WD_COUNTER2_rtl_1|dffs[7] ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; lpm_counter:WD_COUNTER2_rtl_1|dffs[7] ; lpm_counter:WD_COUNTER2_rtl_1|dffs[7] ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; TEST_COUNTER[1]                       ; TEST_COUNTER[1]                       ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; TEST_COUNTER[1]                       ; TEST_COUNTER[2]                       ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; TEST_COUNTER[2]                       ; TEST_COUNTER[2]                       ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; TEST_COUNTER[1]                       ; IOP_TO_IOP_SRH3~reg0                  ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; TEST_COUNTER[2]                       ; IOP_TO_IOP_SRH3~reg0                  ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; WRAP_SIGNAL                           ; ESC1_WDI                              ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; ESC1_WDI                              ; ESC1_WDI                              ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 100.00 MHz ( period = 10.000 ns ) ; ESC2_WDI                              ; ESC2_WDI                              ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 123.46 MHz ( period = 8.100 ns )  ; lpm_counter:WD_COUNTER2_rtl_1|dffs[0] ; WRAP_SIGNAL2                          ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 3.600 ns                ;
+; N/A   ; 123.46 MHz ( period = 8.100 ns )  ; lpm_counter:WD_COUNTER2_rtl_1|dffs[1] ; WRAP_SIGNAL2                          ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 3.600 ns                ;
+; N/A   ; 125.00 MHz ( period = 8.000 ns )  ; lpm_counter:WD_COUNTER_rtl_0|dffs[0]  ; WRAP_SIGNAL                           ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 3.500 ns                ;
+; N/A   ; 125.00 MHz ( period = 8.000 ns )  ; lpm_counter:WD_COUNTER_rtl_0|dffs[8]  ; WRAP_SIGNAL                           ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 3.500 ns                ;
+; N/A   ; 125.00 MHz ( period = 8.000 ns )  ; lpm_counter:WD_COUNTER_rtl_0|dffs[1]  ; WRAP_SIGNAL                           ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 3.500 ns                ;
+; N/A   ; 125.00 MHz ( period = 8.000 ns )  ; lpm_counter:WD_COUNTER_rtl_0|dffs[2]  ; WRAP_SIGNAL                           ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 3.500 ns                ;
+; N/A   ; 125.00 MHz ( period = 8.000 ns )  ; lpm_counter:WD_COUNTER_rtl_0|dffs[3]  ; WRAP_SIGNAL                           ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 3.500 ns                ;
+; N/A   ; 125.00 MHz ( period = 8.000 ns )  ; lpm_counter:WD_COUNTER_rtl_0|dffs[4]  ; WRAP_SIGNAL                           ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 3.500 ns                ;
+; N/A   ; 125.00 MHz ( period = 8.000 ns )  ; lpm_counter:WD_COUNTER_rtl_0|dffs[5]  ; WRAP_SIGNAL                           ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 3.500 ns                ;
+; N/A   ; 125.00 MHz ( period = 8.000 ns )  ; lpm_counter:WD_COUNTER_rtl_0|dffs[6]  ; WRAP_SIGNAL                           ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 3.500 ns                ;
+; N/A   ; 125.00 MHz ( period = 8.000 ns )  ; lpm_counter:WD_COUNTER_rtl_0|dffs[7]  ; WRAP_SIGNAL                           ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 3.500 ns                ;
+; N/A   ; 125.00 MHz ( period = 8.000 ns )  ; lpm_counter:WD_COUNTER2_rtl_1|dffs[8] ; WRAP_SIGNAL2                          ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 3.500 ns                ;
+; N/A   ; 125.00 MHz ( period = 8.000 ns )  ; lpm_counter:WD_COUNTER2_rtl_1|dffs[2] ; WRAP_SIGNAL2                          ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 3.500 ns                ;
+; N/A   ; 125.00 MHz ( period = 8.000 ns )  ; lpm_counter:WD_COUNTER2_rtl_1|dffs[3] ; WRAP_SIGNAL2                          ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 3.500 ns                ;
+; N/A   ; 125.00 MHz ( period = 8.000 ns )  ; lpm_counter:WD_COUNTER2_rtl_1|dffs[4] ; WRAP_SIGNAL2                          ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 3.500 ns                ;
+; N/A   ; 125.00 MHz ( period = 8.000 ns )  ; lpm_counter:WD_COUNTER2_rtl_1|dffs[5] ; WRAP_SIGNAL2                          ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 3.500 ns                ;
+; N/A   ; 125.00 MHz ( period = 8.000 ns )  ; lpm_counter:WD_COUNTER2_rtl_1|dffs[6] ; WRAP_SIGNAL2                          ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 3.500 ns                ;
+; N/A   ; 125.00 MHz ( period = 8.000 ns )  ; lpm_counter:WD_COUNTER2_rtl_1|dffs[7] ; WRAP_SIGNAL2                          ; MPC_ENG_CLK ; MPC_ENG_CLK ; None                        ; None                      ; 3.500 ns                ;
++-------+-----------------------------------+---------------------------------------+---------------------------------------+-------------+-------------+-----------------------------+---------------------------+-------------------------+
+
+
++---------------------------------------------------------------------------------------------------------+
+; tsu                                                                                                     ;
++-------+--------------+------------+---------------+---------------------------------------+-------------+
+; Slack ; Required tsu ; Actual tsu ; From          ; To                                    ; To Clock    ;
++-------+--------------+------------+---------------+---------------------------------------+-------------+
+; N/A   ; None         ; 6.300 ns   ; ESC2_WDI_CPLD ; lpm_counter:WD_COUNTER2_rtl_1|dffs[0] ; MPC_ENG_CLK ;
+; N/A   ; None         ; 6.300 ns   ; ESC2_WDI_CPLD ; lpm_counter:WD_COUNTER2_rtl_1|dffs[8] ; MPC_ENG_CLK ;
+; N/A   ; None         ; 6.300 ns   ; ESC2_WDI_CPLD ; lpm_counter:WD_COUNTER2_rtl_1|dffs[1] ; MPC_ENG_CLK ;
+; N/A   ; None         ; 6.300 ns   ; ESC2_WDI_CPLD ; lpm_counter:WD_COUNTER2_rtl_1|dffs[2] ; MPC_ENG_CLK ;
+; N/A   ; None         ; 6.300 ns   ; ESC2_WDI_CPLD ; lpm_counter:WD_COUNTER2_rtl_1|dffs[3] ; MPC_ENG_CLK ;
+; N/A   ; None         ; 6.300 ns   ; ESC2_WDI_CPLD ; lpm_counter:WD_COUNTER2_rtl_1|dffs[4] ; MPC_ENG_CLK ;
+; N/A   ; None         ; 6.300 ns   ; ESC2_WDI_CPLD ; lpm_counter:WD_COUNTER2_rtl_1|dffs[5] ; MPC_ENG_CLK ;
+; N/A   ; None         ; 6.300 ns   ; ESC2_WDI_CPLD ; lpm_counter:WD_COUNTER2_rtl_1|dffs[6] ; MPC_ENG_CLK ;
+; N/A   ; None         ; 6.300 ns   ; ESC2_WDI_CPLD ; lpm_counter:WD_COUNTER2_rtl_1|dffs[7] ; MPC_ENG_CLK ;
+; N/A   ; None         ; 6.300 ns   ; ESC2_WDI_CPLD ; ESC2_WDI                              ; MPC_ENG_CLK ;
+; N/A   ; None         ; 6.200 ns   ; ESC1_WDI_CPLD ; lpm_counter:WD_COUNTER_rtl_0|dffs[0]  ; MPC_ENG_CLK ;
+; N/A   ; None         ; 6.200 ns   ; ESC1_WDI_CPLD ; lpm_counter:WD_COUNTER_rtl_0|dffs[8]  ; MPC_ENG_CLK ;
+; N/A   ; None         ; 6.200 ns   ; ESC1_WDI_CPLD ; lpm_counter:WD_COUNTER_rtl_0|dffs[1]  ; MPC_ENG_CLK ;
+; N/A   ; None         ; 6.200 ns   ; ESC1_WDI_CPLD ; lpm_counter:WD_COUNTER_rtl_0|dffs[2]  ; MPC_ENG_CLK ;
+; N/A   ; None         ; 6.200 ns   ; ESC1_WDI_CPLD ; lpm_counter:WD_COUNTER_rtl_0|dffs[3]  ; MPC_ENG_CLK ;
+; N/A   ; None         ; 6.200 ns   ; ESC1_WDI_CPLD ; lpm_counter:WD_COUNTER_rtl_0|dffs[4]  ; MPC_ENG_CLK ;
+; N/A   ; None         ; 6.200 ns   ; ESC1_WDI_CPLD ; lpm_counter:WD_COUNTER_rtl_0|dffs[5]  ; MPC_ENG_CLK ;
+; N/A   ; None         ; 6.200 ns   ; ESC1_WDI_CPLD ; lpm_counter:WD_COUNTER_rtl_0|dffs[6]  ; MPC_ENG_CLK ;
+; N/A   ; None         ; 6.200 ns   ; ESC1_WDI_CPLD ; lpm_counter:WD_COUNTER_rtl_0|dffs[7]  ; MPC_ENG_CLK ;
+; N/A   ; None         ; 6.200 ns   ; ESC1_WDI_CPLD ; ESC1_WDI                              ; MPC_ENG_CLK ;
++-------+--------------+------------+---------------+---------------------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------+
+; tco                                                                                       ;
++-------+--------------+------------+----------------------+-----------------+--------------+
+; Slack ; Required tco ; Actual tco ; From                 ; To              ; From Clock   ;
++-------+--------------+------------+----------------------+-----------------+--------------+
+; N/A   ; None         ; 16.500 ns  ; HEALTH_OUT           ; READY_LED       ; TAKE_CONTROL ;
+; N/A   ; None         ; 16.500 ns  ; HEALTH_OUT           ; HEALTHY_INV     ; TAKE_CONTROL ;
+; N/A   ; None         ; 16.500 ns  ; CONTROL_OUT          ; ACTIVE_LED      ; TAKE_CONTROL ;
+; N/A   ; None         ; 16.500 ns  ; CONTROL_OUT          ; CONTROL_INV     ; TAKE_CONTROL ;
+; N/A   ; None         ; 9.700 ns   ; HEALTH_OUT           ; HEALTHY         ; TAKE_CONTROL ;
+; N/A   ; None         ; 9.700 ns   ; CONTROL_OUT          ; CONTROL         ; TAKE_CONTROL ;
+; N/A   ; None         ; 7.000 ns   ; IOP_TO_IOP_SRH3~reg0 ; IOP_TO_IOP_SRH3 ; MPC_ENG_CLK  ;
++-------+--------------+------------+----------------------+-----------------+--------------+
+
+
++---------------------------------------------------------------------------------------------------------------+
+; th                                                                                                            ;
++---------------+-------------+-----------+---------------+---------------------------------------+-------------+
+; Minimum Slack ; Required th ; Actual th ; From          ; To                                    ; To Clock    ;
++---------------+-------------+-----------+---------------+---------------------------------------+-------------+
+; N/A           ; None        ; -2.000 ns ; ESC1_WDI_CPLD ; lpm_counter:WD_COUNTER_rtl_0|dffs[0]  ; MPC_ENG_CLK ;
+; N/A           ; None        ; -2.000 ns ; ESC1_WDI_CPLD ; lpm_counter:WD_COUNTER_rtl_0|dffs[8]  ; MPC_ENG_CLK ;
+; N/A           ; None        ; -2.000 ns ; ESC1_WDI_CPLD ; lpm_counter:WD_COUNTER_rtl_0|dffs[1]  ; MPC_ENG_CLK ;
+; N/A           ; None        ; -2.000 ns ; ESC1_WDI_CPLD ; lpm_counter:WD_COUNTER_rtl_0|dffs[2]  ; MPC_ENG_CLK ;
+; N/A           ; None        ; -2.000 ns ; ESC1_WDI_CPLD ; lpm_counter:WD_COUNTER_rtl_0|dffs[3]  ; MPC_ENG_CLK ;
+; N/A           ; None        ; -2.000 ns ; ESC1_WDI_CPLD ; lpm_counter:WD_COUNTER_rtl_0|dffs[4]  ; MPC_ENG_CLK ;
+; N/A           ; None        ; -2.000 ns ; ESC1_WDI_CPLD ; lpm_counter:WD_COUNTER_rtl_0|dffs[5]  ; MPC_ENG_CLK ;
+; N/A           ; None        ; -2.000 ns ; ESC1_WDI_CPLD ; lpm_counter:WD_COUNTER_rtl_0|dffs[6]  ; MPC_ENG_CLK ;
+; N/A           ; None        ; -2.000 ns ; ESC1_WDI_CPLD ; lpm_counter:WD_COUNTER_rtl_0|dffs[7]  ; MPC_ENG_CLK ;
+; N/A           ; None        ; -2.000 ns ; ESC1_WDI_CPLD ; ESC1_WDI                              ; MPC_ENG_CLK ;
+; N/A           ; None        ; -2.100 ns ; ESC2_WDI_CPLD ; lpm_counter:WD_COUNTER2_rtl_1|dffs[0] ; MPC_ENG_CLK ;
+; N/A           ; None        ; -2.100 ns ; ESC2_WDI_CPLD ; lpm_counter:WD_COUNTER2_rtl_1|dffs[8] ; MPC_ENG_CLK ;
+; N/A           ; None        ; -2.100 ns ; ESC2_WDI_CPLD ; lpm_counter:WD_COUNTER2_rtl_1|dffs[1] ; MPC_ENG_CLK ;
+; N/A           ; None        ; -2.100 ns ; ESC2_WDI_CPLD ; lpm_counter:WD_COUNTER2_rtl_1|dffs[2] ; MPC_ENG_CLK ;
+; N/A           ; None        ; -2.100 ns ; ESC2_WDI_CPLD ; lpm_counter:WD_COUNTER2_rtl_1|dffs[3] ; MPC_ENG_CLK ;
+; N/A           ; None        ; -2.100 ns ; ESC2_WDI_CPLD ; lpm_counter:WD_COUNTER2_rtl_1|dffs[4] ; MPC_ENG_CLK ;
+; N/A           ; None        ; -2.100 ns ; ESC2_WDI_CPLD ; lpm_counter:WD_COUNTER2_rtl_1|dffs[5] ; MPC_ENG_CLK ;
+; N/A           ; None        ; -2.100 ns ; ESC2_WDI_CPLD ; lpm_counter:WD_COUNTER2_rtl_1|dffs[6] ; MPC_ENG_CLK ;
+; N/A           ; None        ; -2.100 ns ; ESC2_WDI_CPLD ; lpm_counter:WD_COUNTER2_rtl_1|dffs[7] ; MPC_ENG_CLK ;
+; N/A           ; None        ; -2.100 ns ; ESC2_WDI_CPLD ; ESC2_WDI                              ; MPC_ENG_CLK ;
++---------------+-------------+-----------+---------------+---------------------------------------+-------------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Classic Timing Analyzer
+    Info: Version 9.1 Build 222 10/21/2009 SJ Web Edition
+    Info: Processing started: Mon Aug 01 12:42:15 2011
+Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off projects -c health_cpld
+Info: Started post-fitting delay annotation
+Info: Delay annotation completed successfully
+Warning: Timing Analysis does not support the analysis of latches as synchronous elements for the currently selected device family
+Warning: Found pins functioning as undefined clocks and/or memory enables
+    Info: Assuming node "TAKE_CONTROL" is an undefined clock
+    Info: Assuming node "MPC_ENG_CLK" is an undefined clock
+Info: No valid register-to-register data paths exist for clock "TAKE_CONTROL"
+Info: Clock "MPC_ENG_CLK" has Internal fmax of 99.01 MHz between source register "lpm_counter:WD_COUNTER2_rtl_1|dffs[0]" and destination register "lpm_counter:WD_COUNTER2_rtl_1|dffs[0]" (period= 10.1 ns)
+    Info: + Longest register to register delay is 5.600 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LC10; Fanout = 19; REG Node = 'lpm_counter:WD_COUNTER2_rtl_1|dffs[0]'
+        Info: 2: + IC(2.400 ns) + CELL(3.200 ns) = 5.600 ns; Loc. = LC10; Fanout = 19; REG Node = 'lpm_counter:WD_COUNTER2_rtl_1|dffs[0]'
+        Info: Total cell delay = 3.200 ns ( 57.14 % )
+        Info: Total interconnect delay = 2.400 ns ( 42.86 % )
+    Info: - Smallest clock skew is 0.000 ns
+        Info: + Shortest clock path from clock "MPC_ENG_CLK" to destination register is 3.600 ns
+            Info: 1: + IC(0.000 ns) + CELL(2.300 ns) = 2.300 ns; Loc. = PIN_37; Fanout = 26; CLK Node = 'MPC_ENG_CLK'
+            Info: 2: + IC(0.000 ns) + CELL(1.300 ns) = 3.600 ns; Loc. = LC10; Fanout = 19; REG Node = 'lpm_counter:WD_COUNTER2_rtl_1|dffs[0]'
+            Info: Total cell delay = 3.600 ns ( 100.00 % )
+        Info: - Longest clock path from clock "MPC_ENG_CLK" to source register is 3.600 ns
+            Info: 1: + IC(0.000 ns) + CELL(2.300 ns) = 2.300 ns; Loc. = PIN_37; Fanout = 26; CLK Node = 'MPC_ENG_CLK'
+            Info: 2: + IC(0.000 ns) + CELL(1.300 ns) = 3.600 ns; Loc. = LC10; Fanout = 19; REG Node = 'lpm_counter:WD_COUNTER2_rtl_1|dffs[0]'
+            Info: Total cell delay = 3.600 ns ( 100.00 % )
+    Info: + Micro clock to output delay of source is 1.600 ns
+    Info: + Micro setup delay of destination is 2.900 ns
+Info: tsu for register "lpm_counter:WD_COUNTER2_rtl_1|dffs[0]" (data pin = "ESC2_WDI_CPLD", clock pin = "MPC_ENG_CLK") is 6.300 ns
+    Info: + Longest pin to register delay is 7.000 ns
+        Info: 1: + IC(0.000 ns) + CELL(1.400 ns) = 1.400 ns; Loc. = PIN_10; Fanout = 18; PIN Node = 'ESC2_WDI_CPLD'
+        Info: 2: + IC(2.400 ns) + CELL(3.200 ns) = 7.000 ns; Loc. = LC10; Fanout = 19; REG Node = 'lpm_counter:WD_COUNTER2_rtl_1|dffs[0]'
+        Info: Total cell delay = 4.600 ns ( 65.71 % )
+        Info: Total interconnect delay = 2.400 ns ( 34.29 % )
+    Info: + Micro setup delay of destination is 2.900 ns
+    Info: - Shortest clock path from clock "MPC_ENG_CLK" to destination register is 3.600 ns
+        Info: 1: + IC(0.000 ns) + CELL(2.300 ns) = 2.300 ns; Loc. = PIN_37; Fanout = 26; CLK Node = 'MPC_ENG_CLK'
+        Info: 2: + IC(0.000 ns) + CELL(1.300 ns) = 3.600 ns; Loc. = LC10; Fanout = 19; REG Node = 'lpm_counter:WD_COUNTER2_rtl_1|dffs[0]'
+        Info: Total cell delay = 3.600 ns ( 100.00 % )
+Info: tco from clock "TAKE_CONTROL" to destination pin "READY_LED" through register "HEALTH_OUT" is 16.500 ns
+    Info: + Longest clock path from clock "TAKE_CONTROL" to source register is 6.300 ns
+        Info: 1: + IC(0.000 ns) + CELL(1.400 ns) = 1.400 ns; Loc. = PIN_6; Fanout = 2; CLK Node = 'TAKE_CONTROL'
+        Info: 2: + IC(2.400 ns) + CELL(2.500 ns) = 6.300 ns; Loc. = LC49; Fanout = 3; REG Node = 'HEALTH_OUT'
+        Info: Total cell delay = 3.900 ns ( 61.90 % )
+        Info: Total interconnect delay = 2.400 ns ( 38.10 % )
+    Info: + Micro clock to output delay of source is 1.600 ns
+    Info: + Longest register to pin delay is 8.600 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LC49; Fanout = 3; REG Node = 'HEALTH_OUT'
+        Info: 2: + IC(2.300 ns) + CELL(4.500 ns) = 6.800 ns; Loc. = LC41; Fanout = 1; COMB Node = 'HEALTH_OUT~6'
+        Info: 3: + IC(0.000 ns) + CELL(1.800 ns) = 8.600 ns; Loc. = PIN_23; Fanout = 0; PIN Node = 'READY_LED'
+        Info: Total cell delay = 6.300 ns ( 73.26 % )
+        Info: Total interconnect delay = 2.300 ns ( 26.74 % )
+Info: th for register "lpm_counter:WD_COUNTER_rtl_0|dffs[0]" (data pin = "ESC1_WDI_CPLD", clock pin = "MPC_ENG_CLK") is -2.000 ns
+    Info: + Longest clock path from clock "MPC_ENG_CLK" to destination register is 3.600 ns
+        Info: 1: + IC(0.000 ns) + CELL(2.300 ns) = 2.300 ns; Loc. = PIN_37; Fanout = 26; CLK Node = 'MPC_ENG_CLK'
+        Info: 2: + IC(0.000 ns) + CELL(1.300 ns) = 3.600 ns; Loc. = LC8; Fanout = 19; REG Node = 'lpm_counter:WD_COUNTER_rtl_0|dffs[0]'
+        Info: Total cell delay = 3.600 ns ( 100.00 % )
+    Info: + Micro hold delay of destination is 1.300 ns
+    Info: - Shortest pin to register delay is 6.900 ns
+        Info: 1: + IC(0.000 ns) + CELL(1.400 ns) = 1.400 ns; Loc. = PIN_8; Fanout = 18; PIN Node = 'ESC1_WDI_CPLD'
+        Info: 2: + IC(2.300 ns) + CELL(3.200 ns) = 6.900 ns; Loc. = LC8; Fanout = 19; REG Node = 'lpm_counter:WD_COUNTER_rtl_0|dffs[0]'
+        Info: Total cell delay = 4.600 ns ( 66.67 % )
+        Info: Total interconnect delay = 2.300 ns ( 33.33 % )
+Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 127 megabytes
+    Info: Processing ended: Mon Aug 01 12:42:16 2011
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

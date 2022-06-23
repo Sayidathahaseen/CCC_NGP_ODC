@@ -1,0 +1,1366 @@
+Analysis & Synthesis report for IOP
+Wed Dec 21 17:07:36 2011
+Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |IOP|SPI:inst13|state
+  9. State Machine - |IOP|SPI_DAC:inst|state_dac
+ 10. State Machine - |IOP|SPI_DAC:inst|state
+ 11. Registers Removed During Synthesis
+ 12. Removed Registers Triggering Further Register Optimizations
+ 13. General Register Statistics
+ 14. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 15. Source assignments for counter8:inst17|lpm_counter:lpm_counter_component
+ 16. Source assignments for COUNTER_25:inst1|lpm_counter:lpm_counter_component
+ 17. Source assignments for counter8:inst21|lpm_counter:lpm_counter_component
+ 18. Parameter Settings for User Entity Instance: lpm_inv0:inst16|lpm_inv:lpm_inv_component
+ 19. Parameter Settings for User Entity Instance: VHI:inst58|lpm_constant:lpm_constant_component
+ 20. Parameter Settings for User Entity Instance: lpm_inv0:inst19|lpm_inv:lpm_inv_component
+ 21. Parameter Settings for User Entity Instance: counter8:inst17|lpm_counter:lpm_counter_component
+ 22. Parameter Settings for User Entity Instance: COUNTER_25:inst1|lpm_counter:lpm_counter_component
+ 23. Parameter Settings for User Entity Instance: VHI:inst45|lpm_constant:lpm_constant_component
+ 24. Parameter Settings for User Entity Instance: lpm_inv0:inst18|lpm_inv:lpm_inv_component
+ 25. Parameter Settings for User Entity Instance: lpm_inv0:inst14|lpm_inv:lpm_inv_component
+ 26. Parameter Settings for User Entity Instance: VHI:inst56|lpm_constant:lpm_constant_component
+ 27. Parameter Settings for User Entity Instance: lpm_inv0:inst22|lpm_inv:lpm_inv_component
+ 28. Parameter Settings for User Entity Instance: counter8:inst21|lpm_counter:lpm_counter_component
+ 29. Parameter Settings for User Entity Instance: VHI:inst44|lpm_constant:lpm_constant_component
+ 30. Parameter Settings for User Entity Instance: VHI:inst51|lpm_constant:lpm_constant_component
+ 31. Parameter Settings for User Entity Instance: lpm_inv0:inst10|lpm_inv:lpm_inv_component
+ 32. Parameter Settings for User Entity Instance: VHI:inst52|lpm_constant:lpm_constant_component
+ 33. Parameter Settings for User Entity Instance: lpm_inv0:inst11|lpm_inv:lpm_inv_component
+ 34. Parameter Settings for User Entity Instance: VHI:inst53|lpm_constant:lpm_constant_component
+ 35. Parameter Settings for User Entity Instance: VHI:inst55|lpm_constant:lpm_constant_component
+ 36. Parameter Settings for User Entity Instance: lpm_inv0:inst12|lpm_inv:lpm_inv_component
+ 37. Parameter Settings for User Entity Instance: VHI:inst54|lpm_constant:lpm_constant_component
+ 38. Parameter Settings for User Entity Instance: NONIN:inst7|lpm_bustri:lpm_bustri_component
+ 39. Parameter Settings for User Entity Instance: VHI:inst48|lpm_constant:lpm_constant_component
+ 40. Parameter Settings for User Entity Instance: NONIN:inst8|lpm_bustri:lpm_bustri_component
+ 41. Parameter Settings for User Entity Instance: VHI:inst49|lpm_constant:lpm_constant_component
+ 42. Parameter Settings for User Entity Instance: NONIN:inst5|lpm_bustri:lpm_bustri_component
+ 43. Parameter Settings for User Entity Instance: VHI:inst46|lpm_constant:lpm_constant_component
+ 44. Parameter Settings for User Entity Instance: NONIN:inst6|lpm_bustri:lpm_bustri_component
+ 45. Parameter Settings for User Entity Instance: VHI:inst47|lpm_constant:lpm_constant_component
+ 46. Parameter Settings for User Entity Instance: NONIN:inst9|lpm_bustri:lpm_bustri_component
+ 47. Parameter Settings for User Entity Instance: VHI:inst50|lpm_constant:lpm_constant_component
+ 48. Parameter Settings for User Entity Instance: lpm_inv0:inst15|lpm_inv:lpm_inv_component
+ 49. Parameter Settings for User Entity Instance: VHI:inst57|lpm_constant:lpm_constant_component
+ 50. Parameter Settings for User Entity Instance: FF_D:inst23|lpm_ff:lpm_ff_component
+ 51. Parameter Settings for User Entity Instance: lpm_inv0:inst20|lpm_inv:lpm_inv_component
+ 52. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                          ;
++-----------------------------+-----------------------------------------+
+; Analysis & Synthesis Status ; Successful - Wed Dec 21 17:07:36 2011   ;
+; Quartus II Version          ; 9.1 Build 222 10/21/2009 SJ Web Edition ;
+; Revision Name               ; IOP                                     ;
+; Top-level Entity Name       ; IOP                                     ;
+; Family                      ; MAX II                                  ;
+; Total logic elements        ; 108                                     ;
+; Total pins                  ; 121                                     ;
+; Total virtual pins          ; 0                                       ;
+; UFM blocks                  ; 1 / 1 ( 100 % )                         ;
++-----------------------------+-----------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EPM2210F256C3      ;                    ;
+; Top-level entity name                                                      ; IOP                ; IOP                ;
+; Family name                                                                ; MAX II             ; Stratix II         ;
+; Use Generated Physical Constraints File                                    ; Off                ;                    ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Show Parameter Settings Tables in Synthesis Report                         ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 100                ; 100                ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 2      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                    ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                    ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------------------------+
+; IOP.bdf                          ; yes             ; User Block Diagram/Schematic File  ; E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/IOP_ANALOG_restored/IOP.bdf         ;
+; counter8.vhd                     ; yes             ; User Wizard-Generated File         ; E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/IOP_ANALOG_restored/counter8.vhd    ;
+; oscillator.vhd                   ; yes             ; User Wizard-Generated File         ; E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/IOP_ANALOG_restored/oscillator.vhd  ;
+; COUNTER_25.vhd                   ; yes             ; User Wizard-Generated File         ; E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/IOP_ANALOG_restored/COUNTER_25.vhd  ;
+; SPI.vhd                          ; yes             ; User VHDL File                     ; E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/IOP_ANALOG_restored/SPI.vhd         ;
+; SPI_DAC.vhd                      ; yes             ; User VHDL File                     ; E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/IOP_ANALOG_restored/SPI_DAC.vhd     ;
+; NONIN.vhd                        ; yes             ; User Wizard-Generated File         ; E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/IOP_ANALOG_restored/NONIN.vhd       ;
+; lpm_inv0.vhd                     ; yes             ; User Wizard-Generated File         ; E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/IOP_ANALOG_restored/lpm_inv0.vhd    ;
+; FF_D.vhd                         ; yes             ; User Wizard-Generated File         ; E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/IOP_ANALOG_restored/FF_D.vhd        ;
+; lpm_inv.tdf                      ; yes             ; Megafunction                       ; c:/altera/91/quartus/libraries/megafunctions/lpm_inv.tdf                                        ;
+; vhi.vhd                          ; yes             ; Auto-Found Wizard-Generated File   ; E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/IOP_ANALOG_restored/vhi.vhd         ;
+; lpm_constant.tdf                 ; yes             ; Megafunction                       ; c:/altera/91/quartus/libraries/megafunctions/lpm_constant.tdf                                   ;
+; lpm_counter.tdf                  ; yes             ; Megafunction                       ; c:/altera/91/quartus/libraries/megafunctions/lpm_counter.tdf                                    ;
+; db/cntr_tbi.tdf                  ; yes             ; Auto-Generated Megafunction        ; E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/IOP_ANALOG_restored/db/cntr_tbi.tdf ;
+; db/cntr_49h.tdf                  ; yes             ; Auto-Generated Megafunction        ; E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/IOP_ANALOG_restored/db/cntr_49h.tdf ;
+; lpm_bustri.tdf                   ; yes             ; Megafunction                       ; c:/altera/91/quartus/libraries/megafunctions/lpm_bustri.tdf                                     ;
+; iopd.vhd                         ; yes             ; Auto-Found VHDL File               ; E:/Projects/ngp/schematic design/IOP ANALOG/CPLD/IOP_ANALOG/IOP_ANALOG_restored/iopd.vhd        ;
+; lpm_ff.tdf                       ; yes             ; Megafunction                       ; c:/altera/91/quartus/libraries/megafunctions/lpm_ff.tdf                                         ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary            ;
++---------------------------------------------+----------+
+; Resource                                    ; Usage    ;
++---------------------------------------------+----------+
+; Total logic elements                        ; 108      ;
+;     -- Combinational with no register       ; 32       ;
+;     -- Register only                        ; 22       ;
+;     -- Combinational with a register        ; 54       ;
+;                                             ;          ;
+; Logic element usage by number of LUT inputs ;          ;
+;     -- 4 input functions                    ; 28       ;
+;     -- 3 input functions                    ; 8        ;
+;     -- 2 input functions                    ; 43       ;
+;     -- 1 input functions                    ; 5        ;
+;     -- 0 input functions                    ; 2        ;
+;                                             ;          ;
+; Logic elements by mode                      ;          ;
+;     -- normal mode                          ; 74       ;
+;     -- arithmetic mode                      ; 34       ;
+;     -- qfbk mode                            ; 0        ;
+;     -- register cascade mode                ; 0        ;
+;     -- synchronous clear/load mode          ; 5        ;
+;     -- asynchronous clear/load mode         ; 5        ;
+;                                             ;          ;
+; Total registers                             ; 76       ;
+; Total logic cells in carry chains           ; 39       ;
+; I/O pins                                    ; 121      ;
+; UFM blocks                                  ; 1        ;
+; Maximum fan-out node                        ; ADC_BUSY ;
+; Maximum fan-out                             ; 25       ;
+; Total fan-out                               ; 377      ;
+; Average fan-out                             ; 1.64     ;
++---------------------------------------------+----------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                             ;
++-----------------------------------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                                            ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                                                 ; Library Name ;
++-----------------------------------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------------------------------------------------------+--------------+
+; |IOP                                                                  ; 108 (1)     ; 76           ; 1          ; 121  ; 0            ; 32 (1)       ; 22 (0)            ; 54 (0)           ; 39 (0)          ; 0 (0)      ; |IOP                                                                                ; work         ;
+;    |COUNTER_25:inst1|                                                 ; 21 (0)      ; 21           ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 21 (0)           ; 21 (0)          ; 0 (0)      ; |IOP|COUNTER_25:inst1                                                               ; work         ;
+;       |lpm_counter:lpm_counter_component|                             ; 21 (0)      ; 21           ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 21 (0)           ; 21 (0)          ; 0 (0)      ; |IOP|COUNTER_25:inst1|lpm_counter:lpm_counter_component                             ; work         ;
+;          |cntr_49h:auto_generated|                                    ; 21 (21)     ; 21           ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 21 (21)          ; 21 (21)         ; 0 (0)      ; |IOP|COUNTER_25:inst1|lpm_counter:lpm_counter_component|cntr_49h:auto_generated     ; work         ;
+;    |FF_D:inst23|                                                      ; 16 (0)      ; 16           ; 0          ; 0    ; 0            ; 0 (0)        ; 16 (0)            ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |IOP|FF_D:inst23                                                                    ; work         ;
+;       |lpm_ff:lpm_ff_component|                                       ; 16 (16)     ; 16           ; 0          ; 0    ; 0            ; 0 (0)        ; 16 (16)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |IOP|FF_D:inst23|lpm_ff:lpm_ff_component                                            ; work         ;
+;    |SPI:inst13|                                                       ; 27 (27)     ; 11           ; 0          ; 0    ; 0            ; 16 (16)      ; 1 (1)             ; 10 (10)          ; 5 (5)           ; 0 (0)      ; |IOP|SPI:inst13                                                                     ; work         ;
+;    |SPI_DAC:inst|                                                     ; 35 (35)     ; 20           ; 0          ; 0    ; 0            ; 15 (15)      ; 5 (5)             ; 15 (15)          ; 5 (5)           ; 0 (0)      ; |IOP|SPI_DAC:inst                                                                   ; work         ;
+;    |counter8:inst17|                                                  ; 3 (0)       ; 3            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 3 (0)            ; 3 (0)           ; 0 (0)      ; |IOP|counter8:inst17                                                                ; work         ;
+;       |lpm_counter:lpm_counter_component|                             ; 3 (0)       ; 3            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 3 (0)            ; 3 (0)           ; 0 (0)      ; |IOP|counter8:inst17|lpm_counter:lpm_counter_component                              ; work         ;
+;          |cntr_tbi:auto_generated|                                    ; 3 (3)       ; 3            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 3 (3)            ; 3 (3)           ; 0 (0)      ; |IOP|counter8:inst17|lpm_counter:lpm_counter_component|cntr_tbi:auto_generated      ; work         ;
+;    |counter8:inst21|                                                  ; 5 (0)       ; 5            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 5 (0)            ; 5 (0)           ; 0 (0)      ; |IOP|counter8:inst21                                                                ; work         ;
+;       |lpm_counter:lpm_counter_component|                             ; 5 (0)       ; 5            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 5 (0)            ; 5 (0)           ; 0 (0)      ; |IOP|counter8:inst21|lpm_counter:lpm_counter_component                              ; work         ;
+;          |cntr_tbi:auto_generated|                                    ; 5 (5)       ; 5            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 5 (5)            ; 5 (5)           ; 0 (0)      ; |IOP|counter8:inst21|lpm_counter:lpm_counter_component|cntr_tbi:auto_generated      ; work         ;
+;    |oscillator:inst2|                                                 ; 0 (0)       ; 0            ; 1          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |IOP|oscillator:inst2                                                               ; work         ;
+;       |oscillator_altufm_osc_rv5:oscillator_altufm_osc_rv5_component| ; 0 (0)       ; 0            ; 1          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |IOP|oscillator:inst2|oscillator_altufm_osc_rv5:oscillator_altufm_osc_rv5_component ; work         ;
++-----------------------------------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++------------------------------------------------------------------+
+; State Machine - |IOP|SPI:inst13|state                            ;
++-------------+------------+------------+-------------+------------+
+; Name        ; state.over ; state.send ; state.ready ; state.idle ;
++-------------+------------+------------+-------------+------------+
+; state.idle  ; 0          ; 0          ; 0           ; 0          ;
+; state.ready ; 0          ; 0          ; 1           ; 1          ;
+; state.send  ; 0          ; 1          ; 0           ; 1          ;
+; state.over  ; 1          ; 0          ; 0           ; 1          ;
++-------------+------------+------------+-------------+------------+
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------------------------+
+; State Machine - |IOP|SPI_DAC:inst|state_dac                                                             ;
++------------------------+------------------------+-----------------+-----------------+-------------------+
+; Name                   ; state_dac.control_read ; state_dac.dread ; state_dac.ddata ; state_dac.control ;
++------------------------+------------------------+-----------------+-----------------+-------------------+
+; state_dac.control      ; 0                      ; 0               ; 0               ; 0                 ;
+; state_dac.ddata        ; 0                      ; 0               ; 1               ; 1                 ;
+; state_dac.dread        ; 0                      ; 1               ; 0               ; 1                 ;
+; state_dac.control_read ; 1                      ; 0               ; 0               ; 1                 ;
++------------------------+------------------------+-----------------+-----------------+-------------------+
+
+
+Encoding Type:  One-Hot
++-------------------------------------------------------------------------------+
+; State Machine - |IOP|SPI_DAC:inst|state                                       ;
++-------------+-----------+------------+-------------+------------+-------------+
+; Name        ; state.nxt ; state.idle ; state.check ; state.send ; state.ready ;
++-------------+-----------+------------+-------------+------------+-------------+
+; state.ready ; 0         ; 0          ; 0           ; 0          ; 0           ;
+; state.send  ; 0         ; 0          ; 0           ; 1          ; 1           ;
+; state.check ; 0         ; 0          ; 1           ; 0          ; 1           ;
+; state.idle  ; 0         ; 1          ; 0           ; 0          ; 1           ;
+; state.nxt   ; 1         ; 0          ; 0           ; 0          ; 1           ;
++-------------+-----------+------------+-------------+------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                 ;
++-------------------------------------------------------------------------------------------+----------------------------------------+
+; Register name                                                                             ; Reason for Removal                     ;
++-------------------------------------------------------------------------------------------+----------------------------------------+
+; IOPD:inst3|B_MPC_DATA_int[15]                                                             ; Stuck at GND due to stuck port clock   ;
+; IOPD:inst3|LED_REGISTER1[15]                                                              ; Lost fanout                            ;
+; IOPD:inst3|LED_REGISTER2[15]                                                              ; Lost fanout                            ;
+; IOPD:inst3|B_MPC_DATA_int[14]                                                             ; Stuck at GND due to stuck port clock   ;
+; IOPD:inst3|LED_REGISTER1[14]                                                              ; Lost fanout                            ;
+; IOPD:inst3|LED_REGISTER2[14]                                                              ; Lost fanout                            ;
+; IOPD:inst3|B_MPC_DATA_int[13]                                                             ; Stuck at GND due to stuck port clock   ;
+; IOPD:inst3|LED_REGISTER1[13]                                                              ; Lost fanout                            ;
+; IOPD:inst3|LED_REGISTER2[13]                                                              ; Lost fanout                            ;
+; IOPD:inst3|B_MPC_DATA_int[12]                                                             ; Stuck at GND due to stuck port clock   ;
+; IOPD:inst3|LED_REGISTER1[12]                                                              ; Lost fanout                            ;
+; IOPD:inst3|LED_REGISTER2[12]                                                              ; Lost fanout                            ;
+; IOPD:inst3|B_MPC_DATA_int[11]                                                             ; Stuck at GND due to stuck port clock   ;
+; IOPD:inst3|LED_REGISTER1[11]                                                              ; Lost fanout                            ;
+; IOPD:inst3|LED_REGISTER2[11]                                                              ; Lost fanout                            ;
+; IOPD:inst3|B_MPC_DATA_int[10]                                                             ; Stuck at GND due to stuck port clock   ;
+; IOPD:inst3|LED_REGISTER1[10]                                                              ; Lost fanout                            ;
+; IOPD:inst3|LED_REGISTER2[10]                                                              ; Lost fanout                            ;
+; IOPD:inst3|B_MPC_DATA_int[9]                                                              ; Stuck at GND due to stuck port clock   ;
+; IOPD:inst3|LED_REGISTER1[9]                                                               ; Lost fanout                            ;
+; IOPD:inst3|LED_REGISTER2[9]                                                               ; Lost fanout                            ;
+; IOPD:inst3|B_MPC_DATA_int[8]                                                              ; Stuck at GND due to stuck port clock   ;
+; IOPD:inst3|LED_REGISTER1[8]                                                               ; Lost fanout                            ;
+; IOPD:inst3|LED_REGISTER2[8]                                                               ; Lost fanout                            ;
+; IOPD:inst3|B_MPC_DATA_int[7]                                                              ; Stuck at GND due to stuck port clock   ;
+; IOPD:inst3|LED_REGISTER1[7]                                                               ; Lost fanout                            ;
+; IOPD:inst3|LED_REGISTER2[7]                                                               ; Lost fanout                            ;
+; IOPD:inst3|B_MPC_DATA_int[6]                                                              ; Stuck at GND due to stuck port clock   ;
+; IOPD:inst3|LED_REGISTER1[6]                                                               ; Lost fanout                            ;
+; IOPD:inst3|LED_REGISTER2[6]                                                               ; Lost fanout                            ;
+; IOPD:inst3|B_MPC_DATA_int[5]                                                              ; Stuck at GND due to stuck port clock   ;
+; IOPD:inst3|LED_REGISTER1[5]                                                               ; Lost fanout                            ;
+; IOPD:inst3|LED_REGISTER2[5]                                                               ; Lost fanout                            ;
+; IOPD:inst3|B_MPC_DATA_int[4]                                                              ; Stuck at GND due to stuck port clock   ;
+; IOPD:inst3|LED_REGISTER1[4]                                                               ; Lost fanout                            ;
+; IOPD:inst3|LED_REGISTER2[4]                                                               ; Lost fanout                            ;
+; IOPD:inst3|B_MPC_DATA_int[3]                                                              ; Stuck at GND due to stuck port clock   ;
+; IOPD:inst3|LED_REGISTER1[3]                                                               ; Lost fanout                            ;
+; IOPD:inst3|LED_REGISTER2[3]                                                               ; Lost fanout                            ;
+; IOPD:inst3|B_MPC_DATA_int[2]                                                              ; Stuck at GND due to stuck port clock   ;
+; IOPD:inst3|LED_REGISTER1[2]                                                               ; Lost fanout                            ;
+; IOPD:inst3|LED_REGISTER2[2]                                                               ; Lost fanout                            ;
+; IOPD:inst3|B_MPC_DATA_int[1]                                                              ; Stuck at GND due to stuck port clock   ;
+; IOPD:inst3|LED_REGISTER1[1]                                                               ; Lost fanout                            ;
+; IOPD:inst3|LED_REGISTER2[1]                                                               ; Lost fanout                            ;
+; IOPD:inst3|B_MPC_DATA_int[0]                                                              ; Stuck at GND due to stuck port clock   ;
+; IOPD:inst3|LED_REGISTER1[0]                                                               ; Lost fanout                            ;
+; IOPD:inst3|LED_REGISTER2[0]                                                               ; Lost fanout                            ;
+; IOPD:inst3|CPLD_READ_ADD_BUF[0..13]                                                       ; Lost fanout                            ;
+; IOPD:inst3|MPC_CS3n_dly                                                                   ; Stuck at GND due to stuck port clock   ;
+; IOPD:inst3|CPLD_WR                                                                        ; Stuck at GND due to stuck port clock   ;
+; IOPD:inst3|CPLD_RD                                                                        ; Stuck at GND due to stuck port clock   ;
+; counter8:inst21|lpm_counter:lpm_counter_component|cntr_tbi:auto_generated|safe_q[5..15]   ; Lost fanout                            ;
+; COUNTER_25:inst1|lpm_counter:lpm_counter_component|cntr_49h:auto_generated|safe_q[21..24] ; Lost fanout                            ;
+; counter8:inst17|lpm_counter:lpm_counter_component|cntr_tbi:auto_generated|safe_q[3..15]   ; Lost fanout                            ;
+; SPI_DAC:inst|DAC_SEND[0,2,4,9,13,15,17,19]                                                ; Stuck at GND due to stuck port data_in ;
+; SPI_DAC:inst|DAC_SEND[1,3,11,21]                                                          ; Merged with SPI_DAC:inst|DAC_SEND[5]   ;
+; SPI_DAC:inst|DAC_SEND[10,12,14,16,18,20,22]                                               ; Merged with SPI_DAC:inst|DAC_SEND[8]   ;
+; SPI_DAC:inst|state_dac.control_read                                                       ; Merged with SPI_DAC:inst|DAC_SEND[8]   ;
+; SPI_DAC:inst|state_dac.dread                                                              ; Merged with SPI_DAC:inst|DAC_SEND[6]   ;
+; Total Number of Removed Registers = 114                                                   ;                                        ;
++-------------------------------------------------------------------------------------------+----------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                      ;
++-------------------------------+-------------------------+----------------------------------------+
+; Register name                 ; Reason for Removal      ; Registers Removed due to This Register ;
++-------------------------------+-------------------------+----------------------------------------+
+; IOPD:inst3|B_MPC_DATA_int[15] ; Stuck at GND            ; IOPD:inst3|LED_REGISTER2[15]           ;
+;                               ; due to stuck port clock ;                                        ;
+; IOPD:inst3|B_MPC_DATA_int[14] ; Stuck at GND            ; IOPD:inst3|LED_REGISTER2[14]           ;
+;                               ; due to stuck port clock ;                                        ;
+; IOPD:inst3|B_MPC_DATA_int[13] ; Stuck at GND            ; IOPD:inst3|LED_REGISTER2[13]           ;
+;                               ; due to stuck port clock ;                                        ;
+; IOPD:inst3|B_MPC_DATA_int[12] ; Stuck at GND            ; IOPD:inst3|LED_REGISTER2[12]           ;
+;                               ; due to stuck port clock ;                                        ;
+; IOPD:inst3|B_MPC_DATA_int[11] ; Stuck at GND            ; IOPD:inst3|LED_REGISTER2[11]           ;
+;                               ; due to stuck port clock ;                                        ;
+; IOPD:inst3|B_MPC_DATA_int[10] ; Stuck at GND            ; IOPD:inst3|LED_REGISTER2[10]           ;
+;                               ; due to stuck port clock ;                                        ;
+; IOPD:inst3|B_MPC_DATA_int[9]  ; Stuck at GND            ; IOPD:inst3|LED_REGISTER2[9]            ;
+;                               ; due to stuck port clock ;                                        ;
+; IOPD:inst3|B_MPC_DATA_int[8]  ; Stuck at GND            ; IOPD:inst3|LED_REGISTER2[8]            ;
+;                               ; due to stuck port clock ;                                        ;
+; IOPD:inst3|B_MPC_DATA_int[7]  ; Stuck at GND            ; IOPD:inst3|LED_REGISTER2[7]            ;
+;                               ; due to stuck port clock ;                                        ;
+; IOPD:inst3|B_MPC_DATA_int[6]  ; Stuck at GND            ; IOPD:inst3|LED_REGISTER2[6]            ;
+;                               ; due to stuck port clock ;                                        ;
+; IOPD:inst3|B_MPC_DATA_int[5]  ; Stuck at GND            ; IOPD:inst3|LED_REGISTER2[5]            ;
+;                               ; due to stuck port clock ;                                        ;
+; IOPD:inst3|B_MPC_DATA_int[4]  ; Stuck at GND            ; IOPD:inst3|LED_REGISTER2[4]            ;
+;                               ; due to stuck port clock ;                                        ;
+; IOPD:inst3|B_MPC_DATA_int[3]  ; Stuck at GND            ; IOPD:inst3|LED_REGISTER2[3]            ;
+;                               ; due to stuck port clock ;                                        ;
+; IOPD:inst3|B_MPC_DATA_int[2]  ; Stuck at GND            ; IOPD:inst3|LED_REGISTER2[2]            ;
+;                               ; due to stuck port clock ;                                        ;
+; IOPD:inst3|B_MPC_DATA_int[1]  ; Stuck at GND            ; IOPD:inst3|LED_REGISTER2[1]            ;
+;                               ; due to stuck port clock ;                                        ;
+; IOPD:inst3|B_MPC_DATA_int[0]  ; Stuck at GND            ; IOPD:inst3|LED_REGISTER2[0]            ;
+;                               ; due to stuck port clock ;                                        ;
++-------------------------------+-------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 76    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 5     ;
+; Number of registers using Asynchronous Clear ; 5     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 7     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                            ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------+
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; No         ; |IOP|SPI_DAC:inst|state_dac ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------+
+
+
++--------------------------------------------------------------------------+
+; Source assignments for counter8:inst17|lpm_counter:lpm_counter_component ;
++---------------------------+-------+------+-------------------------------+
+; Assignment                ; Value ; From ; To                            ;
++---------------------------+-------+------+-------------------------------+
+; SUPPRESS_DA_RULE_INTERNAL ; a101  ; -    ; -                             ;
+; SUPPRESS_DA_RULE_INTERNAL ; s102  ; -    ; -                             ;
+; SUPPRESS_DA_RULE_INTERNAL ; s103  ; -    ; -                             ;
++---------------------------+-------+------+-------------------------------+
+
+
++---------------------------------------------------------------------------+
+; Source assignments for COUNTER_25:inst1|lpm_counter:lpm_counter_component ;
++---------------------------+-------+------+--------------------------------+
+; Assignment                ; Value ; From ; To                             ;
++---------------------------+-------+------+--------------------------------+
+; SUPPRESS_DA_RULE_INTERNAL ; a101  ; -    ; -                              ;
+; SUPPRESS_DA_RULE_INTERNAL ; s102  ; -    ; -                              ;
+; SUPPRESS_DA_RULE_INTERNAL ; s103  ; -    ; -                              ;
++---------------------------+-------+------+--------------------------------+
+
+
++--------------------------------------------------------------------------+
+; Source assignments for counter8:inst21|lpm_counter:lpm_counter_component ;
++---------------------------+-------+------+-------------------------------+
+; Assignment                ; Value ; From ; To                            ;
++---------------------------+-------+------+-------------------------------+
+; SUPPRESS_DA_RULE_INTERNAL ; a101  ; -    ; -                             ;
+; SUPPRESS_DA_RULE_INTERNAL ; s102  ; -    ; -                             ;
+; SUPPRESS_DA_RULE_INTERNAL ; s103  ; -    ; -                             ;
++---------------------------+-------+------+-------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_inv0:inst16|lpm_inv:lpm_inv_component ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; LPM_WIDTH      ; 1     ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: VHI:inst58|lpm_constant:lpm_constant_component ;
++--------------------+------------------+-----------------------------------------------------+
+; Parameter Name     ; Value            ; Type                                                ;
++--------------------+------------------+-----------------------------------------------------+
+; LPM_WIDTH          ; 1                ; Signed Integer                                      ;
+; LPM_CVALUE         ; 1                ; Signed Integer                                      ;
+; ENABLE_RUNTIME_MOD ; NO               ; Untyped                                             ;
+; CBXI_PARAMETER     ; lpm_constant_4e6 ; Untyped                                             ;
++--------------------+------------------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_inv0:inst19|lpm_inv:lpm_inv_component ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; LPM_WIDTH      ; 1     ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: counter8:inst17|lpm_counter:lpm_counter_component ;
++------------------------+-------------+---------------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                                    ;
++------------------------+-------------+---------------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                              ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                            ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                            ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                          ;
+; LPM_WIDTH              ; 16          ; Signed Integer                                          ;
+; LPM_DIRECTION          ; UP          ; Untyped                                                 ;
+; LPM_MODULUS            ; 0           ; Untyped                                                 ;
+; LPM_AVALUE             ; UNUSED      ; Untyped                                                 ;
+; LPM_SVALUE             ; UNUSED      ; Untyped                                                 ;
+; LPM_PORT_UPDOWN        ; PORT_UNUSED ; Untyped                                                 ;
+; DEVICE_FAMILY          ; MAX II      ; Untyped                                                 ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                                 ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                                      ;
+; NOT_GATE_PUSH_BACK     ; ON          ; NOT_GATE_PUSH_BACK                                      ;
+; CARRY_CNT_EN           ; SMART       ; Untyped                                                 ;
+; LABWIDE_SCLR           ; ON          ; Untyped                                                 ;
+; USE_NEW_VERSION        ; TRUE        ; Untyped                                                 ;
+; CBXI_PARAMETER         ; cntr_tbi    ; Untyped                                                 ;
++------------------------+-------------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: COUNTER_25:inst1|lpm_counter:lpm_counter_component ;
++------------------------+-------------+----------------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                                     ;
++------------------------+-------------+----------------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                               ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                             ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                             ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                           ;
+; LPM_WIDTH              ; 25          ; Signed Integer                                           ;
+; LPM_DIRECTION          ; UP          ; Untyped                                                  ;
+; LPM_MODULUS            ; 0           ; Untyped                                                  ;
+; LPM_AVALUE             ; UNUSED      ; Untyped                                                  ;
+; LPM_SVALUE             ; UNUSED      ; Untyped                                                  ;
+; LPM_PORT_UPDOWN        ; PORT_UNUSED ; Untyped                                                  ;
+; DEVICE_FAMILY          ; MAX II      ; Untyped                                                  ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                                  ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                                       ;
+; NOT_GATE_PUSH_BACK     ; ON          ; NOT_GATE_PUSH_BACK                                       ;
+; CARRY_CNT_EN           ; SMART       ; Untyped                                                  ;
+; LABWIDE_SCLR           ; ON          ; Untyped                                                  ;
+; USE_NEW_VERSION        ; TRUE        ; Untyped                                                  ;
+; CBXI_PARAMETER         ; cntr_49h    ; Untyped                                                  ;
++------------------------+-------------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: VHI:inst45|lpm_constant:lpm_constant_component ;
++--------------------+------------------+-----------------------------------------------------+
+; Parameter Name     ; Value            ; Type                                                ;
++--------------------+------------------+-----------------------------------------------------+
+; LPM_WIDTH          ; 1                ; Signed Integer                                      ;
+; LPM_CVALUE         ; 1                ; Signed Integer                                      ;
+; ENABLE_RUNTIME_MOD ; NO               ; Untyped                                             ;
+; CBXI_PARAMETER     ; lpm_constant_4e6 ; Untyped                                             ;
++--------------------+------------------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_inv0:inst18|lpm_inv:lpm_inv_component ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; LPM_WIDTH      ; 1     ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_inv0:inst14|lpm_inv:lpm_inv_component ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; LPM_WIDTH      ; 1     ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: VHI:inst56|lpm_constant:lpm_constant_component ;
++--------------------+------------------+-----------------------------------------------------+
+; Parameter Name     ; Value            ; Type                                                ;
++--------------------+------------------+-----------------------------------------------------+
+; LPM_WIDTH          ; 1                ; Signed Integer                                      ;
+; LPM_CVALUE         ; 1                ; Signed Integer                                      ;
+; ENABLE_RUNTIME_MOD ; NO               ; Untyped                                             ;
+; CBXI_PARAMETER     ; lpm_constant_4e6 ; Untyped                                             ;
++--------------------+------------------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_inv0:inst22|lpm_inv:lpm_inv_component ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; LPM_WIDTH      ; 1     ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: counter8:inst21|lpm_counter:lpm_counter_component ;
++------------------------+-------------+---------------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                                    ;
++------------------------+-------------+---------------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                              ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                            ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                            ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                          ;
+; LPM_WIDTH              ; 16          ; Signed Integer                                          ;
+; LPM_DIRECTION          ; UP          ; Untyped                                                 ;
+; LPM_MODULUS            ; 0           ; Untyped                                                 ;
+; LPM_AVALUE             ; UNUSED      ; Untyped                                                 ;
+; LPM_SVALUE             ; UNUSED      ; Untyped                                                 ;
+; LPM_PORT_UPDOWN        ; PORT_UNUSED ; Untyped                                                 ;
+; DEVICE_FAMILY          ; MAX II      ; Untyped                                                 ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                                 ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                                      ;
+; NOT_GATE_PUSH_BACK     ; ON          ; NOT_GATE_PUSH_BACK                                      ;
+; CARRY_CNT_EN           ; SMART       ; Untyped                                                 ;
+; LABWIDE_SCLR           ; ON          ; Untyped                                                 ;
+; USE_NEW_VERSION        ; TRUE        ; Untyped                                                 ;
+; CBXI_PARAMETER         ; cntr_tbi    ; Untyped                                                 ;
++------------------------+-------------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: VHI:inst44|lpm_constant:lpm_constant_component ;
++--------------------+------------------+-----------------------------------------------------+
+; Parameter Name     ; Value            ; Type                                                ;
++--------------------+------------------+-----------------------------------------------------+
+; LPM_WIDTH          ; 1                ; Signed Integer                                      ;
+; LPM_CVALUE         ; 1                ; Signed Integer                                      ;
+; ENABLE_RUNTIME_MOD ; NO               ; Untyped                                             ;
+; CBXI_PARAMETER     ; lpm_constant_4e6 ; Untyped                                             ;
++--------------------+------------------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: VHI:inst51|lpm_constant:lpm_constant_component ;
++--------------------+------------------+-----------------------------------------------------+
+; Parameter Name     ; Value            ; Type                                                ;
++--------------------+------------------+-----------------------------------------------------+
+; LPM_WIDTH          ; 1                ; Signed Integer                                      ;
+; LPM_CVALUE         ; 1                ; Signed Integer                                      ;
+; ENABLE_RUNTIME_MOD ; NO               ; Untyped                                             ;
+; CBXI_PARAMETER     ; lpm_constant_4e6 ; Untyped                                             ;
++--------------------+------------------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_inv0:inst10|lpm_inv:lpm_inv_component ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; LPM_WIDTH      ; 1     ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: VHI:inst52|lpm_constant:lpm_constant_component ;
++--------------------+------------------+-----------------------------------------------------+
+; Parameter Name     ; Value            ; Type                                                ;
++--------------------+------------------+-----------------------------------------------------+
+; LPM_WIDTH          ; 1                ; Signed Integer                                      ;
+; LPM_CVALUE         ; 1                ; Signed Integer                                      ;
+; ENABLE_RUNTIME_MOD ; NO               ; Untyped                                             ;
+; CBXI_PARAMETER     ; lpm_constant_4e6 ; Untyped                                             ;
++--------------------+------------------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_inv0:inst11|lpm_inv:lpm_inv_component ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; LPM_WIDTH      ; 1     ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: VHI:inst53|lpm_constant:lpm_constant_component ;
++--------------------+------------------+-----------------------------------------------------+
+; Parameter Name     ; Value            ; Type                                                ;
++--------------------+------------------+-----------------------------------------------------+
+; LPM_WIDTH          ; 1                ; Signed Integer                                      ;
+; LPM_CVALUE         ; 1                ; Signed Integer                                      ;
+; ENABLE_RUNTIME_MOD ; NO               ; Untyped                                             ;
+; CBXI_PARAMETER     ; lpm_constant_4e6 ; Untyped                                             ;
++--------------------+------------------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: VHI:inst55|lpm_constant:lpm_constant_component ;
++--------------------+------------------+-----------------------------------------------------+
+; Parameter Name     ; Value            ; Type                                                ;
++--------------------+------------------+-----------------------------------------------------+
+; LPM_WIDTH          ; 1                ; Signed Integer                                      ;
+; LPM_CVALUE         ; 1                ; Signed Integer                                      ;
+; ENABLE_RUNTIME_MOD ; NO               ; Untyped                                             ;
+; CBXI_PARAMETER     ; lpm_constant_4e6 ; Untyped                                             ;
++--------------------+------------------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_inv0:inst12|lpm_inv:lpm_inv_component ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; LPM_WIDTH      ; 1     ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: VHI:inst54|lpm_constant:lpm_constant_component ;
++--------------------+------------------+-----------------------------------------------------+
+; Parameter Name     ; Value            ; Type                                                ;
++--------------------+------------------+-----------------------------------------------------+
+; LPM_WIDTH          ; 1                ; Signed Integer                                      ;
+; LPM_CVALUE         ; 1                ; Signed Integer                                      ;
+; ENABLE_RUNTIME_MOD ; NO               ; Untyped                                             ;
+; CBXI_PARAMETER     ; lpm_constant_4e6 ; Untyped                                             ;
++--------------------+------------------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: NONIN:inst7|lpm_bustri:lpm_bustri_component ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; LPM_WIDTH      ; 1     ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: VHI:inst48|lpm_constant:lpm_constant_component ;
++--------------------+------------------+-----------------------------------------------------+
+; Parameter Name     ; Value            ; Type                                                ;
++--------------------+------------------+-----------------------------------------------------+
+; LPM_WIDTH          ; 1                ; Signed Integer                                      ;
+; LPM_CVALUE         ; 1                ; Signed Integer                                      ;
+; ENABLE_RUNTIME_MOD ; NO               ; Untyped                                             ;
+; CBXI_PARAMETER     ; lpm_constant_4e6 ; Untyped                                             ;
++--------------------+------------------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: NONIN:inst8|lpm_bustri:lpm_bustri_component ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; LPM_WIDTH      ; 1     ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: VHI:inst49|lpm_constant:lpm_constant_component ;
++--------------------+------------------+-----------------------------------------------------+
+; Parameter Name     ; Value            ; Type                                                ;
++--------------------+------------------+-----------------------------------------------------+
+; LPM_WIDTH          ; 1                ; Signed Integer                                      ;
+; LPM_CVALUE         ; 1                ; Signed Integer                                      ;
+; ENABLE_RUNTIME_MOD ; NO               ; Untyped                                             ;
+; CBXI_PARAMETER     ; lpm_constant_4e6 ; Untyped                                             ;
++--------------------+------------------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: NONIN:inst5|lpm_bustri:lpm_bustri_component ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; LPM_WIDTH      ; 1     ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: VHI:inst46|lpm_constant:lpm_constant_component ;
++--------------------+------------------+-----------------------------------------------------+
+; Parameter Name     ; Value            ; Type                                                ;
++--------------------+------------------+-----------------------------------------------------+
+; LPM_WIDTH          ; 1                ; Signed Integer                                      ;
+; LPM_CVALUE         ; 1                ; Signed Integer                                      ;
+; ENABLE_RUNTIME_MOD ; NO               ; Untyped                                             ;
+; CBXI_PARAMETER     ; lpm_constant_4e6 ; Untyped                                             ;
++--------------------+------------------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: NONIN:inst6|lpm_bustri:lpm_bustri_component ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; LPM_WIDTH      ; 1     ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: VHI:inst47|lpm_constant:lpm_constant_component ;
++--------------------+------------------+-----------------------------------------------------+
+; Parameter Name     ; Value            ; Type                                                ;
++--------------------+------------------+-----------------------------------------------------+
+; LPM_WIDTH          ; 1                ; Signed Integer                                      ;
+; LPM_CVALUE         ; 1                ; Signed Integer                                      ;
+; ENABLE_RUNTIME_MOD ; NO               ; Untyped                                             ;
+; CBXI_PARAMETER     ; lpm_constant_4e6 ; Untyped                                             ;
++--------------------+------------------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: NONIN:inst9|lpm_bustri:lpm_bustri_component ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; LPM_WIDTH      ; 1     ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: VHI:inst50|lpm_constant:lpm_constant_component ;
++--------------------+------------------+-----------------------------------------------------+
+; Parameter Name     ; Value            ; Type                                                ;
++--------------------+------------------+-----------------------------------------------------+
+; LPM_WIDTH          ; 1                ; Signed Integer                                      ;
+; LPM_CVALUE         ; 1                ; Signed Integer                                      ;
+; ENABLE_RUNTIME_MOD ; NO               ; Untyped                                             ;
+; CBXI_PARAMETER     ; lpm_constant_4e6 ; Untyped                                             ;
++--------------------+------------------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_inv0:inst15|lpm_inv:lpm_inv_component ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; LPM_WIDTH      ; 1     ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: VHI:inst57|lpm_constant:lpm_constant_component ;
++--------------------+------------------+-----------------------------------------------------+
+; Parameter Name     ; Value            ; Type                                                ;
++--------------------+------------------+-----------------------------------------------------+
+; LPM_WIDTH          ; 1                ; Signed Integer                                      ;
+; LPM_CVALUE         ; 1                ; Signed Integer                                      ;
+; ENABLE_RUNTIME_MOD ; NO               ; Untyped                                             ;
+; CBXI_PARAMETER     ; lpm_constant_4e6 ; Untyped                                             ;
++--------------------+------------------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FF_D:inst23|lpm_ff:lpm_ff_component ;
++------------------------+---------+-----------------------------------------------+
+; Parameter Name         ; Value   ; Type                                          ;
++------------------------+---------+-----------------------------------------------+
+; LPM_WIDTH              ; 16      ; Signed Integer                                ;
+; LPM_AVALUE             ; UNUSED  ; Untyped                                       ;
+; LPM_SVALUE             ; UNUSED  ; Untyped                                       ;
+; LPM_FFTYPE             ; DFF     ; Untyped                                       ;
+; DEVICE_FAMILY          ; MAX II  ; Untyped                                       ;
+; CBXI_PARAMETER         ; NOTHING ; Untyped                                       ;
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY                                    ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY                                  ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE                                  ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE                                ;
++------------------------+---------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_inv0:inst20|lpm_inv:lpm_inv_component ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; LPM_WIDTH      ; 1     ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Analysis & Synthesis
+    Info: Version 9.1 Build 222 10/21/2009 SJ Web Edition
+    Info: Processing started: Wed Dec 21 17:07:28 2011
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off IOP -c IOP
+Warning: Tcl Script File ADCCONVST.qip not found
+    Info: set_global_assignment -name QIP_FILE ADCCONVST.qip
+Info: Found 1 design units, including 1 entities, in source file iop.bdf
+    Info: Found entity 1: IOP
+Info: Found 2 design units, including 1 entities, in source file counter8.vhd
+    Info: Found design unit 1: counter8-SYN
+    Info: Found entity 1: counter8
+Info: Found 2 design units, including 1 entities, in source file and_3.vhd
+    Info: Found design unit 1: and_3-SYN
+    Info: Found entity 1: AND_3
+Warning: Entity "OR4" will be ignored because it conflicts with Quartus II primitive name
+Info: Found 2 design units, including 1 entities, in source file or4.vhd
+    Info: Found design unit 1: or4-SYN
+Info: Found 2 design units, including 1 entities, in source file or_2.vhd
+    Info: Found design unit 1: or_2-SYN
+    Info: Found entity 1: OR_2
+Info: Found 2 design units, including 1 entities, in source file and_2.vhd
+    Info: Found design unit 1: and_2-SYN
+    Info: Found entity 1: AND_2
+Info: Found 2 design units, including 1 entities, in source file or_4.vhd
+    Info: Found design unit 1: or_4-SYN
+    Info: Found entity 1: OR_4
+Info: Found 2 design units, including 1 entities, in source file and_4.vhd
+    Info: Found design unit 1: and_4-SYN
+    Info: Found entity 1: AND_4
+Info: Found 2 design units, including 1 entities, in source file nor_4.vhd
+    Info: Found design unit 1: NOR_4-arc
+    Info: Found entity 1: NOR_4
+Info: Found 2 design units, including 1 entities, in source file nand_2.vhd
+    Info: Found design unit 1: NAND_2-arc_nand
+    Info: Found entity 1: NAND_2
+Info: Found 2 design units, including 1 entities, in source file dff_1.vhd
+    Info: Found design unit 1: dff_1-SYN
+    Info: Found entity 1: DFF_1
+Info: Found 2 design units, including 1 entities, in source file vlo.vhd
+    Info: Found design unit 1: vlo-SYN
+    Info: Found entity 1: VLO
+Info: Found 2 design units, including 1 entities, in source file cnt3.vhd
+    Info: Found design unit 1: cnt3-SYN
+    Info: Found entity 1: CNT3
+Info: Found 2 design units, including 1 entities, in source file cnt4.vhd
+    Info: Found design unit 1: cnt4-SYN
+    Info: Found entity 1: CNT4
+Info: Found 2 design units, including 1 entities, in source file t_ff.vhd
+    Info: Found design unit 1: T_FF-BEHAVE
+    Info: Found entity 1: T_FF
+Info: Found 2 design units, including 1 entities, in source file delay_500ns.vhd
+    Info: Found design unit 1: delay_500ns-SYN
+    Info: Found entity 1: DELAY_500ns
+Info: Found 2 design units, including 1 entities, in source file conv_st.vhd
+    Info: Found design unit 1: conv_st-SYN
+    Info: Found entity 1: CONV_ST
+Info: Found 2 design units, including 1 entities, in source file adc_conv.vhd
+    Info: Found design unit 1: adc_conv-SYN
+    Info: Found entity 1: ADC_CONV
+Info: Found 2 design units, including 1 entities, in source file lled_ff.vhd
+    Info: Found design unit 1: lled_ff-SYN
+    Info: Found entity 1: lLED_FF
+Info: Found 4 design units, including 2 entities, in source file oscillator.vhd
+    Info: Found design unit 1: oscillator_altufm_osc_rv5-RTL
+    Info: Found design unit 2: oscillator-RTL
+    Info: Found entity 1: oscillator_altufm_osc_rv5
+    Info: Found entity 2: oscillator
+Info: Found 2 design units, including 1 entities, in source file mem_1.vhd
+    Info: Found design unit 1: mem_1-SYN
+    Info: Found entity 1: MEM_1
+Info: Found 2 design units, including 1 entities, in source file counter_25.vhd
+    Info: Found design unit 1: counter_25-SYN
+    Info: Found entity 1: COUNTER_25
+Info: Found 2 design units, including 1 entities, in source file spi.vhd
+    Info: Found design unit 1: spi-SYN
+    Info: Found entity 1: SPI
+Info: Found 2 design units, including 1 entities, in source file spi_dac.vhd
+    Info: Found design unit 1: SPI_DAC-SYN
+    Info: Found entity 1: SPI_DAC
+Info: Found 2 design units, including 1 entities, in source file const24.vhd
+    Info: Found design unit 1: const24-SYN
+    Info: Found entity 1: CONST24
+Info: Found 2 design units, including 1 entities, in source file nonin.vhd
+    Info: Found design unit 1: nonin-SYN
+    Info: Found entity 1: NONIN
+Info: Found 2 design units, including 1 entities, in source file lpm_inv0.vhd
+    Info: Found design unit 1: lpm_inv0-SYN
+    Info: Found entity 1: lpm_inv0
+Info: Found 2 design units, including 1 entities, in source file const.vhd
+    Info: Found design unit 1: const-SYN
+    Info: Found entity 1: CONST
+Info: Found 2 design units, including 1 entities, in source file ff.vhd
+    Info: Found design unit 1: ff-SYN
+    Info: Found entity 1: FF
+Info: Found 2 design units, including 1 entities, in source file dff_16.vhd
+    Info: Found design unit 1: dff_16-SYN
+    Info: Found entity 1: DFF_16
+Warning: Entity "DFF" will be ignored because it conflicts with Quartus II primitive name
+Info: Found 2 design units, including 1 entities, in source file dff.vhd
+    Info: Found design unit 1: dff-SYN
+Info: Found 2 design units, including 1 entities, in source file ff_d.vhd
+    Info: Found design unit 1: ff_d-SYN
+    Info: Found entity 1: FF_D
+Info: Elaborating entity "IOP" for the top level hierarchy
+Warning: Pin "AI_EMPTY" is missing source
+Warning: Pin "AI_COMP" is missing source
+Warning: Pin "ADC_PD" is missing source
+Warning: Pin "CLEAR2" is missing source
+Warning: Pin "CLEAR3" is missing source
+Warning: Pin "CLEAR4" is missing source
+Warning: Pin "LATCH2" is missing source
+Warning: Pin "LATCH3" is missing source
+Warning: Pin "LATCH4" is missing source
+Warning: Pin "SCK_DAC2" is missing source
+Warning: Pin "SCK_DAC3" is missing source
+Warning: Pin "SCK_DAC4" is missing source
+Warning: Pin "SDIN_DAC2" is missing source
+Warning: Pin "SDIN_DAC3" is missing source
+Warning: Pin "SDIN_DAC4" is missing source
+Warning: Pin "CS_ADC1" is missing source
+Warning: Pin "CS_ADC2" is missing source
+Warning: Pin "CS_ADC3" is missing source
+Warning: Pin "CS_ADC4" is missing source
+Warning: Pin "SDIN_ADC" is missing source
+Warning: Pin "SCK_ADC" is missing source
+Warning: Pin "H1" is missing source
+Warning: Pin "H2" is missing source
+Warning: Pin "H3" is missing source
+Warning: Pin "H4" is missing source
+Warning: Pin "H5" is missing source
+Warning: Pin "AI_OE" not connected
+Warning: Pin "AI_READ" not connected
+Warning: Pin "RB_DL_D" not connected
+Warning: Pin "RB_DL_C" not connected
+Warning: Pin "RB_DL_B" not connected
+Warning: Pin "RB_DL_A" not connected
+Warning: Pin "SDO_DAC4" not connected
+Warning: Pin "SDO_DAC2" not connected
+Warning: Pin "SDO_DAC3" not connected
+Warning: Pin "AICLK" not connected
+Warning: Pin "AI_START" not connected
+Warning: Pin "AI_CLEAR" not connected
+Warning: Pin "BD5" not connected
+Warning: Pin "SDO_ADC" not connected
+Warning: Pin "SPARE1" not connected
+Warning: Pin "SPARE2" not connected
+Warning: Pin "SPARE3" not connected
+Warning: Pin "FLAG_CLEAR" not connected
+Warning: Pin "P_WE0" not connected
+Warning: Pin "P_WE1" not connected
+Info: Elaborating entity "lpm_inv0" for hierarchy "lpm_inv0:inst16"
+Info: Elaborating entity "lpm_inv" for hierarchy "lpm_inv0:inst16|lpm_inv:lpm_inv_component"
+Info: Elaborated megafunction instantiation "lpm_inv0:inst16|lpm_inv:lpm_inv_component"
+Info: Instantiated megafunction "lpm_inv0:inst16|lpm_inv:lpm_inv_component" with the following parameter:
+    Info: Parameter "lpm_type" = "LPM_INV"
+    Info: Parameter "lpm_width" = "1"
+Warning: Using design file vhi.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info: Found design unit 1: vhi-SYN
+    Info: Found entity 1: VHI
+Info: Elaborating entity "VHI" for hierarchy "VHI:inst58"
+Info: Elaborating entity "lpm_constant" for hierarchy "VHI:inst58|lpm_constant:lpm_constant_component"
+Info: Elaborated megafunction instantiation "VHI:inst58|lpm_constant:lpm_constant_component"
+Info: Instantiated megafunction "VHI:inst58|lpm_constant:lpm_constant_component" with the following parameter:
+    Info: Parameter "lpm_cvalue" = "1"
+    Info: Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info: Parameter "lpm_type" = "LPM_CONSTANT"
+    Info: Parameter "lpm_width" = "1"
+Info: Elaborating entity "counter8" for hierarchy "counter8:inst17"
+Info: Elaborating entity "lpm_counter" for hierarchy "counter8:inst17|lpm_counter:lpm_counter_component"
+Info: Elaborated megafunction instantiation "counter8:inst17|lpm_counter:lpm_counter_component"
+Info: Instantiated megafunction "counter8:inst17|lpm_counter:lpm_counter_component" with the following parameter:
+    Info: Parameter "lpm_direction" = "UP"
+    Info: Parameter "lpm_port_updown" = "PORT_UNUSED"
+    Info: Parameter "lpm_type" = "LPM_COUNTER"
+    Info: Parameter "lpm_width" = "16"
+Info: Found 1 design units, including 1 entities, in source file db/cntr_tbi.tdf
+    Info: Found entity 1: cntr_tbi
+Info: Elaborating entity "cntr_tbi" for hierarchy "counter8:inst17|lpm_counter:lpm_counter_component|cntr_tbi:auto_generated"
+Info: Elaborating entity "COUNTER_25" for hierarchy "COUNTER_25:inst1"
+Info: Elaborating entity "lpm_counter" for hierarchy "COUNTER_25:inst1|lpm_counter:lpm_counter_component"
+Info: Elaborated megafunction instantiation "COUNTER_25:inst1|lpm_counter:lpm_counter_component"
+Info: Instantiated megafunction "COUNTER_25:inst1|lpm_counter:lpm_counter_component" with the following parameter:
+    Info: Parameter "lpm_direction" = "UP"
+    Info: Parameter "lpm_port_updown" = "PORT_UNUSED"
+    Info: Parameter "lpm_type" = "LPM_COUNTER"
+    Info: Parameter "lpm_width" = "25"
+Info: Found 1 design units, including 1 entities, in source file db/cntr_49h.tdf
+    Info: Found entity 1: cntr_49h
+Info: Elaborating entity "cntr_49h" for hierarchy "COUNTER_25:inst1|lpm_counter:lpm_counter_component|cntr_49h:auto_generated"
+Info: Elaborating entity "oscillator" for hierarchy "oscillator:inst2"
+Info: Elaborating entity "oscillator_altufm_osc_rv5" for hierarchy "oscillator:inst2|oscillator_altufm_osc_rv5:oscillator_altufm_osc_rv5_component"
+Info: Elaborating entity "SPI_DAC" for hierarchy "SPI_DAC:inst"
+Warning (10541): VHDL Signal Declaration warning at SPI_DAC.vhd(11): used implicit default value for signal "CLR" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Info: Elaborating entity "SPI" for hierarchy "SPI:inst13"
+Info: Elaborating entity "NONIN" for hierarchy "NONIN:inst7"
+Info: Elaborating entity "lpm_bustri" for hierarchy "NONIN:inst7|lpm_bustri:lpm_bustri_component"
+Info: Elaborated megafunction instantiation "NONIN:inst7|lpm_bustri:lpm_bustri_component"
+Info: Instantiated megafunction "NONIN:inst7|lpm_bustri:lpm_bustri_component" with the following parameter:
+    Info: Parameter "lpm_type" = "LPM_BUSTRI"
+    Info: Parameter "lpm_width" = "1"
+Warning: Using design file iopd.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info: Found design unit 1: IOPD-MAIN
+    Info: Found entity 1: IOPD
+Info: Elaborating entity "IOPD" for hierarchy "IOPD:inst3"
+Info: Elaborating entity "FF_D" for hierarchy "FF_D:inst23"
+Info: Elaborating entity "lpm_ff" for hierarchy "FF_D:inst23|lpm_ff:lpm_ff_component"
+Info: Elaborated megafunction instantiation "FF_D:inst23|lpm_ff:lpm_ff_component"
+Info: Instantiated megafunction "FF_D:inst23|lpm_ff:lpm_ff_component" with the following parameter:
+    Info: Parameter "lpm_fftype" = "DFF"
+    Info: Parameter "lpm_type" = "LPM_FF"
+    Info: Parameter "lpm_width" = "16"
+Warning: The following nodes have both tri-state and non-tri-state drivers
+    Warning: Inserted always-enabled tri-state buffer between "P_DATA[15]" and its non-tri-state driver.
+    Warning: Inserted always-enabled tri-state buffer between "P_DATA[14]" and its non-tri-state driver.
+    Warning: Inserted always-enabled tri-state buffer between "P_DATA[13]" and its non-tri-state driver.
+    Warning: Inserted always-enabled tri-state buffer between "P_DATA[12]" and its non-tri-state driver.
+    Warning: Inserted always-enabled tri-state buffer between "P_DATA[11]" and its non-tri-state driver.
+    Warning: Inserted always-enabled tri-state buffer between "P_DATA[10]" and its non-tri-state driver.
+    Warning: Inserted always-enabled tri-state buffer between "P_DATA[9]" and its non-tri-state driver.
+    Warning: Inserted always-enabled tri-state buffer between "P_DATA[8]" and its non-tri-state driver.
+    Warning: Inserted always-enabled tri-state buffer between "P_DATA[7]" and its non-tri-state driver.
+    Warning: Inserted always-enabled tri-state buffer between "P_DATA[6]" and its non-tri-state driver.
+    Warning: Inserted always-enabled tri-state buffer between "P_DATA[5]" and its non-tri-state driver.
+    Warning: Inserted always-enabled tri-state buffer between "P_DATA[4]" and its non-tri-state driver.
+    Warning: Inserted always-enabled tri-state buffer between "P_DATA[3]" and its non-tri-state driver.
+    Warning: Inserted always-enabled tri-state buffer between "P_DATA[2]" and its non-tri-state driver.
+    Warning: Inserted always-enabled tri-state buffer between "P_DATA[1]" and its non-tri-state driver.
+    Warning: Inserted always-enabled tri-state buffer between "P_DATA[0]" and its non-tri-state driver.
+Warning: Removed fan-outs from the following always-disabled I/O buffers
+    Warning: Removed fan-out from the always-disabled I/O buffer "IOPD:inst3|B_MPC_DATA[15]" to the node "P_DATA[15]"
+    Warning: Removed fan-out from the always-disabled I/O buffer "IOPD:inst3|B_MPC_DATA[14]" to the node "P_DATA[14]"
+    Warning: Removed fan-out from the always-disabled I/O buffer "IOPD:inst3|B_MPC_DATA[13]" to the node "P_DATA[13]"
+    Warning: Removed fan-out from the always-disabled I/O buffer "IOPD:inst3|B_MPC_DATA[12]" to the node "P_DATA[12]"
+    Warning: Removed fan-out from the always-disabled I/O buffer "IOPD:inst3|B_MPC_DATA[11]" to the node "P_DATA[11]"
+    Warning: Removed fan-out from the always-disabled I/O buffer "IOPD:inst3|B_MPC_DATA[10]" to the node "P_DATA[10]"
+    Warning: Removed fan-out from the always-disabled I/O buffer "IOPD:inst3|B_MPC_DATA[9]" to the node "P_DATA[9]"
+    Warning: Removed fan-out from the always-disabled I/O buffer "IOPD:inst3|B_MPC_DATA[8]" to the node "P_DATA[8]"
+    Warning: Removed fan-out from the always-disabled I/O buffer "IOPD:inst3|B_MPC_DATA[7]" to the node "P_DATA[7]"
+    Warning: Removed fan-out from the always-disabled I/O buffer "IOPD:inst3|B_MPC_DATA[6]" to the node "P_DATA[6]"
+    Warning: Removed fan-out from the always-disabled I/O buffer "IOPD:inst3|B_MPC_DATA[5]" to the node "P_DATA[5]"
+    Warning: Removed fan-out from the always-disabled I/O buffer "IOPD:inst3|B_MPC_DATA[4]" to the node "P_DATA[4]"
+    Warning: Removed fan-out from the always-disabled I/O buffer "IOPD:inst3|B_MPC_DATA[3]" to the node "P_DATA[3]"
+    Warning: Removed fan-out from the always-disabled I/O buffer "IOPD:inst3|B_MPC_DATA[2]" to the node "P_DATA[2]"
+    Warning: Removed fan-out from the always-disabled I/O buffer "IOPD:inst3|B_MPC_DATA[1]" to the node "P_DATA[1]"
+    Warning: Removed fan-out from the always-disabled I/O buffer "IOPD:inst3|B_MPC_DATA[0]" to the node "P_DATA[0]"
+Warning: Always-enabled tri-state buffer(s) removed
+    Warning: Converted the fanout from the always-enabled tri-state buffer "NONIN:inst7|lpm_bustri:lpm_bustri_component|dout[0]" to the node "EXTRA16" into a wire
+    Warning: Converted the fanout from the always-enabled tri-state buffer "NONIN:inst8|lpm_bustri:lpm_bustri_component|dout[0]" to the node "EXTRA14" into a wire
+    Warning: Converted the fanout from the always-enabled tri-state buffer "NONIN:inst5|lpm_bustri:lpm_bustri_component|dout[0]" to the node "EXTRA12" into a wire
+    Warning: Converted the fanout from the always-enabled tri-state buffer "NONIN:inst6|lpm_bustri:lpm_bustri_component|dout[0]" to the node "EXTRA10" into a wire
+    Warning: Converted the fanout from the always-enabled tri-state buffer "NONIN:inst9|lpm_bustri:lpm_bustri_component|dout[0]" to the node "EXTRA32" into a wire
+Info: One or more bidirs are fed by always enabled tri-state buffers
+    Info: Fan-out of permanently enabled tri-state buffer feeding bidir "P_DATA[15]" is moved to its source
+    Info: Fan-out of permanently enabled tri-state buffer feeding bidir "P_DATA[14]" is moved to its source
+    Info: Fan-out of permanently enabled tri-state buffer feeding bidir "P_DATA[13]" is moved to its source
+    Info: Fan-out of permanently enabled tri-state buffer feeding bidir "P_DATA[12]" is moved to its source
+    Info: Fan-out of permanently enabled tri-state buffer feeding bidir "P_DATA[11]" is moved to its source
+    Info: Fan-out of permanently enabled tri-state buffer feeding bidir "P_DATA[10]" is moved to its source
+    Info: Fan-out of permanently enabled tri-state buffer feeding bidir "P_DATA[9]" is moved to its source
+    Info: Fan-out of permanently enabled tri-state buffer feeding bidir "P_DATA[8]" is moved to its source
+    Info: Fan-out of permanently enabled tri-state buffer feeding bidir "P_DATA[7]" is moved to its source
+    Info: Fan-out of permanently enabled tri-state buffer feeding bidir "P_DATA[6]" is moved to its source
+    Info: Fan-out of permanently enabled tri-state buffer feeding bidir "P_DATA[5]" is moved to its source
+    Info: Fan-out of permanently enabled tri-state buffer feeding bidir "P_DATA[4]" is moved to its source
+    Info: Fan-out of permanently enabled tri-state buffer feeding bidir "P_DATA[3]" is moved to its source
+    Info: Fan-out of permanently enabled tri-state buffer feeding bidir "P_DATA[2]" is moved to its source
+    Info: Fan-out of permanently enabled tri-state buffer feeding bidir "P_DATA[1]" is moved to its source
+    Info: Fan-out of permanently enabled tri-state buffer feeding bidir "P_DATA[0]" is moved to its source
+Warning: TRI or OPNDRN buffers permanently enabled
+    Warning: Node "P_DATA~synth"
+    Warning: Node "P_DATA~synth"
+    Warning: Node "P_DATA~synth"
+    Warning: Node "P_DATA~synth"
+    Warning: Node "P_DATA~synth"
+    Warning: Node "P_DATA~synth"
+    Warning: Node "P_DATA~synth"
+    Warning: Node "P_DATA~synth"
+    Warning: Node "P_DATA~synth"
+    Warning: Node "P_DATA~synth"
+    Warning: Node "P_DATA~synth"
+    Warning: Node "P_DATA~synth"
+    Warning: Node "P_DATA~synth"
+    Warning: Node "P_DATA~synth"
+    Warning: Node "P_DATA~synth"
+    Warning: Node "P_DATA~synth"
+Warning: Output pins are stuck at VCC or GND
+    Warning (13410): Pin "AI_EMPTY" is stuck at GND
+    Warning (13410): Pin "AI_COMP" is stuck at GND
+    Warning (13410): Pin "ADC_PD" is stuck at GND
+    Warning (13410): Pin "ADC_RESET" is stuck at GND
+    Warning (13410): Pin "ADC_CS" is stuck at GND
+    Warning (13410): Pin "CLEAR1" is stuck at GND
+    Warning (13410): Pin "CLEAR2" is stuck at GND
+    Warning (13410): Pin "CLEAR3" is stuck at GND
+    Warning (13410): Pin "CLEAR4" is stuck at GND
+    Warning (13410): Pin "LATCH2" is stuck at GND
+    Warning (13410): Pin "LATCH3" is stuck at GND
+    Warning (13410): Pin "LATCH4" is stuck at GND
+    Warning (13410): Pin "SCK_DAC2" is stuck at GND
+    Warning (13410): Pin "SCK_DAC3" is stuck at GND
+    Warning (13410): Pin "SCK_DAC4" is stuck at GND
+    Warning (13410): Pin "SDIN_DAC2" is stuck at GND
+    Warning (13410): Pin "SDIN_DAC3" is stuck at GND
+    Warning (13410): Pin "SDIN_DAC4" is stuck at GND
+    Warning (13410): Pin "CS_ADC1" is stuck at GND
+    Warning (13410): Pin "CS_ADC2" is stuck at GND
+    Warning (13410): Pin "CS_ADC3" is stuck at GND
+    Warning (13410): Pin "CS_ADC4" is stuck at GND
+    Warning (13410): Pin "SDIN_ADC" is stuck at GND
+    Warning (13410): Pin "SCK_ADC" is stuck at GND
+    Warning (13410): Pin "H1" is stuck at GND
+    Warning (13410): Pin "H2" is stuck at GND
+    Warning (13410): Pin "H3" is stuck at GND
+    Warning (13410): Pin "H4" is stuck at GND
+    Warning (13410): Pin "H5" is stuck at GND
+    Warning (13410): Pin "P_LE" is stuck at VCC
+    Warning (13410): Pin "MUX_0" is stuck at VCC
+    Warning (13410): Pin "MUX_1" is stuck at GND
+    Warning (13410): Pin "MUX_2" is stuck at GND
+    Warning (13410): Pin "MUX_3" is stuck at VCC
+    Warning (13410): Pin "MUX_4" is stuck at GND
+    Warning (13410): Pin "ADC_READ" is stuck at GND
+Info: 74 registers lost all their fanouts during netlist optimizations. The first 74 are displayed below.
+    Info: Register "IOPD:inst3|LED_REGISTER1[15]" lost all its fanouts during netlist optimizations.
+    Info: Register "IOPD:inst3|LED_REGISTER2[15]" lost all its fanouts during netlist optimizations.
+    Info: Register "IOPD:inst3|LED_REGISTER1[14]" lost all its fanouts during netlist optimizations.
+    Info: Register "IOPD:inst3|LED_REGISTER2[14]" lost all its fanouts during netlist optimizations.
+    Info: Register "IOPD:inst3|LED_REGISTER1[13]" lost all its fanouts during netlist optimizations.
+    Info: Register "IOPD:inst3|LED_REGISTER2[13]" lost all its fanouts during netlist optimizations.
+    Info: Register "IOPD:inst3|LED_REGISTER1[12]" lost all its fanouts during netlist optimizations.
+    Info: Register "IOPD:inst3|LED_REGISTER2[12]" lost all its fanouts during netlist optimizations.
+    Info: Register "IOPD:inst3|LED_REGISTER1[11]" lost all its fanouts during netlist optimizations.
+    Info: Register "IOPD:inst3|LED_REGISTER2[11]" lost all its fanouts during netlist optimizations.
+    Info: Register "IOPD:inst3|LED_REGISTER1[10]" lost all its fanouts during netlist optimizations.
+    Info: Register "IOPD:inst3|LED_REGISTER2[10]" lost all its fanouts during netlist optimizations.
+    Info: Register "IOPD:inst3|LED_REGISTER1[9]" lost all its fanouts during netlist optimizations.
+    Info: Register "IOPD:inst3|LED_REGISTER2[9]" lost all its fanouts during netlist optimizations.
+    Info: Register "IOPD:inst3|LED_REGISTER1[8]" lost all its fanouts during netlist optimizations.
+    Info: Register "IOPD:inst3|LED_REGISTER2[8]" lost all its fanouts during netlist optimizations.
+    Info: Register "IOPD:inst3|LED_REGISTER1[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "IOPD:inst3|LED_REGISTER2[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "IOPD:inst3|LED_REGISTER1[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "IOPD:inst3|LED_REGISTER2[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "IOPD:inst3|LED_REGISTER1[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "IOPD:inst3|LED_REGISTER2[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "IOPD:inst3|LED_REGISTER1[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "IOPD:inst3|LED_REGISTER2[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "IOPD:inst3|LED_REGISTER1[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "IOPD:inst3|LED_REGISTER2[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "IOPD:inst3|LED_REGISTER1[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "IOPD:inst3|LED_REGISTER2[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "IOPD:inst3|LED_REGISTER1[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "IOPD:inst3|LED_REGISTER2[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "IOPD:inst3|LED_REGISTER1[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "IOPD:inst3|LED_REGISTER2[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "IOPD:inst3|CPLD_READ_ADD_BUF[13]" lost all its fanouts during netlist optimizations.
+    Info: Register "IOPD:inst3|CPLD_READ_ADD_BUF[12]" lost all its fanouts during netlist optimizations.
+    Info: Register "IOPD:inst3|CPLD_READ_ADD_BUF[11]" lost all its fanouts during netlist optimizations.
+    Info: Register "IOPD:inst3|CPLD_READ_ADD_BUF[10]" lost all its fanouts during netlist optimizations.
+    Info: Register "IOPD:inst3|CPLD_READ_ADD_BUF[9]" lost all its fanouts during netlist optimizations.
+    Info: Register "IOPD:inst3|CPLD_READ_ADD_BUF[8]" lost all its fanouts during netlist optimizations.
+    Info: Register "IOPD:inst3|CPLD_READ_ADD_BUF[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "IOPD:inst3|CPLD_READ_ADD_BUF[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "IOPD:inst3|CPLD_READ_ADD_BUF[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "IOPD:inst3|CPLD_READ_ADD_BUF[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "IOPD:inst3|CPLD_READ_ADD_BUF[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "IOPD:inst3|CPLD_READ_ADD_BUF[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "IOPD:inst3|CPLD_READ_ADD_BUF[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "IOPD:inst3|CPLD_READ_ADD_BUF[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "counter8:inst21|lpm_counter:lpm_counter_component|cntr_tbi:auto_generated|safe_q[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "counter8:inst21|lpm_counter:lpm_counter_component|cntr_tbi:auto_generated|safe_q[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "counter8:inst21|lpm_counter:lpm_counter_component|cntr_tbi:auto_generated|safe_q[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "counter8:inst21|lpm_counter:lpm_counter_component|cntr_tbi:auto_generated|safe_q[8]" lost all its fanouts during netlist optimizations.
+    Info: Register "counter8:inst21|lpm_counter:lpm_counter_component|cntr_tbi:auto_generated|safe_q[9]" lost all its fanouts during netlist optimizations.
+    Info: Register "counter8:inst21|lpm_counter:lpm_counter_component|cntr_tbi:auto_generated|safe_q[10]" lost all its fanouts during netlist optimizations.
+    Info: Register "counter8:inst21|lpm_counter:lpm_counter_component|cntr_tbi:auto_generated|safe_q[11]" lost all its fanouts during netlist optimizations.
+    Info: Register "counter8:inst21|lpm_counter:lpm_counter_component|cntr_tbi:auto_generated|safe_q[12]" lost all its fanouts during netlist optimizations.
+    Info: Register "counter8:inst21|lpm_counter:lpm_counter_component|cntr_tbi:auto_generated|safe_q[13]" lost all its fanouts during netlist optimizations.
+    Info: Register "counter8:inst21|lpm_counter:lpm_counter_component|cntr_tbi:auto_generated|safe_q[14]" lost all its fanouts during netlist optimizations.
+    Info: Register "counter8:inst21|lpm_counter:lpm_counter_component|cntr_tbi:auto_generated|safe_q[15]" lost all its fanouts during netlist optimizations.
+    Info: Register "COUNTER_25:inst1|lpm_counter:lpm_counter_component|cntr_49h:auto_generated|safe_q[21]" lost all its fanouts during netlist optimizations.
+    Info: Register "COUNTER_25:inst1|lpm_counter:lpm_counter_component|cntr_49h:auto_generated|safe_q[22]" lost all its fanouts during netlist optimizations.
+    Info: Register "COUNTER_25:inst1|lpm_counter:lpm_counter_component|cntr_49h:auto_generated|safe_q[23]" lost all its fanouts during netlist optimizations.
+    Info: Register "COUNTER_25:inst1|lpm_counter:lpm_counter_component|cntr_49h:auto_generated|safe_q[24]" lost all its fanouts during netlist optimizations.
+    Info: Register "counter8:inst17|lpm_counter:lpm_counter_component|cntr_tbi:auto_generated|safe_q[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "counter8:inst17|lpm_counter:lpm_counter_component|cntr_tbi:auto_generated|safe_q[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "counter8:inst17|lpm_counter:lpm_counter_component|cntr_tbi:auto_generated|safe_q[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "counter8:inst17|lpm_counter:lpm_counter_component|cntr_tbi:auto_generated|safe_q[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "counter8:inst17|lpm_counter:lpm_counter_component|cntr_tbi:auto_generated|safe_q[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "counter8:inst17|lpm_counter:lpm_counter_component|cntr_tbi:auto_generated|safe_q[8]" lost all its fanouts during netlist optimizations.
+    Info: Register "counter8:inst17|lpm_counter:lpm_counter_component|cntr_tbi:auto_generated|safe_q[9]" lost all its fanouts during netlist optimizations.
+    Info: Register "counter8:inst17|lpm_counter:lpm_counter_component|cntr_tbi:auto_generated|safe_q[10]" lost all its fanouts during netlist optimizations.
+    Info: Register "counter8:inst17|lpm_counter:lpm_counter_component|cntr_tbi:auto_generated|safe_q[11]" lost all its fanouts during netlist optimizations.
+    Info: Register "counter8:inst17|lpm_counter:lpm_counter_component|cntr_tbi:auto_generated|safe_q[12]" lost all its fanouts during netlist optimizations.
+    Info: Register "counter8:inst17|lpm_counter:lpm_counter_component|cntr_tbi:auto_generated|safe_q[13]" lost all its fanouts during netlist optimizations.
+    Info: Register "counter8:inst17|lpm_counter:lpm_counter_component|cntr_tbi:auto_generated|safe_q[14]" lost all its fanouts during netlist optimizations.
+    Info: Register "counter8:inst17|lpm_counter:lpm_counter_component|cntr_tbi:auto_generated|safe_q[15]" lost all its fanouts during netlist optimizations.
+Warning: Design contains 38 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "P_CS"
+    Warning (15610): No output dependent on input pin "P_OE"
+    Warning (15610): No output dependent on input pin "P_RD/W"
+    Warning (15610): No output dependent on input pin "RST_IN"
+    Warning (15610): No output dependent on input pin "P_ADDR[30]"
+    Warning (15610): No output dependent on input pin "P_ADDR[29]"
+    Warning (15610): No output dependent on input pin "P_ADDR[28]"
+    Warning (15610): No output dependent on input pin "P_ADDR[27]"
+    Warning (15610): No output dependent on input pin "P_ADDR[26]"
+    Warning (15610): No output dependent on input pin "P_ADDR[25]"
+    Warning (15610): No output dependent on input pin "P_ADDR[24]"
+    Warning (15610): No output dependent on input pin "P_ADDR[23]"
+    Warning (15610): No output dependent on input pin "P_ADDR[22]"
+    Warning (15610): No output dependent on input pin "P_ADDR[21]"
+    Warning (15610): No output dependent on input pin "P_ADDR[20]"
+    Warning (15610): No output dependent on input pin "P_ADDR[19]"
+    Warning (15610): No output dependent on input pin "P_ADDR[18]"
+    Warning (15610): No output dependent on input pin "P_ADDR[17]"
+    Warning (15610): No output dependent on input pin "AI_OE"
+    Warning (15610): No output dependent on input pin "AI_READ"
+    Warning (15610): No output dependent on input pin "RB_DL_D"
+    Warning (15610): No output dependent on input pin "RB_DL_C"
+    Warning (15610): No output dependent on input pin "RB_DL_B"
+    Warning (15610): No output dependent on input pin "RB_DL_A"
+    Warning (15610): No output dependent on input pin "SDO_DAC4"
+    Warning (15610): No output dependent on input pin "SDO_DAC2"
+    Warning (15610): No output dependent on input pin "SDO_DAC3"
+    Warning (15610): No output dependent on input pin "AICLK"
+    Warning (15610): No output dependent on input pin "AI_START"
+    Warning (15610): No output dependent on input pin "AI_CLEAR"
+    Warning (15610): No output dependent on input pin "BD5"
+    Warning (15610): No output dependent on input pin "SDO_ADC"
+    Warning (15610): No output dependent on input pin "SPARE1"
+    Warning (15610): No output dependent on input pin "SPARE2"
+    Warning (15610): No output dependent on input pin "SPARE3"
+    Warning (15610): No output dependent on input pin "FLAG_CLEAR"
+    Warning (15610): No output dependent on input pin "P_WE0"
+    Warning (15610): No output dependent on input pin "P_WE1"
+Info: Implemented 230 device resources after synthesis - the final resource count might be different
+    Info: Implemented 56 input pins
+    Info: Implemented 49 output pins
+    Info: Implemented 16 bidirectional pins
+    Info: Implemented 108 logic cells
+    Info: Implemented 1 User Flash Memory blocks
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 185 warnings
+    Info: Peak virtual memory: 199 megabytes
+    Info: Processing ended: Wed Dec 21 17:07:36 2011
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:07
+
+

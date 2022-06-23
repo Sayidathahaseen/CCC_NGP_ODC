@@ -1,0 +1,2 @@
+1. SCH will not have NO LOAD list.
+2. Do not generate BoM from SCH. They may not be matching

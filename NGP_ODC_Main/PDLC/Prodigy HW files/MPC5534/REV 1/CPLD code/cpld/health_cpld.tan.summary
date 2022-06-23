@@ -1,0 +1,56 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 6.300 ns
+From           : ESC2_WDI_CPLD
+To             : ESC2_WDI
+From Clock     : --
+To Clock       : MPC_ENG_CLK
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 16.500 ns
+From           : CONTROL_OUT
+To             : CONTROL_INV
+From Clock     : TAKE_CONTROL
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : -2.000 ns
+From           : ESC1_WDI_CPLD
+To             : ESC1_WDI
+From Clock     : --
+To Clock       : MPC_ENG_CLK
+Failed Paths   : 0
+
+Type           : Clock Setup: 'MPC_ENG_CLK'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 99.01 MHz ( period = 10.100 ns )
+From           : WRAP_SIGNAL2
+To             : ESC2_WDI
+From Clock     : MPC_ENG_CLK
+To Clock       : MPC_ENG_CLK
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+

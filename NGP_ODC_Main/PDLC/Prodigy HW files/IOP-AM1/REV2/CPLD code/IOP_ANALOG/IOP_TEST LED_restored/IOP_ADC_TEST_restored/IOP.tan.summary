@@ -1,0 +1,56 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : -0.883 ns
+From           : ADC_D[3]
+To             : FF_D:inst23|lpm_ff:lpm_ff_component|dffs[3]
+From Clock     : --
+To Clock       : ADC_BUSY
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 8.219 ns
+From           : FF_D:inst23|lpm_ff:lpm_ff_component|dffs[13]
+To             : P_DATA[2]
+From Clock     : ADC_BUSY
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 5.375 ns
+From           : ADC_BUSY
+To             : EXTRA16
+From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : 2.343 ns
+From           : ADC_D[12]
+To             : FF_D:inst23|lpm_ff:lpm_ff_component|dffs[12]
+From Clock     : --
+To Clock       : ADC_BUSY
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+
