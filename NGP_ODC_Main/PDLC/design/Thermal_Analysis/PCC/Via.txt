@@ -1,0 +1,27 @@
+
+BOARD STATISTICS REPORT -- Mindteck_PCC_20JULY11A.pcb -- Thu Jul 21 16:13:35 2011
+
+
+Job Design Time:    268:26
+
+Part Types:         32
+Parts TopSide:      59    BottomSide:     102   Total: 161
+Drilled pads:       177   Undrilled pads: 294   Total: 471
+Via Name : STANDARDVIA   Via Count : 7
+Via Name : VIA_25_12   Via Count : 72
+Via Name : VIA_35_16   Via Count : 113
+Signal Nets:        71
+Connections Routed: 202  Partially 36   Unrouted: 49   Total: 287
+
+Plane  Nets:        1
+Connections Routed: 55   Partially 42   Unrouted: 12   Total: 109
+
+Routed Connection Length (inches) X:   181.71   Y: 125.55   Total: 307.26  
+Unrouted Connection Length (inches) X: 67.54    Y: 74.27    Total: 141.81  
+
+Number of copper clearance errors:         0
+
+Number of Routing Layers:                  4
+Size of Board (square inches):             29.23   
+Equivalent IC count (1-IC/14 pins):        33.64   
+Board Density(boardsize/14pin-components): 0.87    

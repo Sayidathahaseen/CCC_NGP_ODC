@@ -1,0 +1,28 @@
+
+BOARD STATISTICS REPORT -- app_11_07_11.pcb -- Mon Jul 11 14:15:20 2011
+
+
+Job Design Time:    182:37
+
+Part Types:         156
+Parts TopSide:      392   BottomSide:     535   Total: 927
+Drilled pads:       230   Undrilled pads: 3686  Total: 3916
+Via Name : STANDARDVIA   Via Count : 0
+Via Name : VIA24X12   Via Count : 751
+Via Name : BGAVIA18X10   Via Count : 887
+Via Name : VIA36X20   Via Count : 285
+Signal Nets:        755
+Connections Routed: 1012 Partially 181  Unrouted: 156  Total: 1349
+
+Plane  Nets:        8
+Connections Routed: 222  Partially 709  Unrouted: 714  Total: 1645
+
+Routed Connection Length (inches) X:   642.46   Y: 639.01   Total: 1281.47 
+Unrouted Connection Length (inches) X: 2335.97  Y: 2822.83  Total: 5158.80 
+
+Number of copper clearance errors:         0
+
+Number of Routing Layers:                  8
+Size of Board (square inches):             29.25   
+Equivalent IC count (1-IC/14 pins):        279.71  
+Board Density(boardsize/14pin-components): 0.10    

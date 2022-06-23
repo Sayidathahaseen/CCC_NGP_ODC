@@ -1,0 +1,30 @@
+
+BOARD STATISTICS REPORT -- CCCNGP_MPC5534_BOARD_REV1.0.pcb -- Fri Jul 15 16:42:59 2011
+
+
+Job Design Time:    86:27
+
+Part Types:         80
+Parts TopSide:      267   BottomSide:     213   Total: 480
+Drilled pads:       50    Undrilled pads: 2223  Total: 2273
+Via Name : VIA_24_12   Via Count : 380
+Via Name : VIA_20_16_10   Via Count : 275
+Via Name : VIA_30_16   Via Count : 624
+Via Name : VIA_40_20   Via Count : 24
+Via Name : VIA_20_10   Via Count : 296
+Via Name : VIA_18_14_8   Via Count : 96
+Signal Nets:        432
+Connections Routed: 808  Partially 73   Unrouted: 0    Total: 881
+
+Plane  Nets:        8
+Connections Routed: 194  Partially 639  Unrouted: 101  Total: 934
+
+Routed Connection Length (inches) X:   694.11   Y: 619.95   Total: 1314.06 
+Unrouted Connection Length (inches) X: 475.41   Y: 1437.44  Total: 1912.85 
+
+Number of copper clearance errors:         0
+
+Number of Routing Layers:                  10
+Size of Board (square inches):             18.36   
+Equivalent IC count (1-IC/14 pins):        162.36  
+Board Density(boardsize/14pin-components): 0.11    

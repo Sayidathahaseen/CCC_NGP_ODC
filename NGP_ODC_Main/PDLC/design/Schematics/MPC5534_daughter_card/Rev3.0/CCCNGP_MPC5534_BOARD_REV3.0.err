@@ -1,0 +1,414 @@
+PCB Net List Errors Report - CCCNGP_MPC5534_BOARD_REV3.0.sch - Thu Jul 26 15:45:56 2012
+----------------------------------------------------------------------------------------
+Design to Library Part Consistency Check
+----------------------------------------
+Part Type IC-ETHERCATCNTRLR-BGA128-ET1100 has the following pins not found in PCB Decal BGA128C80P12X12_1100X1100X130:
+M9 L8 M8 L7 M7 M10 M11 L10 K10 M12 L11 L12 L9 J11 J12 M3 L3 M2 L2 M1 
+L6 M4 K4 L4 M5 L5 M6 K3 K2 L1 F1 E1 J1 H1 F2 C3 E3 K11 K12 G12 
+F12 H12 C11 B12 C10 A12 B11 A11 B10 A10 C9 A9 B9 A8 B8 A7 B7 A6 B6 A5 
+B5 A4 B4 A3 B3 A2 A1 B2 B1 C2 C1 D1 D2 E2 G1 G2 H2 J2 K1 E11 
+E12 C4 H3 H11 G11 F11 C12 D11 D12 C6 C7 K6 K7 C5 D10 D3 E9 F10 J10 J3 
+K5 K8 G10 F3 H4 K9 H9 D6 D7 J6 J7 D4 D5 D9 F9 J4 J5 J8 J9 G9 
+F4 H10 E4 G3 G4 E10 C8 D8 
+Non matching PCB Decal BGA128C80P12X12_1100X1100X130 affects the following parts:
+ U15 U19.
+
+Single/Zero Pin Net Warnings
+----------------------------
+No single or zero pin nets.
+
+Schematic Connectivity Errors
+-----------------------------
+
+Dangling Connections with a Net Name
+
++5VA
+SHEET6-MC33730 X10800 Y9940 
+
+ESC1_+2V5_CORE
+SHEET12-ESC_POWER X2300  Y10660
+SHEET12-ESC_POWER X8900  Y10660
+SHEET12-ESC_POWER X4090  Y7248 
+SHEET12-ESC_POWER X4050  Y5450 
+
+ESC2_+2V5_CORE
+SHEET12-ESC_POWER X13820 Y11180
+SHEET12-ESC_POWER X20420 Y11180
+SHEET12-ESC_POWER X15856 Y7596 
+SHEET12-ESC_POWER X15500 Y5800 
+
+Power or Ground Symbols used with wrong Net Name
+
++24V
+SHEET13-RESET,POWER X19250 Y15050 - Power  Symbol used for net: +5V
+SHEET13-RESET,POWER X19300 Y10450 - Power  Symbol used for net: +5V
+SHEET13-RESET,POWER X19700 Y7600  - Power  Symbol used for net: +5V
+SHEET13-RESET,POWER X18750 Y4350  - Power  Symbol used for net: +5V
+SHEET14-CONNECTOR X8950  Y9850  - Power  Symbol used for net: +5V
+
++3.3V
+SHEET7-NOR_FLASH,SRAM,MRAM X17800 Y11500 - Power  Symbol used for net: +5V
+SHEET7-NOR_FLASH,SRAM,MRAM X13800 Y10700 - Power  Symbol used for net: +5V
+SHEET7-NOR_FLASH,SRAM,MRAM X9900  Y11850 - Power  Symbol used for net: +5V
+SHEET7-NOR_FLASH,SRAM,MRAM X10250 Y4800  - Power  Symbol used for net: +5V
+SHEET8-CPLD,EBI_BUFFERS X12650 Y12700 - Power  Symbol used for net: +5V
+SHEET8-CPLD,EBI_BUFFERS X18100 Y6200  - Power  Symbol used for net: +5V
+SHEET8-CPLD,EBI_BUFFERS X19700 Y6160  - Power  Symbol used for net: +5V
+SHEET8-CPLD,EBI_BUFFERS X8590  Y15720 - Power  Symbol used for net: +5V
+SHEET8-CPLD,EBI_BUFFERS X1550  Y10150 - Power  Symbol used for net: +5V
+SHEET8-CPLD,EBI_BUFFERS X1550  Y7400  - Power  Symbol used for net: +5V
+SHEET8-CPLD,EBI_BUFFERS X1800  Y4550  - Power  Symbol used for net: +5V
+SHEET8-CPLD,EBI_BUFFERS X15250 Y11850 - Power  Symbol used for net: +5V
+SHEET8-CPLD,EBI_BUFFERS X15350 Y10100 - Power  Symbol used for net: +5V
+SHEET8-CPLD,EBI_BUFFERS X1600  Y12800 - Power  Symbol used for net: +5V
+SHEET8-CPLD,EBI_BUFFERS X1600  Y14900 - Power  Symbol used for net: +5V
+SHEET8-CPLD,EBI_BUFFERS X6900  Y15350 - Power  Symbol used for net: +5V
+SHEET8-CPLD,EBI_BUFFERS X6950  Y13300 - Power  Symbol used for net: +5V
+SHEET8-CPLD,EBI_BUFFERS X6950  Y10750 - Power  Symbol used for net: +5V
+SHEET8-CPLD,EBI_BUFFERS X7000  Y8100  - Power  Symbol used for net: +5V
+SHEET8-CPLD,EBI_BUFFERS X7000  Y5350  - Power  Symbol used for net: +5V
+SHEET8-CPLD,EBI_BUFFERS X20500 Y11750 - Power  Symbol used for net: +5V
+SHEET8-CPLD,EBI_BUFFERS X20500 Y9850  - Power  Symbol used for net: +5V
+SHEET8-CPLD,EBI_BUFFERS X11100 Y7850  - Power  Symbol used for net: +5V
+SHEET8-CPLD,EBI_BUFFERS X15850 Y7500  - Power  Symbol used for net: +5V
+SHEET8-CPLD,EBI_BUFFERS X13750 Y3600  - Power  Symbol used for net: +5V
+SHEET8-CPLD,EBI_BUFFERS X8250  Y4250  - Power  Symbol used for net: +5V
+SHEET8-CPLD,EBI_BUFFERS X13500 Y5600  - Power  Symbol used for net: +5V
+SHEET8-CPLD,EBI_BUFFERS X11850 Y6100  - Power  Symbol used for net: +5V
+SHEET8-CPLD,EBI_BUFFERS X7050  Y2800  - Power  Symbol used for net: +5V
+SHEET8-CPLD,EBI_BUFFERS X1850  Y2700  - Power  Symbol used for net: +5V
+SHEET8-CPLD,EBI_BUFFERS X16450 Y12150 - Power  Symbol used for net: +5V
+SHEET8-CPLD,EBI_BUFFERS X16548 Y10388 - Power  Symbol used for net: +5V
+SHEET8-CPLD,EBI_BUFFERS X10000 Y6400  - Power  Symbol used for net: +5V
+SHEET9-JTAG,RS485,TEMP_SENSOR, X15230 Y6740  - Power  Symbol used for net: +5V
+SHEET9-JTAG,RS485,TEMP_SENSOR, X13990 Y6760  - Power  Symbol used for net: +5V
+SHEET9-JTAG,RS485,TEMP_SENSOR, X13500 Y13850 - Power  Symbol used for net: +5V
+SHEET9-JTAG,RS485,TEMP_SENSOR, X11600 Y15500 - Power  Symbol used for net: +5V
+SHEET10-ESC-1 X15020 Y11820 - Power  Symbol used for net: +5V
+SHEET10-ESC-1 X2000  Y11450 - Power  Symbol used for net: +5V
+SHEET11-ESC-2 X15420 Y11920 - Power  Symbol used for net: +5V
+SHEET11-ESC-2 X2000  Y11850 - Power  Symbol used for net: +5V
+SHEET12-ESC_POWER X14220 Y15940 - Power  Symbol used for net: +5V
+SHEET12-ESC_POWER X14220 Y13740 - Power  Symbol used for net: +5V
+SHEET12-ESC_POWER X20420 Y15800 - Power  Symbol used for net: +5V
+SHEET12-ESC_POWER X15800 Y7150  - Power  Symbol used for net: +5V
+SHEET12-ESC_POWER X16300 Y5310  - Power  Symbol used for net: +5V
+SHEET12-ESC_POWER X2700  Y15420 - Power  Symbol used for net: +5V
+SHEET12-ESC_POWER X2700  Y13220 - Power  Symbol used for net: +5V
+SHEET12-ESC_POWER X8900  Y15280 - Power  Symbol used for net: +5V
+SHEET12-ESC_POWER X4084  Y6868  - Power  Symbol used for net: +5V
+SHEET12-ESC_POWER X4500  Y4900  - Power  Symbol used for net: +5V
+SHEET13-RESET,POWER X11700 Y13700 - Power  Symbol used for net: +5V
+SHEET13-RESET,POWER X13300 Y7000  - Power  Symbol used for net: +5V
+SHEET14-CONNECTOR X5250  Y3500  - Power  Symbol used for net: +5V
+SHEET14-CONNECTOR X5000  Y15150 - Power  Symbol used for net: +5V
+SHEET14-CONNECTOR X4100  Y15200 - Power  Symbol used for net: +5V
+
++5VA
+SHEET3-MPC5534 X3250  Y2900  - Power  Symbol used for net: +5V
+SHEET9-JTAG,RS485,TEMP_SENSOR, X4650  Y6470  - Power  Symbol used for net: +5V
+
++6.5V
+SHEET6-MC33730 X4900  Y10960 - Power  Symbol used for net: +5V
+SHEET6-MC33730 X4850  Y14250 - Power  Symbol used for net: +5V
+SHEET6-MC33730 X4460  Y6780  - Power  Symbol used for net: +5V
+SHEET13-RESET,POWER X2900  Y12900 - Power  Symbol used for net: +5V
+SHEET13-RESET,POWER X13500 Y11100 - Power  Symbol used for net: +5V
+SHEET14-CONNECTOR X8800  Y10300 - Power  Symbol used for net: +5V
+
+1.5V_OPT
+SHEET5-MPC5534_POWER X5950  Y13300 - Power  Symbol used for net: +5V
+SHEET6-MC33730 X12700 Y11050 - Power  Symbol used for net: +5V
+SHEET13-RESET,POWER X18250 Y12550 - Power  Symbol used for net: +5V
+
+CON_+24V_F
+SHEET13-RESET,POWER X15700 Y9100  - Power  Symbol used for net: +5V
+SHEET14-CONNECTOR X3250  Y10450 - Power  Symbol used for net: +5V
+
+CON_+3.3V
+SHEET13-RESET,POWER X16300 Y6800  - Power  Symbol used for net: +5V
+SHEET14-CONNECTOR X4250  Y10450 - Power  Symbol used for net: +5V
+
+CON_+5V
+SHEET13-RESET,POWER X13900 Y4350  - Power  Symbol used for net: +5V
+SHEET14-CONNECTOR X3750  Y10450 - Power  Symbol used for net: +5V
+
+DGND
+SHEET3-MPC5534 X9450  Y1100  - Ground Symbol used for net: GND
+SHEET3-MPC5534 X7600  Y1050  - Ground Symbol used for net: GND
+SHEET4-MPC-CONFIGURATIONS X13300 Y6550  - Ground Symbol used for net: GND
+SHEET4-MPC-CONFIGURATIONS X9550  Y8600  - Ground Symbol used for net: GND
+SHEET4-MPC-CONFIGURATIONS X7250  Y13550 - Ground Symbol used for net: GND
+SHEET4-MPC-CONFIGURATIONS X1350  Y14700 - Ground Symbol used for net: GND
+SHEET4-MPC-CONFIGURATIONS X1300  Y13350 - Ground Symbol used for net: GND
+SHEET5-MPC5534_POWER X11450 Y7900  - Ground Symbol used for net: GND
+SHEET5-MPC5534_POWER X7050  Y13350 - Ground Symbol used for net: GND
+SHEET5-MPC5534_POWER X6820  Y11000 - Ground Symbol used for net: GND
+SHEET5-MPC5534_POWER X7900  Y6450  - Ground Symbol used for net: GND
+SHEET5-MPC5534_POWER X7500  Y11450 - Ground Symbol used for net: GND
+SHEET5-MPC5534_POWER X6000  Y2840  - Ground Symbol used for net: GND
+SHEET5-MPC5534_POWER X20250 Y11650 - Ground Symbol used for net: GND
+SHEET5-MPC5534_POWER X19600 Y10840 - Ground Symbol used for net: GND
+SHEET5-MPC5534_POWER X4000  Y1850  - Ground Symbol used for net: GND
+SHEET5-MPC5534_POWER X17800 Y9700  - Ground Symbol used for net: GND
+SHEET5-MPC5534_POWER X15850 Y4900  - Ground Symbol used for net: GND
+SHEET5-MPC5534_POWER X18650 Y6700  - Ground Symbol used for net: GND
+SHEET5-MPC5534_POWER X16400 Y5850  - Ground Symbol used for net: GND
+SHEET6-MC33730 X4750  Y8400  - Ground Symbol used for net: GND
+SHEET6-MC33730 X7900  Y11450 - Ground Symbol used for net: GND
+SHEET6-MC33730 X8300  Y11450 - Ground Symbol used for net: GND
+SHEET6-MC33730 X7250  Y12000 - Ground Symbol used for net: GND
+SHEET6-MC33730 X14080 Y10400 - Ground Symbol used for net: GND
+SHEET6-MC33730 X12000 Y9640  - Ground Symbol used for net: GND
+SHEET6-MC33730 X11400 Y14026 - Ground Symbol used for net: GND
+SHEET6-MC33730 X14340 Y13100 - Ground Symbol used for net: GND
+SHEET6-MC33730 X15360 Y11280 - Ground Symbol used for net: GND
+SHEET6-MC33730 X18420 Y11180 - Ground Symbol used for net: GND
+SHEET6-MC33730 X17100 Y11240 - Ground Symbol used for net: GND
+SHEET6-MC33730 X10950 Y4850  - Ground Symbol used for net: GND
+SHEET6-MC33730 X6400  Y14100 - Ground Symbol used for net: GND
+SHEET6-MC33730 X4800  Y5650  - Ground Symbol used for net: GND
+SHEET6-MC33730 X6150  Y5650  - Ground Symbol used for net: GND
+SHEET6-MC33730 X4850  Y13056 - Ground Symbol used for net: GND
+SHEET6-MC33730 X8250  Y9400  - Ground Symbol used for net: GND
+SHEET7-NOR_FLASH,SRAM,MRAM X16950 Y10350 - Ground Symbol used for net: GND
+SHEET7-NOR_FLASH,SRAM,MRAM X17800 Y10450 - Ground Symbol used for net: GND
+SHEET7-NOR_FLASH,SRAM,MRAM X8250  Y10750 - Ground Symbol used for net: GND
+SHEET7-NOR_FLASH,SRAM,MRAM X9900  Y10800 - Ground Symbol used for net: GND
+SHEET7-NOR_FLASH,SRAM,MRAM X5800  Y5000  - Ground Symbol used for net: GND
+SHEET7-NOR_FLASH,SRAM,MRAM X8450  Y3750  - Ground Symbol used for net: GND
+SHEET7-NOR_FLASH,SRAM,MRAM X10250 Y3450  - Ground Symbol used for net: GND
+SHEET8-CPLD,EBI_BUFFERS X12650 Y9250  - Ground Symbol used for net: GND
+SHEET8-CPLD,EBI_BUFFERS X19800 Y4700  - Ground Symbol used for net: GND
+SHEET8-CPLD,EBI_BUFFERS X18450 Y3950  - Ground Symbol used for net: GND
+SHEET8-CPLD,EBI_BUFFERS X10710 Y14760 - Ground Symbol used for net: GND
+SHEET8-CPLD,EBI_BUFFERS X4750  Y9350  - Ground Symbol used for net: GND
+SHEET8-CPLD,EBI_BUFFERS X4750  Y6750  - Ground Symbol used for net: GND
+SHEET8-CPLD,EBI_BUFFERS X4800  Y3900  - Ground Symbol used for net: GND
+SHEET8-CPLD,EBI_BUFFERS X3400  Y3900  - Ground Symbol used for net: GND
+SHEET8-CPLD,EBI_BUFFERS X17950 Y8750  - Ground Symbol used for net: GND
+SHEET8-CPLD,EBI_BUFFERS X17950 Y10650 - Ground Symbol used for net: GND
+SHEET8-CPLD,EBI_BUFFERS X4750  Y11850 - Ground Symbol used for net: GND
+SHEET8-CPLD,EBI_BUFFERS X3250  Y11900 - Ground Symbol used for net: GND
+SHEET8-CPLD,EBI_BUFFERS X5100  Y13900 - Ground Symbol used for net: GND
+SHEET8-CPLD,EBI_BUFFERS X3250  Y13850 - Ground Symbol used for net: GND
+SHEET8-CPLD,EBI_BUFFERS X6900  Y14550 - Ground Symbol used for net: GND
+SHEET8-CPLD,EBI_BUFFERS X6950  Y12500 - Ground Symbol used for net: GND
+SHEET8-CPLD,EBI_BUFFERS X6950  Y9950  - Ground Symbol used for net: GND
+SHEET8-CPLD,EBI_BUFFERS X7000  Y7300  - Ground Symbol used for net: GND
+SHEET8-CPLD,EBI_BUFFERS X7000  Y4550  - Ground Symbol used for net: GND
+SHEET8-CPLD,EBI_BUFFERS X20500 Y10950 - Ground Symbol used for net: GND
+SHEET8-CPLD,EBI_BUFFERS X20500 Y9050  - Ground Symbol used for net: GND
+SHEET8-CPLD,EBI_BUFFERS X14200 Y6650  - Ground Symbol used for net: GND
+SHEET8-CPLD,EBI_BUFFERS X15850 Y6700  - Ground Symbol used for net: GND
+SHEET8-CPLD,EBI_BUFFERS X10450 Y2300  - Ground Symbol used for net: GND
+SHEET8-CPLD,EBI_BUFFERS X11800 Y2750  - Ground Symbol used for net: GND
+SHEET8-CPLD,EBI_BUFFERS X13750 Y2800  - Ground Symbol used for net: GND
+SHEET8-CPLD,EBI_BUFFERS X13500 Y4800  - Ground Symbol used for net: GND
+SHEET8-CPLD,EBI_BUFFERS X11850 Y4650  - Ground Symbol used for net: GND
+SHEET8-CPLD,EBI_BUFFERS X7050  Y2000  - Ground Symbol used for net: GND
+SHEET8-CPLD,EBI_BUFFERS X4600  Y1800  - Ground Symbol used for net: GND
+SHEET9-JTAG,RS485,TEMP_SENSOR, X6050  Y11100 - Ground Symbol used for net: GND
+SHEET9-JTAG,RS485,TEMP_SENSOR, X15700 Y12250 - Ground Symbol used for net: GND
+SHEET9-JTAG,RS485,TEMP_SENSOR, X13950 Y5800  - Ground Symbol used for net: GND
+SHEET9-JTAG,RS485,TEMP_SENSOR, X16100 Y6550  - Ground Symbol used for net: GND
+SHEET9-JTAG,RS485,TEMP_SENSOR, X13500 Y12800 - Ground Symbol used for net: GND
+SHEET9-JTAG,RS485,TEMP_SENSOR, X11600 Y14450 - Ground Symbol used for net: GND
+SHEET10-ESC-1 X10550 Y9550  - Ground Symbol used for net: GND
+SHEET10-ESC-1 X15020 Y10180 - Ground Symbol used for net: GND
+SHEET10-ESC-1 X16850 Y13850 - Ground Symbol used for net: GND
+SHEET10-ESC-1 X15550 Y14100 - Ground Symbol used for net: GND
+SHEET10-ESC-1 X13600 Y7240  - Ground Symbol used for net: GND
+SHEET10-ESC-1 X5780  Y6620  - Ground Symbol used for net: GND
+SHEET10-ESC-1 X8760  Y4420  - Ground Symbol used for net: GND
+SHEET10-ESC-1 X8820  Y2380  - Ground Symbol used for net: GND
+SHEET10-ESC-1 X13640 Y4900  - Ground Symbol used for net: GND
+SHEET10-ESC-1 X13640 Y4300  - Ground Symbol used for net: GND
+SHEET10-ESC-1 X3940  Y4900  - Ground Symbol used for net: GND
+SHEET10-ESC-1 X13460 Y3080  - Ground Symbol used for net: GND
+SHEET10-ESC-1 X19480 Y4140  - Ground Symbol used for net: GND
+SHEET10-ESC-1 X19360 Y5860  - Ground Symbol used for net: GND
+SHEET10-ESC-1 X14120 Y11280 - Ground Symbol used for net: GND
+SHEET10-ESC-1 X4300  Y6500  - Ground Symbol used for net: GND
+SHEET10-ESC-1 X3980  Y3400  - Ground Symbol used for net: GND
+SHEET10-ESC-1 X3920  Y2080  - Ground Symbol used for net: GND
+SHEET10-ESC-1 X19320 Y7300  - Ground Symbol used for net: GND
+SHEET10-ESC-1 X8840  Y1260  - Ground Symbol used for net: GND
+SHEET10-ESC-1 X4700  Y9700  - Ground Symbol used for net: GND
+SHEET10-ESC-1 X9250  Y9700  - Ground Symbol used for net: GND
+SHEET10-ESC-1 X17000 Y10150 - Ground Symbol used for net: GND
+SHEET10-ESC-1 X16450 Y14100 - Ground Symbol used for net: GND
+SHEET10-ESC-1 X15150 Y13850 - Ground Symbol used for net: GND
+SHEET11-ESC-2 X10550 Y9550  - Ground Symbol used for net: GND
+SHEET11-ESC-2 X15420 Y10280 - Ground Symbol used for net: GND
+SHEET11-ESC-2 X15000 Y13750 - Ground Symbol used for net: GND
+SHEET11-ESC-2 X16400 Y13800 - Ground Symbol used for net: GND
+SHEET11-ESC-2 X15400 Y14150 - Ground Symbol used for net: GND
+SHEET11-ESC-2 X16100 Y14150 - Ground Symbol used for net: GND
+SHEET11-ESC-2 X13600 Y7280  - Ground Symbol used for net: GND
+SHEET11-ESC-2 X5780  Y6660  - Ground Symbol used for net: GND
+SHEET11-ESC-2 X8760  Y4460  - Ground Symbol used for net: GND
+SHEET11-ESC-2 X8820  Y2420  - Ground Symbol used for net: GND
+SHEET11-ESC-2 X13640 Y4940  - Ground Symbol used for net: GND
+SHEET11-ESC-2 X13640 Y4340  - Ground Symbol used for net: GND
+SHEET11-ESC-2 X3940  Y4940  - Ground Symbol used for net: GND
+SHEET11-ESC-2 X13460 Y3120  - Ground Symbol used for net: GND
+SHEET11-ESC-2 X19480 Y4180  - Ground Symbol used for net: GND
+SHEET11-ESC-2 X19360 Y5900  - Ground Symbol used for net: GND
+SHEET11-ESC-2 X14520 Y11380 - Ground Symbol used for net: GND
+SHEET11-ESC-2 X4050  Y6450  - Ground Symbol used for net: GND
+SHEET11-ESC-2 X3980  Y3440  - Ground Symbol used for net: GND
+SHEET11-ESC-2 X3920  Y2120  - Ground Symbol used for net: GND
+SHEET11-ESC-2 X19320 Y7340  - Ground Symbol used for net: GND
+SHEET11-ESC-2 X8840  Y1300  - Ground Symbol used for net: GND
+SHEET11-ESC-2 X4720  Y9780  - Ground Symbol used for net: GND
+SHEET11-ESC-2 X9180  Y9740  - Ground Symbol used for net: GND
+SHEET11-ESC-2 X17420 Y10280 - Ground Symbol used for net: GND
+SHEET12-ESC_POWER X14220 Y14580 - Ground Symbol used for net: GND
+SHEET12-ESC_POWER X14220 Y12380 - Ground Symbol used for net: GND
+SHEET12-ESC_POWER X14120 Y9880  - Ground Symbol used for net: GND
+SHEET12-ESC_POWER X20420 Y14580 - Ground Symbol used for net: GND
+SHEET12-ESC_POWER X19450 Y5600  - Ground Symbol used for net: GND
+SHEET12-ESC_POWER X19250 Y4550  - Ground Symbol used for net: GND
+SHEET12-ESC_POWER X15660 Y4780  - Ground Symbol used for net: GND
+SHEET12-ESC_POWER X2700  Y14060 - Ground Symbol used for net: GND
+SHEET12-ESC_POWER X2700  Y11860 - Ground Symbol used for net: GND
+SHEET12-ESC_POWER X2600  Y9360  - Ground Symbol used for net: GND
+SHEET12-ESC_POWER X8900  Y14060 - Ground Symbol used for net: GND
+SHEET12-ESC_POWER X7600  Y5250  - Ground Symbol used for net: GND
+SHEET12-ESC_POWER X7400  Y4200  - Ground Symbol used for net: GND
+SHEET12-ESC_POWER X3900  Y4460  - Ground Symbol used for net: GND
+SHEET13-RESET,POWER X5750  Y3250  - Ground Symbol used for net: GND
+SHEET13-RESET,POWER X5010  Y4900  - Ground Symbol used for net: GND
+SHEET13-RESET,POWER X4200  Y10600 - Ground Symbol used for net: GND
+SHEET13-RESET,POWER X5400  Y10900 - Ground Symbol used for net: GND
+SHEET13-RESET,POWER X2900  Y11100 - Ground Symbol used for net: GND
+SHEET13-RESET,POWER X9500  Y12400 - Ground Symbol used for net: GND
+SHEET13-RESET,POWER X8000  Y10800 - Ground Symbol used for net: GND
+SHEET13-RESET,POWER X11700 Y10000 - Ground Symbol used for net: GND
+SHEET13-RESET,POWER X7100  Y12000 - Ground Symbol used for net: GND
+SHEET13-RESET,POWER X7900  Y2950  - Ground Symbol used for net: GND
+SHEET13-RESET,POWER X6150  Y2950  - Ground Symbol used for net: GND
+SHEET13-RESET,POWER X8700  Y3300  - Ground Symbol used for net: GND
+SHEET13-RESET,POWER X4100  Y3450  - Ground Symbol used for net: GND
+SHEET13-RESET,POWER X19250 Y13700 - Ground Symbol used for net: GND
+SHEET13-RESET,POWER X19300 Y9150  - Ground Symbol used for net: GND
+SHEET13-RESET,POWER X19700 Y6250  - Ground Symbol used for net: GND
+SHEET13-RESET,POWER X18750 Y3050  - Ground Symbol used for net: GND
+SHEET13-RESET,POWER X13400 Y13650 - Ground Symbol used for net: GND
+SHEET13-RESET,POWER X13500 Y9450  - Ground Symbol used for net: GND
+SHEET13-RESET,POWER X13450 Y3550  - Ground Symbol used for net: GND
+SHEET13-RESET,POWER X16100 Y5900  - Ground Symbol used for net: GND
+SHEET13-RESET,POWER X14350 Y12150 - Ground Symbol used for net: GND
+SHEET13-RESET,POWER X15500 Y8150  - Ground Symbol used for net: GND
+SHEET13-RESET,POWER X17850 Y11600 - Ground Symbol used for net: GND
+SHEET13-RESET,POWER X12900 Y5900  - Ground Symbol used for net: GND
+SHEET14-CONNECTOR X5900  Y8600  - Ground Symbol used for net: GND
+SHEET14-CONNECTOR X7300  Y8600  - Ground Symbol used for net: GND
+SHEET14-CONNECTOR X13900 Y8500  - Ground Symbol used for net: GND
+SHEET14-CONNECTOR X12500 Y8500  - Ground Symbol used for net: GND
+SHEET14-CONNECTOR X14700 Y7200  - Ground Symbol used for net: GND
+SHEET14-CONNECTOR X13100 Y7200  - Ground Symbol used for net: GND
+SHEET14-CONNECTOR X13900 Y4650  - Ground Symbol used for net: GND
+SHEET14-CONNECTOR X8000  Y7450  - Ground Symbol used for net: GND
+SHEET14-CONNECTOR X6400  Y7450  - Ground Symbol used for net: GND
+SHEET14-CONNECTOR X7200  Y4800  - Ground Symbol used for net: GND
+SHEET14-CONNECTOR X8250  Y14250 - Ground Symbol used for net: GND
+SHEET14-CONNECTOR X4100  Y14400 - Ground Symbol used for net: GND
+
+MPC3.3V
+SHEET3-MPC5534 X8120  Y1920  - Power  Symbol used for net: +5V
+SHEET3-MPC5534 X2350  Y4800  - Power  Symbol used for net: +5V
+SHEET3-MPC5534 X7600  Y1850  - Power  Symbol used for net: +5V
+SHEET4-MPC-CONFIGURATIONS X13300 Y9750  - Power  Symbol used for net: +5V
+SHEET4-MPC-CONFIGURATIONS X2800  Y15570 - Power  Symbol used for net: +5V
+SHEET4-MPC-CONFIGURATIONS X5100  Y15100 - Power  Symbol used for net: +5V
+SHEET4-MPC-CONFIGURATIONS X8800  Y15200 - Power  Symbol used for net: +5V
+SHEET4-MPC-CONFIGURATIONS X17000 Y12560 - Power  Symbol used for net: +5V
+SHEET4-MPC-CONFIGURATIONS X4700  Y8950  - Power  Symbol used for net: +5V
+SHEET4-MPC-CONFIGURATIONS X5200  Y10400 - Power  Symbol used for net: +5V
+SHEET5-MPC5534_POWER X3160  Y12740 - Power  Symbol used for net: +5V
+SHEET5-MPC5534_POWER X7900  Y12500 - Power  Symbol used for net: +5V
+SHEET5-MPC5534_POWER X7100  Y9680  - Power  Symbol used for net: +5V
+SHEET5-MPC5534_POWER X12250 Y9150  - Power  Symbol used for net: +5V
+SHEET5-MPC5534_POWER X14550 Y12800 - Power  Symbol used for net: +5V
+SHEET5-MPC5534_POWER X5500  Y9400  - Power  Symbol used for net: +5V
+SHEET6-MC33730 X14080 Y11760 - Power  Symbol used for net: +5V
+SHEET9-JTAG,RS485,TEMP_SENSOR, X1700  Y12500 - Power  Symbol used for net: +5V
+SHEET9-JTAG,RS485,TEMP_SENSOR, X2950  Y13650 - Power  Symbol used for net: +5V
+SHEET13-RESET,POWER X5950  Y5150  - Power  Symbol used for net: +5V
+SHEET13-RESET,POWER X8550  Y5450  - Power  Symbol used for net: +5V
+SHEET13-RESET,POWER X6250  Y3550  - Power  Symbol used for net: +5V
+SHEET13-RESET,POWER X14800 Y13350 - Power  Symbol used for net: +5V
+
+MPC5V
+SHEET3-MPC5534 X2100  Y14100 - Power  Symbol used for net: +5V
+SHEET5-MPC5534_POWER X7500  Y10000 - Power  Symbol used for net: +5V
+SHEET5-MPC5534_POWER X12000 Y9150  - Power  Symbol used for net: +5V
+SHEET5-MPC5534_POWER X14400 Y7900  - Power  Symbol used for net: +5V
+SHEET6-MC33730 X5400  Y12550 - Power  Symbol used for net: +5V
+SHEET6-MC33730 X18860 Y12400 - Power  Symbol used for net: +5V
+SHEET8-CPLD,EBI_BUFFERS X12800 Y8296  - Power  Symbol used for net: +5V
+SHEET8-CPLD,EBI_BUFFERS X10350 Y6400  - Power  Symbol used for net: +5V
+SHEET13-RESET,POWER X13600 Y15400 - Power  Symbol used for net: +5V
+SHEET14-CONNECTOR X7900  Y15850 - Power  Symbol used for net: +5V
+
+VDD1.5V
+SHEET5-MPC5534_POWER X7500  Y14350 - Power  Symbol used for net: +5V
+SHEET5-MPC5534_POWER X2800  Y3900  - Power  Symbol used for net: +5V
+
+VDDA0
+SHEET5-MPC5534_POWER X13050 Y9150  - Power  Symbol used for net: +5V
+SHEET6-MC33730 X13040 Y6800  - Power  Symbol used for net: +5V
+
+VDDA1
+SHEET5-MPC5534_POWER X13350 Y9150  - Power  Symbol used for net: +5V
+SHEET6-MC33730 X18240 Y6820  - Power  Symbol used for net: +5V
+
+VDDSYN
+SHEET5-MPC5534_POWER X12650 Y9150  - Power  Symbol used for net: +5V
+SHEET5-MPC5534_POWER X4100  Y9450  - Power  Symbol used for net: +5V
+
+VKAM
+SHEET6-MC33730 X8300  Y12650 - Power  Symbol used for net: +5V
+
+VREF1
+SHEET6-MC33730 X11160 Y9980  - Power  Symbol used for net: +5V
+
+VSSA
+SHEET3-MPC5534 X4700  Y1250  - Ground Symbol used for net: GND
+SHEET5-MPC5534_POWER X7100  Y8000  - Ground Symbol used for net: GND
+SHEET6-MC33730 X11080 Y8300  - Ground Symbol used for net: GND
+SHEET6-MC33730 X10500 Y5520  - Ground Symbol used for net: GND
+SHEET6-MC33730 X12480 Y5640  - Ground Symbol used for net: GND
+SHEET6-MC33730 X17680 Y5660  - Ground Symbol used for net: GND
+SHEET9-JTAG,RS485,TEMP_SENSOR, X4950  Y4650  - Ground Symbol used for net: GND
+
+VSSSYN
+SHEET3-MPC5534 X10900 Y2550  - Ground Symbol used for net: GND
+SHEET5-MPC5534_POWER X8050  Y7550  - Ground Symbol used for net: GND
+SHEET5-MPC5534_POWER X7100  Y6450  - Ground Symbol used for net: GND
+SHEET5-MPC5534_POWER X4650  Y8050  - Ground Symbol used for net: GND
+
+Subnets with Missing Off-Page Reference
+
++5VA
+SHEET6-MC33730 X10698 Y9940  - Pin: U2.6
+
+ESC1_+2V5_CORE
+SHEET12-ESC_POWER X8400  Y10360 - Pin: C60.1
+SHEET12-ESC_POWER X4800  Y7250  - Pin: U15.C6
+SHEET12-ESC_POWER X4800  Y5450  - Pin: U15.G10
+
+ESC2_+2V5_CORE
+SHEET12-ESC_POWER X19920 Y10880 - Pin: C94.1
+SHEET12-ESC_POWER X16600 Y7300  - Pin: U19.K7
+SHEET12-ESC_POWER X16600 Y5800  - Pin: U19.G10
+
+Subnets with Off-Page Reference to no other Subnet
+
+ESC1_MI_DATA
+SHEET10-ESC-1 X1650  Y10600
+
+ESC2_MI_DATA
+SHEET11-ESC-2 X1350  Y10700

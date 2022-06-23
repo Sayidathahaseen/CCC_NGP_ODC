@@ -1,0 +1,26 @@
+
+BOARD STATISTICS REPORT -- CCCNGP_MODBUS_REV1.0_7-july_2011.pcb -- Fri Jul 15 15:48:58 2011
+
+
+Job Design Time:    236:25
+
+Part Types:         28
+Parts TopSide:      50    BottomSide:     57    Total: 107
+Drilled pads:       84    Undrilled pads: 301   Total: 385
+Via Name : STANDARDVIA   Via Count : 110
+Via Name : 12/24   Via Count : 71
+Signal Nets:        49
+Connections Routed: 117  Partially 3    Unrouted: 0    Total: 120
+
+Plane  Nets:        9
+Connections Routed: 19   Partially 138  Unrouted: 28   Total: 185
+
+Routed Connection Length (inches) X:   258.90   Y: 126.93   Total: 385.83  
+Unrouted Connection Length (inches) X: 73.02    Y: 114.57   Total: 187.59  
+
+Number of copper clearance errors:         0
+
+Number of Routing Layers:                  4
+Size of Board (square inches):             7.28    
+Equivalent IC count (1-IC/14 pins):        27.50   
+Board Density(boardsize/14pin-components): 0.26    

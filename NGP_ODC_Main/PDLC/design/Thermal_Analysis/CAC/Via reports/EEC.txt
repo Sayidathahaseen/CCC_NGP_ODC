@@ -1,0 +1,25 @@
+
+BOARD STATISTICS REPORT -- CCCNGP_EEC_REV1 0_6-july_2011_9.pcb -- Fri Jul 15 15:50:53 2011
+
+
+Job Design Time:    214:21
+
+Part Types:         8
+Parts TopSide:      27    BottomSide:     9     Total: 36
+Drilled pads:       98    Undrilled pads: 122   Total: 220
+Via Name : STANDARDVIA   Via Count : 41
+Signal Nets:        44
+Connections Routed: 52   Partially 0    Unrouted: 0    Total: 52
+
+Plane  Nets:        6
+Connections Routed: 9    Partially 33   Unrouted: 44   Total: 86
+
+Routed Connection Length (inches) X:   77.53    Y: 88.90    Total: 166.43  
+Unrouted Connection Length (inches) X: 44.86    Y: 51.27    Total: 96.13   
+
+Number of copper clearance errors:         0
+
+Number of Routing Layers:                  4
+Size of Board (square inches):             8.63    
+Equivalent IC count (1-IC/14 pins):        15.71   
+Board Density(boardsize/14pin-components): 0.55    
