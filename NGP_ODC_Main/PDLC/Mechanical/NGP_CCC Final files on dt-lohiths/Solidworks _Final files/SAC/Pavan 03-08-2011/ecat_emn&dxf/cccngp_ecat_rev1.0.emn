@@ -1,0 +1,323 @@
+.HEADER
+BOARD_FILE    3.0    "PADS Layout 9.2"    2011/08/03.15:14:04    1
+"d:\projects\ccc\cac\cac_files\cac_files\ecat\cccngp_ecat_rev1.0.emn"    THOU
+.END_HEADER
+.BOARD_OUTLINE    UNOWNED
+35.4
+0     0.0                           0.0                           0     
+0     3199.83                       0.0                           0     
+0     3199.83                       2599.93                       0     
+0     3099.7                        2700.05                       0     
+0     99.75                         2700.05                       0     
+0     0.0                           2600.3                        0     
+0     0.0                           0.0                           0     
+.END_BOARD_OUTLINE
+.DRILLED_HOLES
+118.110236 127.952756 197.637795 PTH    J1    PIN    UNOWNED
+51.181102 424.015748 196.850394 NPTH    J1    PIN    UNOWNED
+59.055118 353.149606 283.464567 PTH    J1    PIN    UNOWNED
+59.055118 494.881890 283.464567 PTH    J1    PIN    UNOWNED
+118.110236 719.291339 197.637795 PTH    J1    PIN    UNOWNED
+118.110236 915.354331 197.637795 PTH    J4    PIN    UNOWNED
+51.181102 1211.417323 196.850394 NPTH    J4    PIN    UNOWNED
+59.055118 1140.551181 283.464567 PTH    J4    PIN    UNOWNED
+59.055118 1282.283465 283.464567 PTH    J4    PIN    UNOWNED
+118.110236 1506.692913 197.637795 PTH    J4    PIN    UNOWNED
+118.110236 1702.755906 197.637795 PTH    J3    PIN    UNOWNED
+51.181102 1998.818898 196.850394 NPTH    J3    PIN    UNOWNED
+59.055118 1927.952756 283.464567 PTH    J3    PIN    UNOWNED
+59.055118 2069.685039 283.464567 PTH    J3    PIN    UNOWNED
+118.110236 2294.094488 197.637795 PTH    J3    PIN    UNOWNED
+118.110236 2490.157480 197.637795 PTH    J5    PIN    UNOWNED
+51.181102 2786.220472 196.850394 NPTH    J5    PIN    UNOWNED
+59.055118 2715.354331 283.464567 PTH    J5    PIN    UNOWNED
+59.055118 2857.086614 283.464567 PTH    J5    PIN    UNOWNED
+118.110236 3081.496063 197.637795 PTH    J5    PIN    UNOWNED
+98.425197 128.740157 354.330709 PTH    J1    PIN    UNOWNED
+59.055118 353.149606 425.196850 PTH    J1    PIN    UNOWNED
+59.055118 494.881890 425.196850 PTH    J1    PIN    UNOWNED
+98.425197 719.291339 354.330709 PTH    J1    PIN    UNOWNED
+98.425197 916.141732 354.330709 PTH    J4    PIN    UNOWNED
+59.055118 1140.551181 425.196850 PTH    J4    PIN    UNOWNED
+59.055118 1282.283465 425.196850 PTH    J4    PIN    UNOWNED
+98.425197 1506.692913 354.330709 PTH    J4    PIN    UNOWNED
+98.425197 1703.543307 354.330709 PTH    J3    PIN    UNOWNED
+59.055118 1927.952756 425.196850 PTH    J3    PIN    UNOWNED
+59.055118 2069.685039 425.196850 PTH    J3    PIN    UNOWNED
+98.425197 2294.094488 354.330709 PTH    J3    PIN    UNOWNED
+98.425197 2490.944882 354.330709 PTH    J5    PIN    UNOWNED
+59.055118 2715.354331 425.196850 PTH    J5    PIN    UNOWNED
+59.055118 2857.086614 425.196850 PTH    J5    PIN    UNOWNED
+98.425197 3081.496063 354.330709 PTH    J5    PIN    UNOWNED
+12.000000 500.000000 789.960000 PTH    BOARD    VIA    UNOWNED
+12.000000 750.000000 789.700000 PTH    BOARD    VIA    UNOWNED
+12.000000 1200.000000 790.280000 PTH    BOARD    VIA    UNOWNED
+12.000000 1450.000000 788.610000 PTH    BOARD    VIA    UNOWNED
+12.000000 1900.000000 790.000000 PTH    BOARD    VIA    UNOWNED
+12.000000 2150.000000 790.000000 PTH    BOARD    VIA    UNOWNED
+12.000000 2600.000000 791.470000 PTH    BOARD    VIA    UNOWNED
+12.000000 2850.000000 787.570000 PTH    BOARD    VIA    UNOWNED
+12.000000 500.000000 1260.130000 PTH    BOARD    VIA    UNOWNED
+12.000000 750.000000 1258.900000 PTH    BOARD    VIA    UNOWNED
+12.000000 1200.000000 1258.890000 PTH    BOARD    VIA    UNOWNED
+12.000000 1450.000000 1259.270000 PTH    BOARD    VIA    UNOWNED
+12.000000 1900.000000 1259.800000 PTH    BOARD    VIA    UNOWNED
+12.000000 2150.000000 1259.960000 PTH    BOARD    VIA    UNOWNED
+12.000000 2600.000000 1259.270000 PTH    BOARD    VIA    UNOWNED
+12.000000 2850.000000 1257.160000 PTH    BOARD    VIA    UNOWNED
+20.000000 525.000000 1500.000000 PTH    BOARD    VIA    UNOWNED
+20.000000 585.000000 1480.000000 PTH    BOARD    VIA    UNOWNED
+20.000000 705.000000 1325.000000 PTH    BOARD    VIA    UNOWNED
+20.000000 642.720000 1325.550000 PTH    BOARD    VIA    UNOWNED
+20.000000 737.200000 1483.300000 PTH    BOARD    VIA    UNOWNED
+20.000000 920.140000 1395.310000 PTH    BOARD    VIA    UNOWNED
+20.000000 910.000000 1325.000000 PTH    BOARD    VIA    UNOWNED
+12.000000 1150.040000 1458.240000 PTH    BOARD    VIA    UNOWNED
+12.000000 1117.640000 1458.240000 PTH    BOARD    VIA    UNOWNED
+20.000000 1121.850000 1325.130000 PTH    BOARD    VIA    UNOWNED
+20.000000 1213.100000 1476.400000 PTH    BOARD    VIA    UNOWNED
+20.000000 1204.390000 1416.100000 PTH    BOARD    VIA    UNOWNED
+20.000000 1328.490000 1325.480000 PTH    BOARD    VIA    UNOWNED
+20.000000 1262.040000 1378.130000 PTH    BOARD    VIA    UNOWNED
+20.000000 1545.120000 1410.430000 PTH    BOARD    VIA    UNOWNED
+20.000000 1595.740000 1468.830000 PTH    BOARD    VIA    UNOWNED
+20.000000 1746.860000 1325.000000 PTH    BOARD    VIA    UNOWNED
+20.000000 1949.810000 1324.280000 PTH    BOARD    VIA    UNOWNED
+20.000000 2101.370000 1325.320000 PTH    BOARD    VIA    UNOWNED
+20.000000 2303.690000 1324.420000 PTH    BOARD    VIA    UNOWNED
+20.000000 2434.360000 1320.380000 PTH    BOARD    VIA    UNOWNED
+20.000000 2801.020000 1324.900000 PTH    BOARD    VIA    UNOWNED
+20.000000 2659.880000 1325.570000 PTH    BOARD    VIA    UNOWNED
+20.000000 3001.220000 1324.430000 PTH    BOARD    VIA    UNOWNED
+12.000000 450.000000 1615.000000 PTH    BOARD    VIA    UNOWNED
+12.000000 535.820000 1692.420000 PTH    BOARD    VIA    UNOWNED
+12.000000 450.000000 1580.000000 PTH    BOARD    VIA    UNOWNED
+12.000000 617.990000 1583.330000 PTH    BOARD    VIA    UNOWNED
+12.000000 931.830000 1683.150000 PTH    BOARD    VIA    UNOWNED
+12.000000 932.190000 1533.170000 PTH    BOARD    VIA    UNOWNED
+20.000000 1015.000000 1515.000000 PTH    BOARD    VIA    UNOWNED
+12.000000 1180.000000 1681.000000 PTH    BOARD    VIA    UNOWNED
+12.000000 1227.446168 1526.460709 PTH    BOARD    VIA    UNOWNED
+12.000000 1227.741050 1676.460709 PTH    BOARD    VIA    UNOWNED
+12.000000 1537.470000 1676.540000 PTH    BOARD    VIA    UNOWNED
+12.000000 1537.470000 1526.220000 PTH    BOARD    VIA    UNOWNED
+12.000000 1793.930000 1566.740000 PTH    BOARD    VIA    UNOWNED
+12.000000 1826.330000 1566.740000 PTH    BOARD    VIA    UNOWNED
+12.000000 535.820000 1724.560000 PTH    BOARD    VIA    UNOWNED
+12.000000 619.350000 1733.330000 PTH    BOARD    VIA    UNOWNED
+20.000000 939.900000 1783.300000 PTH    BOARD    VIA    UNOWNED
+12.000000 1180.000000 1714.000000 PTH    BOARD    VIA    UNOWNED
+12.000000 1375.523386 1879.417795 PTH    BOARD    VIA    UNOWNED
+12.000000 1560.442283 1863.633281 PTH    BOARD    VIA    UNOWNED
+12.000000 1608.832100 1863.633281 PTH    BOARD    VIA    UNOWNED
+20.000000 1486.700000 1815.800000 PTH    BOARD    VIA    UNOWNED
+12.000000 1681.694121 1780.070026 PTH    BOARD    VIA    UNOWNED
+12.000000 1730.052100 1778.595696 PTH    BOARD    VIA    UNOWNED
+157.480315 309.842520 2020.866142 PTH    J6    PIN    UNOWNED
+20.000000 980.000000 1921.300000 PTH    BOARD    VIA    UNOWNED
+20.000000 870.000000 2037.900000 PTH    BOARD    VIA    UNOWNED
+20.000000 1060.700000 2095.100000 PTH    BOARD    VIA    UNOWNED
+12.000000 1341.306614 1913.634567 PTH    BOARD    VIA    UNOWNED
+12.000000 2075.000000 2050.000000 PTH    BOARD    VIA    UNOWNED
+20.000000 2075.000000 2085.000000 PTH    BOARD    VIA    UNOWNED
+20.000000 2410.000000 1965.000000 PTH    BOARD    VIA    UNOWNED
+20.000000 2256.200000 1994.200000 PTH    BOARD    VIA    UNOWNED
+20.000000 2410.000000 2030.000000 PTH    BOARD    VIA    UNOWNED
+157.480315 309.842520 2281.496063 PTH    J6    PIN    UNOWNED
+12.000000 465.000000 2200.000000 PTH    BOARD    VIA    UNOWNED
+12.000000 625.000000 2275.000000 PTH    BOARD    VIA    UNOWNED
+20.000000 990.200000 2235.700000 PTH    BOARD    VIA    UNOWNED
+20.000000 1060.000000 2235.000000 PTH    BOARD    VIA    UNOWNED
+19.700000 1403.149606 2180.314961 PTH    J2    PIN    UNOWNED
+19.700000 1403.149606 2235.433071 PTH    J2    PIN    UNOWNED
+19.700000 1403.149606 2290.551181 PTH    J2    PIN    UNOWNED
+19.700000 1481.889764 2176.377953 PTH    J2    PIN    UNOWNED
+19.700000 1560.629921 2180.314961 PTH    J2    PIN    UNOWNED
+19.700000 1481.889764 2231.496063 PTH    J2    PIN    UNOWNED
+19.700000 1560.629921 2235.433071 PTH    J2    PIN    UNOWNED
+19.700000 1481.889764 2286.614173 PTH    J2    PIN    UNOWNED
+19.700000 1560.629921 2290.551181 PTH    J2    PIN    UNOWNED
+19.700000 1639.370079 2176.377953 PTH    J2    PIN    UNOWNED
+19.700000 1718.110236 2180.314961 PTH    J2    PIN    UNOWNED
+19.700000 1796.850394 2176.377953 PTH    J2    PIN    UNOWNED
+19.700000 1639.370079 2231.496063 PTH    J2    PIN    UNOWNED
+19.700000 1718.110236 2235.433071 PTH    J2    PIN    UNOWNED
+19.700000 1796.850394 2231.496063 PTH    J2    PIN    UNOWNED
+19.700000 1639.370079 2286.614173 PTH    J2    PIN    UNOWNED
+19.700000 1718.110236 2290.551181 PTH    J2    PIN    UNOWNED
+19.700000 1796.850394 2286.614173 PTH    J2    PIN    UNOWNED
+20.000000 2410.000000 2270.000000 PTH    BOARD    VIA    UNOWNED
+12.000000 2610.000000 2220.000000 PTH    BOARD    VIA    UNOWNED
+12.000000 2730.000000 2255.000000 PTH    BOARD    VIA    UNOWNED
+12.000000 2675.000000 2205.000000 PTH    BOARD    VIA    UNOWNED
+12.000000 2730.000000 2205.000000 PTH    BOARD    VIA    UNOWNED
+157.480315 309.842520 2503.149606 PTH    J6    PIN    UNOWNED
+12.000000 465.000000 2345.000000 PTH    BOARD    VIA    UNOWNED
+12.000000 620.000000 2355.000000 PTH    BOARD    VIA    UNOWNED
+19.700000 1403.149606 2345.669291 PTH    J2    PIN    UNOWNED
+19.700000 1403.149606 2400.787402 PTH    J2    PIN    UNOWNED
+19.700000 1403.149606 2455.905512 PTH    J2    PIN    UNOWNED
+19.700000 1481.889764 2341.732283 PTH    J2    PIN    UNOWNED
+19.700000 1560.629921 2345.669291 PTH    J2    PIN    UNOWNED
+19.700000 1481.889764 2396.850394 PTH    J2    PIN    UNOWNED
+19.700000 1560.629921 2400.787402 PTH    J2    PIN    UNOWNED
+19.700000 1481.889764 2451.968504 PTH    J2    PIN    UNOWNED
+19.700000 1560.629921 2455.905512 PTH    J2    PIN    UNOWNED
+19.700000 1639.370079 2341.732283 PTH    J2    PIN    UNOWNED
+19.700000 1718.110236 2345.669291 PTH    J2    PIN    UNOWNED
+19.700000 1796.850394 2341.732283 PTH    J2    PIN    UNOWNED
+19.700000 1639.370079 2396.850394 PTH    J2    PIN    UNOWNED
+19.700000 1718.110236 2400.787402 PTH    J2    PIN    UNOWNED
+19.700000 1796.850394 2396.850394 PTH    J2    PIN    UNOWNED
+19.700000 1639.370079 2451.968504 PTH    J2    PIN    UNOWNED
+19.700000 1718.110236 2455.905512 PTH    J2    PIN    UNOWNED
+19.700000 1796.850394 2451.968504 PTH    J2    PIN    UNOWNED
+20.000000 2186.500000 2350.900000 PTH    BOARD    VIA    UNOWNED
+12.000000 2300.000000 2390.000000 PTH    BOARD    VIA    UNOWNED
+12.000000 2300.000000 2465.000000 PTH    BOARD    VIA    UNOWNED
+12.000000 2410.000000 2465.000000 PTH    BOARD    VIA    UNOWNED
+20.000000 2410.000000 2325.000000 PTH    BOARD    VIA    UNOWNED
+20.000000 2410.000000 2385.000000 PTH    BOARD    VIA    UNOWNED
+12.000000 2565.000000 2455.000000 PTH    BOARD    VIA    UNOWNED
+12.000000 2660.000000 2455.000000 PTH    BOARD    VIA    UNOWNED
+12.000000 2660.000000 2410.000000 PTH    BOARD    VIA    UNOWNED
+20.000000 783.570000 2612.920000 PTH    BOARD    VIA    UNOWNED
+19.700000 1403.149606 2511.023622 PTH    J2    PIN    UNOWNED
+19.700000 1403.149606 2566.141732 PTH    J2    PIN    UNOWNED
+19.700000 1403.149606 2621.259843 PTH    J2    PIN    UNOWNED
+19.700000 1481.889764 2507.086614 PTH    J2    PIN    UNOWNED
+19.700000 1560.629921 2511.023622 PTH    J2    PIN    UNOWNED
+19.700000 1481.889764 2562.204724 PTH    J2    PIN    UNOWNED
+19.700000 1560.629921 2566.141732 PTH    J2    PIN    UNOWNED
+19.700000 1481.889764 2617.322835 PTH    J2    PIN    UNOWNED
+19.700000 1560.629921 2621.259843 PTH    J2    PIN    UNOWNED
+19.700000 1639.370079 2507.086614 PTH    J2    PIN    UNOWNED
+19.700000 1718.110236 2511.023622 PTH    J2    PIN    UNOWNED
+19.700000 1796.850394 2507.086614 PTH    J2    PIN    UNOWNED
+19.700000 1639.370079 2562.204724 PTH    J2    PIN    UNOWNED
+19.700000 1718.110236 2566.141732 PTH    J2    PIN    UNOWNED
+19.700000 1796.850394 2562.204724 PTH    J2    PIN    UNOWNED
+19.700000 1639.370079 2617.322835 PTH    J2    PIN    UNOWNED
+19.700000 1718.110236 2621.259843 PTH    J2    PIN    UNOWNED
+19.700000 1796.850394 2617.322835 PTH    J2    PIN    UNOWNED
+.END_DRILLED_HOLES
+.ROUTE_KEEPOUT    UNOWNED
+ALL
+0     3050.0                        1250.0                        0     
+0     3050.0                        800.0                         0     
+0     3200.0                        800.0                         0     
+0     3200.0                        1250.0                        0     
+0     3050.0                        1250.0                        0     
+.END_ROUTE_KEEPOUT
+.PLACEMENT
+XFMR_HX1188NL                                XFMR-HX1188NL                                T4                                           
+625.0                         1025.0                        0.0                           270.0     TOP       PLACED    
+R0805                                        RES-75E-0805-1_-0_125W                       R1                                           
+750.0                         675.0                         0.0                           270.0     BOTTOM    PLACED    
+R0805                                        RES-75E-0805-1_-0_125W                       R2                                           
+500.0                         675.0                         0.0                           270.0     BOTTOM    PLACED    
+C1206                                        CAPC-1NF-1206-10_-2KV-X7R                    C3                                           
+975.0                         650.0                         0.0                           270.0     BOTTOM    PLACED    
+R1206                                        RES-1M                                       R12                                          
+875.0                         650.0                         0.0                           90.0      BOTTOM    PLACED    
+XFMR_HX1188NL                                XFMR-HX1188NL                                T1                                           
+1325.0                        1025.0                        0.0                           270.0     TOP       PLACED    
+R0805                                        RES-75E-0805-1_-0_125W                       R4                                           
+1450.0                        675.0                         0.0                           270.0     BOTTOM    PLACED    
+R0805                                        RES-75E-0805-1_-0_125W                       R5                                           
+1200.0                        675.0                         0.0                           270.0     BOTTOM    PLACED    
+C1206                                        CAPC-1NF-1206-10_-2KV-X7R                    C6                                           
+1575.0                        650.0                         0.0                           270.0     BOTTOM    PLACED    
+R1206                                        RES-1M                                       R6                                           
+1675.0                        650.0                         0.0                           90.0      BOTTOM    PLACED    
+XFMR_HX1188NL                                XFMR-HX1188NL                                T2                                           
+2025.0                        1025.0                        0.0                           270.0     TOP       PLACED    
+R0805                                        RES-75E-0805-1_-0_125W                       R7                                           
+2150.0                        675.0                         0.0                           270.0     BOTTOM    PLACED    
+R0805                                        RES-75E-0805-1_-0_125W                       R8                                           
+1900.0                        675.0                         0.0                           270.0     BOTTOM    PLACED    
+C1206                                        CAPC-1NF-1206-10_-2KV-X7R                    C9                                           
+2300.0                        650.0                         0.0                           270.0     BOTTOM    PLACED    
+R1206                                        RES-1M                                       R9                                           
+2400.0                        650.0                         0.0                           90.0      BOTTOM    PLACED    
+XFMR_HX1188NL                                XFMR-HX1188NL                                T3                                           
+2725.0                        1025.0                        0.0                           270.0     TOP       PLACED    
+R0805                                        RES-75E-0805-1_-0_125W                       R10                                          
+2850.0                        675.0                         0.0                           270.0     BOTTOM    PLACED    
+R0805                                        RES-75E-0805-1_-0_125W                       R11                                          
+2600.0                        675.0                         0.0                           270.0     BOTTOM    PLACED    
+C1206                                        CAPC-1NF-1206-10_-2KV-X7R                    C12                                          
+3100.0                        650.0                         0.0                           270.0     BOTTOM    PLACED    
+R1206                                        RES-1M                                       R3                                           
+3000.0                        650.0                         0.0                           90.0      BOTTOM    PLACED    
+43K1542                                      CON_DIN_ECAT                                 J4                                           
+1211.42                       196.85                        0.0                           180.0     TOP       PLACED    
+43K1542                                      CON_DIN_ECAT                                 J1                                           
+424.02                        196.85                        0.0                           180.0     TOP       PLACED    
+43K1542                                      CON_DIN_ECAT                                 J3                                           
+1998.82                       196.85                        0.0                           180.0     TOP       PLACED    
+C1206                                        CAPC-1UF-1206-10_-50V-X7R                    C21                                          
+980.0                         2040.0                        0.0                           270.0     TOP       PLACED    
+43K1542                                      CON_DIN_ECAT                                 J5                                           
+2786.22                       196.85                        0.0                           180.0     TOP       PLACED    
+FUSE_451_453                                 FUSE-0451_500MRL                             F1                                           
+890.0                         2510.0                        0.0                           270.0     TOP       PLACED    
+FUSE_451_453                                 FUSE-0451_500MRL                             F2                                           
+1140.0                        2510.0                        0.0                           270.0     TOP       PLACED    
+TP_40_SM                                     TESTPOINT                                    TP_3P3V                                      
+870.0                         2090.0                        0.0                           0.0       TOP       PLACED    
+R0805                                        RES-0E-0805-J-1_8W                           R13                                          
+2077.1                        2182.6                        0.0                           270.0     TOP       PLACED    
+DFLS160                                      DIO-1N4004-SMD                               D1                                           
+940.0                         2290.0                        0.0                           0.0       TOP       PLACED    
+DFLS160                                      DIO-1N4004-SMD                               D2                                           
+1110.0                        2290.0                        0.0                           180.0     TOP       PLACED    
+R0603                                        RES-10K                                      R14                                          
+950.0                         1450.0                        0.0                           180.0     BOTTOM    PLACED    
+R0603                                        RES-10K                                      R15                                          
+1475.0                        1450.0                        0.0                           90.0      BOTTOM    PLACED    
+C0805                                        CAP_100NF_50V_0803                           C13                                          
+1300.0                        1475.0                        0.0                           90.0      BOTTOM    PLACED    
+C0805                                        CAP_100NF_50V_0803                           C14                                          
+550.0                         1425.0                        0.0                           0.0       BOTTOM    PLACED    
+SOIC127P600X165-16N                          ADG774A                                      U1                                           
+775.27                        1608.33                       0.0                           180.0     TOP       PLACED    
+SOIC127P600X165-16N                          ADG774A                                      U2                                           
+1380.16                       1601.46                       0.0                           180.0     TOP       PLACED    
+SOIC_N_EP_9                                  ADP1706_8-SOIC                               U4                                           
+2535.0                        2070.0                        0.0                           90.0      TOP       PLACED    
+C0805                                        CAP_10NF_50V_0603                            C15                                          
+2187.2                        2031.6                        0.0                           90.0      TOP       PLACED    
+F0805                                        FB-120E-100MHZ-0805                          FB1                                          
+525.0                         2275.0                        0.0                           180.0     BOTTOM    PLACED    
+CONN_10045597                                GUIDE                                        J6                                           
+309.84                        2503.15                       0.0                           180.0     TOP       PLACED    
+CONN_FCI_54                                  CON-54_AIRMAX_2ARRAY                         J2                                           
+1796.85                       2617.32                       0.0                           270.0     TOP       PLACED    
+C0805                                        CAPC-0_01UF-0805-5_-50V-X7R                  C1                                           
+550.0                         1325.0                        0.0                           180.0     BOTTOM    PLACED    
+C0805                                        CAPC-0_01UF-0805-5_-50V-X7R                  C10                                          
+2900.0                        1325.0                        0.0                           180.0     BOTTOM    PLACED    
+C0805                                        CAPC-0_01UF-0805-5_-50V-X7R                  C11                                          
+2550.0                        1325.0                        0.0                           0.0       BOTTOM    PLACED    
+C0805                                        CAP_4_7UF_25V_0803                           C16                                          
+2186.5                        2257.5                        0.0                           90.0      TOP       PLACED    
+C0805                                        CAP_4_7UF_25V_0803                           C17                                          
+2660.0                        2305.0                        0.0                           90.0      TOP       PLACED    
+C0805                                        CAPC-0_01UF-0805-5_-50V-X7R                  C2                                           
+800.0                         1325.0                        0.0                           180.0     BOTTOM    PLACED    
+C0805                                        CAPC-0_01UF-0805-5_-50V-X7R                  C4                                           
+1425.0                        1325.0                        0.0                           0.0       BOTTOM    PLACED    
+C0805                                        CAPC-0_01UF-0805-5_-50V-X7R                  C5                                           
+1225.0                        1325.0                        0.0                           180.0     BOTTOM    PLACED    
+C0805                                        CAPC-0_01UF-0805-5_-50V-X7R                  C7                                           
+2200.0                        1325.0                        0.0                           180.0     BOTTOM    PLACED    
+C0805                                        CAPC-0_01UF-0805-5_-50V-X7R                  C8                                           
+1850.0                        1325.0                        0.0                           0.0       BOTTOM    PLACED    
+FID                                          FID                                          FD2                                          
+270.0                         695.0                         0.0                           0.0       TOP       PLACED    
+FID                                          FID                                          FD3                                          
+630.0                         2605.0                        0.0                           0.0       TOP       PLACED    
+FID                                          FID                                          FD1                                          
+3080.0                        2485.0                        0.0                           0.0       TOP       PLACED    
+.END_PLACEMENT
