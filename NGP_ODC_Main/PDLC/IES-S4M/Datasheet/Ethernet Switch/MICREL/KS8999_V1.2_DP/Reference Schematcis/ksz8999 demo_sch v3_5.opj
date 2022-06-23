@@ -1,0 +1,87 @@
+(ExpressProject ""
+  (ProjectVersion "19981106")
+  (ProjectType "PCB")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File "e:\projects\ies\schematics\orcad16.2\library\ies_orcad lib.olb"
+        (Type "Schematic Library")))
+    (File ".\ksz8999 demo_sch v3_5.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (NoModify))
+  (Folder "Outputs")
+  (Folder "Referenced Projects")
+  (PartMRUSelector)
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources" ".\ksz8999 demo_sch v3_5.dsn")
+      (Path "Design Resources" ".\ksz8999 demo_sch v3_5.dsn" "SCHEMATIC1")
+      (Path "Design Resources" "Library")
+      (Path "Design Resources" "Library"
+         "e:\projects\ies\schematics\orcad16.2\library\ies_orcad lib.olb")
+      (Select "Design Resources" ".\ksz8999 demo_sch v3_5.dsn" "SCHEMATIC1"
+         "PAGE2-KS8999"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -4 -24 0 200 0 375"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -4 -24 66 878 87 500")
+        (Scroll "-22 0")
+        (Zoom "48")
+        (Occurrence "/"))
+      (Path
+         "E:\PROJECTS\IES\DATASHEETS\ETHERNET SWITCH\MICREL\KS8999_V1.2_DP\REFERENCE SCHEMATCIS\KSZ8999 DEMO_SCH V3_5.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE3-RJ45"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -4 -24 88 900 116 529")
+        (Scroll "-88 -4")
+        (Zoom "48")
+        (Occurrence "/"))
+      (Path
+         "E:\PROJECTS\IES\DATASHEETS\ETHERNET SWITCH\MICREL\KS8999_V1.2_DP\REFERENCE SCHEMATCIS\KSZ8999 DEMO_SCH V3_5.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE2-KS8999"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -4 -24 132 944 174 587")
+        (Scroll "-37 0")
+        (Zoom "46")
+        (Occurrence "/"))
+      (Path
+         "E:\PROJECTS\IES\DATASHEETS\ETHERNET SWITCH\MICREL\KS8999_V1.2_DP\REFERENCE SCHEMATCIS\KSZ8999 DEMO_SCH V3_5.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE5-POWER SUPPLY"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -4 -24 0 812 0 413")
+        (Scroll "-22 0")
+        (Zoom "48")
+        (Occurrence "/"))
+      (Path
+         "E:\PROJECTS\IES\DATASHEETS\ETHERNET SWITCH\MICREL\KS8999_V1.2_DP\REFERENCE SCHEMATCIS\KSZ8999 DEMO_SCH V3_5.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE6-MII INTERFACE"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -4 -24 132 944 174 555")
+        (Scroll "-22 0")
+        (Zoom "48")
+        (Occurrence "/"))
+      (Path
+         "E:\PROJECTS\IES\DATASHEETS\ETHERNET SWITCH\MICREL\KS8999_V1.2_DP\REFERENCE SCHEMATCIS\KSZ8999 DEMO_SCH V3_5.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE4-RJ45")))
+  (MPSSessionName "9361"))
